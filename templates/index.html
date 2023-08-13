@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>語音轉文字</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #recordButton {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #recordButton:hover {
+            background-color: #2980b9;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>語音轉文字</h1>
+    <p id="convertedText"></p>
+    <button id="recordButton">開始錄音</button>
+
+    <script>
+        const recordButton = document.getElementById('recordButton');
+        const convertedTextElement = document.getElementById('convertedText');
+        recordButton.addEventListener('click', async() => {
+            const stream = await navigator.mediaDevices.getUserMedia({
+                audio: true
+            });
+            const mediaRecorder = new MediaRecorder(stream);
+            const chunks = [];
+
+            mediaRecorder.ondataavailable = (e) => {
+                chunks.push(e.data);
+            };
+
+            mediaRecorder.onstop = async() => {
+                const blob = new Blob(chunks, {
+                    type: 'audio/wav'
+                });
+                const formData = new FormData();
+                formData.append('audio', blob);
+
+                const response = await fetch('/convert', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+                if (data.error) {
+                    convertedTextElement.textContent = data.error; 
+                } else {
+                    convertedTextElement.textContent = data.text;
+                }
+            };
+
+            mediaRecorder.start();
+            recordButton.textContent = '錄音中...';
+            setTimeout(() => {
+                mediaRecorder.stop();
+                recordButton.textContent = '開始錄音';
+            }, 5000); // 錄音5秒
+        });
+    </script>
+</body>
+
+</html>
