@@ -1,42 +1,27 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template
 import speech_recognition as sr
 
-app = Flask(__name__, template_folder="templates")
+app = Flask(__name__)
 
+r = sr.Recognizer()
 
-@app.route("/")
+@app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template('index.html')
 
-
-@app.route("/convert", methods=["POST"])
-def convert():
-    recognizer = sr.Recognizer()
-
-    if "audio" not in request.files:
-        return jsonify({"error": "未上傳"})
-
-    audio_file = request.files["audio"]
-    if audio_file.filename == "":
-        return jsonify({"error": "未選擇文件"})
-
-    allowed_extensions = {"wav", "mp3"}
-    if audio_file.filename.split(".")[-1].lower() not in allowed_extensions:
-        return jsonify({"error": "無效的文件格式"})
-
-    # 存檔的位置
-    temp_audio_path = "temp_audio.wav"  # 應為絕對路徑
-    audio_file.save(temp_audio_path)
-
-    with sr.AudioFile(temp_audio_path) as source:
-        audio_data = recognizer.record(source)
+@app.route('/recognize', methods=['POST'])
+def recognize():
+    with sr.Microphone() as source:
+        print("請開始說話...")
+        audio = r.listen(source)
 
     try:
-        text = recognizer.recognize_google(audio_data, language="zh-TW")
-        return jsonify({"text": text})
+        text = r.recognize_google(audio, language='zh-TW')
+        return text
     except sr.UnknownValueError:
-        return jsonify({"error": "無法識別語音"})
+        return "無法辨識您的語音"
+    except sr.RequestError as e:
+        return "無法連線至Google語音辨識服務：{0}".format(e)
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)
