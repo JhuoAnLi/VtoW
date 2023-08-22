@@ -15,6 +15,7 @@ function init(){
 
     const keywords = [
         '刪除',
+        '刪除前一句',
         '清除',
         '停止錄音',
 
@@ -55,7 +56,7 @@ function init(){
             recording = true;
         }else{
             recognition.stop();
-            button.innerHTML = '按下開始錄音';
+            button.innerHTML = '開始錄音';
             recording = false;
         }
     }
@@ -63,7 +64,7 @@ function init(){
     recognition.onresult = function(event){
         console.log(event.results);
 
-        let text = '';
+        let text = "";
         const lines = [];
         for(let i = 0; i < event.results.length; i++){
             // console.log(event.results[i][0].transcript);
@@ -75,6 +76,7 @@ function init(){
                 });
         }
 
+        //handle command
         for (let i = 0; i < lines.length; i++) {
             if (lines[i].text.includes('[停止錄音]') && lines[i].isFinal) {
                 lines[i].text = lines[i].text.replace('[停止錄音]', '');
@@ -82,11 +84,19 @@ function init(){
             }else if(lines[i].text.includes('[刪除]') && lines[i].isFinal){
                 lines[i].text = lines[i].text.replace('[刪除]', '');
                 lines[i].text = "";
+            }else if(lines[i].text.includes('[刪除前一句]') && lines[i].isFinal){
+                lines[i].text = lines[i].text.replace('[刪除前一句]', '');
+                lines[i-1].text = "";
+            }else if (lines[i].text.includes('[清除]') && lines[i].isFinal) {
+                lines[i].text = lines[i].text.replace('[清除]', '');
+                output.innerHTML = "";
+                debugger;
+                break;
             }
         }
-
+        
         for (let i = 0; i < lines.length; i++) {
-            text += `<text style="color: ${lines[i].color}">${lines[i].text}</text>`
+            text += `<text style="color: ${lines[i].isFinal? lines[i].color : '#ff0000'}">${lines[i].text}</text>`
         }
         output.innerHTML = text;
     }
@@ -124,6 +134,7 @@ function confidenceToColor(confidence){
 
 function convertKeyWords(oringalText){
     oringalText = oringalText.replace(/刪除/g, '[刪除]');
+    oringalText = oringalText.replace(/刪除前一句/g, '[刪除前一句]');
     oringalText = oringalText.replace(/清除/g, '[清除]');
     oringalText = oringalText.replace(/停止錄音/, '[停止錄音]')
     oringalText = oringalText.replace(/逗號/g, '，');
