@@ -64,41 +64,41 @@ function init(){
     recognition.onresult = function(event){
         console.log(event.results);
 
-        let text = "";
-        const lines = [];
-        for(let i = 0; i < event.results.length; i++){
-            // console.log(event.results[i][0].transcript);
-            lines.push(
-                {
-                    text: convertKeyWords(event.results[i][0].transcript), 
-                    color: confidenceToColor(event.results[i][0].confidence),
-                    isFinal: event.results[i].isFinal
-                });
-        }
+        const last = event.results.length - 1;
+        // console.log(event.results[last])
+        
+        let text = convertKeyWords(event.results[last][0].transcript);
+        let color = confidenceToColor(event.results[last][0].confidence);
+        let isFinal = event.results[last].isFinal;
+        console.log(text, color, isFinal);
 
         //handle command
-        for (let i = 0; i < lines.length; i++) {
-            if (lines[i].text.includes('[停止錄音]') && lines[i].isFinal) {
-                lines[i].text = lines[i].text.replace('[停止錄音]', '');
-                button.click();
-            }else if(lines[i].text.includes('[刪除]') && lines[i].isFinal){
-                lines[i].text = lines[i].text.replace('[刪除]', '');
-                lines[i].text = "";
-            }else if(lines[i].text.includes('[刪除前一句]') && lines[i].isFinal){
-                lines[i].text = lines[i].text.replace('[刪除前一句]', '');
-                lines[i-1].text = "";
-            }else if (lines[i].text.includes('[清除]') && lines[i].isFinal) {
-                lines[i].text = lines[i].text.replace('[清除]', '');
-                output.innerHTML = "";
-                debugger;
-                break;
-            }
+        if (text.includes('[停止錄音]') && isFinal) {
+            text = text.replace('[停止錄音]', '');
+            button.click();
+        }else if(text.includes('[刪除]') && isFinal){
+            text = text.replace('[刪除]', '');
+            text = "";
+        }else if(text.includes('[刪除前一句]') && isFinal){ //not working
+            text = text.replace('[刪除前一句]', '');
+            output.lastElementChild.previousElementSibling.innerHTML = "";
+        }else if (text.includes('[清除]') && isFinal) {
+            text = text.replace('[清除]', '');
+            text = "";
+            output.textContent = ""; //clear all child  
+            output.appendChild(document.createElement('text'));
         }
+
+        const lastElement = output.lastElementChild;
+        while (lastElement && lastElement.nodeType !== 1) {
+            lastElement = lastElement.previousElementSibling;
+        }
+        lastElement.innerHTML = text;
+        lastElement.style.color = isFinal? color : '#ff0000';
         
-        for (let i = 0; i < lines.length; i++) {
-            text += `<text style="color: ${lines[i].isFinal? lines[i].color : '#ff0000'}">${lines[i].text}</text>`
+        if (isFinal) {
+            output.appendChild(document.createElement('text'));
         }
-        output.innerHTML = text;
     }
 }
 
