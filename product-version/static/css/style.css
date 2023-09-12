@@ -1,0 +1,10 @@
+.custom-textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 100px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    white-space: pre-wrap; /* Allow line breaks */
+    text-align: left; /* Right-align the text */
+}
