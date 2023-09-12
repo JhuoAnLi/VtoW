@@ -24,4 +24,4 @@ def recognize():
         return "無法連線至Google語音辨識服務：{0}".format(e)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) # debug mode
