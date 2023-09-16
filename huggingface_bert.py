@@ -3,7 +3,7 @@
 import requests
 
 API_URL = "https://api-inference.huggingface.co/models/ckiplab/bert-base-chinese"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer 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"} #It's my api owo
 
 
 def query(payload):
