@@ -13,7 +13,7 @@ def query(payload):
 
 output = query(
     {
-        "inputs": "今天天氣真[MASK]",
+        "inputs": "今天天氣真[MASK]呀",
     }
 )
 sorted_data = sorted(output, key=lambda x: x["score"], reverse=True)
