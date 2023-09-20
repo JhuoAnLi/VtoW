@@ -9,7 +9,7 @@ class CangjieKeyMap:
         with open("Cangjie5.txt", "r", encoding="utf-8") as file:
             lines = file.readlines()
 
-        with open("Cangie-markers.txt", "r", encoding="utf-8") as file2:
+        with open("Cangjie-markers.txt", "r", encoding="utf-8") as file2:
             lines2 = file2.readlines()
         
         lines += lines2
@@ -17,15 +17,21 @@ class CangjieKeyMap:
             parts = line.strip().split()
 
             if len(parts) == 2:
-                key, value = parts
-                self.my_list.append((key, value))
+                word, cangjie_key = parts
+                self.my_list.append((word, cangjie_key))
 
     def convert_to_cangjie_key(self, input:str) -> str:
         result = ""
         for char in input:
-            for cangjie, value in self.my_list:
-                if char == value:
-                    result += cangjie
+            converted = False
+            for word, cangjie_key in self.my_list:
+                if char == word:
+                    result += cangjie_key + " "
+                    converted = True
+                    break
+            if converted == False:
+                result += char
+
         return result
 
 if __name__ == '__main__':
@@ -33,6 +39,17 @@ if __name__ == '__main__':
         lines = file.readlines()
 
     cangjie_key_map = CangjieKeyMap()
+    
+    print(cangjie_key_map.convert_to_cangjie_key("?"))
 
-    for line in lines:
-        print(cangjie_key_map.convert_to_cangjie_key(line.strip()))
+    # for line in lines:
+        # print(cangjie_key_map.convert_to_cangjie_key(line.strip()))
+
+    # with open ("Cangjie-markers.txt", "r", encoding="utf-8") as file:
+    #     with open("Cangjie-markers2.txt", "w", encoding="utf-8") as file2:
+    #         lines = file.readlines()
+    #         for line in lines:
+    #             parts = line.strip().split()
+    #             if len(parts) == 2:
+    #                 word, cangjie_key = parts
+    #                 file2.write(word + "\t" + cangjie_key.lower() + "\n")
