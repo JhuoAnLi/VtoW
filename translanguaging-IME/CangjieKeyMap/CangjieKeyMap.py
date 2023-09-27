@@ -6,10 +6,10 @@ class CangjieKeyMap:
         self.setup_cangjie_key_map()
 
     def setup_cangjie_key_map(self) -> None:
-        with open("Cangjie5.txt", "r", encoding="utf-8") as file:
+        with open("translanguaging-IME\CangjieKeyMap\Cangjie5.txt", "r", encoding="utf-8") as file:
             lines = file.readlines()
 
-        with open("Cangjie-markers.txt", "r", encoding="utf-8") as file2:
+        with open("translanguaging-IME\CangjieKeyMap\Cangjie-markers.txt", "r", encoding="utf-8") as file2:
             lines2 = file2.readlines()
         
         lines += lines2
