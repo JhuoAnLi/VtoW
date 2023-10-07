@@ -1,10 +1,7 @@
-chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-    console.log("Message received:", message);
+// background.js
 
-    if (message.action === "convertToUppercase") {
-        const convertedText = message.text.toUpperCase();
-        sendResponse({ result: convertedText });
-
-        console.log("Received a message from content script or popup:", message.text);
-    }
+// 在瀏覽器啟動時執行的程式碼
+chrome.runtime.onStartup.addListener(function() {
+    // 在這裡添加啟動時的任務
+    console.log("onStartup");
 });

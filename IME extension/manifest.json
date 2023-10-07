@@ -1,11 +1,18 @@
 {
     "manifest_version": 3,
-    "name": "Input to Uppercase",
+    "name": "Input Click Detector",
     "version": "1.0",
-    "description": "A Chrome extension that converts lowercase text to uppercase.",
-    "permissions": [
-        "activeTab"
-    ],
+    "description": "Detects clicks on input elements.",
+    "permissions": ["activeTab"],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }],
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
@@ -13,17 +20,5 @@
             "48": "images/icon48.png",
             "128": "images/icon128.png"
         }
-    },
-    "icons": {
-        "16": "images/icon16.png",
-        "48": "images/icon48.png",
-        "128": "images/icon128.png"
-    },
-    "background": {
-        "service_worker": "background.js"
-    },
-    "content_scripts": [{
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-    }]
+    }
 }
