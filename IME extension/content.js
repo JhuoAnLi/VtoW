@@ -10,21 +10,41 @@ document.addEventListener("input", function(event) {
 
     if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
 
-        const inputValue = event.target.value;
+        var textarea = event.target;
+        // console.log(event.target);
+        textarea.addEventListener("input", function(event) {
+            var inputValue = textarea.value;
+            let container = document.createElement("div");
 
-        console.log("用戶輸入的文字:", inputValue);
-        showMenu(x, y);
+            container.innerHTML = `
+              <select id="mySelect">
+                <option value="option1">apple</option>
+                <option value="option2">banana</option>
+                <option value="option3">juice</option>
+              </select>
+            `;
+
+            container.addEventListener("change", function(event) {
+                textarea.value = event.target.value;
+
+            });
+            textarea.appendChild(container);
+            const ee = event.target.value;
+            console.log("用戶輸入的文字:", ee);
+            // showMenu(x, y);
+        });
+
     }
 });
 
 function showMenu(x, y) {
-    const menuUrl = chrome.runtime.getURL("menu.html");
+    const menuUrl = chrome.runtime.getURL("popup.html");
 
 
     const activeElement = document.activeElement;
 
 
-    const menuLeft = x;
+    const menuLeft = x - 500;
     const menuTop = y + 100;
 
 
@@ -40,3 +60,11 @@ function showMenu(x, y) {
         }
     });
 }
+// content.js
+
+// document.addEventListener("input", function(event) {
+//     if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
+//         // 向 background script 发送消息以显示 popup.html
+//         chrome.runtime.sendMessage({ action: "showPopup" });
+//     }
+// });
