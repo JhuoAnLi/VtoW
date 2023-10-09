@@ -7,35 +7,44 @@ document.addEventListener("mousemove", function(event) {
 
 
 document.addEventListener("input", function(event) {
-
     if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
 
         var textarea = event.target;
-        // console.log(event.target);
+        var existingSelect = textarea.nextElementSibling;
+
+        if (textarea.value !== "" && !existingSelect) {
+            var select = document.createElement("select");
+            select.innerHTML = `
+                <option value="apple">apple</option>
+                <option value="banana">banana</option>
+                <option value="juice">juice</option>
+                <option value="guava">guava</option>
+            `;
+            select.addEventListener("change", function(event) {
+                var selectedOption = event.target.value;
+                var currentValue = textarea.value;
+
+                var lastSpaceIndex = currentValue.lastIndexOf(" ");
+
+                if (lastSpaceIndex !== -1) {
+                    var newValue = currentValue.substring(0, lastSpaceIndex + 1) + selectedOption;
+                    textarea.value = newValue;
+                } else {
+                    textarea.value = selectedOption;
+                }
+            });
+
+            textarea.parentNode.appendChild(select);
+        }
         textarea.addEventListener("input", function(event) {
             var inputValue = textarea.value;
-            let container = document.createElement("div");
-
-            container.innerHTML = `
-              <select id="mySelect">
-                <option value="option1">apple</option>
-                <option value="option2">banana</option>
-                <option value="option3">juice</option>
-              </select>
-            `;
-
-            container.addEventListener("change", function(event) {
-                textarea.value = event.target.value;
-
-            });
-            textarea.appendChild(container);
-            const ee = event.target.value;
+            const ee = inputValue;
             console.log("用戶輸入的文字:", ee);
-            // showMenu(x, y);
-        });
 
+        });
     }
 });
+
 
 function showMenu(x, y) {
     const menuUrl = chrome.runtime.getURL("popup.html");
