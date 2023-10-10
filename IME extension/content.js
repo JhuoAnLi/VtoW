@@ -26,12 +26,19 @@ document.addEventListener("input", function(event) {
 
             textarea.addEventListener("keydown", function(event) {
 
-                if (event.key === "ArrowDown" && !selectVisible) {
-                    selectedIndex = 0;
-                    console.log(selectedIndex, selectVisible, event.key);
-                    select.style.display = "block";
-                    selectVisible = true;
-                    event.preventDefault();
+                if (event.key === "ArrowDown") {
+                    if (!selectVisible) {
+                        selectedIndex = 0;
+                        console.log(selectedIndex, selectVisible, event.key);
+                        select.style.display = "block";
+                        selectVisible = true;
+                        event.preventDefault();
+                    } else if (selectVisible && selectedIndex < select.options.length - 1) {
+                        selectedIndex++;
+                        select.options[selectedIndex].selected = true;
+                        console.log(selectedIndex, selectVisible, event.key);
+                        event.preventDefault();
+                    }
                 } else if (event.key === "ArrowUp") {
                     if (selectVisible) {
 
@@ -55,7 +62,7 @@ document.addEventListener("input", function(event) {
                 } else if (event.key === "Enter" && selectVisible) {
                     var selectedOption = select.options[selectedIndex].value;
                     var currentValue = textarea.value;
-                    var lastSpaceIndex = currentValue.lastIndexOf(" ");
+                    var lastSpaceIndex = currentValue.lastIndexOf("\\");
 
                     if (lastSpaceIndex != -1) {
                         var newValue = currentValue.substring(0, lastSpaceIndex) + selectedOption;
@@ -68,7 +75,9 @@ document.addEventListener("input", function(event) {
                     selectVisible = false;
                     textarea.focus();
                     select.options[0].selected = true;
-                    event.preventDefault();
+                    document.querySelector('form').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                    });
                 }
             });
 
@@ -87,7 +96,7 @@ document.addEventListener("input", function(event) {
 
                 select.style.display = "none";
                 selectVisible = false;
-                textarea.focus(); // 将焦点转回 textarea
+                textarea.focus();
             });
         }
 
