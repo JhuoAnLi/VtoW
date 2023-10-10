@@ -1,5 +1,5 @@
 var SecondPara = document.getElementById("Alh6id");
-SecondPara.remove();;
+SecondPara.remove();
 
 document.addEventListener("input", function(event) {
     if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
@@ -80,30 +80,12 @@ document.addEventListener("input", function(event) {
                     });
                 }
             });
-
-            select.addEventListener("change", function(event) {
-                var selectedOption = event.target.value;
-                var currentValue = textarea.value;
-
-                var lastSpaceIndex = currentValue.lastIndexOf(" ");
-
-                if (lastSpaceIndex != -1) {
-                    var newValue = currentValue.substring(0, lastSpaceIndex) + selectedOption;
-                    textarea.value = newValue;
-                } else {
-                    textarea.value = selectedOption;
-                }
-
-                select.style.display = "none";
-                selectVisible = false;
-                textarea.focus();
-            });
         }
 
         textarea.addEventListener("input", function(event) {
             var inputValue = textarea.value;
             const ee = inputValue;
-            console.log("用户输入的文字:", ee);
+            console.log("用戶输入的文字:", ee);
         });
     }
 });
