@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Multilingual IME ",
+    "name": "Multilingual IME",
     "version": "1.0",
-    "description": "Multilingual IME ",
+    "description": "Multilingual IME",
     "permissions": ["activeTab", "input"],
     "host_permissions": [
         "https://*/*"

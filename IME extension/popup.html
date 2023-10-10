@@ -1,49 +1,15 @@
-popup.html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>选择一个选项</title>
-    <style>
-        /* 添加一些基本样式 */
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 10px;
-        }
-        /* 创建滚动菜单容器 */
-        
-        .menu-container {
-            width: 200px;
-            height: 300px;
-            overflow-y: scroll;
-            /* 启用垂直滚动 */
-        }
-        /* 设置菜单项样式 */
-        
-        .menu-item {
-            padding: 10px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            /* 添加过渡效果 */
-        }
-        /* 添加鼠标悬停效果 */
-        
-        .menu-item:hover {
-            background-color: #e0e0e0;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Extension Popup</title>
 </head>
 
 <body>
-    <div class="menu-container" id="menu-container">
-        <!-- 添加菜单项 -->
-        <div class="menu-item">apple</div>
-        <div class="menu-item">banana</div>
-        <div class="menu-item">watermelon</div>
-        <!-- 可以继续添加更多菜单项 -->
-    </div>
+    <button id="toggleButton" class="button">Multilingual IME unactivate</button>
     <script src="popup.js"></script>
 </body>
 
