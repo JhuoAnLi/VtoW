@@ -1,6 +1,6 @@
 var SecondPara = document.getElementById("Alh6id");
 SecondPara.remove();
-
+// Run the main function
 document.addEventListener("input", function(event) {
     if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
 
@@ -19,6 +19,7 @@ document.addEventListener("input", function(event) {
         }
         // if (inputforbackend[inputforbackend.length - 1] != '3' && inputforbackend[inputforbackend.length - 1] != '4' && inputforbackend[inputforbackend.length - 1] != '6' && inputforbackend[inputforbackend.length - 1] != '7') { inputforbackend + ' '; }
         console.log(inputforbackend);
+
         if (textarea.value !== "" && !existingSelect) {
             var select = document.createElement("select");
             var optionValues = ["apple", "banana", "juice", "guava", "tea"];
