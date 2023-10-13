@@ -43,7 +43,7 @@ document.addEventListener("input", function(event) {
                 option.textContent = value;
                 select.appendChild(option);
             });
-
+            select.size = backendoutputarray.length;
             select.style.display = "none";
 
             textarea.parentNode.appendChild(select);
