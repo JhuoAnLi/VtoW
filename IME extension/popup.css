@@ -1,0 +1,37 @@
+body {
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+#toggleButton {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+}
+
+#toggleButton.activate {
+    background-color: #f44336;
+    /* Red */
+}

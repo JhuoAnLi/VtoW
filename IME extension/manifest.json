@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "My Text Replacement Extension",
+    "name": "Multilingual IME",
     "version": "1.0",
-    "description": "Replace text in input fields",
+    "description": "Multilingual IME",
     "permissions": ["activeTab", "input"],
     "host_permissions": [
         "https://*/*"
@@ -11,9 +11,7 @@
         "default_popup": "popup.html",
 
         "default_icon": {
-            "16": "images/icon16.png",
-            "48": "images/icon48.png",
-            "128": "images/icon128.png"
+            "48": "images/main.png"
         }
     },
     "content_scripts": [{
@@ -24,8 +22,6 @@
         "service_worker": "background.js"
     },
     "icons": {
-        "16": "images/icon16.png",
-        "48": "images/icon48.png",
-        "128": "images/icon128.png"
+        "48": "images/main.png"
     }
 }

@@ -1,6 +1,6 @@
 var SecondPara = document.getElementById("Alh6id");
 SecondPara.remove();
-
+// Run the main function
 document.addEventListener("input", function(event) {
     if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
 
@@ -8,6 +8,17 @@ document.addEventListener("input", function(event) {
         var existingSelect = textarea.nextElementSibling;
         var selectVisible = false;
         var selectedIndex = 0;
+
+        var test = textarea.value;
+        var inputforbackend = "";
+        for (var i = test.length - 1; i >= 0; i--) {
+            if (test[i] === ' ') {
+                break;
+            }
+            inputforbackend = test[i] + inputforbackend;
+        }
+        // if (inputforbackend[inputforbackend.length - 1] != '3' && inputforbackend[inputforbackend.length - 1] != '4' && inputforbackend[inputforbackend.length - 1] != '6' && inputforbackend[inputforbackend.length - 1] != '7') { inputforbackend + ' '; }
+        console.log(inputforbackend);
 
         if (textarea.value !== "" && !existingSelect) {
             var select = document.createElement("select");
@@ -62,10 +73,9 @@ document.addEventListener("input", function(event) {
                 } else if (event.key === "Enter" && selectVisible) {
                     var selectedOption = select.options[selectedIndex].value;
                     var currentValue = textarea.value;
-                    var lastSpaceIndex = currentValue.lastIndexOf("\\");
-
+                    var lastSpaceIndex = currentValue.lastIndexOf(" ");
                     if (lastSpaceIndex != -1) {
-                        var newValue = currentValue.substring(0, lastSpaceIndex) + selectedOption;
+                        var newValue = currentValue.substring(0, lastSpaceIndex + 1) + selectedOption;
                         textarea.value = newValue;
                     } else {
                         textarea.value = selectedOption;
