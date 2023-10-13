@@ -1,6 +1,32 @@
 var SecondPara = document.getElementById("Alh6id");
 SecondPara.remove();
-// Run the main function
+var buffer = "";
+var buffer2 = "";
+var backendoutputarray = [];
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Backspace") { // solve the problem of backspace XD
+        buffer = buffer.substring(0, buffer.length - 1);
+
+    } else if (/^[a-zA-Z0-9 ]$/.test(event.key)) {
+        buffer = buffer + event.key;
+        var inputforbackend = "";
+        var inputarray = [];
+        for (var i = 0; i < buffer.length; i++) {
+            if (buffer[i] === ' ' || buffer[i] === '3' || buffer[i] === '4' || buffer[i] === '6' || buffer[i] === '7') {
+                inputforbackend = inputforbackend + buffer[i];
+                inputarray.push(inputforbackend);
+                inputforbackend = "";
+            } else {
+                inputforbackend = inputforbackend + buffer[i];
+            }
+        }
+        if (inputforbackend != "") inputarray.push(inputforbackend);
+    }
+    //backendoutputarray[]=function(inputarray); here is the function to get the output from backend
+    ////['su3','cl3', ' ', 'i ', 'have ', 'a ', 'dog'] =>
+    //['你好 我有一隻狗','擬好 我有一隻狗','擬郝 我有一隻狗']
+    console.log(inputarray);
+});
 document.addEventListener("input", function(event) {
     if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
 
@@ -8,23 +34,10 @@ document.addEventListener("input", function(event) {
         var existingSelect = textarea.nextElementSibling;
         var selectVisible = false;
         var selectedIndex = 0;
-
-        var test = textarea.value;
-        var inputforbackend = "";
-        for (var i = test.length - 1; i >= 0; i--) {
-            if (test[i] === ' ') {
-                break;
-            }
-            inputforbackend = test[i] + inputforbackend;
-        }
-        // if (inputforbackend[inputforbackend.length - 1] != '3' && inputforbackend[inputforbackend.length - 1] != '4' && inputforbackend[inputforbackend.length - 1] != '6' && inputforbackend[inputforbackend.length - 1] != '7') { inputforbackend + ' '; }
-        console.log(inputforbackend);
-
         if (textarea.value !== "" && !existingSelect) {
             var select = document.createElement("select");
-            var optionValues = ["apple", "banana", "juice", "guava", "tea"];
-
-            optionValues.forEach(function(value) {
+            backendoutputarray = ["你好 我有一隻狗", "擬好 我有一隻狗", "擬郝 我有一隻狗"];
+            backendoutputarray.forEach(function(value) {
                 var option = document.createElement("option");
                 option.value = value;
                 option.textContent = value;
@@ -70,32 +83,26 @@ document.addEventListener("input", function(event) {
                         }
                     }
                     event.preventDefault();
-                } else if (event.key === "Enter" && selectVisible) {
+                }
+                if (event.key === "ArrowRight" && selectVisible) { //rightkey
                     var selectedOption = select.options[selectedIndex].value;
-                    var currentValue = textarea.value;
-                    var lastSpaceIndex = currentValue.lastIndexOf(" ");
-                    if (lastSpaceIndex != -1) {
-                        var newValue = currentValue.substring(0, lastSpaceIndex + 1) + selectedOption;
-                        textarea.value = newValue;
-                    } else {
-                        textarea.value = selectedOption;
-                    }
-
+                    buffer2 = buffer2 + selectedOption;
+                    setTimeout(() => {
+                        textarea.value = buffer2;
+                    }, 0);
+                    buffer = "";
                     select.style.display = "none";
                     selectVisible = false;
                     textarea.focus();
                     select.options[0].selected = true;
-                    document.querySelector('form').addEventListener('submit', function(event) {
-                        event.preventDefault();
-                    });
                 }
+
             });
         }
-
         textarea.addEventListener("input", function(event) {
             var inputValue = textarea.value;
             const ee = inputValue;
-            console.log("用戶输入的文字:", ee);
+            console.log("输入的文字:", ee);
         });
     }
 });
