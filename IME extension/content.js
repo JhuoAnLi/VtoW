@@ -1,108 +1,238 @@
-var SecondPara = document.getElementById("Alh6id");
+"use strict";
+
+class TrieNode {
+  constructor() {
+    this.children = {};
+    this.value = null;
+  }
+}
+class Trie {
+  constructor() {
+    this.root = new TrieNode();
+  }
+
+  insert(key, value) {
+    let node = this.root;
+    for (let char of key) {
+      if (!(char in node.children)) {
+        node.children[char] = new TrieNode();
+      }
+      node = node.children[char];
+    }
+    node.value = value.map((element) => ({
+      word: element[0],
+      frequency: element[1]
+    }));
+  }
+
+  search(key) {
+    let node = this.root;
+    for (let char of key) {
+      if (!(char in node.children)) {
+        return null;
+      }
+      node = node.children[char];
+    }
+    return node.value;
+  }
+}
+
+
+// global variables
+let SecondPara = document.getElementById("Alh6id");
 SecondPara.remove();
-var buffer = "";
-var buffer2 = "";
-var backendoutputarray = [];
-document.addEventListener("keydown", function(event) {
-    if (event.key === "Backspace") { // solve the problem of backspace XD
-        buffer = buffer.substring(0, buffer.length - 1);
+let buffer = "";
+let backendoutputarray = [];
+let trie = new Trie();
+let BOPOMOFO_DICT_URL = chrome.runtime.getURL('./src/bopomofo_dict_with_frequency2.json');
 
-    } else if (/^[a-zA-Z0-9 ]$/.test(event.key)) {
-        buffer = buffer + event.key;
-        var inputforbackend = "";
-        var inputarray = [];
-        for (var i = 0; i < buffer.length; i++) {
-            if (buffer[i] === ' ' || buffer[i] === '3' || buffer[i] === '4' || buffer[i] === '6' || buffer[i] === '7') {
-                inputforbackend = inputforbackend + buffer[i];
-                inputarray.push(inputforbackend);
-                inputforbackend = "";
-            } else {
-                inputforbackend = inputforbackend + buffer[i];
-            }
-        }
-        if (inputforbackend != "") inputarray.push(inputforbackend);
+fetch(BOPOMOFO_DICT_URL).then((response) => response.json()).then((json) => {
+  let bopomofo_dict = json;
+  for (let key in bopomofo_dict) {
+    trie.insert(key, bopomofo_dict[key]);
+  }
+  // let textarea = document.getElementsByTagName("textarea")[0];
+
+
+  document.addEventListener("keydown", function (event) {
+    if (event.target.tagName !== "TEXTAREA") {
+      console.log("not in textarea");
+      return;
     }
-    //backendoutputarray[]=function(inputarray); here is the function to get the output from backend
-    ////['su3','cl3', ' ', 'i ', 'have ', 'a ', 'dog'] =>
-    //['你好 我有一隻狗','擬好 我有一隻狗','擬郝 我有一隻狗']
-    console.log(inputarray);
-});
-document.addEventListener("input", function(event) {
-    if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
+    // console.log("in textarea");
+    console.log("key: ", event.key);
 
-        var textarea = event.target;
-        var existingSelect = textarea.nextElementSibling;
-        var selectVisible = false;
-        var selectedIndex = 0;
-        if (textarea.value !== "" && !existingSelect) {
-            var select = document.createElement("select");
-            backendoutputarray = ["你好 我有一隻狗", "擬好 我有一隻狗", "擬郝 我有一隻狗"];
-            backendoutputarray.forEach(function(value) {
-                var option = document.createElement("option");
-                option.value = value;
-                option.textContent = value;
-                select.appendChild(option);
-            });
-            select.size = backendoutputarray.length;
-            select.style.display = "none";
-
-            textarea.parentNode.appendChild(select);
-
-            textarea.addEventListener("keydown", function(event) {
-
-                if (event.key === "ArrowDown") {
-                    if (!selectVisible) {
-                        selectedIndex = 0;
-                        console.log(selectedIndex, selectVisible, event.key);
-                        select.style.display = "block";
-                        selectVisible = true;
-                        event.preventDefault();
-                    } else if (selectVisible && selectedIndex < select.options.length - 1) {
-                        selectedIndex++;
-                        select.options[selectedIndex].selected = true;
-                        console.log(selectedIndex, selectVisible, event.key);
-                        event.preventDefault();
-                    }
-                } else if (event.key === "ArrowUp") {
-                    if (selectVisible) {
-
-                        if (selectedIndex > 0) {
-                            selectedIndex--;
-                            select.options[selectedIndex].selected = true;
-                            console.log(selectedIndex, selectVisible, event.key);
-                        }
-                    }
-                    event.preventDefault();
-                } else if (event.key === "ArrowDown") {
-                    if (selectVisible) {
-
-                        if (selectedIndex < select.options.length - 1) {
-                            selectedIndex++;
-                            select.options[selectedIndex].selected = true;
-                            console.log(selectedIndex, selectVisible, event.key);
-                        }
-                    }
-                    event.preventDefault();
-                }
-                if (event.key === "ArrowRight" && selectVisible) { //rightkey
-                    var selectedOption = select.options[selectedIndex].value;
-                    buffer2 = buffer2 + selectedOption;
-                    setTimeout(() => {
-                        textarea.value = buffer2;
-                    }, 0);
-                    buffer = "";
-                    select.style.display = "none";
-                    selectVisible = false;
-                    textarea.focus();
-                    select.options[0].selected = true;
-                }
-
-            });
-        }
-        textarea.addEventListener("input", function(event) {
-            var inputValue = textarea.value;
-            const ee = inputValue;
-            console.log("输入的文字:", ee);
-        });
+    if (event.key === "Backspace") {
+      buffer = buffer.substring(0, buffer.length - 1);
+    } else if (/^[a-zA-Z0-9-\=\[\]\;\'\,\.\/ ]$/.test(event.key)) { 
+      buffer = buffer + event.key;
+    } else {
+      console.log("else part");
     }
+    console.log("buffer: ", buffer);
+
+    let token_list = tokenizeString(buffer);
+    console.log("1", token_list);
+    token_list = combineTokens(token_list);
+    console.log("2", token_list);
+    let possible_results = keyStrokeToString(token_list);
+    console.log(possible_results);
+
+    // let selectElement = document.createElement("select");
+    // possible_results.forEach(function (value) {
+    //   let option = document.createElement("option");
+    //   option.value = value;
+    //   option.textContent = value;
+    //   selectElement.appendChild(option);
+    // });
+    // selectElement.size = backendoutputarray.length;
+    // selectElement.style.display = "none";
+    // event.target.parentNode.appendChild(selectElement);
+  });
 });
+
+/**
+  * @param {string} inputString
+  * @return {array} possible results
+  */
+function tokenizeString(inputString) {
+  let token = "";
+  let token_arrary = [];
+  console.log(inputString);
+  for (let i = 0; i < inputString.length; i++) {
+    if (inputString[i] === ' ' || inputString[i] === '3' || inputString[i] === '4' || inputString[i] === '6' || inputString[i] === '7') {
+      token = token + inputString[i];
+      token_arrary.push(token);
+      token = "";
+    } else {
+      token = token + inputString[i];
+    }
+  }
+  if (token != "") token_arrary.push(token);
+  return token_arrary;
+}
+
+/**
+ * 
+ * @param {string} s1 
+ * @param {string} s2 
+ * @returns {number} Levenshtein Distance of s1 and s2
+ */
+function levenshteinDistance(s1, s2) {
+  if (s1.length < s2.length) {
+    return levenshteinDistance(s2, s1);
+  }
+
+  if (s2.length === 0) {
+    return s1.length;
+  }
+
+  let previousRow = [...Array(s2.length + 1).keys()];
+
+  for (let i = 0; i < s1.length; i++) {
+    let currentRow = [i + 1];
+
+    for (let j = 0; j < s2.length; j++) {
+      let insertions = previousRow[j + 1] + 1;
+      let deletions = currentRow[j] + 1;
+      let substitutions = previousRow[j] + (s1[i] !== s2[j]);
+
+      currentRow.push(Math.min(insertions, deletions, substitutions));
+    }
+
+    previousRow = currentRow;
+  }
+  return previousRow[previousRow.length - 1];
+}
+
+
+/**
+ * @param {string} query
+ * @param {Trie} trie
+ * @param {number} num_of_result
+ * @return {array} array of objects of the form {distance, keySoFar, value} 
+ */
+function findClosestMatches(query, trie, num_of_result = 5) {
+  let minHeap = [];
+
+  function dfs(node, keySoFar) {
+    if (node.value !== null) {
+      let distance = levenshteinDistance(query, keySoFar);
+      minHeap.push([distance, keySoFar, node.value]);
+    }
+  }
+
+  function traverse(node, keySoFar) {
+    dfs(node, keySoFar);
+    for (let char in node.children) {
+      traverse(node.children[char], keySoFar + char);
+    }
+  }
+
+  traverse(trie.root, "");
+
+  minHeap.sort((a, b) => a[0] - b[0]);
+
+  return minHeap.slice(0, num_of_result).map(result => (
+    {
+      "distance": result[0],
+      "keySoFar": result[1],
+      "value": result[2]
+    }
+  ));
+}
+
+
+/**
+ * 
+ * @param {array} inputarray 
+ * @returns {array} string array of combined tokens
+ */
+function combineTokens(inputarray) {
+  let newInputArray = [];
+  while (true) {
+    newInputArray = [];
+    let modified = false;
+    for (let i = 0; i < inputarray.length - 1; i++) {
+      let combinedString = inputarray[i] + inputarray[i + 1];
+      let combinedDistance = findClosestMatches(combinedString, trie, 1)[0].distance;
+      if (combinedDistance === 0) {
+        newInputArray.push(combinedString);
+        i++;
+        modified = true;
+      } else {
+        newInputArray.push(inputarray[i]);
+      }
+    }
+    if (modified === true) {
+      inputarray = newInputArray;
+    } else {
+      break;
+    }
+  }
+  return inputarray;
+}
+
+/**
+ * 
+ * @param {array} keyStrokeArray 
+ * @returns {array} string array of possible results
+ */
+function keyStrokeToString(keyStrokeArray) { // fix this function
+  let outputarray = ["", "", "", "", ""];
+  for (let i = 0; i < keyStrokeArray.length; i++) {
+    let result = findClosestMatches(keyStrokeArray[i], trie, 5);
+    if (result[0].distance === 0) {
+      console.log("distance is 0");
+      outputarray.forEach((element, index) => {
+        console.log(result[0].value[0].word)
+        outputarray[index] = element + result[0].value[0].word; // fix this
+      });
+    } else {
+      for (let j = 0; j < outputarray.length; j++) {
+        outputarray[j] = outputarray[j] + result[j].value[0].word;
+      }
+    }
+  }
+  return outputarray;
+}

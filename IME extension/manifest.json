@@ -23,5 +23,12 @@
     },
     "icons": {
         "48": "images/main.png"
-    }
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["src/bopomofo_dict_with_frequency2.json"],
+            "matches": ["*://*/*"],
+            "extension_ids": ["*"]
+        }
+    ]
 }
