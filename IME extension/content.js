@@ -39,8 +39,6 @@ class Trie {
 
 
 // global variables
-let SecondPara = document.getElementById("Alh6id");
-SecondPara.remove();
 
 let backendoutputarray = [];
 let trie = new Trie();
@@ -94,9 +92,11 @@ fetch(BOPOMOFO_DICT_URL).then((response) => response.json()).then((json) => {
             buffer = "";
             selectElement.style.display = "none";
             selectedIndex = 0;
+            textarea.focus();
           }
         } else if (event.key === "Escape") {
           selectElement.style.display = "none";
+          textarea.focus();
         } else if (event.key === "ArrowUp") {
           selectedIndex = (selectedIndex - 1 + selectElement.options.length) % selectElement.options.length;
         } else if (event.key === "ArrowDown") {
@@ -117,6 +117,7 @@ fetch(BOPOMOFO_DICT_URL).then((response) => response.json()).then((json) => {
     console.log("3", possible_results);
 
     createSelectElement(possible_results);
+    event.stopPropagation();
   });
 });
 
