@@ -41,55 +41,96 @@ class Trie {
 // global variables
 let SecondPara = document.getElementById("Alh6id");
 SecondPara.remove();
-let buffer = "";
+
 let backendoutputarray = [];
 let trie = new Trie();
 let BOPOMOFO_DICT_URL = chrome.runtime.getURL('./src/bopomofo_dict_with_frequency2.json');
+
+let selectElement;
 
 fetch(BOPOMOFO_DICT_URL).then((response) => response.json()).then((json) => {
   let bopomofo_dict = json;
   for (let key in bopomofo_dict) {
     trie.insert(key, bopomofo_dict[key]);
   }
-  // let textarea = document.getElementsByTagName("textarea")[0];
+  selectElement = document.createElement("select");
+  selectElement.id = "select";
+  selectElement.style.display = "none";
 
-
+  let buffer = "";
+  let cursorStartPosition = 0;
   document.addEventListener("keydown", function (event) {
     if (event.target.tagName !== "TEXTAREA") {
       console.log("not in textarea");
       return;
     }
-    // console.log("in textarea");
-    console.log("key: ", event.key);
+
+    let textarea = event.target;
+    selectElement.style.display = "block";
+    selectElement.size = 0;
+    event.target.parentNode.appendChild(selectElement);
+    if (buffer.length === 0) {
+      cursorStartPosition = textarea.selectionStart
+    }
+    // console.log("buffer", buffer);
+    // console.log("cursorStartPosition", cursorStartPosition);
 
     if (event.key === "Backspace") {
-      buffer = buffer.substring(0, buffer.length - 1);
-    } else if (/^[a-zA-Z0-9-\=\[\]\;\'\,\.\/ ]$/.test(event.key)) { 
+      buffer = buffer.substring(0, buffer.length - 1);  
+    } else if (/^[a-zA-Z0-9-\=\[\]\;\'\,\.\/ ]$/.test(event.key)) {
       buffer = buffer + event.key;
+    } else if (event.key === "ArrowDown") {
+      event.preventDefault();
+      selectElement.focus();
+      selectElement.size = selectElement.options.length;
+
+      let selectedIndex = 0;
+      selectElement.addEventListener("keydown", function (event) {
+        event.preventDefault();
+        if (event.key === "Enter") {
+          if (buffer !==  "") {
+            console.log("here",textarea.value.substring(0, cursorStartPosition) + selectElement.options[selectedIndex].value + textarea.value.substring(textarea.selectionStart, textarea.value.length));
+            textarea.value = textarea.value.substring(0, cursorStartPosition) + selectElement.options[selectedIndex].value + textarea.value.substring(textarea.selectionStart, textarea.value.length);
+            buffer = "";
+            selectElement.style.display = "none";
+            selectedIndex = 0;
+          }
+        } else if (event.key === "Escape") {
+          selectElement.style.display = "none";
+        } else if (event.key === "ArrowUp") {
+          selectedIndex = (selectedIndex - 1 + selectElement.options.length) % selectElement.options.length;
+        } else if (event.key === "ArrowDown") {
+          selectedIndex = (selectedIndex + 1) % selectElement.options.length;
+        }
+        selectElement.options[selectedIndex].selected = true;
+        event.stopPropagation();
+      });
     } else {
       console.log("else part");
     }
-    console.log("buffer: ", buffer);
 
     let token_list = tokenizeString(buffer);
     console.log("1", token_list);
     token_list = combineTokens(token_list);
     console.log("2", token_list);
     let possible_results = keyStrokeToString(token_list);
-    console.log(possible_results);
+    console.log("3", possible_results);
 
-    // let selectElement = document.createElement("select");
-    // possible_results.forEach(function (value) {
-    //   let option = document.createElement("option");
-    //   option.value = value;
-    //   option.textContent = value;
-    //   selectElement.appendChild(option);
-    // });
-    // selectElement.size = backendoutputarray.length;
-    // selectElement.style.display = "none";
-    // event.target.parentNode.appendChild(selectElement);
+    createSelectElement(possible_results);
   });
 });
+
+function createSelectElement(possible_results) {
+  selectElement.innerHTML = "";
+  possible_results.forEach(function (value) {
+    let option = document.createElement("option");
+    option.classList.add("my-option");
+    option.value = value;
+    option.textContent = value;
+    selectElement.appendChild(option);
+  });
+  selectElement.style.display = "block";
+}
 
 /**
   * @param {string} inputString
