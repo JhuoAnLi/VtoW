@@ -74,7 +74,7 @@ window.onload = async function () {
 function main(){
     document.addEventListener("click", function (event) {
 
-        if (event.target.tagName == "TEXTAREA") {
+        if (event.target.tagName == "TEXTAREA" || event.target.tagName == "INPUT" || (event.target.tagName == "DIV" && event.target.contentEditable == "true")) {
             console.log("in textarea");
             selectElement = document.createElement("select");
             selectElement.id = "select";
@@ -115,6 +115,10 @@ function IMEHandler(event){
             break;
         case "Enter":
             break;
+        case "ArrowLeft":
+        case "ArrowRight":
+            buffer = "";
+            break;
         case "Tab":
             pressTab();
             break;
@@ -149,8 +153,8 @@ function IMEHandler(event){
         selectElement.focus();
         selectElement.open = true;
         selectElement.addEventListener("keydown", selectionHandeler);
-        event.stopPropagation();
         event.preventDefault();
+        event.stopPropagation();
     }
 
     function pressTab(){
@@ -162,6 +166,7 @@ function IMEHandler(event){
         textarea.focus();
         textarea.click();
         event.preventDefault();
+        event.stopPropagation();
     }
 
 
