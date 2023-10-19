@@ -40,88 +40,171 @@ class Trie {
 
 // global variables
 
-let backendoutputarray = [];
+const SHOW_LENGTH = 5;
 let trie = new Trie();
-let BOPOMOFO_DICT_URL = chrome.runtime.getURL('./src/bopomofo_dict_with_frequency2.json');
-
 let selectElement;
 
-fetch(BOPOMOFO_DICT_URL).then((response) => response.json()).then((json) => {
-  let bopomofo_dict = json;
-  for (let key in bopomofo_dict) {
-    trie.insert(key, bopomofo_dict[key]);
-  }
-  selectElement = document.createElement("select");
-  selectElement.id = "select";
-  selectElement.style.display = "none";
+window.onload = async function () {
+    const BOPOMOFO_DICT_URL = chrome.runtime.getURL('./src/bopomofo_dict_with_frequency2.json');
+    const CANJIE_DICT_URL = chrome.runtime.getURL('./src/canjie_dict.json');
 
-  let buffer = "";
-  let cursorStartPosition = 0;
-  document.addEventListener("keydown", function (event) {
-    if (event.target.tagName !== "TEXTAREA") {
-      console.log("not in textarea");
-      return;
+    try {
+        // load json
+        const response1 = await fetch(BOPOMOFO_DICT_URL);
+        const bopomofo_dict = await response1.json();
+
+        const response2 = await fetch(CANJIE_DICT_URL);
+        const canjie_dict = await response2.json();
+
+        // build trie
+        for (let key in bopomofo_dict) {
+            trie.insert(key, bopomofo_dict[key]);
+        }
+        // for (let key in canjie_dict) { //need to fix json file
+        //     trie.insert(key, canjie_dict[key]); 
+        // }
+        main(); 
+
+
+    } catch (error) {
+        console.error('Error loading JSON files:', error);
     }
+};
 
-    let textarea = event.target;
-    selectElement.style.display = "block";
-    selectElement.size = 0;
-    event.target.parentNode.appendChild(selectElement);
-    if (buffer.length === 0) {
-      cursorStartPosition = textarea.selectionStart
-    }
-    // console.log("buffer", buffer);
-    // console.log("cursorStartPosition", cursorStartPosition);
+function main(){
+    document.addEventListener("click", function (event) {
 
-    if (event.key === "Backspace") {
-      buffer = buffer.substring(0, buffer.length - 1);  
-    } else if (/^[a-zA-Z0-9-\=\[\]\;\'\,\.\/ ]$/.test(event.key)) {
-      buffer = buffer + event.key;
-    } else if (event.key === "ArrowDown") {
-      event.preventDefault();
-      selectElement.focus();
-      selectElement.size = selectElement.options.length;
-
-      let selectedIndex = 0;
-      selectElement.addEventListener("keydown", function (event) {
-        event.preventDefault();
-        if (event.key === "Enter") {
-          if (buffer !==  "") {
-            console.log("here",textarea.value.substring(0, cursorStartPosition) + selectElement.options[selectedIndex].value + textarea.value.substring(textarea.selectionStart, textarea.value.length));
-            textarea.value = textarea.value.substring(0, cursorStartPosition) + selectElement.options[selectedIndex].value + textarea.value.substring(textarea.selectionStart, textarea.value.length);
-            buffer = "";
+        if (event.target.tagName == "TEXTAREA") {
+            console.log("in textarea");
+            selectElement = document.createElement("select");
+            selectElement.id = "select";
             selectElement.style.display = "none";
-            selectedIndex = 0;
-            textarea.focus();
-          }
-        } else if (event.key === "Escape") {
-          selectElement.style.display = "none";
-          textarea.focus();
-        } else if (event.key === "ArrowUp") {
-          selectedIndex = (selectedIndex - 1 + selectElement.options.length) % selectElement.options.length;
-        } else if (event.key === "ArrowDown") {
-          selectedIndex = (selectedIndex + 1) % selectElement.options.length;
+            let textarea = event.target;
+            document.getElementById("select")?.remove();
+            textarea.parentNode.appendChild(selectElement);
+            textarea.addEventListener("keydown", IMEHandler);
+        } else {
+            buffer = "";
+            console.log("not in textarea");
+            return;
+        }
+    });
+}
+
+let buffer = "";
+let cursorStartPosition = 0;
+function IMEHandler(event){
+    // variable declaration
+    let selectValue = "";
+    let textarea = event.target;
+
+    if (buffer == "") { // reset cursorStartPosition
+        console.log("buffer is empty reset cursorStartPosition");
+        cursorStartPosition = event.target.selectionStart;  
+    }
+    console.log("buffer", buffer);
+    console.log("cursorStartPosition", cursorStartPosition);
+
+
+    switch (event.key) {
+        case "Backspace":
+            buffer = buffer.substring(0, buffer.length - 1);
+            break;
+        case "ArrowDown":
+            pressArrowDown();
+            break;
+        case "Enter":
+            break;
+        case "Tab":
+            pressTab();
+            break;
+        case "Escape":
+            break;
+        default:
+            if (/^[a-zA-Z0-9-\=\[\]\;\'\,\.\/ ]$/.test(event.key)) {
+                buffer = buffer + event.key;
+            } else {
+                console.log("else part");
+            }
+            break;
+    }
+
+    if (buffer == "") {
+        selectElement.style.display = "none";
+        return;
+    }else{
+        selectElement.style.display = "block";
+        const token_list = tokenizeString(buffer);
+        console.log("1", token_list);
+        const combined_token_list = combineTokens(token_list);
+        console.log("2", token_list);
+        const possible_results = keyStrokeToString(combined_token_list);
+        console.log("3", possible_results);
+
+        createOptions(possible_results);
+    }
+
+    function pressArrowDown(){
+        selectElement.size = SHOW_LENGTH;
+        selectElement.focus();
+        selectElement.open = true;
+        selectElement.addEventListener("keydown", selectionHandeler);
+        event.stopPropagation();
+        event.preventDefault();
+    }
+
+    function pressTab(){
+        let selectValue = selectElement.options[0].value;
+        textarea.value = textarea.value.substring(0, cursorStartPosition) + selectValue + textarea.value.substring(textarea.selectionStart, textarea.value.length);
+        buffer = "";
+        selectElement.style.display = "none";
+        textarea.setSelectionRange(cursorStartPosition + selectValue.length, cursorStartPosition + selectValue.length);
+        textarea.focus();
+        textarea.click();
+        event.preventDefault();
+    }
+
+
+    let selectedIndex = 0;
+    function selectionHandeler(event) {
+        console.log("in selectionHandeler", selectedIndex);
+        
+        event.preventDefault();
+        switch (event.key) {
+            case "Enter":
+                textarea.value = textarea.value.substring(0, cursorStartPosition) + selectValue + textarea.value.substring(textarea.selectionStart, textarea.value.length);
+                selectElement.style.display = "none";
+                buffer = "";
+                selectedIndex = 0;
+                textarea.focus();
+                textarea.click();
+                textarea.setSelectionRange(cursorStartPosition + selectValue.length, cursorStartPosition + selectValue.length); // bad
+                event.stopPropagation();
+                selectElement.removeEventListener("keydown", selectionHandeler);
+                return;
+                break;
+            case "Escape":
+                selectElement.style.display = "none";
+                buffer = "";
+                textarea.focus();
+                break;
+            case "ArrowUp":
+                selectedIndex = (selectedIndex - 1 + selectElement.options.length) % selectElement.options.length;
+                break;
+            case "ArrowDown":
+                selectedIndex = (selectedIndex + 1) % selectElement.options.length;
+                break;
+            default:
+                console.log("else part");
+                break;
         }
         selectElement.options[selectedIndex].selected = true;
+        selectValue = selectElement.options[selectedIndex].value;
         event.stopPropagation();
-      });
-    } else {
-      console.log("else part");
-    }
+    };
+}
 
-    let token_list = tokenizeString(buffer);
-    console.log("1", token_list);
-    token_list = combineTokens(token_list);
-    console.log("2", token_list);
-    let possible_results = keyStrokeToString(token_list);
-    console.log("3", possible_results);
-
-    createSelectElement(possible_results);
-    event.stopPropagation();
-  });
-});
-
-function createSelectElement(possible_results) {
+function createOptions(possible_results) {
   selectElement.innerHTML = "";
   possible_results.forEach(function (value) {
     let option = document.createElement("option");
@@ -130,7 +213,6 @@ function createSelectElement(possible_results) {
     option.textContent = value;
     selectElement.appendChild(option);
   });
-  selectElement.style.display = "block";
 }
 
 /**
@@ -140,7 +222,6 @@ function createSelectElement(possible_results) {
 function tokenizeString(inputString) {
     let token = "";
     let token_arrary = [];
-    console.log(inputString);
     for (let i = 0; i < inputString.length; i++) {
         if (inputString[i] === ' ' || inputString[i] === '3' || inputString[i] === '4' || inputString[i] === '6' || inputString[i] === '7') {
             token = token + inputString[i];
@@ -264,16 +345,18 @@ function keyStrokeToString(keyStrokeArray) {
         let result = findClosestMatches(keyStrokeArray[i], trie, 5);
         if (result[0].distance === 0) {
             if (result[0].value.length === 1) {
-                for (let k = 0; k < 5; k++) {
+                for (let k = 0; k < outputarray.length; k++) {
                     outputarray[k] = outputarray[k] + result[0].value[0].word;
                 }
             } else {
-                for (let j = 0; j < result[0].value.length; j++) {
-                    outputarray[j] = outputarray[j] + result[0].value[j].word;
+                for (let j = 0; j < outputarray.length; j++) {
+                    if (result[0].value[j] !== undefined){
+                        outputarray[j] = outputarray[j] + result[0].value[j].word;
+                    }
                 }
             }
         } else {
-            for (let y = 0; y < 5; y++) {
+            for (let y = 0; y < outputarray.length; y++) {
                 outputarray[y] = outputarray[y] + keyStrokeArray[i];
             }
         }
