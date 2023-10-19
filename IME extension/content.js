@@ -46,7 +46,7 @@ let selectElement;
 
 window.onload = async function () {
     const BOPOMOFO_DICT_URL = chrome.runtime.getURL('./src/bopomofo_dict_with_frequency2.json');
-    const CANJIE_DICT_URL = chrome.runtime.getURL('./src/canjie_dict.json');
+    const CANJIE_DICT_URL = chrome.runtime.getURL('./src/canjie_dict_with_frequency.json');
 
     try {
         // load json
@@ -60,9 +60,9 @@ window.onload = async function () {
         for (let key in bopomofo_dict) {
             trie.insert(key, bopomofo_dict[key]);
         }
-        // for (let key in canjie_dict) { //need to fix json file
-        //     trie.insert(key, canjie_dict[key]); 
-        // }
+        for (let key in canjie_dict) { //need to fix json file
+            trie.insert(key, canjie_dict[key]); 
+        }
         main(); 
 
 
@@ -361,5 +361,6 @@ function keyStrokeToString(keyStrokeArray) {
             }
         }
     }
+    outputarray.splice(1, 0, keyStrokeArray.join(""));
     return outputarray;
 }

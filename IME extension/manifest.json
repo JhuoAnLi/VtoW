@@ -25,7 +25,7 @@
         "48": "images/try.png"
     },
     "web_accessible_resources": [{
-        "resources": ["src/bopomofo_dict_with_frequency2.json", "src/canjie_dict.json"],
+        "resources": ["src/bopomofo_dict_with_frequency2.json", "src/canjie_dict_with_frequency.json"],
         "matches": ["*://*/*"],
         "extension_ids": ["*"]
     }]
