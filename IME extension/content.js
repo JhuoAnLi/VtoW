@@ -99,11 +99,11 @@ function IMEHandler(event){
     let textarea = event.target;
 
     if (buffer == "") { // reset cursorStartPosition
-        console.log("buffer is empty reset cursorStartPosition");
+        // console.log("buffer is empty reset cursorStartPosition");
         cursorStartPosition = event.target.selectionStart;  
     }
-    console.log("buffer", buffer);
-    console.log("cursorStartPosition", cursorStartPosition);
+    // console.log("buffer", buffer);
+    // console.log("cursorStartPosition", cursorStartPosition);
 
 
     switch (event.key) {
@@ -135,11 +135,11 @@ function IMEHandler(event){
     }else{
         selectElement.style.display = "block";
         const token_list = tokenizeString(buffer);
-        console.log("1", token_list);
+        // console.log("1", token_list);
         const combined_token_list = combineTokens(token_list);
-        console.log("2", token_list);
+        // console.log("2", token_list);
         const possible_results = keyStrokeToString(combined_token_list);
-        console.log("3", possible_results);
+        // console.log("3", possible_results);
 
         createOptions(possible_results);
     }
@@ -167,7 +167,7 @@ function IMEHandler(event){
 
     let selectedIndex = 0;
     function selectionHandeler(event) {
-        console.log("in selectionHandeler", selectedIndex);
+        // console.log("in selectionHandeler", selectedIndex);
         
         event.preventDefault();
         switch (event.key) {
