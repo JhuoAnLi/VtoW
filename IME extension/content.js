@@ -39,7 +39,7 @@ class Trie {
 
 
 // global variables
-
+let IMEActivated = true;
 const SHOW_LENGTH = 5;
 let trie = new Trie();
 let selectElement;
@@ -63,7 +63,10 @@ window.onload = async function () {
         for (let key in canjie_dict) { //need to fix json file
             trie.insert(key, canjie_dict[key]); 
         }
-        main(); 
+
+        if (IMEActivated) {
+            main();
+        }
 
 
     } catch (error) {
@@ -111,6 +114,7 @@ function IMEHandler(event){
             buffer = buffer.substring(0, buffer.length - 1);
             break;
         case "ArrowDown":
+            if (buffer == "") return;
             pressArrowDown();
             break;
         case "Enter":
@@ -119,13 +123,15 @@ function IMEHandler(event){
         case "ArrowRight":
             buffer = "";
             break;
-        case "ArrowUp":
+        case "`":
             predict();
             break;
         case "Tab":
+            if (buffer == "") return;
             pressTab();
             break;
         case "Escape":
+            buffer = "";
             break;
         default:
             if (/^[a-zA-Z0-9-\=\[\]\;\'\,\.\/ ]$/.test(event.key)) {
@@ -174,9 +180,11 @@ function IMEHandler(event){
 
     function predict(){
         predictiong_query(buffer).then((response) => {
-            
-
             console.log(response);
+            
+            textarea.value = textarea.value + response[0].generated_text;
+            buffer = "";
+            selectElement.style.display = "none";
         });
         event.preventDefault();
         event.stopPropagation();
