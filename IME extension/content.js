@@ -119,6 +119,9 @@ function IMEHandler(event){
         case "ArrowRight":
             buffer = "";
             break;
+        case "ArrowUp":
+            predict();
+            break;
         case "Tab":
             pressTab();
             break;
@@ -165,6 +168,16 @@ function IMEHandler(event){
         textarea.setSelectionRange(cursorStartPosition + selectValue.length, cursorStartPosition + selectValue.length);
         textarea.focus();
         textarea.click();
+        event.preventDefault();
+        event.stopPropagation();
+    }
+
+    function predict(){
+        predictiong_query(buffer).then((response) => {
+            
+
+            console.log(response);
+        });
         event.preventDefault();
         event.stopPropagation();
     }
@@ -218,6 +231,21 @@ function createOptions(possible_results) {
     option.textContent = value;
     selectElement.appendChild(option);
   });
+}
+
+async function predictiong_query(input_string) {
+    // const data = {"inputs": `Please predict the next two words of ths sentence "${input_string}"`}
+    const data = {"inputs": `Q: Please continue writing the following sentences.\n\nSentence: ${input_string}`}
+	const response = await fetch(
+		"https://api-inference.huggingface.co/models/google/flan-t5-base",
+		{
+			headers: { Authorization: "Bearer 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" },
+			method: "POST",
+			body: JSON.stringify(data),
+		}
+	);
+	const result = await response.json();
+	return result;
 }
 
 /**
