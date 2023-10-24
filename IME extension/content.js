@@ -88,6 +88,7 @@ floatingElement.appendChild(selectElement);
 document.body.appendChild(floatingElement);
 
 const hiddenDiv = document.createElement("div");
+hiddenDiv.id = "hiddenDiv";
 hiddenDiv.style.display = "inline-block";
 hiddenDiv.style.position = "absolute";
 hiddenDiv.style.top = "-9999px";
@@ -147,10 +148,10 @@ function IMEHandler(event){
         // console.log("buffer is empty reset cursorStartPosition");
         cursorStartPosition = event.target.selectionStart;  
     }
-    // console.log("buffer", buffer);
+    console.log("buffer", buffer);
     // console.log("cursorStartPosition", cursorStartPosition);
 
-
+    console.log("event.key", event.key)
     switch (event.key) {
         case "Backspace":
             buffer = buffer.substring(0, buffer.length - 1);
@@ -176,7 +177,7 @@ function IMEHandler(event){
             buffer = "";
             break;
         default:
-            if (/^[a-zA-Z0-9-\=\[\]\;\'\,\.\/ ]$/.test(event.key)) {
+            if (/^[a-zA-Z0-9 `=\[\];',.\/~!@#\$%^&*()_+{}:"<>?-]$/.test(event.key)) {
                 buffer = buffer + event.key;
             } else {
                 console.log("else part");
@@ -221,7 +222,10 @@ function IMEHandler(event){
     }
 
     function predict(){
-        predictiong_query(buffer).then((response) => {
+        const WORDS_BEFORE_PREDICT_LENGTH = 10;
+        const query = textarea.value.substring(cursorStartPosition - WORDS_BEFORE_PREDICT_LENGTH, cursorStartPosition);
+
+        predictiong_query(query).then((response) => {
             console.log(response);
             
             textarea.value = textarea.value + response[0].generated_text;
@@ -454,5 +458,6 @@ function keyStrokeToString(keyStrokeArray) {
         }
     }
     outputarray.splice(1, 0, keyStrokeArray.join(""));
+    outputarray = [...new Set(outputarray)] // remove duplicates
     return outputarray;
 }
