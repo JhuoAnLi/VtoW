@@ -41,6 +41,8 @@ class Trie {
 // global variables
 let IMEActivated = true;
 const SHOW_LENGTH = 5;
+const SEARCH_DISTANCE = 3;
+const NUM_OF_RESULT = 1;
 let trie = new Trie();
 let selectElement;
 
@@ -316,7 +318,7 @@ function levenshteinDistance(s1, s2) {
  * @param {number} num_of_result
  * @return {array} array of objects of the form {distance, keySoFar, value} 
  */
-function findClosestMatches(query, trie, num_of_result = 5) {
+function findClosestMatches(query, trie, num_of_result = NUM_OF_RESULT) {
     let minHeap = [];
 
     function dfs(node, keySoFar) {
@@ -351,6 +353,7 @@ function findClosestMatches(query, trie, num_of_result = 5) {
  * @returns {array} string array of combined tokens
  */
 function combineTokens(inputarray) {
+    inputarray.push("");
     let newInputArray = [];
     while (true) {
         newInputArray = [];
