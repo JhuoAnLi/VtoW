@@ -418,6 +418,7 @@ function combineTokens(inputarray) {
     return inputarray;
 }
 
+let keyStrokeCatch = [];
 /**
  * 
  * @param {array} keyStrokeArray 
@@ -426,7 +427,14 @@ function combineTokens(inputarray) {
 function keyStrokeToString(keyStrokeArray) {
     let outputarray = ["", "", "", "", ""];
     for (let i = 0; i < keyStrokeArray.length; i++) {
-        let result = findClosestMatches(keyStrokeArray[i], trie, 5);
+        let result = [];
+        if (keyStrokeArray[i] in keyStrokeCatch) {
+            result = keyStrokeCatch[keyStrokeArray[i]];
+        }else{
+            result = findClosestMatches(keyStrokeArray[i], trie, 5);
+            keyStrokeCatch[keyStrokeArray[i]] = result;
+        }
+
         if (result[0].distance === 0) {
             if (result[0].value.length === 1) {
                 for (let k = 0; k < outputarray.length; k++) {
