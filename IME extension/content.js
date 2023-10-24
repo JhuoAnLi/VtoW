@@ -44,7 +44,7 @@ const SHOW_LENGTH = 5;
 const SEARCH_DISTANCE = 3;
 const NUM_OF_RESULT = 1;
 let trie = new Trie();
-let selectElement;
+
 
 window.onload = async function () {
     const BOPOMOFO_DICT_URL = chrome.runtime.getURL('./src/bopomofo_dict_with_frequency2.json');
@@ -76,18 +76,58 @@ window.onload = async function () {
     }
 };
 
+const selectElement = document.createElement("select");
+selectElement.id = "my-select";
+selectElement.style.display = "block";
+
+const floatingElement = document.createElement("div");
+floatingElement.id = "floatingElement";
+floatingElement.style.position = "absolute";
+floatingElement.style.zIndex = "999";
+floatingElement.appendChild(selectElement);
+document.body.appendChild(floatingElement);
+
+const hiddenDiv = document.createElement("div");
+hiddenDiv.style.display = "inline-block";
+hiddenDiv.style.position = "absolute";
+hiddenDiv.style.top = "-9999px";
+hiddenDiv.style.left = "-9999px";
+hiddenDiv.style.visibility = "hidden";
+document.body.appendChild(hiddenDiv);
+
+
 function main(){
     document.addEventListener("click", function (event) {
 
         if (event.target.tagName == "TEXTAREA" || event.target.tagName == "INPUT" || (event.target.tagName == "DIV" && event.target.contentEditable == "true")) {
             console.log("in textarea");
-            selectElement = document.createElement("select");
-            selectElement.id = "select";
-            selectElement.style.display = "none";
-            let textarea = event.target;
+
+            const textarea = event.target;
             document.getElementById("select")?.remove();
-            textarea.parentNode.appendChild(selectElement);
             textarea.addEventListener("keydown", IMEHandler);
+            textarea.addEventListener("input", updateFloatingElement);
+            
+            function updateFloatingElement() {
+                const cursorPosition = getCaretCoordinates();
+                const textareaRect = textarea.getBoundingClientRect();
+    
+                const top = textareaRect.top + window.scrollY + cursorPosition.top + 15; // Adjust top position as needed
+                const left = textareaRect.left + window.scrollX + cursorPosition.left; // Adjust left position as needed
+                
+                // console.log("top", top, "left", left);
+                floatingElement.style.top = top + "px";
+                floatingElement.style.left = left + "px";
+            }
+    
+            function getCaretCoordinates() {
+                const text = textarea.value.substring(0, textarea.selectionStart);
+                hiddenDiv.textContent = text;
+                const rect = hiddenDiv.getBoundingClientRect();
+                return {
+                    top: rect.height,
+                    left: rect.width,
+                };
+            }
         } else {
             buffer = "";
             console.log("not in textarea");
