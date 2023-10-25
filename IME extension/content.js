@@ -19,10 +19,17 @@ class Trie {
             }
             node = node.children[char];
         }
-        node.value = value.map((element) => ({
-            word: element[0],
-            frequency: element[1]
-        }));
+        if (node.value === null) {
+            node.value = value.map((element) => ({
+                word: element[0],
+                frequency: element[1]
+            }));
+        } else {
+            node.value = node.value.concat(value.map((element) => ({
+                word: element[0],
+                frequency: element[1]
+            })));
+        }
     }
 
     search(key) {
@@ -148,10 +155,10 @@ function IMEHandler(event){
         // console.log("buffer is empty reset cursorStartPosition");
         cursorStartPosition = event.target.selectionStart;  
     }
-    console.log("buffer", buffer);
+    // console.log("event.key", event.key);
+    // console.log("buffer", buffer);
     // console.log("cursorStartPosition", cursorStartPosition);
 
-    console.log("event.key", event.key)
     switch (event.key) {
         case "Backspace":
             buffer = buffer.substring(0, buffer.length - 1);
@@ -356,6 +363,7 @@ function levenshteinDistance(s1, s2) {
 }
 
 
+let keyStrokeCatch = {};
 /**
  * @param {string} query
  * @param {Trie} trie
@@ -363,6 +371,9 @@ function levenshteinDistance(s1, s2) {
  * @return {array} array of objects of the form {distance, keySoFar, value} 
  */
 function findClosestMatches(query, trie, num_of_result = NUM_OF_RESULT) {
+    if (query in keyStrokeCatch){
+        return keyStrokeCatch[query];
+    }
     let minHeap = [];
 
     function dfs(node, keySoFar) {
@@ -383,11 +394,19 @@ function findClosestMatches(query, trie, num_of_result = NUM_OF_RESULT) {
 
     minHeap.sort((a, b) => a[0] - b[0]);
 
-    return minHeap.slice(0, num_of_result).map(result => ({
+    const result =  minHeap.slice(0, num_of_result).map(result => ({
         "distance": result[0],
         "keySoFar": result[1],
         "value": result[2]
     }));
+    keyStrokeCatch[query] = result;
+    
+    // const CUT_OFF_LENGTH = 100;
+    // if (Object.keys(keyStrokeCatch).length > CUT_OFF_LENGTH) { // cut off the first n elements
+    //     const keys = Object.keys(keyStrokeCatch).slice(CUT_OFF_LENGTH/2);
+    //     keyStrokeCatch = Object.fromEntries(keys.map(key => [key, keyStrokeCatch[key]]));
+    // }
+    return result
 }
 
 
@@ -422,7 +441,7 @@ function combineTokens(inputarray) {
     return inputarray;
 }
 
-let keyStrokeCatch = [];
+
 /**
  * 
  * @param {array} keyStrokeArray 
@@ -431,13 +450,7 @@ let keyStrokeCatch = [];
 function keyStrokeToString(keyStrokeArray) {
     let outputarray = ["", "", "", "", ""];
     for (let i = 0; i < keyStrokeArray.length; i++) {
-        let result = [];
-        if (keyStrokeArray[i] in keyStrokeCatch) {
-            result = keyStrokeCatch[keyStrokeArray[i]];
-        }else{
-            result = findClosestMatches(keyStrokeArray[i], trie, 5);
-            keyStrokeCatch[keyStrokeArray[i]] = result;
-        }
+        let result = findClosestMatches(keyStrokeArray[i], trie, 5);
 
         if (result[0].distance === 0) {
             if (result[0].value.length === 1) {
