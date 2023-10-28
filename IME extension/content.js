@@ -85,7 +85,7 @@ window.onload = async function () {
 
 const selectElement = document.createElement("select");
 selectElement.id = "my-select";
-selectElement.style.display = "block";
+// selectElement.style.display = "block";
 
 const floatingElement = document.createElement("div");
 floatingElement.id = "floatingElement";
@@ -139,6 +139,7 @@ function main(){
         } else {
             buffer = "";
             console.log("not in textarea");
+            floatingElement.style.display = "none";
             return;
         }
     });
@@ -152,7 +153,6 @@ function IMEHandler(event){
     let textarea = event.target;
 
     if (buffer == "") { // reset cursorStartPosition
-        // console.log("buffer is empty reset cursorStartPosition");
         cursorStartPosition = event.target.selectionStart;  
     }
     // console.log("event.key", event.key);
@@ -193,10 +193,10 @@ function IMEHandler(event){
     }
 
     if (buffer == "") {
-        selectElement.style.display = "none";
+        floatingElement.style.display = "none";
         return;
     }else{
-        selectElement.style.display = "block";
+        floatingElement.style.display = "block";
         const token_list = tokenizeString(buffer);
         // console.log("1", token_list);
         const combined_token_list = combineTokens(token_list);
@@ -220,7 +220,7 @@ function IMEHandler(event){
         let selectValue = selectElement.options[0].value;
         textarea.value = textarea.value.substring(0, cursorStartPosition) + selectValue + textarea.value.substring(textarea.selectionStart, textarea.value.length);
         buffer = "";
-        selectElement.style.display = "none";
+        floatingElement.style.display = "none";
         textarea.setSelectionRange(cursorStartPosition + selectValue.length, cursorStartPosition + selectValue.length);
         textarea.focus();
         textarea.click();
@@ -237,7 +237,7 @@ function IMEHandler(event){
             
             textarea.value = textarea.value + response[0].generated_text;
             buffer = "";
-            selectElement.style.display = "none";
+            floatingElement.style.display = "none";
         });
         event.preventDefault();
         event.stopPropagation();
@@ -252,7 +252,7 @@ function IMEHandler(event){
         switch (event.key) {
             case "Enter":
                 textarea.value = textarea.value.substring(0, cursorStartPosition) + selectValue + textarea.value.substring(textarea.selectionStart, textarea.value.length);
-                selectElement.style.display = "none";
+                floatingElement.style.display = "none";
                 buffer = "";
                 selectedIndex = 0;
                 textarea.focus();
@@ -263,7 +263,7 @@ function IMEHandler(event){
                 return;
                 break;
             case "Escape":
-                selectElement.style.display = "none";
+                floatingElement.style.display = "none";
                 buffer = "";
                 textarea.focus();
                 break;
