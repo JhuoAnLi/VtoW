@@ -85,12 +85,12 @@ window.onload = async function () {
 
 const selectElement = document.createElement("select");
 selectElement.id = "my-select";
-// selectElement.style.display = "block";
 
 const floatingElement = document.createElement("div");
 floatingElement.id = "floatingElement";
 floatingElement.style.position = "absolute";
 floatingElement.style.zIndex = "999";
+floatingElement.style.display = "none";
 floatingElement.appendChild(selectElement);
 document.body.appendChild(floatingElement);
 
@@ -255,6 +255,7 @@ function IMEHandler(event){
                 floatingElement.style.display = "none";
                 buffer = "";
                 selectedIndex = 0;
+                selectElement.size = 1;
                 textarea.focus();
                 textarea.click();
                 textarea.setSelectionRange(cursorStartPosition + selectValue.length, cursorStartPosition + selectValue.length); // bad
@@ -265,6 +266,7 @@ function IMEHandler(event){
             case "Escape":
                 floatingElement.style.display = "none";
                 buffer = "";
+                selectElement.size = 1;
                 textarea.focus();
                 break;
             case "ArrowUp":
