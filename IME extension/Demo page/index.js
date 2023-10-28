@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener('DOMContentLoaded', function () {
     const myTextArea = document.getElementById("my-textarea");
     const exampleSentence = document.getElementById("example-sentence");
@@ -14,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     const sentences = ["中文", "abc"];
-    let currentSentence = 0; 
+    let currentSentence = 0;
     let startTime;
     let endTime;
     let keystrokeCounter = 0;
@@ -23,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let timerInterval;
 
 
-    function resetAll(){
+    function resetAll() {
         currentSentence = 0;
         keystrokeCounter = 0;
         backspaceCounter = 0;
@@ -49,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     startBtn.addEventListener("click", function () {
         resetAll();
         startTime = new Date().getTime();
-        timerInterval = setInterval(()=>{timer.textContent = `${(new Date().getTime() - startTime)/1000} seconds`;}, 1);
+        timerInterval = setInterval(() => { endTime = new Date().getTime(); timer.textContent = `${(endTime - startTime) / 1000} seconds`;  }, 1);
 
         startBtn.disabled = true;
         exampleSentence.textContent = sentences[currentSentence];
@@ -58,40 +60,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     resetBtn.addEventListener("click", function () {
         resetAll();
+        startBtn.disabled = false;
     });
 
-
-    let clear = false;
     myTextArea.addEventListener('keydown', function (event) {
-        if (clear) {
-            myTextArea.value = "";
-            clear = false;
-        }
-
         if (event.code === "Enter") {
-            checkCorrect();
             event.preventDefault();
-        } else if (event.code === "Backspace") {
+        }
+        if (event.code === "Backspace") {
             backspaceCounter++;
-        }else if (event.code === "ShiftLeft" || event.code === "ShiftRight") {
+        } else if (event.code === "ShiftLeft" || event.code === "ShiftRight") {
             shiftCounter++;
         }
-        
+
         keystrokeCounter++;
         const keystroke = codeToEnglish(event.code);
         showKeyStroke(keystroke);
         updateResult();
 
-        function checkCorrect(){
-            if (clear) {
-                myTextArea.value = "";
-                clear = false;
-            }
-    
-            if (myTextArea.value == sentences[currentSentence]) {
-                updateSentence();
-            }
-    
+        if (myTextArea.value == sentences[currentSentence] && event.key == "Enter") {
+            console.log("correct")
+            updateSentence();
+
             function updateSentence() {
                 if (currentSentence === sentences.length - 1) {
                     clearInterval(timerInterval);
@@ -99,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     startBtn.disabled = false;
                     myTextArea.value = "";
                     updateResult();
-                    clear = true;
                     return;
                 } else {
                     currentSentence++;
@@ -108,18 +97,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
     
-            function updateResult(){
+            function updateResult() {
                 keystroke_count.textContent = keystrokeCounter;
                 backspace_count.textContent = backspaceCounter;
-    
-                endTime = new Date().getTime();
-                time_spend.textContent = `${(endTime - startTime)/1000} seconds`;
+                time_spend.textContent = `${(endTime - startTime) / 1000} seconds`;
 
             }
         }
     });
 
-    function updateResult(){
+    function updateResult() {
         keystroke_count.textContent = keystrokeCounter;
         backspace_count.textContent = backspaceCounter;
         shift_count.textContent = shiftCounter;
