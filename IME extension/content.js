@@ -124,6 +124,7 @@ hiddenDiv.style.left = "-9999px";
 hiddenDiv.style.visibility = "hidden";
 document.body.appendChild(hiddenDiv);
 
+const div = document.createElement("div");
 
 function main() {
     document.addEventListener("click", function(event) {
@@ -138,6 +139,33 @@ function main() {
             }
             textarea.addEventListener("keydown", IMEHandler);
             textarea.addEventListener("input", updateFloatingElement);
+            createDivWithSameStyles(textarea);
+
+            function createDivWithSameStyles(textarea) {
+                const textareaStyles = window.getComputedStyle(textarea);
+                for (let prop of textareaStyles) {
+                  div.style[prop] = textareaStyles[prop];
+                }
+              
+                // Set the div to be invisible
+                // div.style.display = "none";
+                // div.style.visibility = "hidden"; 
+                div.style.backgroundColor = "blue";
+                div.style.opacity = "0.5";
+                div.style.pointerEvents = "none";
+                div.style.zIndex = "999";
+                div.id = "my-div";
+                // Position the div over the textarea
+                const rect = textarea.getBoundingClientRect();
+                div.style.position = "absolute";
+                div.style.top = rect.top + "px";
+                div.style.left = rect.left + "px";
+                div.style.width = rect.width + "px";
+                div.style.height = rect.height + "px";
+              
+                document.body.appendChild(div); // fix here
+              }
+
 
             function updateFloatingElement() {
                 const cursorPosition = getCaretCoordinates();
