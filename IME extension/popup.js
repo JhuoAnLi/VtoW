@@ -1,16 +1,21 @@
 document.getElementById('toggleButton').addEventListener('click', function() {
     let button = document.getElementById('toggleButton');
-    if (button.innerText === 'Unactivate Multilingual IME') {
-        button.innerText = 'Activate Multilingual IME';
+    if (button.innerText === 'Deactivate') {
+        button.innerText = 'Activate';
         button.classList.add('activate');
-        console.log('Message sent from popup.js: fdjaiofjdoiasp');
+        chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+            chrome.tabs.sendMessage(tabs[0].id, { action: 'activate' }, function(response) {
 
-        chrome.runtime.sendMessage({ action: 'activate' });
+            });
+        });
     } else {
-        button.innerText = 'Unactivate Multilingual IME';
+        button.innerText = 'Deactivate';
         button.classList.remove('activate');
 
-        chrome.runtime.sendMessage({ action: 'deactivate' });
+        chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+            chrome.tabs.sendMessage(tabs[0].id, { action: 'deactivate' }, function(response) {
+
+            });
+        });
     }
 });
-

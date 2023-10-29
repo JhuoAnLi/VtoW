@@ -46,14 +46,35 @@ class Trie {
 
 
 // global variables
-let IMEActivated = true;
 const SHOW_LENGTH = 5;
 const SEARCH_DISTANCE = 3;
 const NUM_OF_RESULT = 1;
 let trie = new Trie();
+let IMEActivated = false;
 
 
-window.onload = async function () {
+chrome.storage.local.get(['IMEActivated'], function(result) {
+    if (result.IMEActivated !== undefined) {
+        IMEActivated = result.IMEActivated;
+    }
+});
+
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    if (request.action === 'activate') {
+        IMEActivated = true;
+        console.log("IMEActivated", IMEActivated);
+        chrome.storage.local.set({ IMEActivated: true });
+    } else if (request.action === 'deactivate') {
+        IMEActivated = false;
+        console.log("IMEActivated", IMEActivated);
+        chrome.storage.local.set({ IMEActivated: false });
+    }
+});
+
+
+
+
+window.onload = async function() {
     const BOPOMOFO_DICT_URL = chrome.runtime.getURL('./src/bopomofo_dict_with_frequency2.json');
     const CANJIE_DICT_URL = chrome.runtime.getURL('./src/canjie_dict_with_frequency.json');
 
@@ -70,7 +91,7 @@ window.onload = async function () {
             trie.insert(key, bopomofo_dict[key]);
         }
         for (let key in canjie_dict) { //need to fix json file
-            trie.insert(key, canjie_dict[key]); 
+            trie.insert(key, canjie_dict[key]);
         }
 
         if (IMEActivated) {
@@ -104,29 +125,32 @@ hiddenDiv.style.visibility = "hidden";
 document.body.appendChild(hiddenDiv);
 
 
-function main(){
-    document.addEventListener("click", function (event) {
+function main() {
+    document.addEventListener("click", function(event) {
 
         if (event.target.tagName == "TEXTAREA" || event.target.tagName == "INPUT" || (event.target.tagName == "DIV" && event.target.contentEditable == "true")) {
             console.log("in textarea");
 
             const textarea = event.target;
-            document.getElementById("select")?.remove();
+            const selectElement = document.getElementById("select");
+            if (selectElement) {
+                selectElement.remove();
+            }
             textarea.addEventListener("keydown", IMEHandler);
             textarea.addEventListener("input", updateFloatingElement);
-            
+
             function updateFloatingElement() {
                 const cursorPosition = getCaretCoordinates();
                 const textareaRect = textarea.getBoundingClientRect();
-    
+
                 const top = textareaRect.top + window.scrollY + cursorPosition.top + 15; // Adjust top position as needed
                 const left = textareaRect.left + window.scrollX + cursorPosition.left; // Adjust left position as needed
-                
+
                 // console.log("top", top, "left", left);
                 floatingElement.style.top = top + "px";
                 floatingElement.style.left = left + "px";
             }
-    
+
             function getCaretCoordinates() {
                 const text = textarea.value.substring(0, textarea.selectionStart);
                 hiddenDiv.textContent = text;
@@ -147,13 +171,14 @@ function main(){
 
 let buffer = "";
 let cursorStartPosition = 0;
-function IMEHandler(event){
+
+function IMEHandler(event) {
     // variable declaration
     let selectValue = "";
     let textarea = event.target;
 
     if (buffer == "") { // reset cursorStartPosition
-        cursorStartPosition = event.target.selectionStart;  
+        cursorStartPosition = event.target.selectionStart;
     }
     // console.log("event.key", event.key);
     // console.log("buffer", buffer);
@@ -168,6 +193,7 @@ function IMEHandler(event){
             pressArrowDown();
             break;
         case "Enter":
+            console.log("IMEActivated", IMEActivated);
             break;
         case "ArrowLeft":
         case "ArrowRight":
@@ -195,7 +221,7 @@ function IMEHandler(event){
     if (buffer == "") {
         floatingElement.style.display = "none";
         return;
-    }else{
+    } else {
         floatingElement.style.display = "block";
         const token_list = tokenizeString(buffer);
         // console.log("1", token_list);
@@ -207,7 +233,7 @@ function IMEHandler(event){
         createOptions(possible_results);
     }
 
-    function pressArrowDown(){
+    function pressArrowDown() {
         selectElement.size = SHOW_LENGTH;
         selectElement.focus();
         selectElement.open = true;
@@ -216,7 +242,7 @@ function IMEHandler(event){
         event.stopPropagation();
     }
 
-    function pressTab(){
+    function pressTab() {
         let selectValue = selectElement.options[0].value;
         textarea.value = textarea.value.substring(0, cursorStartPosition) + selectValue + textarea.value.substring(textarea.selectionStart, textarea.value.length);
         buffer = "";
@@ -228,13 +254,13 @@ function IMEHandler(event){
         event.stopPropagation();
     }
 
-    function predict(){
+    function predict() {
         const WORDS_BEFORE_PREDICT_LENGTH = 10;
         const query = textarea.value.substring(cursorStartPosition - WORDS_BEFORE_PREDICT_LENGTH, cursorStartPosition);
 
         predictiong_query(query).then((response) => {
             console.log(response);
-            
+
             textarea.value = textarea.value + response[0].generated_text;
             buffer = "";
             floatingElement.style.display = "none";
@@ -245,9 +271,10 @@ function IMEHandler(event){
 
 
     let selectedIndex = 0;
+
     function selectionHandeler(event) {
         // console.log("in selectionHandeler", selectedIndex);
-        
+
         event.preventDefault();
         switch (event.key) {
             case "Enter":
@@ -286,29 +313,28 @@ function IMEHandler(event){
 }
 
 function createOptions(possible_results) {
-  selectElement.innerHTML = "";
-  possible_results.forEach(function (value) {
-    let option = document.createElement("option");
-    option.classList.add("my-option");
-    option.value = value;
-    option.textContent = value;
-    selectElement.appendChild(option);
-  });
+    selectElement.innerHTML = "";
+    possible_results.forEach(function(value) {
+        let option = document.createElement("option");
+        option.classList.add("my-option");
+        option.value = value;
+        option.textContent = value;
+        selectElement.appendChild(option);
+    });
 }
 
 async function predictiong_query(input_string) {
     // const data = {"inputs": `Please predict the next two words of ths sentence "${input_string}"`}
-    const data = {"inputs": `Q: Please continue writing the following sentences.\n\nSentence: ${input_string}`}
-	const response = await fetch(
-		"https://api-inference.huggingface.co/models/google/flan-t5-base",
-		{
-			headers: { Authorization: "Bearer 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" },
-			method: "POST",
-			body: JSON.stringify(data),
-		}
-	);
-	const result = await response.json();
-	return result;
+    const data = { "inputs": `Q: Please continue writing the following sentences.\n\nSentence: ${input_string}` }
+    const response = await fetch(
+        "https://api-inference.huggingface.co/models/google/flan-t5-base", {
+            headers: { Authorization: "Bearer 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" },
+            method: "POST",
+            body: JSON.stringify(data),
+        }
+    );
+    const result = await response.json();
+    return result;
 }
 
 /**
@@ -373,7 +399,7 @@ let keyStrokeCatch = {};
  * @return {array} array of objects of the form {distance, keySoFar, value} 
  */
 function findClosestMatches(query, trie, num_of_result = NUM_OF_RESULT) {
-    if (query in keyStrokeCatch){
+    if (query in keyStrokeCatch) {
         return keyStrokeCatch[query];
     }
     let minHeap = [];
@@ -396,13 +422,13 @@ function findClosestMatches(query, trie, num_of_result = NUM_OF_RESULT) {
 
     minHeap.sort((a, b) => a[0] - b[0]);
 
-    const result =  minHeap.slice(0, num_of_result).map(result => ({
+    const result = minHeap.slice(0, num_of_result).map(result => ({
         "distance": result[0],
         "keySoFar": result[1],
         "value": result[2]
     }));
     keyStrokeCatch[query] = result;
-    
+
     // const CUT_OFF_LENGTH = 100;
     // if (Object.keys(keyStrokeCatch).length > CUT_OFF_LENGTH) { // cut off the first n elements
     //     const keys = Object.keys(keyStrokeCatch).slice(CUT_OFF_LENGTH/2);
@@ -461,7 +487,7 @@ function keyStrokeToString(keyStrokeArray) {
                 }
             } else {
                 for (let j = 0; j < outputarray.length; j++) {
-                    if (result[0].value[j] !== undefined){
+                    if (result[0].value[j] !== undefined) {
                         outputarray[j] = outputarray[j] + result[0].value[j].word;
                     }
                 }

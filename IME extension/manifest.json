@@ -3,13 +3,12 @@
     "name": "Multilingual IME",
     "version": "1.0",
     "description": "Multilingual IME",
-    "permissions": ["activeTab", "input"],
+    "permissions": ["activeTab", "input", "tabs", "storage"],
     "host_permissions": [
         "https://*/*"
     ],
     "action": {
         "default_popup": "popup.html",
-
         "default_icon": {
             "48": "images/try.png"
         }
