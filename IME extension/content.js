@@ -255,8 +255,9 @@ function IMEHandler(event) {
         // console.log("1", token_list);
         const combined_token_list = combineTokens(token_list);
         // console.log("2", token_list);
-        const possible_results = keyStrokeToString(combined_token_list);
+        const possible_results = keyStrokeToString2(combined_token_list);
         // console.log("3", possible_results);
+        // keyStrokeToString2(combined_token_list);
 
         createOptions(possible_results);
     }
@@ -494,6 +495,7 @@ function combineTokens(inputarray) {
             break;
         }
     }
+    inputarray = inputarray.filter(element => element !== "");
     return inputarray;
 }
 
@@ -529,4 +531,44 @@ function keyStrokeToString(keyStrokeArray) {
     outputarray.splice(1, 0, keyStrokeArray.join(""));
     outputarray = [...new Set(outputarray)] // remove duplicates
     return outputarray;
+}
+
+function keyStrokeToString2(keyStrokeArray){
+    console.log(keyStrokeArray);
+    let poss = []
+    keyStrokeArray.forEach((element) => {
+        poss.push(findClosestMatches(element, trie, 5))
+    });
+
+    function generateCombinations(originalList) {
+        const resultList = [];
+      
+        function generate(index, currentCombination, currentScore) {
+          if (index === originalList.length) {
+            resultList.push({ str: currentCombination, score: currentScore });
+            return;
+          }
+      
+          const currentDimension = originalList[index];
+          for (let element of currentDimension) {
+            for (let wordObj of element.value) {
+              generate(
+                index + 1,
+                currentCombination + wordObj.word,
+                currentScore + wordObj.freq
+              );
+            }
+          }
+        }
+      
+        generate(0, '', 0);
+      
+        return resultList;
+    }
+    console.log(poss);
+    let result = generateCombinations(poss);
+    result = result.sort((a, b) => b.score - a.score);
+    result = result.map(element => element.str);
+    console.log(result);
+    return result;
 }
