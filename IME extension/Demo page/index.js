@@ -5,40 +5,86 @@ document.addEventListener('DOMContentLoaded', function () {
     const exampleSentence = document.getElementById("example-sentence");
     const startBtn = document.getElementById("start-btn");
     const resetBtn = document.getElementById("reset-btn");
-    const nextBtn = document.getElementById("next-btn");
+    const saveBtn = document.getElementById("save-btn");
     const time_spend = document.getElementById("time-spend");
     const timer = document.getElementById("timer");
     const wpm = document.getElementById("wpm");
     const keystroke_count = document.getElementById("keystroke-count");
     const backspace_count = document.getElementById("backspace-count");
+    const backspace_rate = document.getElementById("backspace-rate");
+    const shift_rate = document.getElementById("shift-rate");
     const shift_count = document.getElementById("shift-count");
     const key_pressed = document.getElementById("key-pressed");
 
 
-    const sentences = ["中文", "abc"];
-    let currentSentence = 0;
+    const sentences = [
+    // "維基百科 英語 Wikipedia 是一個自由內容",
+    "公開編輯且多語言的網絡百科全書協作計劃",
+    "ASUS Vivobook 16X搭載NVIDIA GeForce RTX 4060",
+    "筆記型電腦GPU加速創意奔放",
+    "身兼教授與創作者多重身分",
+    "劉辰岫博士擁抱AI也善用",
+    "軟硬體設備展現藝術手法新樣貌",
+    "透過Wiki技術使得包括您在內的所有人",
+    "都可以簡單地使用網頁瀏覽器修改其中的內容",
+    // "維基百科的名稱取自於本網站核心技術 Wiki以及具有百科全書之意的 encyclopedia",
+    "共同創造dangerous出來的新混成詞 Wikipedia",
+    // "任何使用網路進入維基百科的使用者都可以編寫和修改裡面的文章",
+    "從編already碼源頭展開實驗性創作 NVIDIA GPU加速生成式AI創意流暢落地",
+    "近期將Gen AI工具融入創作",
+    "從程式編碼層次切入",
+    "選擇在Python TensorFlow程式語言架構",
+    "餵養大量資料並訓練AI生成不同藝術形式的媒材或風格",
+    "我們經常會使用深度學習模型VGG-16",
+    "VGG-19來處理圖像運算",
+    "過去輸入的圖片動輒10多萬張",
+    "現在因為有GeForce RTX 40系列GPU",
+    "可以在三至四個小時內完成",
+    "與傳統的angry百科全書相比",
+    // "在網際網路上運作的維基百科其文字和絕大部分圖片",
+    "使用創用CC 姓名標示-相同方式分享 4.0協定和GNU自由檔案授權條款來"];
+    // const sentences = ['abc',"123"];
+    
     let startTime;
     let endTime;
-    let keystrokeCounter = 0;
-    let backspaceCounter = 0;
-    let shiftCounter = 0;
+    let currentSentence = 0;
     let timerInterval;
 
+    let saved_result = {
+        time_spend: 0,
+        keystroke_count: 0,
+        backspace_count: 0,
+        backspace_rate: 0,
+        shift_count: 0,
+        shift_rate: 0,
+    }
 
-    function resetAll() {
-        currentSentence = 0;
-        keystrokeCounter = 0;
-        backspaceCounter = 0;
-        shiftCounter = 0;
+    let current_result = {
+        time_spend: 0,
+        keystroke_count: 0,
+        backspace_count: 0,
+        backspace_rate: 0,
+        shift_count: 0,
+        shift_rate: 0,
+    }
+
+    function resetCurrentResult() {
+        current_result.time_spend = 0;
+        current_result.keystroke_count = 0;
+        current_result.backspace_count = 0;
+        current_result.backspace_rate = 0;
+        current_result.shift_count = 0;
+        current_result.shift_rate = 0;
+    }
+
+    function resetCurrentResultElement() {
         time_spend.textContent = "";
         key_pressed.textContent = "";
         keystroke_count.textContent = "";
         backspace_count.textContent = "";
-        exampleSentence.textContent = "";
+        backspace_rate.textContent = "";
         shift_count.textContent = "";
-        timer.textContent = "";
-        myTextArea.value = "";
-        clearInterval(timerInterval);
+        shift_rate.textContent = "";
     }
 
     function showKeyStroke(keystroke) {
@@ -49,34 +95,51 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     startBtn.addEventListener("click", function () {
-        resetAll();
+        resetCurrentResult();
+        resetCurrentResultElement();
         startTime = new Date().getTime();
         timerInterval = setInterval(() => { endTime = new Date().getTime(); timer.textContent = `${(endTime - startTime) / 1000} seconds`;  }, 1);
 
+        currentSentence = 0;
         startBtn.disabled = true;
+        saveBtn.disabled = true;
         exampleSentence.textContent = sentences[currentSentence];
         myTextArea.focus();
     });
 
     resetBtn.addEventListener("click", function () {
-        resetAll();
+        resetCurrentResult();
+        resetCurrentResultElement();
+        myTextArea.value = "";
+        exampleSentence.textContent = "";
+        timer.textContent = "";
+        clearInterval(timerInterval);
         startBtn.disabled = false;
+        saveBtn.disabled = false;
     });
 
+    saveBtn.addEventListener("click", function () {
+        saved_result = {...current_result};
+        updateSavedResultElement();
+    });
+
+
+    updateSavedResultElement();
     myTextArea.addEventListener('keydown', function (event) {
         if (event.code === "Enter") {
             event.preventDefault();
         }
         if (event.code === "Backspace") {
-            backspaceCounter++;
+            current_result.backspace_count++;
+            current_result.backspace_rate = (current_result.backspace_count / current_result.keystroke_count).toFixed(3);
         } else if (event.code === "ShiftLeft" || event.code === "ShiftRight") {
-            shiftCounter++;
+            current_result.shift_count++;
+            current_result.shift_rate = (current_result.shift_count / current_result.keystroke_count).toFixed(3);
         }
-
-        keystrokeCounter++;
+        current_result.keystroke_count++;
         const keystroke = codeToEnglish(event.code);
         showKeyStroke(keystroke);
-        updateResult();
+
 
         if (myTextArea.value == sentences[currentSentence] && event.key == "Enter") {
             console.log("correct")
@@ -84,11 +147,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
             function updateSentence() {
                 if (currentSentence === sentences.length - 1) {
+                    console.log("finished");
+                    current_result.time_spend = (endTime - startTime) / 1000;
                     clearInterval(timerInterval);
                     exampleSentence.textContent = "You have finished all the sentences! Click the reset button to start again.";
                     startBtn.disabled = false;
+                    saveBtn.disabled = false;
                     myTextArea.value = "";
-                    updateResult();
                     return;
                 } else {
                     currentSentence++;
@@ -96,20 +161,43 @@ document.addEventListener('DOMContentLoaded', function () {
                     myTextArea.value = "";
                 }
             }
-    
-            function updateResult() {
-                keystroke_count.textContent = keystrokeCounter;
-                backspace_count.textContent = backspaceCounter;
-                time_spend.textContent = `${(endTime - startTime) / 1000} seconds`;
-
-            }
         }
+        updateCurrentResultElement();
     });
 
-    function updateResult() {
-        keystroke_count.textContent = keystrokeCounter;
-        backspace_count.textContent = backspaceCounter;
-        shift_count.textContent = shiftCounter;
+    function updateSavedResultElement() {
+        document.getElementById("save-time-spend").textContent = `${saved_result.time_spend} seconds`;
+        document.getElementById("save-keystroke-count").textContent = saved_result.keystroke_count;
+        document.getElementById("save-backspace-count").textContent = saved_result.backspace_count;
+        document.getElementById("save-shift-count").textContent = saved_result.shift_count;
+        document.getElementById("save-backspace-rate").textContent = saved_result.backspace_rate;
+        document.getElementById("save-shift-rate").textContent = saved_result.shift_rate;
+    }
+
+    function updateCurrentResultElement() {
+        keystroke_count.textContent = current_result.keystroke_count;
+        backspace_count.textContent = current_result.backspace_count;
+        backspace_rate.textContent = current_result.backspace_rate;
+        shift_count.textContent = current_result.shift_count;
+        shift_rate.textContent = current_result.shift_rate;
+        time_spend.textContent = `${current_result.time_spend} seconds`;
+        
+        keystroke_count.style.color = getColor(current_result.keystroke_count, saved_result.keystroke_count);
+        backspace_count.style.color = getColor(current_result.backspace_count, saved_result.backspace_count);
+        backspace_rate.style.color = getColor(current_result.backspace_rate, saved_result.backspace_rate);
+        shift_count.style.color = getColor(current_result.shift_count, saved_result.shift_count);
+        shift_rate.style.color = getColor(current_result.shift_rate, saved_result.shift_rate);
+        time_spend.style.color = getColor(current_result.time_spend, saved_result.time_spend);
+
+        function getColor(a, b){
+            if (a < b) {
+                return "green";
+            } else if (a > b) {
+                return "red";
+            } else {
+                return "black";
+            }
+        }
     }
 
     function codeToEnglish(code) {
