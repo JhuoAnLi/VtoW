@@ -77,6 +77,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 window.onload = async function() {
     const BOPOMOFO_DICT_URL = chrome.runtime.getURL('./src/bopomofo_dict_with_frequency2.json');
     const CANJIE_DICT_URL = chrome.runtime.getURL('./src/canjie_dict_with_frequency.json');
+    const ENGLISH_DICT_URL = chrome.runtime.getURL('./src/english_dict_with_frequency.json');
 
     try {
         // load json
@@ -86,6 +87,9 @@ window.onload = async function() {
         const response2 = await fetch(CANJIE_DICT_URL);
         const canjie_dict = await response2.json();
 
+        const response3 = await fetch(ENGLISH_DICT_URL);
+        const english_dict = await response3.json();
+
         // build trie
         for (let key in bopomofo_dict) {
             trie.insert(key, bopomofo_dict[key]);
@@ -93,7 +97,11 @@ window.onload = async function() {
         for (let key in canjie_dict) { //need to fix json file
             trie.insert(key, canjie_dict[key]);
         }
+        for (let key in english_dict) {
+            trie.insert(key, english_dict[key]);
+        }
 
+        console.log("trie", trie);
         if (IMEActivated) {
             main();
         }
