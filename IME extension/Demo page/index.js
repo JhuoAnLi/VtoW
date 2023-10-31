@@ -142,12 +142,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         if (myTextArea.value == sentences[currentSentence] && event.key == "Enter") {
-            console.log("correct")
             updateSentence();
 
             function updateSentence() {
                 if (currentSentence === sentences.length - 1) {
-                    console.log("finished");
                     current_result.time_spend = (endTime - startTime) / 1000;
                     clearInterval(timerInterval);
                     exampleSentence.textContent = "You have finished all the sentences! Click the reset button to start again.";
@@ -201,7 +199,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function codeToEnglish(code) {
-        console.log(code);
         const specialKeyMap = {
             "Backspace": "[Backspace]",
             "Tab": "[Tab]",
