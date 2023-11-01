@@ -53,13 +53,14 @@ let trie = new Trie();
 let IMEActivated = false;
 
 
-chrome.storage.local.get(['IMEActivated'], function(result) {
+chrome.storage.local.get(['IMEActivated'], function (result) {
     if (result.IMEActivated !== undefined) {
         IMEActivated = result.IMEActivated;
     }
 });
 
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if (request.action === 'activate') {
         IMEActivated = true;
         console.log("IMEActivated", IMEActivated);
@@ -72,9 +73,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
 
 
-
-
-window.onload = async function() {
+window.onload = async function () {
     const BOPOMOFO_DICT_URL = chrome.runtime.getURL('./src/bopomofo_dict_with_frequency2.json');
     const CANJIE_DICT_URL = chrome.runtime.getURL('./src/canjie_dict_with_frequency.json');
     const ENGLISH_DICT_URL = chrome.runtime.getURL('./src/english_dict_with_frequency.json');
@@ -135,7 +134,7 @@ document.body.appendChild(hiddenDiv);
 const div = document.createElement("div");
 
 function main() {
-    document.addEventListener("click", function(event) {
+    document.addEventListener("click", function (event) {
 
         if (event.target.tagName == "TEXTAREA" || event.target.tagName == "INPUT" || (event.target.tagName == "DIV" && event.target.contentEditable == "true")) {
             console.log("in textarea");
@@ -152,9 +151,9 @@ function main() {
             function createDivWithSameStyles(textarea) {
                 const textareaStyles = window.getComputedStyle(textarea);
                 for (let prop of textareaStyles) {
-                  div.style[prop] = textareaStyles[prop];
+                    div.style[prop] = textareaStyles[prop];
                 }
-              
+
                 // Set the div to be invisible
                 // div.style.display = "none";
                 // div.style.visibility = "hidden"; 
@@ -170,9 +169,9 @@ function main() {
                 div.style.left = rect.left + "px";
                 div.style.width = rect.width + "px";
                 div.style.height = rect.height + "px";
-              
+
                 document.body.appendChild(div); // fix here
-              }
+            }
 
 
             function updateFloatingElement() {
@@ -351,7 +350,7 @@ function IMEHandler(event) {
 
 function createOptions(possible_results) {
     selectElement.innerHTML = "";
-    possible_results.forEach(function(value) {
+    possible_results.forEach(function (value) {
         let option = document.createElement("option");
         option.classList.add("my-option");
         option.value = value;
@@ -365,10 +364,10 @@ async function predictiong_query(input_string) {
     const data = { "inputs": `Q: Please continue writing the following sentences.\n\nSentence: ${input_string}` }
     const response = await fetch(
         "https://api-inference.huggingface.co/models/google/flan-t5-base", {
-            headers: { Authorization: "Bearer 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" },
-            method: "POST",
-            body: JSON.stringify(data),
-        }
+        headers: { Authorization: "Bearer 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" },
+        method: "POST",
+        body: JSON.stringify(data),
+    }
     );
     const result = await response.json();
     return result;
@@ -395,7 +394,6 @@ function tokenizeString(inputString) {
 }
 
 /**
- * 
  * @param {string} s1 
  * @param {string} s2 
  * @returns {number} Levenshtein Distance of s1 and s2
@@ -476,7 +474,6 @@ function findClosestMatches(query, trie, num_of_result = NUM_OF_RESULT) {
 
 
 /**
- * 
  * @param {array} inputarray 
  * @returns {array} string array of combined tokens
  */
@@ -509,7 +506,6 @@ function combineTokens(inputarray) {
 
 
 /**
- * 
  * @param {array} keyStrokeArray 
  * @returns {array} string array of possible results
  */
@@ -541,7 +537,7 @@ function keyStrokeToString(keyStrokeArray) {
     return outputarray;
 }
 
-function keyStrokeToString2(keyStrokeArray){
+function keyStrokeToString2(keyStrokeArray) {
     console.log(keyStrokeArray);
     let poss = []
     keyStrokeArray.forEach((element) => {
@@ -550,27 +546,27 @@ function keyStrokeToString2(keyStrokeArray){
 
     function generateCombinations(originalList) {
         const resultList = [];
-      
+
         function generate(index, currentCombination, currentScore) {
-          if (index === originalList.length) {
-            resultList.push({ str: currentCombination, score: currentScore });
-            return;
-          }
-      
-          const currentDimension = originalList[index];
-          for (let element of currentDimension) {
-            for (let wordObj of element.value) {
-              generate(
-                index + 1,
-                currentCombination + wordObj.word,
-                currentScore + wordObj.freq
-              );
+            if (index === originalList.length) {
+                resultList.push({ str: currentCombination, score: currentScore });
+                return;
             }
-          }
+
+            const currentDimension = originalList[index];
+            for (let element of currentDimension) {
+                for (let wordObj of element.value) {
+                    generate(
+                        index + 1,
+                        currentCombination + wordObj.word,
+                        currentScore + wordObj.freq
+                    );
+                }
+            }
         }
-      
+
         generate(0, '', 0);
-      
+
         return resultList;
     }
     console.log(poss);
