@@ -11,7 +11,7 @@ class Trie {
         this.root = new TrieNode();
     }
 
-    insert(key, value) {
+    insert(key, value, type) {
         let node = this.root;
         for (let char of key) {
             if (!(char in node.children)) {
@@ -22,7 +22,8 @@ class Trie {
         if (node.value === null) {
             node.value = value.map((element) => ({
                 word: element[0],
-                frequency: element[1]
+                frequency: element[1],
+                type: type
             }));
         } else {
             node.value = node.value.concat(value.map((element) => ({
@@ -51,6 +52,11 @@ const SEARCH_DISTANCE = 3;
 const NUM_OF_RESULT = 1;
 let trie = new Trie();
 let IMEActivated = false;
+const TOKEN_TYPE_LIST = {
+    ENGLISH: "english",
+    BOPOMOFO: "bopomofo",
+    CANJIE: "canjie"
+}
 
 
 chrome.storage.local.get(['IMEActivated'], function (result) {
@@ -91,13 +97,13 @@ window.onload = async function () {
 
         // build trie
         for (let key in bopomofo_dict) {
-            trie.insert(key, bopomofo_dict[key]);
+            trie.insert(key, bopomofo_dict[key], TOKEN_TYPE_LIST.BOPOMOFO);
         }
         for (let key in canjie_dict) { //need to fix json file
-            trie.insert(key, canjie_dict[key]);
+            trie.insert(key, canjie_dict[key], TOKEN_TYPE_LIST.CANJIE);
         }
         for (let key in english_dict) {
-            trie.insert(key, english_dict[key]);
+            trie.insert(key, english_dict[key], TOKEN_TYPE_LIST.ENGLISH);
         }
 
         console.log("trie", trie);
@@ -155,8 +161,8 @@ function main() {
                 }
 
                 // Set the div to be invisible
-                // div.style.display = "none";
-                // div.style.visibility = "hidden"; 
+                div.style.display = "none";
+                div.style.visibility = "hidden"; 
                 div.style.backgroundColor = "blue";
                 div.style.opacity = "0.5";
                 div.style.pointerEvents = "none";
@@ -258,13 +264,25 @@ function IMEHandler(event) {
         return;
     } else {
         floatingElement.style.display = "block";
-        const token_list = tokenizeString(buffer);
+
+        // version 1 inaccurate
+        // const token_list = tokenizeString(buffer);
         // console.log("1", token_list);
-        const combined_token_list = combineTokens(token_list);
-        // console.log("2", token_list);
-        const possible_results = keyStrokeToString2(combined_token_list);
+        // const combined_token_list = combineTokens(token_list);
+        // console.log("2", combined_token_list);
+        // const possible_results = keyStrokeToString(combined_token_list);
         // console.log("3", possible_results);
-        // keyStrokeToString2(combined_token_list);
+
+        // version 2 slow need to fix
+        // const token_list = tokenizeString2(buffer);
+        // const combined_token_list = token_list;
+        // console.log("combined_token_list", combined_token_list);
+        // const possible_results = keyStrokeToString2(combined_token_list);
+
+
+        // version 3
+        const possible_token_dict = tokenizeString3(buffer);
+        const possible_results = keyStrokeToString2(possible_token_dict);
 
         createOptions(possible_results);
     }
@@ -309,8 +327,6 @@ function IMEHandler(event) {
     let selectedIndex = 0;
 
     function selectionHandeler(event) {
-        // console.log("in selectionHandeler", selectedIndex);
-
         event.preventDefault();
         switch (event.key) {
             case "Enter":
@@ -537,42 +553,190 @@ function keyStrokeToString(keyStrokeArray) {
     return outputarray;
 }
 
-function keyStrokeToString2(keyStrokeArray) {
-    console.log(keyStrokeArray);
-    let poss = []
-    keyStrokeArray.forEach((element) => {
-        poss.push(findClosestMatches(element, trie, 5))
-    });
+function keyStrokeToString2(slice_dict) {
+    let result = [];
+    for (let i = 0; i < slice_dict.length; i++) {
+        const keyStrokeArray = slice_dict[i].arr;
 
-    function generateCombinations(originalList) {
-        const resultList = [];
+        let poss = [];
+        keyStrokeArray.forEach((element) => {
+            poss.push(findClosestMatches(element, trie, 5))
+        });
+        result = [...result, ...generateCombinations(poss)];
 
-        function generate(index, currentCombination, currentScore) {
-            if (index === originalList.length) {
-                resultList.push({ str: currentCombination, score: currentScore });
-                return;
+
+    
+        function generateCombinations(originalList) {
+            const resultList = [];
+    
+            function generate(index, currentCombination, currentScore) {
+                if (index === originalList.length) {
+                    resultList.push({ str: currentCombination, score: currentScore });
+                    return;
+                }
+    
+                const currentDimension = originalList[index];
+                for (let element of currentDimension) {
+                    for (let wordObj of element.value) {
+                        generate(
+                            index + 1,
+                            currentCombination + wordObj.word,
+                            currentScore + wordObj.freq
+                        );
+                    }
+                }
             }
+    
+            generate(0, '', 0);
+    
+            return resultList;
+        }
+    }
+    result = result.sort((a, b) => b.score - a.score);
+    result = result.map(element => element.str);
 
-            const currentDimension = originalList[index];
-            for (let element of currentDimension) {
-                for (let wordObj of element.value) {
-                    generate(
-                        index + 1,
-                        currentCombination + wordObj.word,
-                        currentScore + wordObj.freq
-                    );
+    result.splice(1, 0, slice_dict[0].arr.join(""));
+    result = [...new Set(result)] // remove duplicates
+    return result;
+}
+
+function tokenizeString2(input_string) {
+    return cutStringWithMinScore(input_string, scoreFunction);
+
+    function cutStringWithMinScore(string, scoreFunction) {
+        const n = string.length;
+        const dp = new Array(n).fill(Infinity);
+        const tokens = new Array(n).fill('');
+        const scoreCache = {};
+
+        for (let i = 0; i < n; i++) {
+            let prevDP = i > 0 ? dp.slice() : null;
+            for (let j = 0; j <= i; j++) {
+                const subString = string.substring(j, i + 1);
+
+                if (j === 0) {
+                    dp[i] = getScore(subString, null);
+                    tokens[i] = subString;
+                } else {
+                    const prevToken = tokens[j - 1];
+                    const tokenScore = getScore(subString, prevToken);
+                    const newScore = (prevDP ? prevDP[j - 1] : 0) + tokenScore;
+
+                    if (newScore < dp[i]) {
+                        dp[i] = newScore;
+                        tokens[i] = subString;
+                    }
                 }
             }
         }
 
-        generate(0, '', 0);
+        // Reconstruct the tokens with minimum score
+        const resultTokens = [];
+        let i = n - 1;
+        while (i >= 0) {
+            resultTokens.unshift(tokens[i]);
+            i -= tokens[i].length;
+        }
 
-        return resultList;
+        return resultTokens.filter((token) => token !== ''); // Filter out empty tokens
+
+        function getScore(subString, prevToken) {
+            const cacheKey = `${subString}-${prevToken}`;
+
+            if (cacheKey in scoreCache) {
+                return scoreCache[cacheKey];
+            }
+
+            const tokenScore = scoreFunction(subString, prevToken);
+            scoreCache[cacheKey] = tokenScore;
+            return tokenScore;
+        }
     }
-    console.log(poss);
-    let result = generateCombinations(poss);
-    result = result.sort((a, b) => b.score - a.score);
-    result = result.map(element => element.str);
-    console.log(result);
-    return result;
+    function scoreFunction(string, prevToken_string) {
+        let score = 0;
+        const currentToken = findClosestMatches(string, trie, 1)[0];
+        const current_token_type = currentToken.value[0].type;
+        const distance = currentToken.distance;
+
+        if (prevToken_string === null || prevToken_string === undefined) {
+            score = 0;
+        } else {
+            const prevToken = findClosestMatches(prevToken_string, trie, 1)[0];
+            const pre_token_type = prevToken.value[0].type;
+            if (current_token_type !== pre_token_type) {
+                score = 1;
+            } else {
+                score = -1;
+            }
+        }
+
+        const ALPHA = 0.6;
+        const BETA = 1.1;
+        if (distance === 0) {
+            score += 0;
+        } else {
+            score += BETA * distance - ALPHA * string.length;
+        }
+        return score;
+    }
+}
+
+function scoreFunction(string, prevToken_string) {
+    let score = 0;
+    const currentToken = findClosestMatches(string, trie, 1)[0];
+    const current_token_type = currentToken.value[0].type;
+    const distance = currentToken.distance;
+
+    if (prevToken_string === null || prevToken_string === undefined) {
+        score = 0;
+    } else {
+        const prevToken = findClosestMatches(prevToken_string, trie, 1)[0];
+        const pre_token_type = prevToken.value[0].type;
+        if (current_token_type !== pre_token_type) {
+            score = 1;
+        } else {
+            score = -1;
+        }
+    }
+
+    const ALPHA = 0.3;
+    const BETA = 1;
+    if (distance === 0) {
+        score += 0;
+    } else {
+        score += BETA * distance - ALPHA * string.length;
+    }
+    return score;
+}
+
+function tokenizeString3(inputString) {
+    let token = "";
+    let token_arrary = [];
+    for (let i = 0; i < inputString.length; i++) {
+        if (inputString[i] === ' ' || inputString[i] === '3' || inputString[i] === '4' || inputString[i] === '6' || inputString[i] === '7') {
+            token = token + inputString[i];
+            token_arrary.push(token);
+            token = "";
+        } else {
+            token = token + inputString[i];
+        }
+    }
+    if (token != "") token_arrary.push(token);
+
+    token = "";
+    let new_token_arrary = [];
+    for (let i = 0; i < inputString.length; i++) {
+        if (inputString[i] === ' ') {
+            new_token_arrary.push(token);
+            new_token_arrary.push(inputString[i]);
+            token = "";
+        } else {
+            token = token + inputString[i];
+        }
+    }
+    if (token != "") new_token_arrary.push(token);
+
+    const token_arrary_score = token_arrary.reduce((total, element) => total + scoreFunction(element), 0);
+    const new_token_arrary_score = new_token_arrary.reduce((total, element) => total + scoreFunction(element), 0);
+    return [{arr: token_arrary, score: token_arrary_score}, {arr: new_token_arrary, score: new_token_arrary_score}]
 }
