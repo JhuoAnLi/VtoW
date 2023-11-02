@@ -107,9 +107,7 @@ window.onload = async function () {
         }
 
         console.log("trie", trie);
-        if (IMEActivated) {
-            main();
-        }
+        main();
 
 
     } catch (error) {
@@ -217,6 +215,16 @@ function IMEHandler(event) {
     // variable declaration
     let selectValue = "";
     let textarea = event.target;
+
+    if (event.ctrlKey === true && event.key === "\\") {
+        IMEActivated = !IMEActivated;
+        console.log("IMEActivated", IMEActivated);
+    }
+    if (IMEActivated === false){
+        buffer = "";
+        floatingElement.style.display = "none";
+        return;
+    } 
 
     if (buffer == "") { // reset cursorStartPosition
         cursorStartPosition = event.target.selectionStart;
@@ -329,6 +337,7 @@ function IMEHandler(event) {
     function selectionHandeler(event) {
         event.preventDefault();
         switch (event.key) {
+            case "Tab":
             case "Enter":
                 textarea.value = textarea.value.substring(0, cursorStartPosition) + selectValue + textarea.value.substring(textarea.selectionStart, textarea.value.length);
                 floatingElement.style.display = "none";
@@ -722,6 +731,8 @@ function tokenizeString3(inputString) {
         }
     }
     if (token != "") token_arrary.push(token);
+
+    token_arrary = combineTokens(token_arrary);
 
     token = "";
     let new_token_arrary = [];
