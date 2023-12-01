@@ -19,30 +19,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const sentences = [
         // "維基百科 英語 Wikipedia 是一個自由內容",
-        "公開編輯且多語言的網絡百科全書協作計劃",
-        "ASUS Vivobook 16X搭載NVIDIA GeForce RTX 4060",
-        "筆記型電腦GPU加速創意奔放",
-        "身兼教授與創作者多重身分",
-        "劉辰岫博士擁抱AI也善用",
-        "軟硬體設備展現藝術手法新樣貌",
-        "透過Wiki技術使得包括您在內的所有人",
-        "都可以簡單地使用網頁瀏覽器修改其中的內容",
+        // "公開編輯且多語言的網絡百科全書協作計劃",
+        // "ASUS Vivobook 16X搭載NVIDIA GeForce RTX 4060",
+        // "筆記型電腦GPU加速創意奔放",
+        // "身兼教授與創作者多重身分",
+        // "劉辰岫博士擁抱AI也善用",
+        // "軟硬體設備展現藝術手法新樣貌",
+        // "透過Wiki技術使得包括您在內的所有人",
+        // "都可以簡單地使用網頁瀏覽器修改其中的內容",
         // "維基百科的名稱取自於本網站核心技術 Wiki以及具有百科全書之意的 encyclopedia",
-        "共同創造dangerous出來的新混成詞 Wikipedia",
+        "共同創造dangerous出來的新混成詞 wikipedia", // 0
         // "任何使用網路進入維基百科的使用者都可以編寫和修改裡面的文章",
-        "從編already碼源頭展開實驗性創作 NVIDIA GPU加速生成式AI創意流暢落地",
-        "近期將Gen AI工具融入創作",
-        "從程式編碼層次切入",
-        "選擇在Python TensorFlow程式語言架構",
-        "餵養大量資料並訓練AI生成不同藝術形式的媒材或風格",
-        "我們經常會使用深度學習模型VGG-16",
-        "VGG-19來處理圖像運算",
-        "過去輸入的圖片動輒10多萬張",
-        "現在因為有GeForce RTX 40系列GPU",
-        "可以在三至四個小時內完成",
-        "與傳統的angry百科全書相比",
+        // "從編already碼源頭展開實驗性創作 NVIDIA GPU加速生成式AI創意流暢落地",
+        // "近期將Gen AI工具融入創作",
+        // "從程式編碼層次切入",
+        // "選擇在Python TensorFlow程式語言架構",
+        // "餵養大量資料並訓練AI生成不同藝術形式的媒材或風格",
+        // "我們經常會使用深度學習模型VGG-16",
+        // "VGG-19來處理圖像運算",
+        // "過去輸入的圖片動輒10多萬張",
+        // "現在因為有GeForce RTX 40系列GPU",
+        // "可以在三至四個小時內完成",
+        // "與傳統的angry百科全書相比",
         // "在網際網路上運作的維基百科其文字和絕大部分圖片",
-        "使用創用CC 姓名標示-相同方式分享 4.0協定和GNU自由檔案授權條款來"];
+        // "使用創用CC 姓名標示-相同方式分享 4.0協定和GNU自由檔案授權條款來"
+    ];
     // const sentences = ['abc',"123"];
 
     let startTime;
@@ -95,6 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     startBtn.addEventListener("click", function () {
+        myTextArea.value = "";
         resetCurrentResult();
         resetCurrentResultElement();
         startTime = new Date().getTime();
