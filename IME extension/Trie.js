@@ -10,9 +10,14 @@ class Trie {
     constructor() {
         this.root = new TrieNode();
         this.keyStrokeCatch = {};
+        this.type_list = new Set();
     }
 
     insert(key, value, type) {
+        if (!this.type_list.has(type)) {
+            this.type_list.add(type);
+        }
+
         let node = this.root;
         for (let char of key) {
             if (!(char in node.children)) {
@@ -115,40 +120,26 @@ class Trie {
 
 async function build_Trie(){
     const trie = new Trie();
-    const BOPOMOFO_DICT_URL = chrome.runtime.getURL('./src/bopomofo_dict_with_frequency2.json');
-    const CANJIE_DICT_URL = chrome.runtime.getURL('./src/canjie_dict_with_frequency.json');
-    const ENGLISH_DICT_URL = chrome.runtime.getURL('./src/english_dict_with_frequency.json');
-    const TOKEN_TYPE_LIST = {
-        ENGLISH: "english",
-        BOPOMOFO: "bopomofo",
-        CANJIE: "canjie"
+    const JSON_URLs = {
+        ENGLISH: chrome.runtime.getURL('./src/english_dict_with_frequency.json'),
+        BOPOMOFO: chrome.runtime.getURL('./src/bopomofo_dict_with_frequency2.json'),
+        CANJIE: chrome.runtime.getURL('./src/canjie_dict_with_frequency.json'),
+        PINYIN: chrome.runtime.getURL('./src/pinyin_dict.json'),
+        THAI: chrome.runtime.getURL('./src/thai_dict.json'),
+        VIETNAMESE: chrome.runtime.getURL('./src/vietnam_dict.json'),
     }
 
-
-    try {
-        // load json
-        const response1 = await fetch(BOPOMOFO_DICT_URL);
-        const bopomofo_dict = await response1.json();
-
-        const response2 = await fetch(CANJIE_DICT_URL);
-        const canjie_dict = await response2.json();
-
-        const response3 = await fetch(ENGLISH_DICT_URL);
-        const english_dict = await response3.json();
-
-        // build trie
-        for (let key in bopomofo_dict) {
-            trie.insert(key, bopomofo_dict[key], TOKEN_TYPE_LIST.BOPOMOFO);
+    for (let Language_key in JSON_URLs) {
+        try {
+            const response = await fetch(JSON_URLs[Language_key]);
+            const dict = await response.json();
+            for (let key in dict) {
+                trie.insert(key, dict[key], Language_key);
+            }
+            // return trie;
+        } catch (error) {
+            console.error(`Error Building Trie from ${Language_key} JSON files:`, error);
         }
-        for (let key in canjie_dict) { //need to fix json file
-            trie.insert(key, canjie_dict[key], TOKEN_TYPE_LIST.CANJIE);
-        }
-        for (let key in english_dict) {
-            trie.insert(key, english_dict[key], TOKEN_TYPE_LIST.ENGLISH);
-        }
-        return trie;
-
-    } catch (error) {
-        console.error('Error Building Trie from JSON files:', error);
     }
+    return trie;
 }
