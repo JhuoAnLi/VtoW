@@ -9,7 +9,6 @@ class MyIMEHandler {
 
             this.buffer = "";
             this.cursorStartPosition = 0;
-            this.selectedIndex = 0;
             this.selectElement = this.createSelectElement();
             this.floatingElement = this.createFloatingElement();
             this.hiddenDiv = this.createHiddenDiv();
@@ -33,7 +32,6 @@ class MyIMEHandler {
         if (textarea === undefined) return;
         if (this.textarea === textarea){
             this.buffer = "";
-            this.selectedIndex = 0;
             return;
         }
 
@@ -47,7 +45,6 @@ class MyIMEHandler {
 
         this.buffer = "";
         this.cursorStartPosition = 0;
-        this.selectedIndex = 0;
 
         this.textarea.addEventListener("input", this.updateFloatingElement.bind(this));
         this.textarea.addEventListener("keydown", this.typeingHandler.bind(this));
@@ -59,9 +56,6 @@ class MyIMEHandler {
     createFloatingElement() {
         const element = document.createElement("div");
         element.id = "floatingElement";
-        element.style.position = "absolute";
-        element.style.zIndex = "999";
-        element.style.display = "none";
         element.appendChild(this.selectElement);
         document.body.appendChild(element);
         return element;
@@ -136,13 +130,14 @@ class MyIMEHandler {
             this.selectElement.size = SHOW_LENGTH;
             this.selectElement.focus();
             this.selectElement.open = true;
-            this.selectedIndex = 0;
+            this.selectElement.selectedIndex = 0;
+            this.selectElement.options[0].selected = true;
             event.preventDefault();
             event.stopPropagation();
         }
 
         const pressTab = () => {
-            let selectValue = this.selectElement.options[0].value;
+            const selectValue = this.selectElement.options[0].value;
             this.textarea.value = this.textarea.value.substring(0, this.cursorStartPosition) + selectValue + this.textarea.value.substring(this.textarea.selectionStart, this.textarea.value.length);
             this.buffer = "";
             this.floatingElement.style.display = "none";
@@ -202,6 +197,11 @@ class MyIMEHandler {
 
 
         function tokenizeString3(inputString, trie) {
+            function globalTokenizer(inputString) {
+                
+            }
+
+
             function firstTokenizer(inputString) {
                 let token = "";
                 let token_arrary = [];
@@ -349,23 +349,17 @@ class MyIMEHandler {
     }
 
     selectionHandeler(event) {
-        event.preventDefault();
-
-        let selectValue = this.selectElement.options[this.selectedIndex].value;
         switch (event.key) {
             case "Tab":
             case "Enter":
+                const selectValue = this.selectElement.options[this.selectElement.selectedIndex].value;
                 this.textarea.value = this.textarea.value.substring(0, this.cursorStartPosition) + selectValue + this.textarea.value.substring(this.textarea.selectionStart, this.textarea.value.length);
                 this.floatingElement.style.display = "none";
                 this.buffer = "";
-                this.selectedIndex = 0;
                 this.selectElement.size = 1;
                 this.textarea.focus();
                 this.textarea.click();
                 this.textarea.setSelectionRange(this.cursorStartPosition + selectValue.length, this.cursorStartPosition + selectValue.length); // bad
-                event.stopPropagation();
-                this.selectElement.removeEventListener("keydown", this.selectionHandeler);
-                return;
                 break;
             case "Escape":
                 this.floatingElement.style.display = "none";
@@ -374,17 +368,17 @@ class MyIMEHandler {
                 this.buffertextarea.focus();
                 break;
             case "ArrowUp":
-                this.selectedIndex = (this.selectedIndex - 1 + this.selectElement.options.length) % this.selectElement.options.length;
+                this.selectElement.selectedIndex = (this.selectElement.selectedIndex - 1 + this.selectElement.options.length) % this.selectElement.options.length;
                 break;
             case "ArrowDown":
-                this.selectedIndex = (this.selectedIndex + 1) % this.selectElement.options.length;
+                this.selectElement.selectedIndex = (this.selectElement.selectedIndex + 1 + this.selectElement.options.length) % this.selectElement.options.length;
                 break;
             default:
                 console.log("else part");
                 break;  
         }
-        this.selectElement.options[this.selectedIndex].selected = true;
-        console.log("selectedIndex", this.selectedIndex);
+        console.log("select value:", this.selectElement.options[this.selectElement.selectedIndex].value);
+        event.preventDefault();
         event.stopPropagation();
     };
 }
@@ -395,7 +389,6 @@ class MyIMEHandler {
  * @param {*} input_string 
  * @returns 
  */
-
 async function predictiong_query(input_string) {
     // const data = {"inputs": `Please predict the next two words of ths sentence "${input_string}"`}
     const data = { "inputs": `Q: Please continue writing the following sentences.\n\nSentence: ${input_string}` }
