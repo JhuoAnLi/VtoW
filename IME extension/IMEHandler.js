@@ -202,7 +202,7 @@ class MyIMEHandler {
             }
 
 
-            function firstTokenizer(inputString) {
+            function zhuyin_Tokenizer(inputString) {
                 let token = "";
                 let token_arrary = [];
                 for (let i = 0; i < inputString.length; i++) {
@@ -290,9 +290,53 @@ class MyIMEHandler {
                 return score;
             }
 
+            // todo: work on this
+            function shiff(array1, array2){
+                let result_list = [];
 
-            const firstTokenArray = combineTokens(firstTokenizer(inputString));
+                array1 = ["su3", "cl3"]
+                array2 = ["su3cl3"]
+
+                let array1_index = 0;
+                let array2_index = 0;
+                let array1_score = 0;
+                let array2_score = 0;
+                let array1_sub = [];
+                let array2_sub = [];
+                
+
+                while (array1_index < array1.length && array2_index < array2.length){
+                    console.log("here in shiff:", array1_sub, array2_sub);
+                    if (array1_sub.length < array2_sub.length){
+                        console.log("chanage here");
+                        array1_score += trie.findClosestMatches(array1[array1_index], 1)[0].distance;
+                        array1_sub.push(array1[array1_index]);
+                        array1_index++;
+                    }else if (array1_sub.length > array2_sub.length){
+                        console.log("chanage here");
+                        array2_score += trie.findClosestMatches(array2[array2_index], 1)[0].distance;
+                        array2_sub.push(array2[array2_index]);
+                        array2_index++;
+                    }else {
+                        if (array1_score < array2_score){
+                            result_list.push(array1_sub);
+                        }else {
+                            result_list.push(array2_sub);
+                        }
+                        array1_sub = [];
+                        array2_sub = [];
+                        array1_index++;
+                        array2_index++;
+                    }
+                }
+                console.log("out in shiff:", array1_sub, array2_sub);
+                return result_list;
+            }
+
+            const firstTokenArray = combineTokens(zhuyin_Tokenizer(inputString));
             const secondTokenArray = secondTokenizer(inputString);
+            // const shiffTokenArray = shiff(firstTokenArray, secondTokenArray);
+            // console.log("here shiff:", shiffTokenArray);
 
             const first_token_arrary_score = firstTokenArray.reduce((total, element) => total + scoreFunction(element), 0);
             const second_token_arrary_score = secondTokenArray.reduce((total, element) => total + scoreFunction(element), 0);
@@ -377,7 +421,6 @@ class MyIMEHandler {
                 console.log("else part");
                 break;  
         }
-        console.log("select value:", this.selectElement.options[this.selectElement.selectedIndex].value);
         event.preventDefault();
         event.stopPropagation();
     };
@@ -414,3 +457,43 @@ class TypingHandler {
     }
 }
 
+
+// todo: work on this
+/**
+ * 
+ * @param {string} inputString string to be tokenized
+ * @param {Set} startSet set of characters that can be the start of a token
+ * @param {Set} endSet set of characters that can be the end of a token
+ * @returns list of fine token cuts
+ */
+function cutStringIntoTokens(inputString, startSet, endSet) {
+    const possibleTokenCuts = [];
+    let currentToken = '';
+
+    for (const char of inputString) {
+        if (startSet.has(char)) {
+            // Start of a new token
+            if (currentToken !== '') {
+                // If there's content in currentToken, save it as a separate token
+                possibleTokenCuts.push(currentToken);
+                currentToken = '';
+            }
+            currentToken += char;
+        } else if (endSet.has(char) && currentToken !== '') {
+            // End of the current token
+            currentToken += char;
+            possibleTokenCuts.push(currentToken);
+            currentToken = '';
+        } else {
+            // Not part of a token, add to the current token or standalone
+            currentToken += char;
+        }
+    }
+
+    // If there's content in currentToken, save it as a separate token
+    if (currentToken !== '') {
+        possibleTokenCuts.push(currentToken);
+    }
+
+    return possibleTokenCuts;
+}

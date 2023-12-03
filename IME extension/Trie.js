@@ -11,11 +11,19 @@ class Trie {
         this.root = new TrieNode();
         this.keyStrokeCatch = {};
         this.type_list = new Set();
+        this.startSet = new Set();
+        this.endSet = new Set();
     }
 
     insert(key, value, type) {
         if (!this.type_list.has(type)) {
             this.type_list.add(type);
+        }
+        if (!this.startSet.has(key[0])) { // add StartSet
+            this.startSet.add(key[0]);
+        }
+        if (!this.endSet.has(key[key.length - 1])) { // add EndSet
+            this.endSet.add(key[key.length - 1]);
         }
 
         let node = this.root;

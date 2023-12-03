@@ -225,3 +225,47 @@ window.onload = async function () {
 //     const new_token_arrary_score = new_token_arrary.reduce((total, element) => total + scoreFunction(element), 0);
 //     return [{arr: token_arrary, score: token_arrary_score}, {arr: new_token_arrary, score: new_token_arrary_score}]
 // }
+
+
+// function shiff(array1, array2){
+//     let result_list = [];
+
+//     let array1_index = 0;
+//     let array2_index = 0;
+//     let array1_score = 0;
+//     let array2_score = 0;
+//     let array1_sub = [];
+//     let array2_sub = [];
+    
+
+//     while (array1_index < array1.length && array2_index < array2.length){
+//         console.log("here in shiff:", array1_sub, array2_sub);
+//         if (array1_sub.length < array2_sub.length){
+//             console.log("chanage here");
+//             array1_score += trie.findClosestMatches(array1[array1_index], 1)[0].distance;
+//             array1_sub.push(array1[array1_index]);
+//             array1_index++;
+//         }else if (array1_sub.length > array2_sub.length){
+//             console.log("chanage here");
+//             array2_score += trie.findClosestMatches(array2[array2_index], 1)[0].distance;
+//             array2_sub.push(array2[array2_index]);
+//             array2_index++;
+//         }else {
+//             if (array1_score < array2_score){
+//                 result_list.push(array1_sub);
+//             }else {
+//                 result_list.push(array2_sub);
+//             }
+//             array1_sub = [];
+//             array2_sub = [];
+//             array1_index++;
+//             array2_index++;
+//         }
+//     }
+//     console.log("out in shiff:", array1_sub, array2_sub);
+//     return result_list;
+// }
+// const firstTokenArray = ["su3", "cl3", " ", "this ", "is "];
+// const secondTokenArray = ["su3cl3", " ", "this", " ", "is", " "];
+// const shiffTokenArray = shiff(firstTokenArray, secondTokenArray);
+// console.log("here shiff:", shiffTokenArray);
