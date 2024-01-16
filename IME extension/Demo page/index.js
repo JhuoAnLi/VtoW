@@ -29,6 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // "都可以簡單地使用網頁瀏覽器修改其中的內容",
         // "維基百科的名稱取自於本網站核心技術 Wiki以及具有百科全書之意的 encyclopedia",
         "共同創造dangerous出來的新混成詞 wikipedia", // 0
+        // "\u5f88\u9ad8\u8208\u8a8d\u8b58\u4f60",
+        // "\u0e22\u0e34\u0e19\u0e14\u0e35\u0e17\u0e35\u0e48\u0e44\u0e14\u0e49\u0e23\u0e49\u0e39\u0e08\u0e31\u0e01",
+        // "R\u1ea5t vui \u0111\u01b0\u1ee3c g\u1eb7pp b\u1ea1n",
         // "任何使用網路進入維基百科的使用者都可以編寫和修改裡面的文章",
         // "從編already碼源頭展開實驗性創作 NVIDIA GPU加速生成式AI創意流暢落地",
         // "近期將Gen AI工具融入創作",
@@ -92,7 +95,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const keyStrokeElement = document.createElement("div");
         keyStrokeElement.classList.add("disappearing-element");
         keyStrokeElement.textContent = keystroke;
-        key_pressed.insertBefore(keyStrokeElement, key_pressed.firstChild);
+        if (key_pressed.childElementCount < 5){
+            key_pressed.insertBefore(keyStrokeElement, key_pressed.firstChild);
+        }else{
+            key_pressed.removeChild(key_pressed.lastChild);
+            key_pressed.insertBefore(keyStrokeElement, key_pressed.firstChild);
+        }
     }
 
     startBtn.addEventListener("click", function () {

@@ -53,6 +53,14 @@ class MyIMEHandler {
 
     }
 
+    set setActivated(value) {
+        this.activated = value;
+        if (value === false) {
+            this.buffer = "";
+            this.floatingElement.style.display = "none";
+        }
+    }
+
     createFloatingElement() {
         const element = document.createElement("div");
         element.id = "floatingElement";

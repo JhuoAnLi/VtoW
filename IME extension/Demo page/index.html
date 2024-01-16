@@ -22,39 +22,41 @@
     <div class="col">
       <h1 class="modal-title">Multilingual-IME Demo</h1>
       <div class="row">
-        <h3 class="col col-3">Timer :</h3>
+        <h3 class="col col-auto">Timer :</h3>
         <h3 class="col col-3" id="timer"></h3>
-        <h3 class="col col-3">Saved Result</h3>
+        <!-- <h3 class="col col-3">Saved Result</h3> -->
       </div>
       <div class="row">
         <div class="col col-6">
           <div class="row">
-            <h4 class="col col-4">Time Spend:</h4>
+            <text class="col col-5">Time Spend:</text>
             <div class="col col-auto" id="time-spend"></div>
           </div>
           <div class="row">
-            <h4 class="col col-4">Key Stroke Count:</h4>
-            <div class="col col-auto" id="keystroke-count"></div>
-          </div>
-          <div class="row">
-            <h4 class="col col-4">Backspace Count:</h4>
+            <text class="col col-6">Backspace Count:</text>
             <div class="col col-auto" id="backspace-count"></div>
           </div>
           <div class="row">
-            <h5 class="col col-4">Backspace Per 100 Words:</h4>
+            <text class="col col-6">Shift Count:</text>
+            <div class="col col-auto" id="shift-count"></div>
+          </div>
+        </div>
+        <div class="col col-6">          
+          <div class="row">
+            <text class="col col-6">Key Stroke Count:</text>
+            <div class="col col-auto" id="keystroke-count"></div>
+          </div>
+          <div class="row">
+            <text class="col col-8" style="font-size: 15px;">Backspace Per 100 Words:</text>
               <div class="col col-auto" id="backspace-rate"></div>
           </div>
           <div class="row">
-            <h4 class="col col-4">Shift Count:</h4>
-            <div class="col col-auto" id="shift-count"></div>
-          </div>
-          <div class="row">
-            <h5 class="col col-4">Shift Per 100 Words:</h4>
+            <text class="col col-8" style="font-size: 15px;">Shift Per 100 Words:</text>
               <div class="col col-auto" id="shift-rate"></div>
           </div>
-
         </div>
-        <div class="col col-6">
+
+        <div class="col col-6" style="display: none;">
           <div class="row">
             <h4 class="col col-4">Time Spend:</h4>
             <div class="col col-auto" id="save-time-spend"></div>
@@ -68,7 +70,7 @@
             <div class="col col-auto" id="save-backspace-count"></div>
           </div>
           <div class="row">
-            <h5 class="col col-4">Backspace Per 100 Words:</h4>
+            <text class="col col-4">Backspace Per 100 Words:</h4>
               <div class="col col-auto" id="save-backspace-rate"></div>
           </div>
           <div class="row">
@@ -76,24 +78,31 @@
             <div class="col col-auto" id="save-shift-count"></div>
           </div>
           <div class="row">
-            <h5 class="col col-4">Shift Per 100 Words:</h4>
+            <text class="col col-4">Shift Per 100 Words:</h4>
               <div class="col col-auto" id="save-shift-rate"></div>
           </div>
         </div>
       </div>
       <div class="row">
-        <h4 class="col col-3">Key Pressed:</h4>
+        <text class="col col-3">Key Pressed:</text>
         <div class="col col-9" id="key-pressed"></div>
       </div>
 
 
 
       <div class="from-group">
+        <textarea class="form-control" rows="1" placeholder="Enter your text here" style="visibility: hidden;" disabled ></textarea>
         <textarea class="form-control" id="example-sentence" rows="1"
           disabled>This is example example sentence.</textarea>
         <textarea class="form-control" id="my-textarea" rows="1" placeholder="Enter your text here"
           style="color: gray;"></textarea>
+        <textarea class="form-control" rows="1" placeholder="Enter your text here" style="visibility: hidden;" disabled ></textarea>
+        <textarea class="form-control" rows="1" placeholder="Enter your text here" style="visibility: hidden;" disabled ></textarea>
       </div>
+
+      <div class="row">
+      </div>
+
       <div class="row justify-content-center align-items-center">
         <button class="btn btn-info col-auto" id="start-btn">Start</button>
         <button class="btn btn-danger col-auto" id="reset-btn">Reset</button>

@@ -17,18 +17,18 @@ window.onload = async function () {
 
     chrome.storage.local.get(['IMEActivated'], function (result) {
         if (result.IMEActivated !== undefined) {
-            my_IMEHandler.activated = result.IMEActivated;
+            my_IMEHandler.setActivated(result.IMEActivated);
         }
     });
     
     
     chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         if (request.action === 'activate') {
-            my_IMEHandler.activated = true;
+            my_IMEHandler.setActivated(true);
             console.log("IMEActivated", my_IMEHandler.activated);
             chrome.storage.local.set({ IMEActivated: true });
         } else if (request.action === 'deactivate') {
-            my_IMEHandler.activated = false;
+            my_IMEHandler.setActivated(false);
             console.log("IMEActivated", my_IMEHandler.activated);
             chrome.storage.local.set({ IMEActivated: false });
         }
