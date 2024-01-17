@@ -9,7 +9,7 @@ if __name__ == '__main__':
     PLAIN_TEXT_DATASET_PATH = ".\\Dataset\\Plain_Text_Datasets\\"
     TARGET_DATASET_PATH = ".\\Dataset\\Key_Stroke_Datasets\\"
 
-    files = ["Chinese.txt"]
+    files = ["Chinese_news.json"]
 
     
     for file in files:
@@ -17,7 +17,7 @@ if __name__ == '__main__':
             json_file = json.load(file)
             lines = [line["內容"] for line in json_file]
 
-            lines = [LanguageCleaner.cleanChinese(line) for line in lines]
+            # lines = [LanguageCleaner.cleanChinese(line) for line in lines]
 
-            with open(PLAIN_TEXT_DATASET_PATH + "Chinese_cleaned.txt", "w", encoding="utf-8") as file2:
+            with open(PLAIN_TEXT_DATASET_PATH + "Chinese_news.txt", "w", encoding="utf-8") as file2:
                 file2.write("\n".join(lines))
