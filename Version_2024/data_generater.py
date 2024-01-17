@@ -8,8 +8,8 @@ if __name__ == '__main__':
     PLAIN_TEXT_DATASET_PATH = ".\\Dataset\\Plain_Text_Datasets\\"
     TARGET_DATASET_PATH = ".\\Dataset\\Key_Stroke_Datasets\\"
 
-    files = ["Chinese_cleaned.txt"]
-    convert_types = ["bopomofo"] #, "pinyin"]
+    files = ["Chinese_news.txt"]
+    convert_types = ["pinyin"]
     error_rates = [0, 0.001, 0.003, 0.01 ,0.05, 0.1]
 
     
