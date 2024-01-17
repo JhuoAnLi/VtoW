@@ -1,5 +1,7 @@
+import os
 
 from pypinyin import pinyin, lazy_pinyin, Style
+
 
 class KeyStrokeConverter:
 
@@ -19,7 +21,6 @@ class KeyStrokeConverter:
         Returns:
             str: The converted string
         """
-
 
 
         if convert_type == "english":
@@ -44,7 +45,7 @@ class KeyStrokeConverter:
 
             cangjie_key_map_dict = {}
             for filename in files:
-                with open(filename, "r", encoding="utf-8") as file:
+                with open(os.path.dirname(__file__) + "\\" + filename, "r", encoding="utf-8") as file:
                     for line in file:
                         parts = line.strip().split()
                         if len(parts) == 2:
@@ -60,9 +61,9 @@ class KeyStrokeConverter:
 
 
     @classmethod
-    def _StringToBopomofoKey(cls, input_string:str) -> str:
+    def _StringToBopomofoKey(cls, input_string: str) -> str:
 
-        def bopomofo_to_keystroke(bopomofo:str) -> str:
+        def bopomofo_to_keystroke(bopomofo: str) -> str:
             map = {
                 "ㄅ": "1", "ㄆ": "q", "ㄇ": "a",
                 "ㄈ": "z", "ㄉ": "2", "ㄊ": "w",
@@ -81,15 +82,29 @@ class KeyStrokeConverter:
             }
 
             keystroke = ""
-            for word in bopomofo:
-                keystroke += map[word]
+            try:
+                if bopomofo[0] in cls.full_width_map.keys():  # if the word is full width speical character
+                    for word in bopomofo:
+                        keystroke += cls.full_width_map.get(word, word)
+                else:
+                    for word in bopomofo:
+                        keystroke += map.get(word, word)
+                    
+                    if not keystroke.endswith(("6", "3", "4", "7")):  # if the word is tone 1 add a space
+                        keystroke += " "
+                
+            except KeyError:
+                    print("Invalid bopomofo: " + bopomofo)
+
+                    # raise ValueError("Invalid bopomofo: " + bopomofo)
+            
             return keystroke
         
-        BOPOMOFO_result = ""
-        for pin in pinyin(input_string, style=Style.BOPOMOFO):
-            BOPOMOFO_result += pin[0]
-        keystoke = bopomofo_to_keystroke(BOPOMOFO_result)
-        return keystoke
+        BOPOMOFO_result = [pin[0] for pin in pinyin(input_string, style=Style.BOPOMOFO)]
+        result = [bopomofo_to_keystroke(word) for word in BOPOMOFO_result]
+        result = "".join(result)
+
+        return result
 
 
     @classmethod
@@ -106,9 +121,31 @@ class KeyStrokeConverter:
     def _StringToEnglishKey(cls, input_string: str) -> str:
         return input_string
 
+    full_width_map = {
+        "１": "1", "２": "2", "３": "3",
+        "４": "4", "５": "5", "６": "6",
+        "７": "7", "８": "8", "９": "9",
+        "０": "0", 
+        
+        
+        "，": "<ctrl>,", "。": "<ctrl>.",
+        "、": "<ctrl>'",
+        "；": "<ctrl>;", "：": "<ctrl>:",
+        "？": "<ctrl>?", "！": "<ctrl>!",
+        "（": "(",       "）": ")",  # fixme: not sure if this is correct 
+        "【": '<ctrl>[', "】": '<ctrl>]',
+        "｛": '<ctrl>{', "｝": '<ctrl>}',
+
+
+        "「": "<ctrl>[", "」": "<ctrl>]",  # fixme: not sure if this is correct
+    }
+
+    @classmethod
+    def _full_width_to_half_width(cls, input_char: str) -> str:
+            return cls.full_width_map.get(input_char, input_char)
 
 
 if __name__ == '__main__':
-    input_string = "你好嗎"
-    convert_type = "pinyin"
+    input_string = "頒行政院長陳建仁今（16）日出席「112年鳳凰獎楷模表揚典禮」，頒獎表揚74名獲獎義消"
+    convert_type = "bopomofo"
     print(KeyStrokeConverter.convert(input_string, convert_type))
