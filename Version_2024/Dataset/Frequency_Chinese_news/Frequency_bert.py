@@ -3,12 +3,12 @@ from transformers import BertTokenizer
 import re
 
 def tokenize_and_count(text, tokenizer):
-    tokens = tokenizer.tokenize(tokenizer.decode(tokenizer.encode(text)))
+    tokens = tokenizer.tokenize(tokenizer.decode(tokenizer.encode(text, truncation=True, max_length=512)))
     word_freq = Counter(tokens)
     return word_freq
 
 def main():
-    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    tokenizer = BertTokenizer.from_pretrained('bert-base-chinese')
 
     with open('py\\test.txt', 'r', encoding='utf-8') as file:
         text = file.read()
