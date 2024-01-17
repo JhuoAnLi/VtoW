@@ -109,12 +109,19 @@ class KeyStrokeConverter:
 
     @classmethod
     def _StringToPinyinKey(cls, input_string:str) -> str:
-        PINYIN_result = ""
-        for pin in pinyin(input_string, style=Style.NORMAL):
-            PINYIN_result += pin[0]
-        print(PINYIN_result)
+        PINYIN_result = [pin[0] for pin in pinyin(input_string, style=Style.NORMAL)]
 
-        return PINYIN_result
+
+        # result = [pin if pin[0] in cls.full_width_map.keys() else pin for pin in PINYIN_result]
+        keystroke = ""
+        for pin in PINYIN_result:
+            if pin[0] in cls.full_width_map.keys():
+                for word in pin:
+                    keystroke += cls.full_width_map.get(word, word)
+            else:
+                keystroke += pin
+
+        return keystroke
 
 
     @classmethod
@@ -147,5 +154,5 @@ class KeyStrokeConverter:
 
 if __name__ == '__main__':
     input_string = "頒行政院長陳建仁今（16）日出席「112年鳳凰獎楷模表揚典禮」，頒獎表揚74名獲獎義消"
-    convert_type = "bopomofo"
+    convert_type = "pinyin"
     print(KeyStrokeConverter.convert(input_string, convert_type))
