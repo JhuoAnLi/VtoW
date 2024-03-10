@@ -1,17 +1,13 @@
 from transformers import AutoModel
 from torch import nn
 
-class LCModel(nn.Module): 
-    def __init__(
-            self,
-            layers=[],
-            device=None # fix this
-        ) -> None:
+
+class LCModel(nn.Module):
+    def __init__(self, layers=[], device=None) -> None:  # fix this
         """
         layers: list of layer sizes
         device: device to run model on
         """
-
 
         super().__init__()
 
@@ -26,18 +22,7 @@ class LCModel(nn.Module):
             self.layer_list.append(nn.ReLU())
         self.layer_list.append(nn.Sigmoid())
 
-
     def forward(self, x):
         for layer in self.layer_list:
             x = layer(x)
         return x
-
-
-
-    
-
-
-
-
-
-
