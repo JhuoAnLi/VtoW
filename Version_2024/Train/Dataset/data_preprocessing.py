@@ -4,8 +4,8 @@ from joblib import Parallel, delayed
 from tqdm import tqdm
 
 if __name__ == "__main__":
-    SRC_DATASET_PATH = os.path.join(os.path.dirname(__file__) , ".\\Dataset\\Key_Stroke_Datasets\\")
-    TARGET_DATASET_PATH = os.path.join(os.path.dirname(__file__) , ".\\Dataset\\Train_Datasets\\")
+    SRC_DATASET_PATH = os.path.join(os.path.dirname(__file__) , ".\\Key_Stroke_Datasets\\")
+    TARGET_DATASET_PATH = os.path.join(os.path.dirname(__file__) , ".\\Train_Datasets\\")
     CUT_SIZE = 20
     TARGET_LANGUAGE = "bopomofo"
     ERROR_RATE = 0
