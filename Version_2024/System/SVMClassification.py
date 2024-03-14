@@ -67,7 +67,7 @@ class TextClassifier:
         final_accuracy = sum(
             prediction_info["accuracy"] for prediction_info in predictions.values()
         ) / len(predictions)
-        print("Final Accuracy:", final_accuracy * 100, "%")
+        print("Validation Accuracy:", final_accuracy * 100, "%")
         return predictions, final_accuracy
 
     # output the decimal probability
@@ -82,7 +82,7 @@ class TextClassifier:
             if prediction == label:
                 correct_predictions += 1
             total_predictions += 1
-        print("Predictions:", predictions)
+        # print("Predictions:", predictions)
         return max(predictions, key=predictions.get)
 
     def save_model(self, filename):
@@ -118,7 +118,25 @@ if __name__ == "__main__":
         print("Model saved")
         print("Model loaded")
 
-    new_text = "jmam"
-    print("Test case:", new_text)
-    prediction = loaded_classifier.predict(new_text)
-    print("Predicted label:", prediction)
+    # new_text = ["cl3", "jmam"]
+    # for text in new_text:
+    #     print("Test case:", text)
+    #     prediction = loaded_classifier.predict(text)
+    #     print("Predicted label:", prediction)
+    test_file_name = "Version_2024\\Train\\Dataset\\Train_Datasets\\bopomofo-0_1.txt"
+    bopomofo_0_1_data = read_file(test_file_name)
+    bopomofo_0_1_testing = [(line[0], int(line[1])) for line in bopomofo_0_1_data]
+    # print(bopomofo_0_001_testing)
+    correct_predictions = 0
+    total_predictions = len(bopomofo_0_1_testing)
+    print("Length of predictions:", total_predictions)
+    for text, true_label in bopomofo_0_1_testing:
+        prediction = loaded_classifier.predict(text)
+        if int(prediction) == true_label:
+            correct_predictions += 1
+    accuracy = correct_predictions / total_predictions * 100
+    print("Test Accuracy:", accuracy)
+# new_text = "jmam"
+# print("Test case:", new_text)
+# prediction = loaded_classifier.predict(new_text)
+# print("Predicted label:", prediction)
