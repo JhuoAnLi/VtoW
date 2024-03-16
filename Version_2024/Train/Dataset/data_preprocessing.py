@@ -6,18 +6,22 @@ from tqdm import tqdm
 if __name__ == "__main__":
     SRC_DATASET_PATH = os.path.join(os.path.dirname(__file__) , ".\\Key_Stroke_Datasets\\")
     TARGET_DATASET_PATH = os.path.join(os.path.dirname(__file__) , ".\\Train_Datasets\\")
-    CUT_SIZE = 20
+    CUT_SIZE = 3
     TARGET_LANGUAGE = "bopomofo"
     ERROR_RATE = 0
 
     data_file_names = ["bopomofo-news-0.txt", "cangjie-news-0.txt", "pinyin-news-0.txt", "english-0.txt"]
 
-    target_file_name = "{}-{}.txt".format(TARGET_LANGUAGE, str(ERROR_RATE).replace(".", "_"))
+    target_file_name = "{}-{}-len3.txt".format(TARGET_LANGUAGE, str(ERROR_RATE).replace(".", "_"))
 
 
     if os.path.exists(TARGET_DATASET_PATH + target_file_name):
-       print("Removing old file: " + target_file_name)
-       os.remove(TARGET_DATASET_PATH + target_file_name)
+        if "y" == input("File already exists. Do you want to overwrite it? (y/n)"):
+            print("Removing old file: " + target_file_name)
+            os.remove(TARGET_DATASET_PATH + target_file_name)
+        else:
+            print("File not overwritten. Exiting...")
+            exit()
 
     for file_name in tqdm(data_file_names, desc="Processing files"):
         with open(SRC_DATASET_PATH + file_name, "r", encoding="utf-8") as file:
