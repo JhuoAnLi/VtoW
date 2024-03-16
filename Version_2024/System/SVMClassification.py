@@ -97,23 +97,24 @@ class TextClassifier:
 
 if __name__ == "__main__":
 
-    filename = "Version_2024\\Train\\Dataset\\Train_Datasets\\bopomofo-0.txt"
+    filename = "Version_2024\\Train\\Dataset\\Train_Datasets\\cangjie-0.txt"
     data = read_file(filename)
-    bopomofo_0_training = [(line[0], int(line[1])) for line in data]
-    # print(bopomofo_0_training)
+    random.seed(42)
+    random_data = random.sample(data, 100000)
+    # cangjie_0_training = [(line[0], int(line[1])) for line in random_data]
 
     relative_path = "Version_2024\\Model_dump"
-    model_name = "model_bopomofo-0.pkl"
+    model_name = "model_cangjie-0.pkl"
     if os.path.exists(os.path.join(os.getcwd(), relative_path, model_name)):
-        loaded_classifier = TextClassifier(data)
+        loaded_classifier = TextClassifier(random_data)
         loaded_classifier.load_model(model_name)
         print("Model loaded")
     else:
-        text_classifier = TextClassifier(data)
+        text_classifier = TextClassifier(random_data)
         text_classifier.train_classifier()
         text_classifier.validate_classifier()
         text_classifier.save_model(model_name)
-        loaded_classifier = TextClassifier(data)
+        loaded_classifier = TextClassifier(random_data)
         loaded_classifier.load_model(model_name)
         print("Model saved")
         print("Model loaded")
@@ -123,14 +124,15 @@ if __name__ == "__main__":
     #     print("Test case:", text)
     #     prediction = loaded_classifier.predict(text)
     #     print("Predicted label:", prediction)
-    test_file_name = "Version_2024\\Train\\Dataset\\Train_Datasets\\bopomofo-0_1.txt"
-    bopomofo_0_1_data = read_file(test_file_name)
-    bopomofo_0_1_testing = [(line[0], int(line[1])) for line in bopomofo_0_1_data]
-    # print(bopomofo_0_001_testing)
+    test_file_name = "Version_2024\\Train\\Dataset\\Train_Datasets\\cangjie-0_1.txt"
+    temp_test_data = read_file(test_file_name)
+    cangjie_0_1_data = random.sample(temp_test_data, 100000)
+    cangjie_0_1_testing = [(line[0], int(line[1])) for line in cangjie_0_1_data]
+    # print(cangjie_0_1_testing)
     correct_predictions = 0
-    total_predictions = len(bopomofo_0_1_testing)
+    total_predictions = len(cangjie_0_1_testing)
     print("Length of predictions:", total_predictions)
-    for text, true_label in bopomofo_0_1_testing:
+    for text, true_label in cangjie_0_1_testing:
         prediction = loaded_classifier.predict(text)
         if int(prediction) == true_label:
             correct_predictions += 1
