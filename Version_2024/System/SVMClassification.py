@@ -7,6 +7,8 @@ import threading
 from tqdm import tqdm
 import os
 import joblib
+from sklearn.metrics import confusion_matrix
+import numpy as np
 
 
 def read_file(filename):
@@ -101,7 +103,7 @@ if __name__ == "__main__":
     data = read_file(filename)
     random.seed(42)
     random_data = random.sample(data, 100000)
-    # cangjie_0_training = [(line[0], int(line[1])) for line in random_data]
+    cangjie_0_training = [(line[0], int(line[1])) for line in random_data]
 
     relative_path = "Version_2024\\Model_dump"
     model_name = "model_cangjie-0.pkl"
@@ -124,20 +126,35 @@ if __name__ == "__main__":
     #     print("Test case:", text)
     #     prediction = loaded_classifier.predict(text)
     #     print("Predicted label:", prediction)
-    test_file_name = "Version_2024\\Train\\Dataset\\Train_Datasets\\cangjie-0_1.txt"
+    test_file_name = "Version_2024\\Train\\Dataset\\Train_Datasets\\cangjie-0-len5.txt"
     temp_test_data = read_file(test_file_name)
-    cangjie_0_1_data = random.sample(temp_test_data, 100000)
-    cangjie_0_1_testing = [(line[0], int(line[1])) for line in cangjie_0_1_data]
-    # print(cangjie_0_1_testing)
-    correct_predictions = 0
-    total_predictions = len(cangjie_0_1_testing)
-    print("Length of predictions:", total_predictions)
-    for text, true_label in cangjie_0_1_testing:
+    cangjie_0_len3_data = random.sample(temp_test_data, 100000)
+    cangjie_0_len3_testing = [(line[0], int(line[1])) for line in cangjie_0_len3_data]
+    print("Length of testing data:", len(cangjie_0_len3_testing))
+    true_labels = []
+    predicted_labels = []
+
+    for text, true_label in cangjie_0_len3_testing:
         prediction = loaded_classifier.predict(text)
-        if int(prediction) == true_label:
-            correct_predictions += 1
-    accuracy = correct_predictions / total_predictions * 100
+        true_labels.append(true_label)
+        predicted_labels.append(int(prediction))
+
+    conf_matrix = confusion_matrix(true_labels, predicted_labels)
+    print("Confusion Matrix:")
+    print(conf_matrix)
+
+    accuracy = np.trace(conf_matrix) / np.sum(conf_matrix) * 100
     print("Test Accuracy:", accuracy)
+
+    # correct_predictions = 0
+    # total_predictions = len(cangjie_0_len3_testing)
+    # print("Length of predictions:", total_predictions)
+    # for text, true_label in cangjie_0_len3_testing:
+    #     prediction = loaded_classifier.predict(text)
+    #     if int(prediction) == true_label:
+    #         correct_predictions += 1
+    # accuracy = correct_predictions / total_predictions * 100
+    # print("Test Accuracy:", accuracy)
 # new_text = "jmam"
 # print("Test case:", new_text)
 # prediction = loaded_classifier.predict(new_text)
