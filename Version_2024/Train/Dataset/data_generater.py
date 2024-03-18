@@ -1,6 +1,6 @@
 import os
-from MyLib.KeyStrokeConverter import KeyStrokeConverter
-from MyLib.TypoGenerater import TypoGenerater
+from DataProcessLib.KeyStrokeConverter import KeyStrokeConverter
+from DataProcessLib.TypoGenerater import TypoGenerater
 from joblib import Parallel, delayed
 from tqdm import tqdm
 
