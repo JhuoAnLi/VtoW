@@ -1,4 +1,12 @@
+import os
 import random
+
+from tqdm import tqdm
+import multiprocessing
+import string
+
+characters = string.digits + string.ascii_letters + ",.;/-'=[]"
+KEYSTROKES = [c for c in characters]
 
 
 def character_mapping(input: str) -> list[str]:
@@ -93,165 +101,20 @@ def character_mapping(input: str) -> list[str]:
     elif input == "/":
         return ["l", ";", "'", "."]
     else:
-        return [
-            "1",
-            "q",
-            "a",
-            "z",
-            "2",
-            "w",
-            "s",
-            "x",
-            "3",
-            "e",
-            "d",
-            "c",
-            "4",
-            "r",
-            "f",
-            "v",
-            "5",
-            "t",
-            "g",
-            "b",
-            "6",
-            "y",
-            "h",
-            "n",
-            "7",
-            "u",
-            "j",
-            "m",
-            "8",
-            "i",
-            "k",
-            ",",
-            "9",
-            "o",
-            "l",
-            ".",
-            "0",
-            "p",
-            ";",
-            "/",
-            "-",
-            "[",
-            "'",
-            "=",
-            "]",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-        ]
+        return KEYSTROKES
 
 
 class TypoGenerater:
 
     @staticmethod
-    def generate_8adjacency(input_string: str, error_rate: float) -> str:
+    def _generate_8adjacency(input_string: str, error_rate: float) -> str:
 
         if not (0 <= error_rate <= 1):
             raise ValueError("error_rate should be between 0 and 1")
 
-        KEYSTROKES = [
-            "1",
-            "q",
-            "a",
-            "z",
-            "2",
-            "w",
-            "s",
-            "x",
-            "3",
-            "e",
-            "d",
-            "c",
-            "4",
-            "r",
-            "f",
-            "v",
-            "5",
-            "t",
-            "g",
-            "b",
-            "6",
-            "y",
-            "h",
-            "n",
-            "7",
-            "u",
-            "j",
-            "m",
-            "8",
-            "i",
-            "k",
-            ",",
-            "9",
-            "o",
-            "l",
-            ".",
-            "0",
-            "p",
-            ";",
-            "/",
-            "-",
-            "[",
-            "'",
-            "=",
-            "]",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-        ]
         typo_index = []
         for i in range(len(input_string)):
-            try :
+            try:
                 if random.random() < error_rate:
                     typo_index.append(i)
             except IndexError:
@@ -259,9 +122,9 @@ class TypoGenerater:
 
         for i in typo_index:
             if i >= len(input_string):
-                i=random.randrange(0, len(input_string))
+                i = random.randrange(0, len(input_string))
             e = random.randrange(0, 4)
-            try :
+            try:
                 if e == 0:  # Swap
                     if i < len(input_string) - 1:
                         input_string = (
@@ -293,12 +156,13 @@ class TypoGenerater:
         return input_string
 
     @staticmethod
-    def generate(input_string: str, error_rate: float) -> str:
+    def generate(input_string: str, error_type:str, error_rate: float) -> str:
         """
         Generate typos for the input string
 
         Args:
             input_string (str): The input string
+            error_type (str): The type of error, "random" or "8adjacency"
             error_rate (float): The error rate (0 <= error_rate <= 1)
 
         Raises:
@@ -310,79 +174,24 @@ class TypoGenerater:
         if not (0 <= error_rate <= 1):
             raise ValueError("error_rate should be between 0 and 1")
 
-        KEYSTROKES = [
-            "1",
-            "q",
-            "a",
-            "z",
-            "2",
-            "w",
-            "s",
-            "x",
-            "3",
-            "e",
-            "d",
-            "c",
-            "4",
-            "r",
-            "f",
-            "v",
-            "5",
-            "t",
-            "g",
-            "b",
-            "6",
-            "y",
-            "h",
-            "n",
-            "7",
-            "u",
-            "j",
-            "m",
-            "8",
-            "i",
-            "k",
-            ",",
-            "9",
-            "o",
-            "l",
-            ".",
-            "0",
-            "p",
-            ";",
-            "/",
-            "-",
-            "[",
-            "'",
-            "=",
-            "]",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-        ]
+        if error_type == "random":
+            return TypoGenerater._generate_random(input_string, error_rate)
+        elif error_type == "8adjacency":
+            return TypoGenerater._generate_8adjacency(input_string, error_rate)
+        else:
+            raise ValueError("Error: error_type '{}' is not supported".format(error_type))
+    
+
+    def _generate_random(input_string: str, error_rate: float) -> str:
+        """
+        Generate typos using random error for the input string
+
+        Args:
+            input_string (str): The input string
+            error_rate (float): The error rate (0 <= error_rate <= 1)
+        Returns:
+            str: The string with typos generated using random error
+        """
 
         typo_index = []
         for i in range(len(input_string)):
@@ -414,14 +223,105 @@ class TypoGenerater:
                 raise ValueError("e should be between 0 and 3, Should not reach here")
 
         return input_string
+    
+
+    @staticmethod
+    def _generate_error_chunk(input_queue, output_queue, error_type:str, error_rate: float):
+        while True:
+            chunk_index, chunk = input_queue.get()
+            if chunk is None:
+                output_queue.put(None)  # Signal the main process that this worker is done
+                break
+            cleaned_chunk = TypoGenerater.generate(chunk, error_type=error_type, error_rate=error_rate)
+            output_queue.put((chunk_index, cleaned_chunk))
+
+
+    @staticmethod
+    def generate_file_parallel(input_file_path:str, output_file_path:str, error_type:str, error_rate:float, num_processes:int=4): # fix: make it cleaner
+        """
+        Clean the input file and write the cleaned content to the output file in parallel
+
+        Args:
+            input_file_path (str): The input file path
+            output_file_path (str): The output file path
+            language (str): The language to reserve, "chinese" or "english"
+            reserve_newline (bool): Whether to reserve the newline character
+            chuck_job: The job to be done on the chunks
+            num_processes (int, optional): The number of processes to use. Defaults to 4.
+        """
+        chunk_size = 10000
+        input_queue = multiprocessing.Queue()
+        output_queue = multiprocessing.Queue()
+
+
+        # Read the input file and split it into chunks
+        with open(input_file_path, 'r', encoding='utf-8') as f:
+            chunk_index = 0
+            while True:
+                chunk = f.read(chunk_size)
+                if not chunk:
+                    break
+                input_queue.put((chunk_index, chunk))
+                chunk_index += 1
+
+        # Add termination signals to the input queue
+        for _ in range(num_processes):
+            input_queue.put((None, None))
+
+        # Process chunks in parallel
+        processes = []
+        for _ in range(num_processes):
+            p = multiprocessing.Process(target=TypoGenerater._generate_error_chunk, args=(input_queue, output_queue, error_type, error_rate))
+            processes.append(p)
+            p.start()
+
+        # Collect and reorder cleaned chunks
+        cleaned_chunks = [None] * chunk_index
+        workers_done = 0
+        with tqdm(total=chunk_index) as pbar:
+            while workers_done < num_processes:
+                try:
+                    chunk_info = output_queue.get(timeout=1)  # Timeout to prevent hanging
+                    if chunk_info is None:
+                        workers_done += 1
+                    else:
+                        chunk_index, cleaned_chunk = chunk_info
+                        cleaned_chunks[chunk_index] = cleaned_chunk
+                        pbar.update(1)  # Update progress bar for each processed chunk
+                except multiprocessing.TimeoutError:
+                    # Timeout occurred, check if processes are still alive
+                    alive_processes = [p.is_alive() for p in processes]
+                    if not any(alive_processes):
+                        break  # All processes have terminated
+
+        # Terminate any remaining processes
+        for p in processes:
+            if p.is_alive():
+                p.terminate()
+                p.join()
+        
+        # Write reordered cleaned chunks to the output file
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            for cleaned_chunk in cleaned_chunks:
+                if cleaned_chunk is not None:
+                    f.write(cleaned_chunk)
 
 
 if __name__ == "__main__":
-    input_string = "n"
-    count = 0
-    SAMPLE_SIZE = 1000
-    for i in range(SAMPLE_SIZE):
-        reuslt = TypoGenerater.generate(input_string, 0.01)
-        if reuslt != input_string:
-            count += 1
-    print("Error rate: {}/{} : {}".format(count, SAMPLE_SIZE, count / SAMPLE_SIZE))
+    # input_string = "hello world"
+    # count = 0
+    # SAMPLE_SIZE = 10000
+    # for i in range(SAMPLE_SIZE):
+    #     reuslt = TypoGenerater.generate(input_string, error_type="random", error_rate=0.001)
+    #     if reuslt != input_string:
+    #         count += 1
+    # print("Error rate: {}/{} : {}".format(count, SAMPLE_SIZE, count / SAMPLE_SIZE))
+
+    ERROR_RATE = 0.1
+    ERROR_TYPE = "random"
+
+    dir_path = os.path.dirname(__file__)
+    input_file = os.path.abspath(os.path.join(dir_path, "..\\Key_Stroke_Datasets\\bopomofo-news-0.txt"))
+    print(input_file)
+    output_file = os.path.abspath(os.path.join(dir_path, "..\\Key_Stroke_Datasets\\bopomofo-news-{}.txt".format(str(ERROR_RATE).replace(".", ""))))
+    TypoGenerater.generate_file_parallel(input_file, output_file, ERROR_TYPE, ERROR_RATE)
