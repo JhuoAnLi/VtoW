@@ -323,5 +323,5 @@ if __name__ == "__main__":
     dir_path = os.path.dirname(__file__)
     input_file = os.path.abspath(os.path.join(dir_path, "..\\Key_Stroke_Datasets\\bopomofo-news-0.txt"))
     print(input_file)
-    output_file = os.path.abspath(os.path.join(dir_path, "..\\Key_Stroke_Datasets\\bopomofo-news-{}.txt".format(str(ERROR_RATE).replace(".", ""))))
+    output_file = os.path.abspath(os.path.join(dir_path, "..\\Key_Stroke_Datasets\\bopomofo-news-{}.txt".format(str(ERROR_RATE).replace(".", "_"))))
     TypoGenerater.generate_file_parallel(input_file, output_file, ERROR_TYPE, ERROR_RATE)
