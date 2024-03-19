@@ -68,7 +68,7 @@ class LanguageCleaner:
 
         return re.sub(pattern, "", input_string)
 
-    def clean_file(input_file_path:str, output_file_path: str, language:str, reserve_newline:bool):
+    def clean_file(input_file_path:str, output_file_path: str, language:str, reserve_newline:bool=True):
         """
         Clean the input file and write the cleaned content to the output file
 
@@ -86,7 +86,7 @@ class LanguageCleaner:
             f.write(cleaned_data)
 
     @staticmethod
-    def _clean_file_chunk(input_queue, output_queue, language:str, reserve_newline:bool):
+    def _clean_file_chunk(input_queue, output_queue, language:str, reserve_newline:bool=True):
         while True:
             chunk_index, chunk = input_queue.get()
             if chunk is None:
@@ -96,7 +96,7 @@ class LanguageCleaner:
             output_queue.put((chunk_index, cleaned_chunk))
 
 
-    def clean_file_parallel(input_file_path:str, output_file_path:str, language:str, reserve_newline:bool, num_processes:int=4): # fix: make it cleaner
+    def clean_file_parallel(input_file_path:str, output_file_path:str, language:str, reserve_newline:bool=True, num_processes:int=4): # fix: make it cleaner
         """
         Clean the input file and write the cleaned content to the output file in parallel
 
