@@ -1,7 +1,8 @@
 import os
 
 from pypinyin import pinyin, lazy_pinyin, Style
-
+import multiprocessing
+from tqdm import tqdm
 
 class KeyStrokeConverter:
 
@@ -152,7 +153,93 @@ class KeyStrokeConverter:
             return cls.full_width_map.get(input_char, input_char)
 
 
+    @staticmethod
+    def _convert_file_chunk(input_queue, output_queue, convert_type:str):
+        while True:
+            chunk_index, chunk = input_queue.get()
+            if chunk is None:
+                output_queue.put(None)  # Signal the main process that this worker is done
+                break
+            cleaned_chunk = KeyStrokeConverter.convert(chunk, convert_type=convert_type)
+            output_queue.put((chunk_index, cleaned_chunk))
+
+
+    @staticmethod
+    def convert_file_parallel(input_file_path:str, output_file_path:str, convert_type:str, num_processes:int=4): # fix: make it cleaner
+        """
+        Clean the input file and write the cleaned content to the output file in parallel
+
+        Args:
+            input_file_path (str): The input file path
+            output_file_path (str): The output file path
+            language (str): The language to reserve, "chinese" or "english"
+            reserve_newline (bool): Whether to reserve the newline character
+            chuck_job: The job to be done on the chunks
+            num_processes (int, optional): The number of processes to use. Defaults to 4.
+        """
+        chunk_size = 10000
+        input_queue = multiprocessing.Queue()
+        output_queue = multiprocessing.Queue()
+
+
+        # Read the input file and split it into chunks
+        with open(input_file_path, 'r', encoding='utf-8') as f:
+            chunk_index = 0
+            while True:
+                chunk = f.read(chunk_size)
+                if not chunk:
+                    break
+                input_queue.put((chunk_index, chunk))
+                chunk_index += 1
+
+        # Add termination signals to the input queue
+        for _ in range(num_processes):
+            input_queue.put((None, None))
+
+        # Process chunks in parallel
+        processes = []
+        for _ in range(num_processes):
+            p = multiprocessing.Process(target=KeyStrokeConverter._convert_file_chunk, args=(input_queue, output_queue, convert_type))
+            processes.append(p)
+            p.start()
+
+        # Collect and reorder cleaned chunks
+        cleaned_chunks = [None] * chunk_index
+        workers_done = 0
+        with tqdm(total=chunk_index) as pbar:
+            while workers_done < num_processes:
+                try:
+                    chunk_info = output_queue.get(timeout=1)  # Timeout to prevent hanging
+                    if chunk_info is None:
+                        workers_done += 1
+                    else:
+                        chunk_index, cleaned_chunk = chunk_info
+                        cleaned_chunks[chunk_index] = cleaned_chunk
+                        pbar.update(1)  # Update progress bar for each processed chunk
+                except multiprocessing.TimeoutError:
+                    # Timeout occurred, check if processes are still alive
+                    alive_processes = [p.is_alive() for p in processes]
+                    if not any(alive_processes):
+                        break  # All processes have terminated
+
+        # Terminate any remaining processes
+        for p in processes:
+            if p.is_alive():
+                p.terminate()
+                p.join()
+        
+        # Write reordered cleaned chunks to the output file
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            for cleaned_chunk in cleaned_chunks:
+                if cleaned_chunk is not None:
+                    f.write(cleaned_chunk)
+        print(f"success: {output_file_path}")
+
 if __name__ == '__main__':
-    input_string = "頒行政院長陳建仁今（16）日出席「112年鳳凰獎楷模表揚典禮」，頒獎表揚74名獲獎義消"
-    convert_type = "pinyin"
-    print(KeyStrokeConverter.convert(input_string, convert_type))
+    # input_string = "頒行政院長陳建仁今（16）日出席「112年鳳凰獎楷模表揚典禮」，頒獎表揚74名獲獎義消"
+    # convert_type = "pinyin"
+    # print(KeyStrokeConverter.convert(input_string, convert_type))
+    dir_path = os.path.dirname(__file__)
+    input_file = os.path.abspath(os.path.join(dir_path, "..\\Plain_Text_Datasets\\Chinese_news-ch.txt"))
+    output_file = os.path.abspath(os.path.join(dir_path, "..\\Key_Stroke_Datasets\\aaa.txt"))
+    KeyStrokeConverter.convert_file_parallel(input_file, output_file, convert_type="bopomofo", num_processes=4)
