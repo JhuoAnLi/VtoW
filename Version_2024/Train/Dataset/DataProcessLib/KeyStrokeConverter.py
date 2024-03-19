@@ -129,23 +129,22 @@ class KeyStrokeConverter:
     def _StringToEnglishKey(cls, input_string: str) -> str:
         return input_string
 
+    CTRL_KEY = "®"
     full_width_map = {
         "１": "1", "２": "2", "３": "3",
         "４": "4", "５": "5", "６": "6",
         "７": "7", "８": "8", "９": "9",
         "０": "0", 
         
-        
-        "，": "<ctrl>,", "。": "<ctrl>.",
-        "、": "<ctrl>'",
-        "；": "<ctrl>;", "：": "<ctrl>:",
-        "？": "<ctrl>?", "！": "<ctrl>!",
-        "（": "(",       "）": ")",  # fixme: not sure if this is correct 
-        "【": '<ctrl>[', "】": '<ctrl>]',
-        "｛": '<ctrl>{', "｝": '<ctrl>}',
+        "，": CTRL_KEY + ",", "。": CTRL_KEY + ".",
+        "；": CTRL_KEY + ";", "：": CTRL_KEY + ":",
+        "、": CTRL_KEY + "'",
+        "？": CTRL_KEY + "?", "！": CTRL_KEY + "!",
+        "（": CTRL_KEY + "(", "）": CTRL_KEY + ")",  # fixme: not sure if this is correct 
+        "【": CTRL_KEY + "[", "】": CTRL_KEY + "]",
+        "｛": CTRL_KEY + "{", "｝": CTRL_KEY + "}",
 
-
-        "「": "<ctrl>[", "」": "<ctrl>]",  # fixme: not sure if this is correct
+        "「": CTRL_KEY + "[", "」": CTRL_KEY + "]",  # fixme: not sure if this is correct
     }
 
     @classmethod
@@ -239,7 +238,6 @@ if __name__ == '__main__':
     # input_string = "頒行政院長陳建仁今（16）日出席「112年鳳凰獎楷模表揚典禮」，頒獎表揚74名獲獎義消"
     # convert_type = "pinyin"
     # print(KeyStrokeConverter.convert(input_string, convert_type))
-    dir_path = os.path.dirname(__file__)
-    input_file = os.path.abspath(os.path.join(dir_path, "..\\Plain_Text_Datasets\\Chinese_news-ch.txt"))
-    output_file = os.path.abspath(os.path.join(dir_path, "..\\Key_Stroke_Datasets\\aaa.txt"))
+    input_file =  "..\\Plain_Text_Datasets\\Chinese_news-ch.txt"
+    output_file =  "..\\Key_Stroke_Datasets\\aaa.txt"
     KeyStrokeConverter.convert_file_parallel(input_file, output_file, convert_type="bopomofo", num_processes=4)
