@@ -164,6 +164,7 @@ class LanguageCleaner:
             for cleaned_chunk in cleaned_chunks:
                 if cleaned_chunk is not None:
                     f.write(cleaned_chunk)
+        print(f"Cleaning Success: {output_file_path}")
 
 if __name__ == '__main__':
     # test_input = "★ 內建智慧晶片可自動切換和雙系統接上即可使用"

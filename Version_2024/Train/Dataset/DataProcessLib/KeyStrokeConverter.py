@@ -232,7 +232,7 @@ class KeyStrokeConverter:
             for cleaned_chunk in cleaned_chunks:
                 if cleaned_chunk is not None:
                     f.write(cleaned_chunk)
-        print(f"success: {output_file_path}")
+        print(f"Conversion Success: {output_file_path}")
 
 if __name__ == '__main__':
     # input_string = "頒行政院長陳建仁今（16）日出席「112年鳳凰獎楷模表揚典禮」，頒獎表揚74名獲獎義消"

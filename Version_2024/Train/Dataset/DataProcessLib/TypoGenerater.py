@@ -305,6 +305,7 @@ class TypoGenerater:
             for cleaned_chunk in cleaned_chunks:
                 if cleaned_chunk is not None:
                     f.write(cleaned_chunk)
+        print(f"Typo Generation Success: {output_file_path}")
 
 
 if __name__ == "__main__":
