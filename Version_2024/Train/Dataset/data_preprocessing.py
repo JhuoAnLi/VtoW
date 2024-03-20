@@ -10,9 +10,9 @@ if __name__ == "__main__":
     TARGET_LANGUAGE = "bopomofo"
     ERROR_RATE = 0
 
-    data_file_names = ["bopomofo-news-0.txt", "cangjie-news-0.txt", "pinyin-news-0.txt", "english-0.txt"]
+    data_file_names = ["bopomofo-cc100-0.txt", "cangjie-cc100-0.txt", "pinyin-cc100-0.txt", "english-0.txt"]
 
-    target_file_name = "{}-{}-len3.txt".format(TARGET_LANGUAGE, str(ERROR_RATE).replace(".", "_"))
+    target_file_name = "{}-{}-len{}.txt".format(TARGET_LANGUAGE, str(ERROR_RATE).replace(".", "_"), CUT_SIZE)
 
 
     if os.path.exists(TARGET_DATASET_PATH + target_file_name):
@@ -26,7 +26,6 @@ if __name__ == "__main__":
     for file_name in tqdm(data_file_names, desc="Processing files"):
         with open(SRC_DATASET_PATH + file_name, "r", encoding="utf-8") as file:
             lines = file.readlines()
-            lines = [line.replace("<ctrl>", "") for line in lines]  # remove the <ctrl> in the line
             lines = [line.replace("\n", "") for line in lines] # remove the \n in the line
             joined_lines = "".join(lines)
             new_lines = [joined_lines[i:i + CUT_SIZE] for i in range(0, len(joined_lines), CUT_SIZE)]
