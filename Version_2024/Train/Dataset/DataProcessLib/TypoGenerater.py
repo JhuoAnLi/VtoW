@@ -174,6 +174,9 @@ class TypoGenerater:
         if not (0 <= error_rate <= 1):
             raise ValueError("error_rate should be between 0 and 1")
 
+        if error_rate == 0:
+            return input_string
+
         if error_type == "random":
             return TypoGenerater._generate_random(input_string, error_rate)
         elif error_type == "8adjacency":
