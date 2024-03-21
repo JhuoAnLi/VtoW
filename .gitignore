@@ -1,3 +1,6 @@
 .vscode
 __pycache__
 wandb
+
+Version_2024/Train/Dataset/Train_Datasets/*
+tempCodeRunnerFile.py
