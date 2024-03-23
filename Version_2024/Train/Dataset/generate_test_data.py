@@ -5,14 +5,16 @@ from tqdm import tqdm
 # generate test data from news data
 
 if __name__ == "__main__":
-    SRC_DATASET_PATH = ".\\Key_Stroke_Datasets\\"
-    TARGET_DATASET_PATH = ".\\Test_Datasets\\"
+    SRC_DATASET_PATH = "Version_2024\\Train\\Dataset\\Key_Stroke_Datasets\\"
+    TARGET_DATASET_PATH = "Version_2024\\Train\\Dataset\\Test_Datasets\\"
 
     cut_sizes = [20, 5, 3]
     target_languages = ["bopomofo", "cangjie", "pinyin", "english"]
     error_rates = [0, 0.1]
     data_file_name_prefix = ["bopomofo-news", "cangjie-news", "pinyin-news", "english"]
 
+    if not os.path.exists(TARGET_DATASET_PATH):
+            os.makedirs(TARGET_DATASET_PATH)
     for target_language in target_languages:
         for error_rate in error_rates:
             for cut_size in cut_sizes:
