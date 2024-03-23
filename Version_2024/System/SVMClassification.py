@@ -95,19 +95,19 @@ class IMEClassifier:
 
 if __name__ == "__main__":
 
-    filename = "Version_2024\\Train\\Dataset\\Train_Datasets\\bopomofo-0.txt"
+    filename = "Version_2024\\Train\\Dataset\\Train_Datasets\\pinyin-0-len20.txt"
     data = read_file(filename)
     random.seed(42)
     training_random_data = random.sample(data, 300000)
     # training_random_data_list = [(line[0], int(line[1])) for line in training_random_data]
 
-    test_file_name = "Version_2024\\Train\\Dataset\\Train_Datasets\\bopomofo-cc100-0-len20-fortest.txt"
-    temp_test_data = read_file(test_file_name)
-    testing_random_data = random.sample(temp_test_data, 100000)
-    testing_random_data_list = [(line[0], int(line[1])) for line in testing_random_data]
+    # test_file_name = "Version_2024\\Train\\Dataset\\Train_Datasets\\bopomofo-cc100-0-len20-fortest.txt"
+    # temp_test_data = read_file(test_file_name)
+    # testing_random_data = random.sample(temp_test_data, 100000)
+    # testing_random_data_list = [(line[0], int(line[1])) for line in testing_random_data]
 
     relative_path = "Version_2024\\Model_dump"
-    model_name = "Temp_model_bopomofo-0.pkl"
+    model_name = "model_pinyin-len20.pkl"
     if os.path.exists(os.path.join(os.getcwd(), relative_path, model_name)):
         loaded_classifier = IMEClassifier(training_random_data)
         loaded_classifier.load_model(model_name)
@@ -122,24 +122,24 @@ if __name__ == "__main__":
         print("Model saved")
         print("Model loaded")
 
-    # new_text = ["cl3", "jmam"]
-    # for text in new_text:
-    #     print("Test case:", text)
-    #     prediction = loaded_classifier.predict(text)
-    #     print("Predicted label:", prediction)
-
-    print("Length of testing data:", len(testing_random_data_list))
-    true_labels = []
-    predicted_labels = []
-
-    for text, true_label in testing_random_data_list:
+    new_text = ["cl3", "jmam"]
+    for text in new_text:
+        print("Test case:", text)
         prediction = loaded_classifier.predict(text)
-        true_labels.append(true_label)
-        predicted_labels.append(int(prediction))
+        print("Predicted label:", prediction)
 
-    conf_matrix = confusion_matrix(true_labels, predicted_labels)
-    print("Confusion Matrix:")
-    print(conf_matrix)
+    # print("Length of testing data:", len(testing_random_data_list))
+    # true_labels = []
+    # predicted_labels = []
 
-    accuracy = np.trace(conf_matrix) / np.sum(conf_matrix) * 100
-    print("Test Accuracy:", accuracy)
+    # for text, true_label in testing_random_data_list:
+    #     prediction = loaded_classifier.predict(text)
+    #     true_labels.append(true_label)
+    #     predicted_labels.append(int(prediction))
+
+    # conf_matrix = confusion_matrix(true_labels, predicted_labels)
+    # print("Confusion Matrix:")
+    # print(conf_matrix)
+
+    # accuracy = np.trace(conf_matrix) / np.sum(conf_matrix) * 100
+    # print("Test Accuracy:", accuracy)

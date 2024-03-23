@@ -4,8 +4,8 @@ from joblib import Parallel, delayed
 from tqdm import tqdm
 
 if __name__ == "__main__":
-    SRC_DATASET_PATH = ".\\Key_Stroke_Datasets\\"
-    TARGET_DATASET_PATH = ".\\Train_Datasets\\"
+    SRC_DATASET_PATH = "Version_2024\\Train\\Dataset\\Key_Stroke_Datasets\\"
+    TARGET_DATASET_PATH = "Version_2024\\Train\\Dataset\\Train_Datasets\\"
 
     cut_sizes = [20, 5, 3]
     target_languages = ["bopomofo", "cangjie", "pinyin", "english"]
@@ -14,6 +14,9 @@ if __name__ == "__main__":
 
     data_file_names = ["bopomofo-cc100-0.txt", "cangjie-cc100-0.txt", "pinyin-cc100-0.txt", "english-0.txt"]
 
+    if not os.path.exists(TARGET_DATASET_PATH):
+        os.makedirs(TARGET_DATASET_PATH)
+    
     for target_language in target_languages:
         for error_rate in error_rates:
             for cut_size in cut_sizes:
@@ -40,6 +43,6 @@ if __name__ == "__main__":
                         new_lines = [joined_lines[i:i + CUT_SIZE] for i in range(0, len(joined_lines), CUT_SIZE)]
                         new_lines = [line + "\t1" if TARGET_LANGUAGE in file_name else line + "\t0" for line in new_lines]
                     
-                    with open(TARGET_DATASET_PATH + target_file_name, "a", encoding="utf-8") as file:
+                    with open(os.path.join(TARGET_DATASET_PATH, target_file_name), "a", encoding="utf-8") as file:
                         for line in new_lines:
                             file.write(line + "\n")
