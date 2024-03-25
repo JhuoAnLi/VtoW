@@ -4,457 +4,101 @@
         "description": "Clean Chinese_news.txt to chinese",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_news.txt",
         "output_file_path": ".\\Plain_Text_Datasets\\Chinese_news-ch.txt",
-        "language": "chinese",
-        "status": "done"
+        "language": "chinese"
     },
     {
         "mode": "clean",
         "description": "Clean Chinese_WebCrawlData_cc100.txt to chinese",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100.txt",
         "output_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch.txt",
-        "language": "chinese",
-        "status": "done"
+        "language": "chinese"
     },
     {
         "mode": "clean",
         "description": "Clean Chinese_gossip.txt to chinese",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_gossip.txt",
         "output_file_path": ".\\Plain_Text_Datasets\\Chinese_gossip-ch.txt",
-        "language": "chinese",
-        "status": "done"
+        "language": "chinese"
     },
     {
         "mode": "convert",
         "description": "Convert Chinese_news-ch.txt to bopomofo",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_news-ch.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0.txt",
-        "convert_type": "bopomofo",
-        "status": "done"
+        "convert_type": "bopomofo"
     },
     {
         "mode": "convert",
         "description": "Convert Chinese_news-ch.txt to cangjie",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_news-ch.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0.txt",
-        "convert_type": "cangjie",
-        "status": "done"
+        "convert_type": "cangjie"
     },
     {
         "mode": "convert",
         "description": "Convert Chinese_news-ch.txt to pinyin",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_news-ch.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0.txt",
-        "convert_type": "pinyin",
-        "status": "done"
+        "convert_type": "pinyin"
     },
     {
         "mode": "convert",
         "description": "Convert Chinese_WebCrawlData_cc100-ch.txt to bopomofo",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0.txt",
-        "convert_type": "bopomofo",
-        "status": "done"
+        "convert_type": "bopomofo"
     },
     {
         "mode": "convert",
         "description": "Convert Chinese_WebCrawlData_cc100-ch.txt to cangjie",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0.txt",
-        "convert_type": "cangjie",
-        "status": "done"
+        "convert_type": "cangjie"
     },
     {
         "mode": "convert",
         "description": "Convert Chinese_WebCrawlData_cc100-ch.txt to pinyin",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0.txt",
-        "convert_type": "pinyin",
-        "status": "done"
+        "convert_type": "pinyin"
     },
     {
         "mode": "convert",
         "description": "Convert English.txt to english",
         "input_file_path": ".\\Plain_Text_Datasets\\English.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\english-0.txt",
-        "convert_type": "english",
-        "status": "done"
+        "convert_type": "english"
     },
     {
-        "mode": "gen_error",
-        "description": "Generate random error for bopomofo-news with error 0",
-        "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0.txt",
-        "error_type": "random",
-        "error_rate": 0,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for bopomofo-news with error 0.001",
-        "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0_001.txt",
-        "error_type": "random",
-        "error_rate": 0.001,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for bopomofo-news with error 0.003",
-        "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0_003.txt",
-        "error_type": "random",
-        "error_rate": 0.003,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for bopomofo-news with error 0.01",
-        "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0_01.txt",
-        "error_type": "random",
-        "error_rate": 0.01,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for bopomofo-news with error 0.05",
-        "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0_05.txt",
-        "error_type": "random",
-        "error_rate": 0.05,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for bopomofo-news with error 0.1",
-        "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0_1.txt",
-        "error_type": "random",
-        "error_rate": 0.1,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for bopomofo-cc100 with error 0",
+        "mode": "split",
+        "description": "Split bopomofo-cc100-0.txt with 0.5 into bopomofo-cc100-0-train.txt and bopomofo-cc100-0-test.txt datasets.",
         "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0.txt",
-        "error_type": "random",
-        "error_rate": 0,
-        "status": "done"
+        "train_file_path": ".\\Train_Datasets\\bopomofo-cc100-0-train.txt",
+        "test_file_path": ".\\Test_Datasets\\bopomofo-cc100-0-test.txt",
+        "train_test_split_ratio": 0.5
     },
     {
-        "mode": "gen_error",
-        "description": "Generate random error for bopomofo-cc100 with error 0.001",
-        "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0_001.txt",
-        "error_type": "random",
-        "error_rate": 0.001,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for bopomofo-cc100 with error 0.003",
-        "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0_003.txt",
-        "error_type": "random",
-        "error_rate": 0.003,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for bopomofo-cc100 with error 0.01",
-        "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0_01.txt",
-        "error_type": "random",
-        "error_rate": 0.01,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for bopomofo-cc100 with error 0.05",
-        "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0_05.txt",
-        "error_type": "random",
-        "error_rate": 0.05,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for bopomofo-cc100 with error 0.1",
-        "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0_1.txt",
-        "error_type": "random",
-        "error_rate": 0.1,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for cangjie-news with error 0",
-        "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0.txt",
-        "error_type": "random",
-        "error_rate": 0,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for cangjie-news with error 0.001",
-        "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0_001.txt",
-        "error_type": "random",
-        "error_rate": 0.001,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for cangjie-news with error 0.003",
-        "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0_003.txt",
-        "error_type": "random",
-        "error_rate": 0.003,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for cangjie-news with error 0.01",
-        "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0_01.txt",
-        "error_type": "random",
-        "error_rate": 0.01,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for cangjie-news with error 0.05",
-        "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0_05.txt",
-        "error_type": "random",
-        "error_rate": 0.05,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for cangjie-news with error 0.1",
-        "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0_1.txt",
-        "error_type": "random",
-        "error_rate": 0.1,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for cangjie-cc100 with error 0",
+        "mode": "split",
+        "description": "Split cangjie-cc100-0.txt with 0.5 into cangjie-cc100-0-train.txt and cangjie-cc100-0-test.txt datasets.",
         "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0.txt",
-        "error_type": "random",
-        "error_rate": 0,
-        "status": "done"
+        "train_file_path": ".\\Train_Datasets\\cangjie-cc100-0-train.txt",
+        "test_file_path": ".\\Test_Datasets\\cangjie-cc100-0-test.txt",
+        "train_test_split_ratio": 0.5
     },
     {
-        "mode": "gen_error",
-        "description": "Generate random error for cangjie-cc100 with error 0.001",
-        "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0_001.txt",
-        "error_type": "random",
-        "error_rate": 0.001,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for cangjie-cc100 with error 0.003",
-        "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0_003.txt",
-        "error_type": "random",
-        "error_rate": 0.003,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for cangjie-cc100 with error 0.01",
-        "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0_01.txt",
-        "error_type": "random",
-        "error_rate": 0.01,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for cangjie-cc100 with error 0.05",
-        "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0_05.txt",
-        "error_type": "random",
-        "error_rate": 0.05,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for cangjie-cc100 with error 0.1",
-        "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0_1.txt",
-        "error_type": "random",
-        "error_rate": 0.1,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for pinyin-news with error 0",
-        "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0.txt",
-        "error_type": "random",
-        "error_rate": 0,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for pinyin-news with error 0.001",
-        "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0_001.txt",
-        "error_type": "random",
-        "error_rate": 0.001,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for pinyin-news with error 0.003",
-        "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0_003.txt",
-        "error_type": "random",
-        "error_rate": 0.003,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for pinyin-news with error 0.01",
-        "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0_01.txt",
-        "error_type": "random",
-        "error_rate": 0.01,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for pinyin-news with error 0.05",
-        "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0_05.txt",
-        "error_type": "random",
-        "error_rate": 0.05,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for pinyin-news with error 0.1",
-        "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0_1.txt",
-        "error_type": "random",
-        "error_rate": 0.1,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for pinyin-cc100 with error 0",
+        "mode": "split",
+        "description": "Split pinyin-cc100-0.txt with 0.5 into pinyin-cc100-0-train.txt and pinyin-cc100-0-test.txt datasets.",
         "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0.txt",
-        "error_type": "random",
-        "error_rate": 0,
-        "status": "done"
+        "train_file_path": ".\\Train_Datasets\\pinyin-cc100-0-train.txt",
+        "test_file_path": ".\\Test_Datasets\\pinyin-cc100-0-test.txt",
+        "train_test_split_ratio": 0.5
     },
     {
-        "mode": "gen_error",
-        "description": "Generate random error for pinyin-cc100 with error 0.001",
-        "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0_001.txt",
-        "error_type": "random",
-        "error_rate": 0.001,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for pinyin-cc100 with error 0.003",
-        "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0_003.txt",
-        "error_type": "random",
-        "error_rate": 0.003,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for pinyin-cc100 with error 0.01",
-        "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0_01.txt",
-        "error_type": "random",
-        "error_rate": 0.01,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for pinyin-cc100 with error 0.05",
-        "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0_05.txt",
-        "error_type": "random",
-        "error_rate": 0.05,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for pinyin-cc100 with error 0.1",
-        "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0_1.txt",
-        "error_type": "random",
-        "error_rate": 0.1,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for english with error 0",
+        "mode": "split",
+        "description": "Split english-0.txt with 0.5 into english-0-train.txt and english-0-test.txt datasets.",
         "input_file_path": ".\\Key_Stroke_Datasets\\english-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\english-0.txt",
-        "error_type": "random",
-        "error_rate": 0,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for english with error 0.001",
-        "input_file_path": ".\\Key_Stroke_Datasets\\english-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\english-0_001.txt",
-        "error_type": "random",
-        "error_rate": 0.001,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for english with error 0.003",
-        "input_file_path": ".\\Key_Stroke_Datasets\\english-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\english-0_003.txt",
-        "error_type": "random",
-        "error_rate": 0.003,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for english with error 0.01",
-        "input_file_path": ".\\Key_Stroke_Datasets\\english-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\english-0_01.txt",
-        "error_type": "random",
-        "error_rate": 0.01,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for english with error 0.05",
-        "input_file_path": ".\\Key_Stroke_Datasets\\english-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\english-0_05.txt",
-        "error_type": "random",
-        "error_rate": 0.05,
-        "status": "done"
-    },
-    {
-        "mode": "gen_error",
-        "description": "Generate random error for english with error 0.1",
-        "input_file_path": ".\\Key_Stroke_Datasets\\english-0.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\english-0_1.txt",
-        "error_type": "random",
-        "error_rate": 0.1,
-        "status": "done"
+        "train_file_path": ".\\Train_Datasets\\english-0-train.txt",
+        "test_file_path": ".\\Test_Datasets\\english-0-test.txt",
+        "train_test_split_ratio": 0.5
     }
 ]

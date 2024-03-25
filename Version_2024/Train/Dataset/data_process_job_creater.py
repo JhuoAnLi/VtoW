@@ -4,6 +4,8 @@ import json
 if __name__ == "__main__":
     PLAIN_TEXT_DATASET_PATH = ".\\Plain_Text_Datasets\\"
     KEY_STROKE_DATASET_PATH = ".\\Key_Stroke_Datasets\\"
+    TRAIN_DATASET_PATH = ".\\Train_Datasets\\"
+    TEST_DATASET_PATH = ".\\Test_Datasets\\"
     FILE_NAME = "data_process_job.json"
 
     job_list = []
@@ -72,29 +74,48 @@ if __name__ == "__main__":
                 })
 
 
-    # Create Error Dataset from existing keystroke dataset
-    mode = "gen_error"
-    src_files = ["bopomofo-news-0.txt", "bopomofo-cc100-0.txt", 
-                 "cangjie-news-0.txt", "cangjie-cc100-0.txt", 
-                 "pinyin-news-0.txt", "pinyin-cc100-0.txt", 
-                 "english-0.txt"]
-    error_rates = [0, 0.001, 0.003, 0.01, 0.05, 0.1]
-    error_types = ["random"]
-
-    # job_list = []
+    # Split Dataset into Train and Test Dataset
+    mode = "split"
+    src_files = ["bopomofo-cc100-0.txt", "cangjie-cc100-0.txt", "pinyin-cc100-0.txt", "english-0.txt"]
+    train_test_split_ratio = 0.5
     for src_file in src_files:
-        for error_type in error_types:
-            for error_rate in error_rates:
-                dataset_name = "-".join(src_file.split("-")[:-1])
-                error_rate_name = str(error_rate).replace(".", "_")
-                job_list.append({
-                    "mode": mode,
-                    "description": f"Generate {error_type} error for {dataset_name} with error {error_rate}",
-                    "input_file_path": KEY_STROKE_DATASET_PATH + src_file, 
-                    "output_file_path": KEY_STROKE_DATASET_PATH + src_file.replace("-0.txt", f"-{error_rate_name}.txt"),
-                    "error_type": error_type,
-                    "error_rate": error_rate
-                    })
+        train_file_name = src_file.replace("-0.txt", "-0-train.txt")
+        test_file_name = src_file.replace("-0.txt", "-0-test.txt")
+
+        job_list.append({
+            "mode": mode,
+            "description": f"Split {src_file} with {train_test_split_ratio} into {train_file_name} and {test_file_name} datasets.",
+            "input_file_path": KEY_STROKE_DATASET_PATH + src_file, 
+            "train_file_path": TRAIN_DATASET_PATH + train_file_name,
+            "test_file_path": TEST_DATASET_PATH + test_file_name,
+            "train_test_split_ratio": train_test_split_ratio
+            })
+
+
+
+    # Create Error Dataset from existing keystroke dataset
+    # mode = "gen_error"
+    # src_files = ["bopomofo-news-0.txt", "bopomofo-cc100-0.txt", 
+    #              "cangjie-news-0.txt", "cangjie-cc100-0.txt", 
+    #              "pinyin-news-0.txt", "pinyin-cc100-0.txt", 
+    #              "english-0.txt"]
+    # error_rates = [0, 0.001, 0.003, 0.01, 0.05, 0.1]
+    # error_types = ["random"]
+
+    # # job_list = []
+    # for src_file in src_files:
+    #     for error_type in error_types:
+    #         for error_rate in error_rates:
+    #             dataset_name = "-".join(src_file.split("-")[:-1])
+    #             error_rate_name = str(error_rate).replace(".", "_")
+    #             job_list.append({
+    #                 "mode": mode,
+    #                 "description": f"Generate {error_type} error for {dataset_name} with error {error_rate}",
+    #                 "input_file_path": KEY_STROKE_DATASET_PATH + src_file, 
+    #                 "output_file_path": KEY_STROKE_DATASET_PATH + src_file.replace("-0.txt", f"-{error_rate_name}.txt"),
+    #                 "error_type": error_type,
+    #                 "error_rate": error_rate
+    #                 })
                 
 
 
