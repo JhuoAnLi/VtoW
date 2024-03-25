@@ -1,18 +1,17 @@
 import os
 
-from joblib import Parallel, delayed
 from tqdm import tqdm
 
 if __name__ == "__main__":
-    SRC_DATASET_PATH = "Version_2024\\Train\\Dataset\\Key_Stroke_Datasets\\"
-    TARGET_DATASET_PATH = "Version_2024\\Train\\Dataset\\Train_Datasets\\"
+    SRC_DATASET_PATH = ".\\Train_Datasets\\"
+    TARGET_DATASET_PATH = ".\\Train_Datasets\\"
 
-    cut_sizes = [20, 5, 3]
+    cut_sizes = [20]
     target_languages = ["bopomofo", "cangjie", "pinyin", "english"]
     error_rates = [0]
 
 
-    data_file_names = ["bopomofo-cc100-0.txt", "cangjie-cc100-0.txt", "pinyin-cc100-0.txt", "english-0.txt"]
+    data_file_names = ["bopomofo-cc100-0-train.txt", "cangjie-cc100-0-train.txt", "pinyin-cc100-0-train.txt", "english-0-train.txt"]
 
     if not os.path.exists(TARGET_DATASET_PATH):
         os.makedirs(TARGET_DATASET_PATH)
