@@ -16,6 +16,9 @@ user_list = ["輸入1", "輸入2", "輸入3", "輸入4"]
 while True:
     temp_output_list = []
     output = query({"inputs": masked_input})
+    for i in range(len(output)):
+        print(output[i])
+    # print(output)
     # need to order bert output and user_list
     for i in range(len(output)):
         temp_output = "".join(output[i]["sequence"].split())
