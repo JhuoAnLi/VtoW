@@ -100,5 +100,69 @@
         "train_file_path": ".\\Train_Datasets\\english-0-train.txt",
         "test_file_path": ".\\Test_Datasets\\english-0-test.txt",
         "train_test_split_ratio": 0.5
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate random error for cc100 with error rate 0.1",
+        "input_file_path": ".\\Test_Datasets\\bopomofo-cc100-0-test.txt",
+        "output_file_path": ".\\Test_Datasets\\bopomofo-cc100-0_1-test.txt",
+        "error_type": "random",
+        "error_rate": 0.1
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate random error for cc100 with error rate 0.01",
+        "input_file_path": ".\\Test_Datasets\\bopomofo-cc100-0-test.txt",
+        "output_file_path": ".\\Test_Datasets\\bopomofo-cc100-0_01-test.txt",
+        "error_type": "random",
+        "error_rate": 0.01
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate random error for cc100 with error rate 0.1",
+        "input_file_path": ".\\Test_Datasets\\cangjie-cc100-0-test.txt",
+        "output_file_path": ".\\Test_Datasets\\cangjie-cc100-0_1-test.txt",
+        "error_type": "random",
+        "error_rate": 0.1
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate random error for cc100 with error rate 0.01",
+        "input_file_path": ".\\Test_Datasets\\cangjie-cc100-0-test.txt",
+        "output_file_path": ".\\Test_Datasets\\cangjie-cc100-0_01-test.txt",
+        "error_type": "random",
+        "error_rate": 0.01
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate random error for cc100 with error rate 0.1",
+        "input_file_path": ".\\Test_Datasets\\pinyin-cc100-0-test.txt",
+        "output_file_path": ".\\Test_Datasets\\pinyin-cc100-0_1-test.txt",
+        "error_type": "random",
+        "error_rate": 0.1
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate random error for cc100 with error rate 0.01",
+        "input_file_path": ".\\Test_Datasets\\pinyin-cc100-0-test.txt",
+        "output_file_path": ".\\Test_Datasets\\pinyin-cc100-0_01-test.txt",
+        "error_type": "random",
+        "error_rate": 0.01
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate random error for cc100 with error rate 0.1",
+        "input_file_path": ".\\Test_Datasets\\english-0-test.txt",
+        "output_file_path": ".\\Test_Datasets\\english-0_1-test.txt",
+        "error_type": "random",
+        "error_rate": 0.1
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate random error for cc100 with error rate 0.01",
+        "input_file_path": ".\\Test_Datasets\\english-0-test.txt",
+        "output_file_path": ".\\Test_Datasets\\english-0_01-test.txt",
+        "error_type": "random",
+        "error_rate": 0.01
     }
 ]

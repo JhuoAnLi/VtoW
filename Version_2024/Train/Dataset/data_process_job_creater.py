@@ -94,28 +94,25 @@ if __name__ == "__main__":
 
 
     # Create Error Dataset from existing keystroke dataset
-    # mode = "gen_error"
-    # src_files = ["bopomofo-news-0.txt", "bopomofo-cc100-0.txt", 
-    #              "cangjie-news-0.txt", "cangjie-cc100-0.txt", 
-    #              "pinyin-news-0.txt", "pinyin-cc100-0.txt", 
-    #              "english-0.txt"]
-    # error_rates = [0, 0.001, 0.003, 0.01, 0.05, 0.1]
-    # error_types = ["random"]
+    mode = "gen_error"
+    src_files = ["bopomofo-cc100-0-test.txt", "cangjie-cc100-0-test.txt", "pinyin-cc100-0-test.txt", "english-0-test.txt"]
+    error_rates = [0.1, 0.01]
+    error_types = ["random"]
 
-    # # job_list = []
-    # for src_file in src_files:
-    #     for error_type in error_types:
-    #         for error_rate in error_rates:
-    #             dataset_name = "-".join(src_file.split("-")[:-1])
-    #             error_rate_name = str(error_rate).replace(".", "_")
-    #             job_list.append({
-    #                 "mode": mode,
-    #                 "description": f"Generate {error_type} error for {dataset_name} with error {error_rate}",
-    #                 "input_file_path": KEY_STROKE_DATASET_PATH + src_file, 
-    #                 "output_file_path": KEY_STROKE_DATASET_PATH + src_file.replace("-0.txt", f"-{error_rate_name}.txt"),
-    #                 "error_type": error_type,
-    #                 "error_rate": error_rate
-    #                 })
+    # job_list = []
+    for src_file in src_files:
+        for error_type in error_types:
+            for error_rate in error_rates:
+                error_rate_name = str(error_rate).replace(".", "_")
+                output_file_name = src_file.replace("-0-", f"-{error_rate_name}-")
+                job_list.append({
+                    "mode": mode,
+                    "description": f"Generate {error_type} error for {dataset_name} with error rate {error_rate}",
+                    "input_file_path": TEST_DATASET_PATH + src_file, 
+                    "output_file_path": TEST_DATASET_PATH + output_file_name,
+                    "error_type": error_type,
+                    "error_rate": error_rate
+                    })
                 
 
 
