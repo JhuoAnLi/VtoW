@@ -5,16 +5,18 @@ from tqdm import tqdm
 # generate test data from news data
 
 if __name__ == "__main__":
-    SRC_DATASET_PATH = "Version_2024\\Train\\Dataset\\Key_Stroke_Datasets\\"
-    TARGET_DATASET_PATH = "Version_2024\\Train\\Dataset\\Test_Datasets\\"
+    SRC_DATASET_PATH = ".\Test_Datasets\\"
+    TARGET_DATASET_PATH = ".\Test_Datasets\\"
 
     cut_sizes = [20, 5, 3]
     target_languages = ["bopomofo", "cangjie", "pinyin", "english"]
     error_rates = [0, 0.1]
-    data_file_name_prefix = ["bopomofo-news", "cangjie-news", "pinyin-news", "english"]
+    data_file_name_prefix = ["bopomofo-cc100", "cangjie-cc100", "pinyin-cc100", "english"]  # todo: fix here
 
-    if not os.path.exists(TARGET_DATASET_PATH):
-            os.makedirs(TARGET_DATASET_PATH)
+    for file in os.listdir(SRC_DATASET_PATH):
+        if not file.endswith("-test.txt"):
+            os.remove(SRC_DATASET_PATH + file)
+
     for target_language in target_languages:
         for error_rate in error_rates:
             for cut_size in cut_sizes:
@@ -23,7 +25,7 @@ if __name__ == "__main__":
                 TARGET_LANGUAGE = target_language
                 ERROR_RATE = error_rate
 
-                target_file_name = "{}-news-{}-len{}.txt".format(TARGET_LANGUAGE, str(ERROR_RATE).replace(".", "_"), CUT_SIZE)
+                target_file_name = "{}-{}-len{}-test.txt".format(TARGET_LANGUAGE, str(ERROR_RATE).replace(".", "_"), CUT_SIZE)
 
                 if os.path.exists(TARGET_DATASET_PATH + target_file_name):
                     if "y" == input("File already exists. Do you want to overwrite it? (y/n)"):
@@ -34,7 +36,9 @@ if __name__ == "__main__":
                         continue
 
                 error_rate_name = str(ERROR_RATE).replace(".", "_")
-                data_file_names = [f"{data_file_name_prefix[i]}-{error_rate_name}.txt" for i in range(4)]
+
+
+                data_file_names = [f"{data_file_name_prefix[i]}-{error_rate_name}-test.txt" for i in range(4)]
 
                 for file_name in tqdm(data_file_names, desc="Processing files"):
                     with open(SRC_DATASET_PATH + file_name, "r", encoding="utf-8") as file:
