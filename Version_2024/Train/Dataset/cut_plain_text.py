@@ -5,7 +5,7 @@ if __name__ == "__main__":
     TARGET_DATASET_PATH = ".\\Plain_Text_Datasets\\"
 
     # cut Chinse text in to 3 words
-    cut_word_sizes = [3]
+    cut_word_sizes = [4]
     src_file_names = ["Chinese_WebCrawlData_cc100-ch"]
 
     for src_file_name in src_file_names:
