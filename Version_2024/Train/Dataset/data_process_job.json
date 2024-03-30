@@ -4,70 +4,80 @@
         "description": "Clean Chinese_news.txt to chinese",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_news.txt",
         "output_file_path": ".\\Plain_Text_Datasets\\Chinese_news-ch.txt",
-        "language": "chinese"
+        "language": "chinese",
+        "status": "done"
     },
     {
         "mode": "clean",
         "description": "Clean Chinese_WebCrawlData_cc100.txt to chinese",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100.txt",
         "output_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch.txt",
-        "language": "chinese"
+        "language": "chinese",
+        "status": "done"
     },
     {
         "mode": "clean",
         "description": "Clean Chinese_gossip.txt to chinese",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_gossip.txt",
         "output_file_path": ".\\Plain_Text_Datasets\\Chinese_gossip-ch.txt",
-        "language": "chinese"
+        "language": "chinese",
+        "status": "done"
     },
     {
         "mode": "convert",
         "description": "Convert Chinese_news-ch.txt to bopomofo",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_news-ch.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0.txt",
-        "convert_type": "bopomofo"
+        "convert_type": "bopomofo",
+        "status": "done"
     },
     {
         "mode": "convert",
         "description": "Convert Chinese_news-ch.txt to cangjie",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_news-ch.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0.txt",
-        "convert_type": "cangjie"
+        "convert_type": "cangjie",
+        "status": "done"
     },
     {
         "mode": "convert",
         "description": "Convert Chinese_news-ch.txt to pinyin",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_news-ch.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0.txt",
-        "convert_type": "pinyin"
+        "convert_type": "pinyin",
+        "status": "done"
     },
     {
         "mode": "convert",
         "description": "Convert Chinese_WebCrawlData_cc100-ch.txt to bopomofo",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0.txt",
-        "convert_type": "bopomofo"
+        "convert_type": "bopomofo",
+        "status": "done"
     },
     {
         "mode": "convert",
         "description": "Convert Chinese_WebCrawlData_cc100-ch.txt to cangjie",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0.txt",
-        "convert_type": "cangjie"
+        "convert_type": "cangjie",
+        "status": "done"
     },
     {
         "mode": "convert",
         "description": "Convert Chinese_WebCrawlData_cc100-ch.txt to pinyin",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0.txt",
-        "convert_type": "pinyin"
+        "convert_type": "pinyin",
+        "status": "done"
     },
     {
         "mode": "convert",
         "description": "Convert English.txt to english",
         "input_file_path": ".\\Plain_Text_Datasets\\English.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\english-0.txt",
-        "convert_type": "english"
+        "convert_type": "english",
+        "status": "done"
     },
     {
         "mode": "split",
@@ -75,7 +85,8 @@
         "input_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0.txt",
         "train_file_path": ".\\Train_Datasets\\bopomofo-cc100-0-train.txt",
         "test_file_path": ".\\Test_Datasets\\bopomofo-cc100-0-test.txt",
-        "train_test_split_ratio": 0.5
+        "train_test_split_ratio": 0.5,
+        "status": "done"
     },
     {
         "mode": "split",
@@ -83,7 +94,8 @@
         "input_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0.txt",
         "train_file_path": ".\\Train_Datasets\\cangjie-cc100-0-train.txt",
         "test_file_path": ".\\Test_Datasets\\cangjie-cc100-0-test.txt",
-        "train_test_split_ratio": 0.5
+        "train_test_split_ratio": 0.5,
+        "status": "done"
     },
     {
         "mode": "split",
@@ -91,7 +103,8 @@
         "input_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0.txt",
         "train_file_path": ".\\Train_Datasets\\pinyin-cc100-0-train.txt",
         "test_file_path": ".\\Test_Datasets\\pinyin-cc100-0-test.txt",
-        "train_test_split_ratio": 0.5
+        "train_test_split_ratio": 0.5,
+        "status": "done"
     },
     {
         "mode": "split",
@@ -99,7 +112,8 @@
         "input_file_path": ".\\Key_Stroke_Datasets\\english-0.txt",
         "train_file_path": ".\\Train_Datasets\\english-0-train.txt",
         "test_file_path": ".\\Test_Datasets\\english-0-test.txt",
-        "train_test_split_ratio": 0.5
+        "train_test_split_ratio": 0.5,
+        "status": "done"
     },
     {
         "mode": "gen_error",
@@ -107,7 +121,8 @@
         "input_file_path": ".\\Test_Datasets\\bopomofo-cc100-0-test.txt",
         "output_file_path": ".\\Test_Datasets\\bopomofo-cc100-0_1-test.txt",
         "error_type": "random",
-        "error_rate": 0.1
+        "error_rate": 0.1,
+        "status": "done"
     },
     {
         "mode": "gen_error",
@@ -115,7 +130,8 @@
         "input_file_path": ".\\Test_Datasets\\bopomofo-cc100-0-test.txt",
         "output_file_path": ".\\Test_Datasets\\bopomofo-cc100-0_01-test.txt",
         "error_type": "random",
-        "error_rate": 0.01
+        "error_rate": 0.01,
+        "status": "done"
     },
     {
         "mode": "gen_error",
@@ -123,7 +139,8 @@
         "input_file_path": ".\\Test_Datasets\\cangjie-cc100-0-test.txt",
         "output_file_path": ".\\Test_Datasets\\cangjie-cc100-0_1-test.txt",
         "error_type": "random",
-        "error_rate": 0.1
+        "error_rate": 0.1,
+        "status": "done"
     },
     {
         "mode": "gen_error",
@@ -131,7 +148,8 @@
         "input_file_path": ".\\Test_Datasets\\cangjie-cc100-0-test.txt",
         "output_file_path": ".\\Test_Datasets\\cangjie-cc100-0_01-test.txt",
         "error_type": "random",
-        "error_rate": 0.01
+        "error_rate": 0.01,
+        "status": "done"
     },
     {
         "mode": "gen_error",
@@ -139,7 +157,8 @@
         "input_file_path": ".\\Test_Datasets\\pinyin-cc100-0-test.txt",
         "output_file_path": ".\\Test_Datasets\\pinyin-cc100-0_1-test.txt",
         "error_type": "random",
-        "error_rate": 0.1
+        "error_rate": 0.1,
+        "status": "done"
     },
     {
         "mode": "gen_error",
@@ -147,7 +166,8 @@
         "input_file_path": ".\\Test_Datasets\\pinyin-cc100-0-test.txt",
         "output_file_path": ".\\Test_Datasets\\pinyin-cc100-0_01-test.txt",
         "error_type": "random",
-        "error_rate": 0.01
+        "error_rate": 0.01,
+        "status": "done"
     },
     {
         "mode": "gen_error",
@@ -155,7 +175,8 @@
         "input_file_path": ".\\Test_Datasets\\english-0-test.txt",
         "output_file_path": ".\\Test_Datasets\\english-0_1-test.txt",
         "error_type": "random",
-        "error_rate": 0.1
+        "error_rate": 0.1,
+        "status": "done"
     },
     {
         "mode": "gen_error",
@@ -163,6 +184,7 @@
         "input_file_path": ".\\Test_Datasets\\english-0-test.txt",
         "output_file_path": ".\\Test_Datasets\\english-0_01-test.txt",
         "error_type": "random",
-        "error_rate": 0.01
+        "error_rate": 0.01,
+        "status": "done"
     }
 ]
