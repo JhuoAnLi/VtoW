@@ -66,9 +66,9 @@ class KeyStrokeConverter:
             return cangjie_key_map_dict
 
         def setup_cangjie_key_map():  # todo: make the dict not load every time
-            file = ".\\cangjie_key_map.txt"
+            file = "cangjie_key_map.txt"
             cangjie_key_map_dict = {}
-            with open(file, "r", encoding="utf-8") as file:
+            with open(os.path.dirname(__file__) + "\\" + file , "r", encoding="utf-8") as file:
                 lines = file.readlines()
                 for line in lines:
                     parts = line.strip().split()
