@@ -41,18 +41,40 @@ class KeyStrokeConverter:
     @classmethod
     def _StringToCangjieKey(cls, input_string:str) -> str:
 
-        def setup_cangjie_key_map() -> dict:  # todo: make the dict not load every time
+        def cangjie_key_map_create() -> dict:  # Deprecated
             files = ["Cangjie5.txt", "Cangjie-markers.txt"]
 
             cangjie_key_map_dict = {}
+            counter = 0
             for filename in files:
                 with open(os.path.dirname(__file__) + "\\" + filename, "r", encoding="utf-8") as file:
-                    for line in file:
+                    lines = file.readlines()[:118190]  # beacuse the remain lines are symbols
+                    
+                    for line in lines:
                         parts = line.strip().split()
-                        if len(parts) == 2:
-                            word, cangjie_key = parts
-                            cangjie_key_map_dict.setdefault(word, cangjie_key)
+                        word, cangjie_key = parts[0], parts[1]
+                        if cangjie_key_map_dict.get(word) is not None:
+                            counter += 1
+                            cangjie_key_map_dict[word] = cangjie_key_map_dict[word] + [cangjie_key]
 
+                        cangjie_key_map_dict.setdefault(word, [cangjie_key])
+            print("Duplicate words: " + str(counter))
+
+            with open(os.path.dirname(__file__) + "\\cangjie_key_map.txt", "w", encoding="utf-8") as file:
+                for key, value in cangjie_key_map_dict.items():
+                    file.write(key + " " + " ".join(value) + "\n")
+            return cangjie_key_map_dict
+
+        def setup_cangjie_key_map():  # todo: make the dict not load every time
+            file = ".\\cangjie_key_map.txt"
+            cangjie_key_map_dict = {}
+            with open(file, "r", encoding="utf-8") as file:
+                lines = file.readlines()
+                for line in lines:
+                    parts = line.strip().split()
+                    word, cangjie_keys = parts[0], parts[1:]
+                    cangjie_key = cangjie_keys[0]
+                    cangjie_key_map_dict[word] = cangjie_key
             return cangjie_key_map_dict
 
         cangjie_map_dict = setup_cangjie_key_map()
@@ -243,9 +265,9 @@ class KeyStrokeConverter:
         print(f"Conversion Success: {output_file_path}")
 
 if __name__ == '__main__':
-    # input_string = "頒行政院長陳建仁今（16）日出席「112年鳳凰獎楷模表揚典禮」，頒獎表揚74名獲獎義消"
-    # convert_type = "pinyin"
-    # print(KeyStrokeConverter.convert(input_string, convert_type))
-    input_file =  "..\\Plain_Text_Datasets\\bbb.txt"
-    output_file =  "..\\Key_Stroke_Datasets\\aaa.txt"
-    KeyStrokeConverter.convert_file_parallel(input_file, output_file, convert_type="cangjie", num_processes=4)
+    input_string = "僅頒行政院長陳建仁今（16）日出席「112年鳳凰獎楷模表揚典禮」，頒獎表揚74名獲獎義消"
+    convert_type = "cangjie"
+    print(KeyStrokeConverter.convert(input_string, convert_type))
+    # input_file =  "..\\Plain_Text_Datasets\\bbb.txt"
+    # output_file =  "..\\Key_Stroke_Datasets\\aaa.txt"
+    # KeyStrokeConverter.convert_file_parallel(input_file, output_file, convert_type="cangjie", num_processes=4)
