@@ -40,9 +40,9 @@ if __name__ == "__main__":
 
     # Create KeyStroke Dataset from existing plain text dataset
     mode = "convert"
-    src_files = ["Chinese_news-ch.txt", "Chinese_WebCrawlData_cc100-ch.txt"]
+    src_files = ["Chinese_WebCrawlData_cc100-ch-w4.txt"]
     convert_types = ["bopomofo", "cangjie", "pinyin"]
-    skip_convert = True
+    skip_convert = False
 
     for src_file in src_files:
         for convert_type in convert_types:
@@ -64,7 +64,7 @@ if __name__ == "__main__":
                 })
 
     mode = "convert"
-    src_files = ["English.txt"]
+    src_files = ["English-w1.txt"]
     convert_types = ["english"]
     for src_file in src_files:
         for convert_type in convert_types:
@@ -82,7 +82,7 @@ if __name__ == "__main__":
     mode = "split"
     src_files = ["bopomofo-cc100-0.txt", "cangjie-cc100-0.txt", "pinyin-cc100-0.txt", "english-0.txt"]
     train_test_split_ratio = 0.5
-    skip_split = True
+    skip_split = False
 
     for src_file in src_files:
         train_file_name = src_file.replace("-0.txt", "-0-train.txt")
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     src_files = ["bopomofo-cc100-0-test.txt", "cangjie-cc100-0-test.txt", "pinyin-cc100-0-test.txt", "english-0-test.txt"]
     error_rates = [0.1, 0.01]
     error_types = ["random"]
-    skip_gen_error = True
+    skip_gen_error = False
 
     # job_list = []
     for src_file in src_files:

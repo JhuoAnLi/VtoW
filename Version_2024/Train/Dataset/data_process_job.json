@@ -25,56 +25,32 @@
     },
     {
         "mode": "convert",
-        "description": "Convert Chinese_news-ch.txt to bopomofo",
-        "input_file_path": ".\\Plain_Text_Datasets\\Chinese_news-ch.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-news-0.txt",
-        "convert_type": "bopomofo",
-        "status": "done"
-    },
-    {
-        "mode": "convert",
-        "description": "Convert Chinese_news-ch.txt to cangjie",
-        "input_file_path": ".\\Plain_Text_Datasets\\Chinese_news-ch.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-news-0.txt",
-        "convert_type": "cangjie",
-        "status": "done"
-    },
-    {
-        "mode": "convert",
-        "description": "Convert Chinese_news-ch.txt to pinyin",
-        "input_file_path": ".\\Plain_Text_Datasets\\Chinese_news-ch.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-news-0.txt",
-        "convert_type": "pinyin",
-        "status": "done"
-    },
-    {
-        "mode": "convert",
-        "description": "Convert Chinese_WebCrawlData_cc100-ch.txt to bopomofo",
-        "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch.txt",
+        "description": "Convert Chinese_WebCrawlData_cc100-ch-w4.txt to bopomofo",
+        "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch-w4.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\bopomofo-cc100-0.txt",
         "convert_type": "bopomofo",
         "status": "done"
     },
     {
         "mode": "convert",
-        "description": "Convert Chinese_WebCrawlData_cc100-ch.txt to cangjie",
-        "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch.txt",
+        "description": "Convert Chinese_WebCrawlData_cc100-ch-w4.txt to cangjie",
+        "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch-w4.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\cangjie-cc100-0.txt",
         "convert_type": "cangjie",
         "status": "done"
     },
     {
         "mode": "convert",
-        "description": "Convert Chinese_WebCrawlData_cc100-ch.txt to pinyin",
-        "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch.txt",
+        "description": "Convert Chinese_WebCrawlData_cc100-ch-w4.txt to pinyin",
+        "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch-w4.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\pinyin-cc100-0.txt",
         "convert_type": "pinyin",
         "status": "done"
     },
     {
         "mode": "convert",
-        "description": "Convert English.txt to english",
-        "input_file_path": ".\\Plain_Text_Datasets\\English.txt",
+        "description": "Convert English-w1.txt to english",
+        "input_file_path": ".\\Plain_Text_Datasets\\English-w1.txt",
         "output_file_path": ".\\Key_Stroke_Datasets\\english-0.txt",
         "convert_type": "english",
         "status": "done"
