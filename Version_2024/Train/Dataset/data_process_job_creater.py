@@ -14,7 +14,7 @@ if __name__ == "__main__":
     mode = "clean"
     src_files = ["Chinese_news.txt", "Chinese_WebCrawlData_cc100.txt", "Chinese_gossip.txt"]
     languages = ["chinese"]
-
+    skip_clean = True
 
     for src_file in src_files:
         for language in languages:
@@ -33,7 +33,8 @@ if __name__ == "__main__":
                 "description": f"Clean {src_file} to {language}",
                 "input_file_path": PLAIN_TEXT_DATASET_PATH + src_file, 
                 "output_file_path": PLAIN_TEXT_DATASET_PATH + f"{src_file.replace('.txt', '-ch.txt')}",
-                "language": language
+                "language": language,
+                "status": "done" if skip_clean else None
                 })
 
 
@@ -41,6 +42,7 @@ if __name__ == "__main__":
     mode = "convert"
     src_files = ["Chinese_news-ch.txt", "Chinese_WebCrawlData_cc100-ch.txt"]
     convert_types = ["bopomofo", "cangjie", "pinyin"]
+    skip_convert = True
 
     for src_file in src_files:
         for convert_type in convert_types:
@@ -57,7 +59,8 @@ if __name__ == "__main__":
                 "description": f"Convert {src_file} to {convert_type}",
                 "input_file_path": PLAIN_TEXT_DATASET_PATH + src_file, 
                 "output_file_path": KEY_STROKE_DATASET_PATH + f"{convert_type}-{dataset_name}-0.txt",
-                "convert_type": convert_type
+                "convert_type": convert_type,
+                "status": "done" if skip_convert else None
                 })
 
     mode = "convert"
@@ -70,7 +73,8 @@ if __name__ == "__main__":
                 "description": f"Convert {src_file} to {convert_type}",
                 "input_file_path": PLAIN_TEXT_DATASET_PATH + src_file, 
                 "output_file_path": KEY_STROKE_DATASET_PATH + f"{convert_type}-0.txt",
-                "convert_type": convert_type
+                "convert_type": convert_type,
+                "status": "done" if skip_convert else None
                 })
 
 
@@ -78,6 +82,8 @@ if __name__ == "__main__":
     mode = "split"
     src_files = ["bopomofo-cc100-0.txt", "cangjie-cc100-0.txt", "pinyin-cc100-0.txt", "english-0.txt"]
     train_test_split_ratio = 0.5
+    skip_split = True
+
     for src_file in src_files:
         train_file_name = src_file.replace("-0.txt", "-0-train.txt")
         test_file_name = src_file.replace("-0.txt", "-0-test.txt")
@@ -88,7 +94,8 @@ if __name__ == "__main__":
             "input_file_path": KEY_STROKE_DATASET_PATH + src_file, 
             "train_file_path": TRAIN_DATASET_PATH + train_file_name,
             "test_file_path": TEST_DATASET_PATH + test_file_name,
-            "train_test_split_ratio": train_test_split_ratio
+            "train_test_split_ratio": train_test_split_ratio,
+            "status": "done" if skip_split else None
             })
 
 
@@ -98,6 +105,7 @@ if __name__ == "__main__":
     src_files = ["bopomofo-cc100-0-test.txt", "cangjie-cc100-0-test.txt", "pinyin-cc100-0-test.txt", "english-0-test.txt"]
     error_rates = [0.1, 0.01]
     error_types = ["random"]
+    skip_gen_error = True
 
     # job_list = []
     for src_file in src_files:
@@ -111,7 +119,8 @@ if __name__ == "__main__":
                     "input_file_path": TEST_DATASET_PATH + src_file, 
                     "output_file_path": TEST_DATASET_PATH + output_file_name,
                     "error_type": error_type,
-                    "error_rate": error_rate
+                    "error_rate": error_rate,
+                    "status": "done" if skip_gen_error else None
                     })
                 
 
