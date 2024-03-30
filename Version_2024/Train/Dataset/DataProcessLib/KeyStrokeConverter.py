@@ -56,7 +56,11 @@ class KeyStrokeConverter:
             return cangjie_key_map_dict
 
         cangjie_map_dict = setup_cangjie_key_map()
-        result = ' '.join(cangjie_map_dict.get(char, char) for char in input_string)
+        
+        lines = input_string.split("\n")
+        result = ""
+        for line in lines:
+            result += ' '.join(cangjie_map_dict.get(char, char) for char in line) + "\n"
 
         return result
 
@@ -88,6 +92,7 @@ class KeyStrokeConverter:
                     for word in bopomofo:
                         keystroke += cls.full_width_map.get(word, word)
                 else:
+                        
                     for word in bopomofo:
                         keystroke += map.get(word, word)
                     
@@ -100,10 +105,13 @@ class KeyStrokeConverter:
                     # raise ValueError("Invalid bopomofo: " + bopomofo)
             
             return keystroke
-        
-        BOPOMOFO_result = [pin[0] for pin in pinyin(input_string, style=Style.BOPOMOFO)]
-        result = [bopomofo_to_keystroke(word) for word in BOPOMOFO_result]
-        result = "".join(result)
+        lines = input_string.split("\n")
+        result = ""
+        for line in lines:
+            BOPOMOFO_result = [pin[0] for pin in pinyin(line, style=Style.BOPOMOFO)]
+            keystorke_result = [bopomofo_to_keystroke(word) for word in BOPOMOFO_result]
+            keystorke_result = "".join(keystorke_result)
+            result += keystorke_result + "\n"
 
         return result
 
@@ -238,6 +246,6 @@ if __name__ == '__main__':
     # input_string = "頒行政院長陳建仁今（16）日出席「112年鳳凰獎楷模表揚典禮」，頒獎表揚74名獲獎義消"
     # convert_type = "pinyin"
     # print(KeyStrokeConverter.convert(input_string, convert_type))
-    input_file =  "..\\Plain_Text_Datasets\\Chinese_news-ch.txt"
+    input_file =  "..\\Plain_Text_Datasets\\bbb.txt"
     output_file =  "..\\Key_Stroke_Datasets\\aaa.txt"
-    KeyStrokeConverter.convert_file_parallel(input_file, output_file, convert_type="bopomofo", num_processes=4)
+    KeyStrokeConverter.convert_file_parallel(input_file, output_file, convert_type="cangjie", num_processes=4)
