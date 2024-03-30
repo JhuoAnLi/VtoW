@@ -50,7 +50,7 @@ def custom_tokenizer_pinyin(text):
     )
     matches = re.findall(pattern, text)
     tokens.extend(matches)
-    if tokens[-1].find("§") != -1:
+    if tokens and tokens[-1].find("§") != -1:
         tokens.pop()
     return tokens
 
@@ -59,7 +59,7 @@ class IMEClassifier:
     def __init__(self, data):
         self.data = data
         self.labels = []
-        self.vectorizer = TfidfVectorizer()
+        self.vectorizer = TfidfVectorizer(tokenizer=custom_tokenizer_pinyin)
         self.classifiers = {}
         self.X_train, self.X_val, self.y_train, self.y_val = train_test_split(
             [text for text, _ in self.data],
@@ -131,7 +131,7 @@ class IMEClassifier:
 
 if __name__ == "__main__":
 
-    filename = "Version_2024\\Train\\Dataset\\Train_Datasets\\english-0-len3.txt"
+    filename = "Version_2024\\Train\\Dataset\\Train_Datasets\\pinyin-0-len3.txt"
     data = read_file(filename)
     random.seed(42)
     training_random_data = random.sample(data, 300000)
@@ -147,7 +147,7 @@ if __name__ == "__main__":
     # testing_random_data_list = [(line[0], int(line[1])) for line in testing_random_data]
 
     relative_path = "Version_2024\\Model_dump"
-    model_name = "english.pkl"
+    model_name = "pinyin.pkl"
     if os.path.exists(os.path.join(os.getcwd(), relative_path, model_name)):
         loaded_classifier = IMEClassifier(training_random_data)
         loaded_classifier.load_model(model_name)
