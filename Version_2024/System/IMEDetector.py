@@ -5,22 +5,16 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from abc import ABC, abstractmethod
 import re
 
+from colorama import Fore, Back, Style
+
+
+from SVMClassification import custom_tokenizer_bopomofo, custom_tokenizer_cangjie, custom_tokenizer_pinyin # fix this depends on SVMClassification.py
+
 def not_implemented_yet_decorator(func):
     def wrapper(*args, **kwargs):
         print(f'Function {func.__name__} is not implemented yet.')
         return func(*args, **kwargs)
     return wrapper
-
-def custom_tokenizer_bopomofo(text):  # fix: depand on the tokenizer using in training
-    if not text:
-        return []
-    pattern = re.compile(r"(?<=3|4|6|7| )")
-    tokens = pattern.split(text)
-    tokens = [token for token in tokens if token]
-    if tokens[-1].find("§") != -1:
-        tokens.pop()
-
-    return tokens
 
 class IMEDetector(ABC):
     @abstractmethod
@@ -72,7 +66,20 @@ class IMEDetectorSVM(IMEDetector):
     
 if __name__ == "__main__":
     my_bopomofo_detector = IMEDetectorSVM('..\\Model_dump\\bopomofo.pkl', '..\\Model_dump\\vectorizer_bopomofo.pkl')
+    my_eng_detector = IMEDetectorSVM('..\\Model_dump\\english.pkl', '..\\Model_dump\\vectorizer_english.pkl')
+    my_cangjie_detector = IMEDetectorSVM('..\\Model_dump\\cangjie.pkl', '..\\Model_dump\\vectorizer_cangjie.pkl')
+    my_pinyin_detector = IMEDetectorSVM('..\\Model_dump\\pinyin.pkl', '..\\Model_dump\\vectorizer_pinyin.pkl')
     input_text = "su3cl3"
     while True:
         input_text = input('Enter text: ')
-        print("Is bopomofo:", True if my_bopomofo_detector.predict(input_text) == "1" else False)
+        is_bopomofo = True if my_bopomofo_detector.predict(input_text) == "1" else False
+        is_cangjie = True if my_cangjie_detector.predict(input_text) == "1" else False
+        is_english = True if my_eng_detector.predict(input_text) == "1" else False
+        is_pinyin = True if my_pinyin_detector.predict(input_text) == "1" else False
+
+        print(Fore.GREEN + 'bopomofo'  if is_bopomofo else Fore.RED + 'bopomofo', end=' ')
+        print(Fore.GREEN + 'cangjie' if is_cangjie else Fore.RED + 'cangjie', end=' ')
+        print(Fore.GREEN + 'english' if is_english else Fore.RED + 'english', end=' ')
+        print(Fore.GREEN + 'pinyin' if is_pinyin else Fore.RED + 'pinyin', end=' ')
+        print(Style.RESET_ALL)
+        print()
