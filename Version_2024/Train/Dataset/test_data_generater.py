@@ -8,7 +8,7 @@ if __name__ == "__main__":
     SRC_DATASET_PATH = ".\Test_Datasets\\"
     TARGET_DATASET_PATH = ".\Test_Datasets\\"
 
-    cut_sizes = [20, 5, 3]
+    cut_sizes = [0]
     target_languages = ["bopomofo", "cangjie", "pinyin", "english"]
     error_rates = [0, 0.1]
     data_file_name_prefix = ["bopomofo-cc100", "cangjie-cc100", "pinyin-cc100", "english"]  # todo: fix here
@@ -16,12 +16,14 @@ if __name__ == "__main__":
     for file in os.listdir(SRC_DATASET_PATH):
         if not file.endswith("-test.txt"):
             os.remove(SRC_DATASET_PATH + file)
+        elif file.find("-len") > 0:
+            os.remove(TARGET_DATASET_PATH + file)
 
     for target_language in target_languages:
         for error_rate in error_rates:
             for cut_size in cut_sizes:
 
-                CUT_SIZE = cut_size
+                CUT_SIZE = "x"
                 TARGET_LANGUAGE = target_language
                 ERROR_RATE = error_rate
 
@@ -43,9 +45,10 @@ if __name__ == "__main__":
                 for file_name in tqdm(data_file_names, desc="Processing files"):
                     with open(SRC_DATASET_PATH + file_name, "r", encoding="utf-8") as file:
                         lines = file.readlines()
-                        lines = [line.replace("\n", "") for line in lines] # remove the \n in the line
-                        joined_lines = "".join(lines)
-                        new_lines = [joined_lines[i:i + CUT_SIZE] for i in range(0, len(joined_lines), CUT_SIZE)]
+                        # lines = [line.replace("\n", "") for line in lines] # remove the \n in the line
+                        # joined_lines = "".join(lines)
+                        # new_lines = [joined_lines[i:i + CUT_SIZE] for i in range(0, len(joined_lines), CUT_SIZE)]
+                        new_lines = [line.replace("\n", "") for line in lines]
                         new_lines = [line + "\t1" if TARGET_LANGUAGE in file_name else line + "\t0" for line in new_lines]
                     
                     with open(TARGET_DATASET_PATH + target_file_name, "a", encoding="utf-8") as file:
