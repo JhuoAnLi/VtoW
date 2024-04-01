@@ -1,0 +1,6140 @@
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('B 2H824k7w/= ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u/j8r.4m0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fm 2 Ap3s94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('.wj3b;j36bjo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c.3shiy7.uyi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('eo3vm,g/vej 0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hy4jt f/u4ru6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m6hozhujian', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('06e03 5xu4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dhrhg fm sapXhyav', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('t7.62j042j424 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xo gj;.1 P4cjv', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b4ulaoshidi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('qmvif hapC n4y qm', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jtj,06g.eo3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vm/tja ou,6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('upkxRu;3ek-6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu,2. 5627k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wv8 apC2k7w9L', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4ru4uvl4noj ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('3uKm,6g /cBi4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (']vu;3yjidj/d3ji4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t/6Qv,61Il4d ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j14vu84x.6w u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru0mru04xuJru,3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tcatics t obePused ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('4gg62rj4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k274/bp6fm,4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ji[Hx96jgi u/H ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hvu;41L®=!fu6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4kag6zp tj; F', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2004h;/6aw3u/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y949ru/ 2 j5k4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 0b6x87®k!xu/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c86zj61u/4gP', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n nayta rrikrmgln', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('2 u.dk3s/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w8 1/ g16uk', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('r uejZ 5j3ul', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y.3yp.3c g8c8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c;t/6ruu.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('f4uy949w6j0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kcj04s065j7 b/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('J/3mIau042j4o', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('e;j 2j624l24k7w', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5]3g4 ug6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('p xuYp6ej/l4j3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('f4m5l38wn04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4ru4quUdk4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Yk cj86ejs ej/U', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4gxu/Abp60s6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' fu ao-ap6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('40tl6 ghj/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jei2;g 6cj/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cf4vm rpu3gp', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ua503u.v3, 1j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mWt6;1u4tg4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1jqu0 xjp4jp', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y.3242ud04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cl66jcj9u662', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g24kR84ejo ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4tj0d k vm,6vupm ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b,4Sez/42jie j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ggji u,,1j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('p jobp6=lg.3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu;f4mrupSw8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2j// c3p9g0 fm', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' g /2k7ej/b5UjB3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ro; rup4 u1j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27gk4u.284', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qj861u954w ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5p32j0hgk1o4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4ru,4bpg642; ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Ozp4vu84x9su3r', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Qup  uxjp6e104', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m0h69/2u/=u g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' yj/ rul4cmb36p', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jp sj2g3;g4/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rw6u,3e njo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27t86vu;- e6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gpx9Zy4tjp6r', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu2k75;4jz u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('up thq enationla ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5xu;4y6je.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('84vu,Ixl39', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (';yji4gl4vu® !E', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu;qup3us60tj ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Zu,3vu 24jwj6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('z483cl66jz03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru/g pbyj6o4E', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Dj/ ru01oz4p4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kt27m,b44fu. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('＝＝B＝ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k4aifaedilu', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('xjA®;bjim/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu0j94xt;3mo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2j75j;qwI/94ri6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('su06uTx9627', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b7g;c4962kn62', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('knf jps u ykmh/', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('u629u4r36u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2o4b7pAgj4ui ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu/6unji3su;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('s;xdj/ bj6v3u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Eats Asial4n ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('; gxk7ulvul3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('.6.6y T86', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' vu;3fu/j4ai6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n 2uu4 xo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vx03ygk6o6us3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b;4e.t3 gj6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('njo6c.cj6;j0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vm zpH 5jm/ tk r', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2; e kek 27k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!yji6j0qcl3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('eAtcu srrrr nc j6rmbc', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('t/a y04ckh1614', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' wul6pco x06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('d8Ju.6h5j0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('replacedb y ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('2.rm,OO2k61Uj4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c/j i3l/ c.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xb8 n84®!Zl3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('-67kt/6hu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu,Q8a8 r,6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ji4e041jf4u/b6m', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gji4d4ql6h0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uPsu0x69a6o6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('28x43vm0Hfm ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('no61uy4Bj0Wcji6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('/t6fvu4.u/67t/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gG j4tjt9 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u/t4/ 2k]rm,6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('su06jRi327k184', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c[84 』c996y94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5/Gg4ck-64', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!xHEl3g 5D4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5l48w a3p7Fqjs3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('0wf0m610p320', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j94aom606up32y/4 8.x8 16im', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6zz.39y4eij6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vW045s bp627', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('d9 vpu 13u.P6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aof3m z rpm6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cj4n/4 ujo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('8a4v3nw8 18', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Zaj=Cfu056/4tj4f', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tK6®!35ul4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('H.Bu dkw8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('s.l3dk6g;j3i', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27kg;4n ®!e', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27F1ulsg4vf6/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ji ymihhk hwli kxhV', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gj4x;;44]x96', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ykR6ykNqwu 0wu0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b[Swj/6ejo3Fao', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5j/vu,31jb4yji6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('js31400 2; ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j4 ;4ru0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('d0w8 a7p2o4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g 2 ;yji4u/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g4s8u4 wV0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cj/a6o3b.6b1j03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5jA/ 2j0 u;c56', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y3xiankandian', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('g5ek4b]6q0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('e p193nj/ FEru,4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k75j2 j w4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xD4gjot6s94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4jy49j3;g4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g4x4uru.4g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (',rup42;35jbvu6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wj/Ivm,6p7mO/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fuvu44wj/3v;u ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ge4j0 ru0y4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tj6c6 10 yj4ork', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2u0ru, z0g.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1u/4jb4le cj; ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('913igk42. ekp w', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('suTg44ugj453', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1/ q0627kfm ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('thapi mr4t jcknlnc', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gj] 267z;V g4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2yp4w4dj/ Zbp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pb6xlg 2k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('x4f06d9 27O', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ufuv /-4tMj3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' rwp u/3vu;3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (']ji6w9c;6d4/6 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('N®!fu.36gwj3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('3fu/6yjor4u8vu/4q', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('terrorim, t mus,tat ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gl3u.u 4E49k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu;c6l3w492j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u 4 ofu/ gj;3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ru; 284nj0s74aD3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tl3b36DP3gI ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pjoH87®!ck6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hji4ejg4itj6v ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('f5k6hyi4g Lu03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' el vm,4u8hu.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yp4＊ g3m/=4A', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wjt 14wjige Ssu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n3engnkdechu', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('10zp 5jP ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (',g6ru.V49jciu2k46', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('o14ejo c69m3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('9j4T; x4mmp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5k4xu32Ik7 a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gru0 5jo s3ruz', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('f h4p5 k27', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uv8g4ru.h3944g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ck6r uxu4ru0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6uU8 1u3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4c3lv;u4aQo6ru3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n dintegrtiGe ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('bjo4 peln ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('3ruu6jg 5ji g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fuW1j4urp3cjo ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zj]fup ruph jp ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dk94ru8Te.4xk', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('55d04y4r3R', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k7au1u3rulE', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g.31u0tjp3tjp3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('my4r3uwj/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('RjiWap71og4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ek4Evu/ fuKu4l', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('q/6x.3njigjiW ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('06;d4u54mk3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('djpn dtbo ej ha=pi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('fue 0j 5jw496', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wu62ku7 e9 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5l4e/j jb4p6m', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y3igandejia', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('u.2k74qup3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y myblb mwsltbln', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('®;O-g44xup6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w 8cjo628614', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fe.6rcup 2l7kgl3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6sji3I3j;,1u04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('703-6suUa7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('7xu;4ai64jt ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Tg/ t1ul4n4g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qu 9e3uz/ jp', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27kz/ vu0u,3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('x2u0Zji3R94u,t', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ®!w8 t8 w ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tl6c8cxu4p ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nj0l2/3m6.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fru6cj301p3ia4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('0d427zk84vu/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fm0l5;3au3dj 0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5k4e4kgjo3mu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('7e t;4vm0/vu.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 2u4x ejiSru4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ej;5b03b0Jji3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u;327krul2j4i', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n Xhe decirions ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' 0ruH04d; ／ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gj64cj06ur/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gS3ru.sl31j3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u244nji fm0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('G1u40ck 2lTxk7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rj;6g;xao4a4o', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2l5k3nim/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4gy4u ru.3u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kc6vlu327ke3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cpe3l v/4B.u3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aQup6ruy0 -j4w9 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vbu k7;z u0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j5/323Wlu.6ru.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('50d3 9t;4wj/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('q86e9 r maup6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jb62;Ebd4j942', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('i3ap727kxu04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('smvXjr gp nlii', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Ji firm jka s', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gjiy9416ixup6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!h3qu0Vcjo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g01 iTj4ej0K', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4ud4f8u3yji4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yKl mvu04y9x', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (';z 2u;4gp45s', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wm44-g6su06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5/44ruy94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('20G327eji6rT8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2/32 .zj544', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6k7fui3fu.5645', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b.6xkd7fux96', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' uek4cl3vl4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5[vu; e;u3vmg,6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('St;6d3k94k27', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1u82 /45jj4i3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4vu;vupXgp4nji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('7z;g 4uL', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tE6ej/] 2ksm3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sup2k7r[u/ u0/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tj0ya/o6w0c6j84', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c4.u s0u6hV/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wrj whapi tbl7n qam', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('d;m p42j=/4fu6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gj 26kul7 fu.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vB, kul3u.O6ru', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c; kg4pb65j0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m/Er5.4clBr.u4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lw fu06wK .2k6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t.4aQ3®!njo6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tj 27kwu0d5p', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('P/ uf4ejo cj8k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xkI7fm,P1lg3; ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('W. Bugsh hvas ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('v4uxu,4.ru ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u.ru,4gl4l ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4s/hxj3f3u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('U2u04]3muv6;/vuf ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y9450 /ejiv7u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zi6Nwji6t/624', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k27vm[3yk2; ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t0bck6u,4j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dtge hapPi n3crvp', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('z38ej0 qj1u04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5c4aub424wk4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Bql6u03r/ Du,37', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ao4 0vu u8', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t6jb6jx4ru8', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5 bpXu94u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('su0w96j0jp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('z8m33uAqu ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('534qu0k2l3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2lj4;6x/3x4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('x6w962kC u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zj=6dj8ru.4sV/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®;fu/6mv414', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu841 lc0x6kj', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2v34l2j4r8u4fm,4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6ux0609h6k4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ubj6j3;t;6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('/u6supw.wevl3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Q7g;j 4j;35', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ruy345k0z/ um', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('282k7bj3m ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xgk18®!a83', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ddh m6bc buznonhe', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('4u104sud6Lu.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('upRh3fu;xu,F', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Xu,31j9ru0 2j04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yb06rut,4u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2ke03.gMup3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y94v0J4hul44m', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' g;4xkj;6gqj ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('h g/ aocjo6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m0up 81o4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4bj4t;kg;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("n dino 'p hap1", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('.g3cj;6u/k6u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ek4r/u Nej; ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4tjqe931u02j6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6r,3wl5k4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u,6w 82k7re03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5j/2=joqy4ru', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Mu420 tjpA64g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jsNza 50,gj', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("mgPb sm'4g3flmi hg", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('5jpx204r6g9', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2fu3vuJylji3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('q96®;xu;3ysu60', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2ksD44j4rlu ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wuru04d; 25j;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('/3z; jd0 4/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('clafup64ut/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6 j5u06uv84', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('djiIdT.6O/L6ck6V', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4～ul 4q.4d9 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4jog/ tM3vu/3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2i t703qup3e/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g/x kLru4vum4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5045/5  fu60', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Pwj626lu njys', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n0l gjseRym qo4', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('oanolgwm n nm', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (',m4nj3l3el4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('eCo38M 27kaj3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('iO5k4ekzbp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1027k/p6fuxp ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 2vu84Xvu04y9', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y3onghao6izhong', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yD fuK;6ru w3u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jo6261lMcj4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("84c'6g;e2j/ ", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Zg8j3 J10 ck ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5/Ct;Q1N/41l', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ul42 20u4wu ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('24ls84g.3e ck', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u03gi y0u;6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('242jS wH0 r8u ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu,su/6ru54vl ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Dl24k75/S3eR3m', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qjO3r6rl4mQ4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cjo,5jo njo6hR', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jp vup0dk39', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ejU6z ;au04 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru0x44®;vu; ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c;m6p4Iu3u,4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gp4y;4rm/u.3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('oynm y imlu kbf', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('njoW5j4x/e504', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu9kx96wD96', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a;xj45j/ 27k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w8e l ru, cjiQ4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qul4V183-u.6qnl4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('r04uf/enk2P47', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nk4p4g,j ej/y', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pqB6a832u/x m', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w69j0n4clR4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' qu0 Lji3pa/y', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('el 27tlqul4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c69ao65j8 l24', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('su06f/d k ur4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('. bv4uQ; m5 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qk3u.327ke03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n.r u6xu/R4 0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gjtY6;351j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yruu3.Iwul6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu45.7hjoa5j6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27kjpG1u35j/42', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('W;gQ6v84', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4jH03ru, M.614', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gluy9g4j 5ji ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u.Tzp 6qu6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu4k7f80  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uw.m44kg4 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('.c6Gk ug 0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1j;4534u H', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bpu,93epfm4t', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cMa rHycru y meowj', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('27ksj5/6wkt403', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gjo06 55k4ek04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2j/h42/6vu8j43', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2m6m,40e314u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('965/4gu4 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('up mfanmjj jc[ik', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('u.5;jo4Tg6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2jo45j/ ejit6 j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4ogpOak75k4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xuu39x61u/3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('d ku g g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2uI0e303/m6t;6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c9324uwj6jei6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('alCjp4ei4』', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('r,u4jo6m ,g4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ur8F2k17l4l23c', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu4/6dj;4 5m06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kkoy0qg/ .u3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5kwu0 4gru/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru/Ub60t/6xm7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("j/onj0 whu0'6Mj0 ", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ek4sug3,un3 c', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('28/5p4q9g .', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('.6sj0hxj6u.3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('run3m,es06zm,4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uu  5jo45g4j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2hk7bj3z;dg6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k7yj/gqul4w0jY6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fm,qQ D/6bYp4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' u5j/31j4ejMi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Bu,4le4njOji3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vmp6u,Cj4u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('/6m0j6fyu3u,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wu427ktj3j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('s/65l02l4el', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tjo7 jFei45j/ ej0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('up up 6-5 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru0Wu gjahj/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2]k6 2jp4u84', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('.g4,4r 53', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4Zxu.4u0su6 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1up zLj6jTck6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j lgwN= y6g udig', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('y9Yvu42j0 vu;6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vupJbji16Vg4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Qu05j4u.3u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ul4 gzj6t06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dk/vu 1j6g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('178', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('q06ejoq4up3jM ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 524s63jo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ruU/ xuEd04cg;', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5j/3n/ u.2jiz G', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1OX h94w7 cji4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('23uxu3Pu. b06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('!rup 4hz/ yk6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4dks/3rsigji ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jei3apao3vwu0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u7xuanbazhongjiang', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gl6 2kxwjo4tj ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jz4t.V6kxu60', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2d c3a6;ru8', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w8xu03®!2u/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vupK584qu0g4.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bjh63fu/603', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1j9s/6gjovyji6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4ru,a4j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vm03ykOk274gj', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u5/42u6fuk6y6 Wvup3bM06suu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xul4e30rm,cjo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uej/ ygj tk ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u uq04dvc4l3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('l4eyigete', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('. a/c.1u0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('3.lt 28g4/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('i 9!cp32ji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('24ckQhjp629', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('p65k4[gu.44g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('T03h0XV®!y94j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j aje dk jmyo', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('u/e. e. t06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rb/ ji4r3ut;39', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('-Sy57 ru J', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu0oh0 33dk4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ek4,427kg4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('s94r2k7yyom3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Zkj4o44gsu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('d7knjb b0otl3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4a8pu45', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5l3 uke4vm,6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vm6,5j0 d gj4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('x0u6p 5313l', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru, g.91i h6H', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gjo4z;xg45k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c8j45j/9jo4b6p', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ejij4V31u/,1j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('9bj4g /Rj6i104', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('3xk7 vu8qs48]4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5jQu427kEj4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('249F j3u6Ll', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m/4ji,1ap724', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ji3oshozuhangdai', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('wu627kru.pg4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w9j60bC62j3S ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('z0al6aoFwu0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('26uuru0D2-7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru8T tsji3ap/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('．． i  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rlu3w84tk2 k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('[e03tj4c96 q', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xup6xup/2k7pu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5p 27k5zTvup ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bm/4sp2u3gj8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nj/3nj/3ru0 b006', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m 5j/3201496', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6;5/4u042M', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bu4.6vu6/d04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('7-2[p jb4ji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ejiu ,5; k27', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('l324ly.3g0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('r ub41p3rBu/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' vmp4gk4suZ60/j;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ux je3x;4gjoY', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k27g4.2 14j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n vogue jst ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Sano owKr tj ymivh', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('p4v;u3fu3xF96', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('job2k6u244', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ek fu5j/ w ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aJ fT4m5q9 nk4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kd4zjrm4wj4/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('v0 y9xw96jF ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1V7u,WO1j6gt4w8yap7e/m p6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Uk7sk7®!j3i', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27fu;.2u65/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ji3a1727je4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cjWi3qD04e2j04u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rz.4eji6wj0yj4i', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!b41puw', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xjDau042kgx', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1Su61ulWg4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gkj44rnuG; ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' /h6f4ufu;6t', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g62u,q i4 u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('guN.3ruh /6j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jog442ui03v=/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Yu.5j/3v0u1 9U', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5jGyru3ru,U ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j732 ;g65p ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yc6zj4y/v4m ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ji6j9427kdk3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k7nVw5 cE6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hj/6e p1p3fE;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g[;4l13a0327', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!jid333u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ckU8 x48au3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('s8n4akP5kek4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nLo62l42keGj6i', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('7eji49tmK65j/m1V4j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu4®!fup6u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('p627kj3i53', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1j54 2n4a83', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wj/dj/ 2ul4ur4g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu,24.1o4djp4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6gc.4mfm06eji6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zU 2/3h 0ru ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('W3odk3s,/6ru0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('28510423/2/3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (';4ug / dk2', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xji4y9t4/6x3u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('h69gjAi2 k7tj', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b6pu,31jv;u3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5;4cjXo1c4o ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m0g6E4u/3a6u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cj94r6uej40ji3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gb rimv gp gsle', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('4jC4ru//yvm3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y t051l6 dji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m3mbIch api ris m', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gei ish y tmgb', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('u.bvu.4u.4g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ap7ul4 24', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u;sv6p2k7wj8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uz0 yi4rjo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jt 5j/ -fu,3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yk6cjo424v u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('compatbile ithE U ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('®!dj 5jH5/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jo vupj4 1i6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vlu3vul327kxm3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu/4 nld3]j03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27kB06slk3eo3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wu61u7/4uYej/ g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4ru3E3uyji4x', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wj/g6uvlvu ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Dk/yr4uua', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('-/3aju sup ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t;z8e3ji6xul4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jgp4ru70b ur.4q 9', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t cbmihs n', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('c9g64mr,62u/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b0q3/g;3vujp4 m,s4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4wj/4z3j2k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('284go3y9b4p4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n4dyvojn; kqus yitdW', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('wc6vuR 2kg47', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nz/4c695 fmQ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mg6a48bjo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uj3Vg42k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jCnd Byhds y7brkvfub', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' ®!®®!', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("g01u'vm 3vug", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kl42j/04a0[4e3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rm 14jwu/ f0m4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dji4C2uj;b64Hm', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zE ulkru,6nj ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1pyji4i 2Bj04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qu3nNgpt/6/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 1u04=2k7ao36', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('P; ge6l ru/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ＡＲＫ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dk4d 1931i94f', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nj424jz;4a6I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('apaow3u0 nji3r', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bp6Wiru 13p', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n4 i!®5 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('20wg4uvu ,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dk23uJu.al3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("gj'1l4t.6fm32", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xkhj/6u/6my ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®;fm,4bp44g.Uz8', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u;3/ek4vu/fu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('294;83ylu4 x', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zjfj4Sc9Sdk3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dhav fdilrb u yHmM', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ypa3k7Pk7nj3i', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xut3j w8Lajl', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ej;g64ge=Bk6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("rus32jUx9gjj' ", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ej/m 06g 2uk4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uao61Zu/ x/j6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gjovu[6cp3dj', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u0t3j. ruWV8 1up', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27kn vu;3z86', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gp ahpi Anii ytb', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('5p 2t7cpu3 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1j4eji5k41 o', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g/ jt f4Yk7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u045/4 yvmp4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g3echanhdesuan', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('up h3r04rug40', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Vru8327rJl32.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ek7 yxul4zo ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hC/64a06le ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ys94442j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m/4x46ue04 ．', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j84c6/u3vu;', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5j/42t7ru 24 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t. t8 ,m47y', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w8 27kso/4vupz ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4dj/ ru0y94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ej8x k7®!f6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2yk7bf6g/Tg4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4bgp6j4Y6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' r0ul4r86g.3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('/449g;4wu06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zj4t.5k3xa062', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('032jpo41l4xu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ej3i10ej/ 4g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nkql y tgoru- vn', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jp6cjiS2k6m', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ur.4ge4l 2j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wu0so4o6u.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m3eilijfnbian', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('z/3h42kg74', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vul 6g504z ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('au4/u/ eM 1j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sQu3u,ey94dly3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vuT4lgji vm/6g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27kdj942u4xR96', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2kd7r gjx3vu8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fuqfujt6cfmxt4 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ci6Gu4c806mv,3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5uw4bp6xLo4u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('.z;j3p42u04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('x;4f0 fqm069j/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('up 27kwu35R4/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a83uxu48493g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru.327kru,6y.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru;4ru;4～ uh3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ekQ u u;j46', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('10u24k7clu3.3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b60uEru/ suld', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('e4km,vup gkjo3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m45jo4w82 k7qu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rm0x3uru.4u.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a; ej/c46keji6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('e;4m,45cs/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2ktj; dS.3y.jo3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tk 004u.53f', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('p4c6kg4j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5j4sk®!j 0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u mAr cb0n yrqbJ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('w ep . 81', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2;xt;33mu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('coa74504yF94gij ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y7a3onji3pl ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ]l4gp6ak7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c9 c9 dk6aob6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('.ag4goj6fm,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!4yji4m', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tl bpf6um,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ck64jke6 fm06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu/534u4tW6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6jiq482k6z8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sQ4co0 4cjp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6z;3wo06u0]ru. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jNxjp4m2Q4l46', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu2u413ul4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('-94tj;4;u06vup, ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('z8 jc; cpj6gp', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('-f6u3,yj426k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j0ru4vu/yNi4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu,0ru61u; rm3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('3oa3®!cj8 dj;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2/u4,.4gwu/3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m6rket completionb', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('be7n killead, ofte ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('sj/Yhjp z 8o03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jog44dk3s6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('d93up snn  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4Lu e4kp1l ejO3i', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4yru3cp3uvp ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g/ y m0d6 9', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u.n30Lek4d7 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('241j3tk g;', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u 12l4242D7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('.4x926kmp4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ulg44u.xu6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sul3cE96l vun/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 94h06oz4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4xji6a8u3;e0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('v/u627kHv1up jp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('o4a.3/aup6u/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zjJmp4yj4z;', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wu0610 tqu  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ck i2 o4xk', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('i3e305jg;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wu3hru04d ;ru.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n3vshileiru', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ji qlmy hsb4cc qmb-c', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('lu u.zgj z66j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu06v uwjo 2jM/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cji62jM4cji6j2/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rm3,2k6k46g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4u0jpo2l41ul3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gj8 pj8 w9Bfu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u su0 u yil3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dj;42 .1j4cj4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ji[3k7ePj0v3u8g6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2u03alu047oy6u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u;ej;Uj5;313o', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' uek64cp3co ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' z8 gt nji32oz4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wu3rB0d; t6p', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ur4u427kfu04y', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('/6aj m4b62p', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('24a6ou.3bdp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('v;Iu3Yh0 njg6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!55 zo6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Tn ul3gk71j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('coiM187®!ru, ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2kvu/ vpu7 2k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (',4bo4u203ej/L ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nklghda et7u hBapi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('X0 ej05j30u6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('su1jA4/6bAW6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('-64gjox96', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cjxw94y94c j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u4ndre vim I Sungs', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ravd up onoa aks', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('wjo～4 ulY1ulo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("au'au6cj cj ", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nji3xjin6 gp4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('NruRl450mmx41dk3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g;4kj6586g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j ovu03yj4omjo ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('su02j3zp 5j/XO R', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vm02jo4ml5k4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('remainledi n ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('tjf m4mm co4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ypu3;2lk7nij3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('28xu;42kW7j/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gD/ cjig66u2p ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a 82k7e yj/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1o3248ejizZ6;6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y9uq6;u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' u284gjcj 85', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2u4p42lMs84', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('G4『 26 w4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zp 27ku.b', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yy94w.6bu4f', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m9uph3 u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu/4pb4Tk06bpr', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gbu.32jiYfu;6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pu ul42cD284', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2kfru;3g cji4w', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y=4/e6l 5j/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('v;4sj3xu2. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2u032 .dkmu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu,2 v3mb..xuQo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6uf,3[j3iru3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('45p 6g27', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('d93j0U4fu0Au4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5/Sy94tj;yl4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('42Pk7qjFru624j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u6ansouxuFnxia', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' fu/3xky04p ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu;xjp62krvu/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('eK93pu04®!j6d', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' jb0.k27vu;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5;x3k7％ 5s', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 1jM4fm 2E04w8g ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu06vm4 uek4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('r4unj04fm,14l3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6r6uxup6vuQu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yj34guH;x u0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("upfvu/6l532'l4", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ulu6l6cj;4cj;3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('i8 ;o4e0 ej', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('!®c8 ®!c8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('othby ru cmnrg qouu', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('j4annengweiwan', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' sAa04u3j94wxu4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('8517®/1j4iei4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('agdia n ayfiku bmlb', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('vu/62ky7 t03N', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j4wkechadeY', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yjim5j/cp35j/4u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('so1j42ok7fu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ajy44lk7z;', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n agri6ulture, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hys a9gr u nio', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('tj wkn4k544kS', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xkxm3m vu ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('el14yj4oitj2k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('us06t 4rup 4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qDu6fm/6Ovu.Dyji4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!jp6/; h6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vm53k5.]4cR3l', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u8v5jE4fu6sp', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ai dn hqi yfik', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('uPekx48 r ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('. a9286t/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kebp6, ai4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ckAu xn4u ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u7j/4u2034', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('; /aovg6u;322l4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4u5j45j;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Ik]®!ji294', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kjp nlmu y m,nldA', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('203vul®!c94B', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru/w94qdu/6mp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xul4yu3uY.m66', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('24lfu;6g;4[et84', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('94Ycj9m6p4t0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t6k75.m/3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('!8f7®!cl3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!dl324u ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wu6 ud9 g3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jo3f m2N7of06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1u/4ru;f ukLwu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ek94jbei7p ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dkEu3nj6vuHp ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2u S 7Kj0 s991', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hgks ji hlamh buavBcy7u ord yrtoe hiq', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('0m6ej4m0e613p', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nel wul32kgp ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u3c.41D4 g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' gl4sun06jpJ6vm,6R', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' jb3s8hh9d69 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('araj45;4c4j2k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ru4cj48fm4y.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zj6wu06auf4uK d', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wj/vu l54pru,4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('e4keji6ru8 ck', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gdx/3Pc0g6y', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pb61Ij1eji4q/u6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu02a;6rup1fm04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Zpu ru;rv[l3ru,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4ufm E2k7g6g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5j ;j65qN76g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6zv04rpu wu0ng;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wjo6q9H6m/4ei4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('/6ru;4®!gl ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Tm06/mj3035l3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dh4mp42j/w4k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g6c.1s/6 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4gt;3k2u,3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w8co4bSj6gck6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("d '9ru6vu0 nj /", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yji95u6aj4u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ejow3.6tj dp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fuu6/3gtj06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cjp ua6s8u ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('x06w6.d9 qul/4b', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' j94wl4k7jp ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('av6.3ta/6,7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c06ejr9i6yj ur,4g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!ao3eivu04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27edj844g94A27kxu/4bpe03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4xW96m,4rji5 -j/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5;f3u 2 bp4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pa7xu;3ekZ4u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('l3l1 nxk7yjo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c69gVsu3a7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('e0-3T.4Sjo3tjp;', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y2j/414or03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('35hKul424ls]84', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yaji3hjo au06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('204dj/f vuw6j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('njximpc0a2k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu/4z4px47ij3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hapiv fm tyh Bwd', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('j0ru,6s;6ji4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aI3ke 8l j94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c.4xlg3 yj/3g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 5juw8104', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y4uy7meyanfei', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hws4rud3ux.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('z0c204rlu4m', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jp sj03!®sj4i', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ekg4kjcjo1l ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('z;gPru6d0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4fvu04vWmpP5l8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('r.3u02ji z06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('202j4yji3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cj/ 5l 29Kf40m4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('d;693e1jm4,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uczj6s8e6oj', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gj;7o13g2k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('f3PuVx961jzgW', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tt c9yvm61u/3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('patento n itsx', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('8ax4j1u3xp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m4/yj/3X5 s3u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27khjS6[2j/3ru0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('24lvu4mr4fm0 K', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u2k7t.6cp4qi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pb627ku wj3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('H5jru k4kc64', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nj04kg;44g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4b1p32j/ rlu/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a4ju;6u.Vd9 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('s/up ojru03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu/6 ufuvsu06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u zvn6 qji ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('28Fqk44ao3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('/6®!e03vu,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u1359k32k7 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('joX=93z p5 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2j4264cj;6zCo ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('/a eyokm h3hyne', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('q2l4s844gup ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('up2ji32unl4n;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('s45j/Dwu3wu,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Ic9W6qJ u/q6w=6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ej/ u,4mf u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rpt j vu8UW04ru,x', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (',;6u,t381j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b6y9vm03rm3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zp ej-  yj3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hk4.um06z30', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mu/1ul Z4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ugau6/2ul ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('du o4. v;u4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!®!®!u ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tjrru8 d9j4Pu8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('E7!nru04p6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k75kXg4vu p', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4r.423xl 5k4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('3aZou6.34g5jn', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g4mignmi omr mf', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('w 8204ji3Pjo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('19e3g04pau03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zj27krm,6k45', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('esourceO.B6t ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('t oimmigSate nto/ ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('2j/53;ji4r6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("pwu3u'vul gw", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u.gl442]42Pk7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 1o gp]ak7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rup7 cgi2k6g0.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('njick65j8= 13', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b4tQ btao6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5j/7 dk33ud04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu/4s3u94P1aj4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rm,t2l4g pc.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru1oj4ibbp4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4％-6z3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fuvp 277ru ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ej34g-6g.W4e', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('45542ufu4/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('f06 zd cji4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tj tcvtd hmrorln', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jmyo klgjijw y4jpbjj', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('dtrg/janl m3tuoma', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('f ufu,4xC7c96', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 75k 1u4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t0k3g/Q vu;Ymup4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a6o104z8j3;6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ckbjxl4z3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' y u.4bu xu,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('etbc n ovlokehsk', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('2u4nD0 24jck6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('r2R94u0Kru/41jZ4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b6pg/ 5/ l3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uR6ruplu304a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5j/Kvm0675j03url3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('8 2u/v uA pfu/6F', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' gbp6194xp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (';3P405 /m3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5H35d6r6urul4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mp3vms3uwul4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('24uu629u03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4h93m/1l ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ruu6z8 50v3m', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c4.4x9z/ ke6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j9j4i3apw7.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru4,u832bp6 u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j/65j80 z;3,u06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('. i4cktjp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g u.p6fu26 ;', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uOekpru0zw.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('l3eV3xka974', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jco6t/6rW 13p', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xku7 2l4rmE', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('iu0ch0x3 96gji ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('njo[ji3n/2k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u;.u3rmu0zo ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('7,Pfm06w3yj/3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yR2484xj4jt ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1] Rju4p jo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('e4kxj4u/cj9', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('3xum6bp26k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('x3um35je3j0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (', s06c96p', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u.3Nu Jj4odk3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Beji4xE03gj2 k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('0ejo3j45jb35.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4wu/, 2845/j4u,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hj3®;j3 2u/3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu.6v;uN4ei6r624', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yuu4 x94oa6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5Zl4Iji62/4tj;l4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('au/4r3 vu;wj/q6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu83ftj4mwj/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' fmI0Ju0i3ru/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('img omwK y ghgks', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Q5k42u0]240g4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c9m4xk2u4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("dkr4'm bs65jo ", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lkt54;3wj owjo ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aj4w 8g4hj6/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sj6/xu34vuG8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m3enyangyuchu', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('53gr4m,6k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zH8 u05445/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rui u/65jw3u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sm,4vulc3Ofu40;m46', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zlj3j06yu,3f', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru0427kqup6z8', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2j/05k 1ulvu4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('el1l f3m2k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sj3Pu416ulI', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('[m/4k27yTxul4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4ej0 vu249e4eo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 1962 8qo4ru03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2N5j/42uD3Yy94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k5.m6pu40y7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Sxu34wg3t/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('f2k7wj. 2/4jyji4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Ps/61h3ruJ4v3=', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fuu4p52u03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gjRxm4nkpruo ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('8®7!®!ji3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1uv4e ul4u.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('avu6/j4y2ji t6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b;14l3u.3x;u6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru; 1ovx4qiq8 M', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g2k7f/u6vm8', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ux3a0u4c9,u.3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gj4.og230;4w6u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('su,4rlu3mf4wWj o', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y93ru/f3 m27', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' bj/5j/ vup 2j.o4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2A/1l3e9wj ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2jF/4f4rug66', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('q8g4u,c3p3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('su3e 1fp3.p ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u frbw gpdUvdn', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('rm3402kJcj84', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 5j0 m/ulkj4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('24vuppm4/4294', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' u;6z/g 6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('v.u j2k76vu8a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('B/4oa4s08fu.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('14;kxiu3c.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u/9y75l4tj', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ls1lu b6pru; M', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hjp5  xMm35j/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n cgdi olknLhpai', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('aotwu3r45kP3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('e 5bj6ck6yij4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu;a u=6.3hvu;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gn54jr4u, .g4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('url41u/eap mr4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (';j3co ru, 27k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2Il4935u4ly53', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a7ru.®!uN r', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('z;dzp 14jy94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('-kfu06zj u.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('24wy94jo4vG/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5Tj4f5ulu4384', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u24t/64g2P04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n,423 jo45j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2kzyji35j0rul ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Cq/6u.34ucp3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ux;－ 62k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jih 4.bvp', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru0cl3 5c.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('thehQr differencei n ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('7r uu84nj; yl3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gc.2jo4fuo.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('x/=ej/ 0z4;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m/46vu0Q4g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('im,41j64gjw8f', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g; v,pr c6kxji4a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('x9;66ru, eja', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tlc6kxji683', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cl6j14d4kfu4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4jiKcj/6nk24k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m5j4z6;P.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b4anzhiinxyou', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('t;3®!fm06vup6 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yhl4z;3gru,4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1W3g; c,6u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ruje.42k2784', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y mnn vbtv rmeNr', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('vu/t/66;7su6/u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1u0 j0t/627', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2// eji6ru83 P1j4y', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('-56jpy3aoihji4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g04Rl427kbp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5]/4kZNur6g.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("2jo2kcj8'c96d", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!a83xu0njo ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yfik uomwa up lmfbtz', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('2l,4fuMxup6bop4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j5j14u0xu4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu/K6z;4nj/6 vm3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4ugu0 294dj30', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('/94eo3w 82ji ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2qk7nrm4u.y34', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vuK7 e;3wk4fm2 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dw8 2Kk7g.h4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gYlP4bu;4a4j504', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m0u4K®!w94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j9Eatu04q8 q8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j14b06139k54', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4g861j4 5', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dj/45Au/4Rwu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5mgp3qu u/Q', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru8 27kru/el4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('od rpr4u g iha', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('0 qd9627kxu.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xu086cg6eji6Xjo4u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('r4ul5j4u24', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('l0t;3ej0r3u04k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('8a3w0 16lt/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('f4uji38ycp3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Xd9 z;672u0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rujp3Cor4m aup6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ryu4wk41u,g64', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yjZ42 .vu4vu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru.Qrul4jp 2j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k54ekIru.mrb.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('r0u4d; !fu/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1ua/4gk4rmyj36', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu413．', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c4.u3pxo4ru R', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c.4e0r3m,66g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yj ke 92U3t0j6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' vu1 u04s/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('f7,3j03kj9hy4v', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u;b4ji4yF/3Rj/3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 204hj/ck6zo6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vulcj84®;u.3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4d9.xu;3hk4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1l4h h;cji45k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uf/6wj b0aru0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ignificantly t ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('cs61l;cj4fu3W', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rs pomd n ytsm', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('xuQ465ru ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('h204cAj84Bg4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('b06 s06 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ur d; d9=284', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('24l54cj496', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w9c4l3uph3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nmb u hooook', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('c3ld; qu3dnk4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4Efu/ gjo3j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m uNl ai64j84', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gkf4m 4ggzj3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tjMvu049v4u8', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u ekhej/ d ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('-X4u8js30u6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('9ciavm u h8m', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('2jp l241jhx96', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' uek4jN/ k6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hom7n ] jolk lsy', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('18s 86a8323l', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('e4.ej/ aup-gk4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ekxji;6 pek ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu062kzru4l2l3u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('windwkng up iMn ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('w96xuW3n.t j', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hp4ai dviiuomwa mrmt', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('nj33uw04gm4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2E4l6104h 0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1Ju0 bp427k7l', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4bj6ejigl3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j4xinlingshen', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ("eo3p6 0fm'6", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cij4e6kau4/jy4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('d.u4coju.3v1u04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2j6cb.44lxu4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ij6wk64i3dk4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Chin ai no ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' xu3766d83', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wkG.u32k『 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bX6ruApr03gjo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w/jckI6k30vup ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uv;rl402j/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zh3eo E/54hx4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ul31jgl3.bw6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gjl kxj7i3/ap7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®!87®!pQ6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('E gT453jc3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u hapio; h]goooo', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('bpzj4a3jk53d', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2420427krupJ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uvKl4-5264y9]4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' m bp6aupd', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 2j ifm4hY0 ru8 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xo42 .dku33', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t5j/Lj3vu844q10 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®b!;4surm,6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Eej/4yjib4p4j4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Xpu;3aj4w e', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j9ＥＮＡ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (',391j4t84k96', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yw8 g.134u0 c9', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('eke4ji4f4um3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' x94e03y.94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('s/t66vm4g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j8r6u d0w4O ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu/wu6vuI3b6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u065j/』4 tQ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('13co4Ou04uP', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('h0 ru8m 6pg4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u/ 2 ;g4w 8', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u.-614jGvu/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' xuD4e/4fu;62Xl4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2o7xmu,3Ehl3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5j6vuU g0g 4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5kIxu3EIp6ruF.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2k8;g 2uT4ru,U', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('d9t k2k7b6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2k7 gpig4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ruq6su-u,3gR4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 5up4c.4fup6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dk4uA,3pd4k ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('V2]k7fyu/6dj;41J]4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uvpIdj491l4mp4m', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4yjo4a=32ks7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2;3qlq ulH2;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yji4w82j4ovu;3 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('82u4nj3iu3oa3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y9u.3v06r4l', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ck6jno42 ;b4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aymo mfrs u ohm', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('d/4h6j07zvp4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5ji gd;4wu6u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2u j;u3.e3p r', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('r tj3gk4g r', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('184m0u44e3o', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' eWji4fu56j /2u4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('®y94w 82/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u56ruaKcj84', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('s841jru.4gp', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru.－  u3d;4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gji4eZoU su,4Ｐ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('18g/ cji65m// ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wI.ru zjd 9', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' u4UfR3uF,4bj', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Ｎ ;2 406', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gj9 v;u ;2ru/ ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('p4jy/3co4y94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("r[0'13lmaup6", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cl323/dk4bp', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vuM4fm24k7b6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('eV 132k6q0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('DYmA/4554k5k4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m/u2k7®!284', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Kep p1314jxLk3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('44gu,3i1j4/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu,J[jDo42ku.6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru8 B g;Ru ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6je 0zp vuq04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu,vu,4sup6c3l', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('grobunUd t separate ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' eji6eji6ru8a5j3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g4eninatouzu', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' 2l4xua39', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru54x7t.6b6p', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vam7p4cj;32lg4l K', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru04w 81j-u/w', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cj0 xulx4u5344', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y0u.63Yy94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('813gji4gfm3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 2.ijn bj4M.3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qjw6lj;62j/3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('.N5j0 40vul3xyj3j/6b6y945', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4vulUcg eYj4u.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('x;6suOvu84]au04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fyj35 c[k6ej', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w ugp j03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aobmc fm ybvruklg', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('2ky412', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1un uv842l ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qjvu,3kol4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('x9u,31jQ4t8', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu86Efm5  so4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u.t3 jis4u3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a;K6a1ulg34vm,6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('3Qu ;620g44', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y9j;62.N2k7/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('up pirvate ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jo ;42Gg7p D', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t/z6p4w8 d3k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vR4Bx87®!x96', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu/s4/6ru.4du60', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2jme449l4au/4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g 8z8 g;4gjp3q', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Tji3supnji3yi49', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ejckpgj x13', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vul/ i f3m-6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gjole/ Oo4277', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w ji6ab4yc4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('s; au024z7924', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ur ur44uwu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ap6i kws o j3mc', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('x;96/ e9Rg4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ai tdeux ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('dviertgence b4etwe4en ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('®!6cjo5ru.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wk7rso4d4jvu04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y.23k74gh9', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pzg/ Ot x92k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('iYg 5. g', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('n cn hnri hnDhli', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mz83x4m2/3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4by7x94c6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k27dj4w8M3f m', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6e ksu3su3hgk4l', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 2jo xgl3b6pe03', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qu6uZdonglai', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('5k45j/5l3 gj', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dvu;3v;u,w8 gS4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mx3l6z e. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('suopAm,44byjo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jp4gjp341u0v4u;3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vm 2k2u0Lru f', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('03jif94tp6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t8 bj4a a 8', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vmxu.65j/ 7 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('likN ea multirtudeof 1', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('cj;g;4c;j6g;G4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('el4yXtj l3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Qfu3Du8 bj45j04P', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tyj v06bptfm06', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yj4zj qupgp ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g023gji4dks3/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('-au/4mpej/4w/cf', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4jru, ®;vu ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' \u3000m061ul w6u', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u3orrengedang', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ux4uf3ci4k3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gd4wB6Pvu; 2 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Nhxhb tbwbt Qqfb68 og', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('xu,3®!au/6w=0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27knk4Kh93c.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('z3 v9Au0qJ/6qu/6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' y310 2l,6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('7su0hbP/62/ aB', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u4xu.2k75B6v', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fuw/6u3ruu6 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('＠ jig342c4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gj3a7pr;3c8j74', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu/[E6qjm6n8424', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ejUg4652k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('PerestLroika, 20 ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('j;,2k7g4w ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m0u6p 4kg4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vu8u ekkxmE4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('d04niju33jiR', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('au,4ai5p GUcji3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("f20'ul4vu0ru03", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g3a 8a r0u ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6ruh6l3ep mr', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ru,I2k6m,22ji ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4ur04j3o2k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("ji4k27vou04nj'iF3", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gkg4 g4Do ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('4ms3j46;y94', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('c9g944cjiq6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("h0mru8 2'k7e0", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('.4=/ e9 4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zjzJo4Ex8 ur ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('urp4fmg466g4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('d 9a49xGk7tl ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yj3ulu60ek60', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('24j xji6ru,C6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u/tXj;y4ji4wj0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5/f4m 18 2Mk6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('la6ql44gvu04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gpbg pvuxpk7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Yzp 1uau03oj', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('erj03ux3mvH,6m0', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1j-4s/6rul426k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('up h3e 9vu/T', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('j6j14xV;64', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('.5 z; u104ji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ji4xc626kgj ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xul627kxu3sQu04', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yfiu ihsn n mgbuC', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ru.44g53/uw0 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wun 2le4wu/ 24', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ruIp39u; wj-6ni3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1ku3fu6w8b 6p', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('i4j eX 14', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g.Jrul48u065j/42', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lu,3yk6ej9-44', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('.g j 200 bj3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a6/0S2uxu3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vule344u3vR84', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ejo cj8d9 8z ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m4ghr okrnHydmhl on', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('-6a a8xlc', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('35.45jKa6o', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5l 27t6/eji3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xj4/ njiK3ep6c', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('186oj6b0c6.4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('7rOu3cj 2.v', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('/6muxyk6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('8 vupxu36fu[- ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2g4m05k4v, ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('29Z4u. 45vup4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g13jeou ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('it y94gkmcjo4', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jiP184a8 wl', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 1j4xjp4gP', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('neption n ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('93j04b6c k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rupt /6xugm6', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('suQru.4g1j3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u94gp445g. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (']b4vulcvu k7', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('o4sm06Aeu04j ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('iny u uysohv y3ys', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('xu-66wp wjp ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('23ej/ y0Vtvu8', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('su0lx96rucj/', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('w8u  1uP 6u.3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("nyjiz3jq4p6'7", 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vulc ji6j/42k', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('g/Xfu4xk7 8K', 1)
+True Label: 1
+Predicted Label: 0
+
