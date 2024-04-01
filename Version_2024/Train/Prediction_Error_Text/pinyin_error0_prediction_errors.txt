@@ -1,0 +1,3092 @@
+Text: ('jincancande', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('buhebugan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('undeniable facts ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('liumiriben', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ceganlanlv', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("face.China's Silent ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('undercapitalized ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('xukelisi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('renmeirian', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yudi mghe wks v', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('vfgwc yuytu bsd ks', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yihu etlb tcb bucsh', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('kanlerinei', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yyyac hgks hqphh hqm', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('understandably ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('litijihe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lenglengdikan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mnp yuymp mvdh rmnn', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('talks should take ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('evfn yuytu bsd ks', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ribenchuichao', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dd yaj nkhg qmv', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ("the BSP's founder, ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('lasting deal ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('emoshie', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gig dhe yitf yitf', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('lanyaerji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('war.Since 1989, Liu ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ("Shanghai, China's ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('futabuli', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('danfutunji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bukefouren', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('detail, where the ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('suoerdechui', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yihu csh ybjj bq', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('guides for the long ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('rouhewenre', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cijinjuli', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lairuciqi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rusouxunbi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aombc gjsle yudi tcb', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('l dm qyt demwl', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('shoujineer', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nikannisuo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lansedeka', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('being ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('bumaibuqu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xupinoju', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('silejinji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kateaolin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cibupici', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mbuc ybik dmnr wyi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('danger is long ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('partly explains why ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('amobaa', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("won't be ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('maiqitawu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vfshu tgdi kb vfmvm', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ziranerran', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dtge m ghui g', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('eventually ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('under the ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('huzuirenao', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("robbing Karzai's ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yihu etlb tjka m', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yipirurui', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mequjile', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vfshu lmsy p wp', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gebutingta', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ju ybysp mghjd livvv', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ("world's ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('lw jibi ynib aaa', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Beijing Olympics ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('zuanjinleta', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tmmc daiu yid ci', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('dehaharu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('established by the ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('suicide bombing.The ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('foufuheni', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('anjiliyi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kmnr gjkni yudi lw', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yad ym hpln my', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('malinibu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('timelier manner by ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('wlyaj hshml kb wks', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('landabufen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lengjinghanleng', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gylm ttc nl yudi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('few geniuses aside, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('banlimudi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('change B might ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gediqumu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('manmanlutu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yihu qhpm mm yck', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('rutouerna', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jileheian', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Sweden, and ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('liwunibu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jin®;ache', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('silinfufu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('halihali', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('menbulvlan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gelitepi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('liheqihai', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wuganceqi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dh kb yuytu bsd', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('persuade markets ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('fuwujige', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lijb yihu dm ykmhm', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('！danbenren', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bamamamen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cijiqita', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qtw jhxf suok tlj', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jinianrina', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('suok tt klg dm', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('penlemanlian', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mizuiershu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('klb nwfa jtcg mfbk', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('leveraged buyouts ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mf mwv mlwk suok', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('nenfuhaorou', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sides must be ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gesj ewot ejjb vsqf', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mencifenwen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('futanchenne', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lileandie', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yishuoaiqu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('huge public debt ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('tamenfuqin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bb lyjwj jjijb yudi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jihenaiji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jiyajihu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hesijigu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('established an ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Burundians felt ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('fdtgf tgk shike wks', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('chitamama', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Cambodia, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('bargain, but ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('guidance remains, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('merchants, workers ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('m hdhjg f byav', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('woainisan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("the US.China's ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('humiliating events ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('smv ptyu pyv ylmo', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('tazaierci', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ren－－wen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sustainable ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('cwa vfmvm qstt yitd', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('(MDGs).Spain ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('dumakesi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mfbk chab dmwf jtcc', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('chab jtcc hnlh m', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ganpingjungao', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gebufenxu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tanfuqiai', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fuesile', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mgmmu p rmlmo vfshu', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('demanding a ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('shifting sands of ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('zhienganen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('workers, no wonder ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yamiyami', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('miyamigu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tatingqita', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dewuteli', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dewulite', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dh ym yad m', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('times hours worked ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('underway, the ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('tadeanmo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dantahunji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('suanhahayin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ribenaichi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('minmoufuli', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mingribenhu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ribenrendou', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('！ganjinbo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('banningjiji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ruhekefu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('delinquents.The ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('litapale', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gerenduli', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fusetianbu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('changed.She saw in ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('money.By buying ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('renqunhenhen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dutumaban', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fuhoumanman', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('established and ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gebuting『', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('outweigh the ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('cun〜airen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cidisanren', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vpd buhjm yif nn', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('derouguner', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qjmc yitd sqnl ypmm', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jindikensi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tesetiyan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m tanw qyt demwl', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('chiwucaner', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('days -- yes, days ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('niwulunta', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('we should remember ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hapi ehgu shike fdqmb', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('cibubidan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hdbu ewot qjcm m', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('phqm wlbuc hail tjka', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ranwanquankan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('doubt Beijing is ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('sustainable way, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yihanhebu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("Zimbabwe's ruling ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mouritazai', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kuohenanhu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('budanfuhan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mabuyanse', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('junlirunke', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('standardized ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ("John McCain's Web ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('u3zi6rul4wj6', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('aburanjiu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('henlengchiwan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wuwuwuwu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('circles, the demand ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hxhu hbyi jwj ffbks', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('cunwufenbi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zi6wji6hj/6n0 ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('aladingdan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('underlying ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('tchml gjsle yudi tgdi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ＢＡＹＥ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('monanrenhu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('polewomen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('oshimama', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nir yudi qamo vwyi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yanjijiben', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hqi rmher mf yif', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ruhegenta', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rc yihu etlb nn', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jibujifu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tiyanweiao', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pincelveye', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('little doubt that ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('xunsilamu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('citizens, we must ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('nianwopopo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('existing ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('rirenshouqu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jv qbbsd yad mwsl', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('bfbg ybye nn m', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('dunledunhai', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('genanrenke', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('manqutiyan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('o．．bu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tesecanting', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('world levels, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('qule®!qi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gjsle yudi ymp jlln', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ranlaqishou', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hail bd bq csh', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('eluding them, but ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mnf yuytu bsd ke', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('lvdiheqin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('！！！！', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ruhequjin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('menfuwunv', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nd pdk qyaj my', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mtmbc knib yyyao aisl', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('furenheba', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('deali－', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dageniqu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fumuheke', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rusanripai', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nwujiren', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('miwudiudiu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rusugela', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nidisihu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('you are worried ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('nl yid tbln tghqi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('juline®!', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('changes ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yebu hgdi jlln mmbc', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('antaolunren', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('adequate ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('momodiqi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('niuroumari', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jihouniru', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('family name still ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('membership.The ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('longdiquda', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qidepenle', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('matches, my ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('．．o．', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('eventually ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hedimidu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lyp nl yudi nhe', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('nikanchanpin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Fannie Mae, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('〞ganmahe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Huawei is outpacing ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jkp hui buln dh', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('(Albania, Bosnia ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('my vpd jjmvm hounk', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('membership has made ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('tiheihei®!', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nio®!ma', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ＥＮＡＮ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u6x06zi6ej; ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ymp vfshu ybhg dup', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('work.The "dark ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yif hdp hgdi mmm', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Lithuania, and ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('manlejidu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('share ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yihu etlb tjka wtc', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('xunruantipu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ＥＮＡＮ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bieroulea', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hqi hjwg ewot nn', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ru4su04zi6g6', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('qilincanpan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bufenquli', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("adjustments.China's ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('fuwatamen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a®!®!sui', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('defended the ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mhda vfhvp m dtge', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Zedong is widely ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('requesting further ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('kuanjinebu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yuwuhansan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('next two ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ("certain: China's ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ruling ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('genlejinqu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('demwl hlbuc vnd vnd', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ym tmtj bdhhh mguog', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('dabujige', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bullying ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('kantamenhe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cideaomen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mgwg qyaj ttc mf', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('lepanchansan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jilirugai', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('the daily ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('dantaganda', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('teshulvhe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('been pushed aside ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('shike fdqmb ehgu m', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('sukehanta', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('publishes ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('direnrudi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('shiburaner', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hail ym pd kb', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('sedebendi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('simujijin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("by China's peasants ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('chuaicedisan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('beipantamen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tamenbugai', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hqi vfshu tgdi dbu', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yid vr my k', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('with Churchillian ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('nc wlvfg nn wyi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('underway, led, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('cantinghenre', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xiacilea', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Bangladeshi ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('next World Bank ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('tagenleta', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rentudibu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kejupike', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bamh wb mf yycb', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('twmmv mhda qka hail', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('cuntu®!®!', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lekouerde', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rul42l3zi6z83', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('pt wcll vfshu k', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mgdhe mgyub ym yhs', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('fundamental change ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('more flexible, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('lmp gjsle yudi yyyap', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ermianmoyo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wenzhanghaha', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('guqiganjin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('laheteru', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("Hong Kong's Acting ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('nikannina', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zerenrenjin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('suningdege', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Zimbabwe -- have ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('make them decidedly ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hebiheku', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('long-range ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Zaibatsus.This ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('worldwide lashed ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('US, defensible ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ｏｌｌｉ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mihui ebcd yphen hxbc', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('lebosiju', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('erhanxiri', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('usually fewer than ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('renosongren', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dm dbcv yihu hmy', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mbuc mwsl hjju wdmq', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('aosikajin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nn ～ yyyad kb', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ytwa jlln hqphh yihu', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yvp hqi yyyad yyyac', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('rouniurouji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('the Yen ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('！waha®!', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nulicujin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("world's ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('taqilelong', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bufennaqu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('haidiruci', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hlil dw tjmu ewot', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gengmomodi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('underlying causes, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ehenhende', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('deganceqi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('longmomohu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('quqintake', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('habirenyi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('shed its dependence ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('wanrencijin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ＥＮＡＮ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jiduxuwu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('recipients claimed ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('kelinfusi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lw hda bamh ffh', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('leadership.Two ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('qucelvelian', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fundamental change ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('rikanleyi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('le®!jilong', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lvelerourou', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("Mozambique's GDP, ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('qulewanli', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('the burden and yet ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('thunderous chants ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('pendidecun', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('President Bashar ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('klg yad ym hbnd', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mwowy hqm nini mwowy', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ipm hda bamh demwl', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('raolairaoqu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jiqibuda', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('President Jiang ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('kelisidi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nfawe nwf fdyj mgwg', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('unsustainable debts ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yitd nn jlln jwjc', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('sixungeiwo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('alabowan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('[Bush] made was ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ruchenqikan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('y94zi6rul4wj6', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('panpanle®!', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tianhanlanda', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('maintained the ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ＮＡＮＡ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hetatanqi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ONGC-Mittal was ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gebufendi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('little wonder, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('claimed in December ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('wulunruhe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Tianjin, Shenyang, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('shike iiil hgmbc jher', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ("Zimbabwe's ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('haoranhougan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qimobujin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zetilehen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("father's house ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('％wusan％', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ruisifuren', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('healiba', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('past decade.Yet a ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('xunqitafu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jinrichucan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jiqiyanli', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('suok tlj mwv m', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ganerjiran', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('erjinriji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('quality.The ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('meteboqi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lp jknd hail tghqi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('pielepiezui', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('erlingerer', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nanvrenkan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yudi nn mylm vr', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hubuanzan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jilvhendi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('k ythu yudi qhdw', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('lene®!ji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gulifuer', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('m ghui wgf klb', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hxh bbtwt yitf qfbw', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('keheneqin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('young.We have been ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jjijb mwowy lijb yihu', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ruhechedi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lifuheti', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tptd llml mbll wyi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('inadequate.The 2008 ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('l nn nini ghui', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hsb bybs bq ju', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ever younger ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('bufensansi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hubukaya', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mk liapv ioog wks', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('twmmv mhda qka hail', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ylb gamh yuytu bsd', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mebujili', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('long-standing ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('warming.Huge ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('tulituqi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bkf kb ym yid', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('lvkeluoai', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('defense ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('henxuruowu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gewentita', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('repaid.Back then ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('contained.Defenders ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ererbaji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('most fascinating ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('nn hail niy hqm', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ensuing ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('la～haha', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ranerbianji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ranergenju', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fugerenben', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('World Bank, the ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('designer lingerie, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yihu etlb ewot gehda', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('medium-size ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('World ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('niotamian', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xungeitawo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nvrenlea', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xunsuquanpan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('unsustainable ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yib l p hcq', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yiranjiman', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('desenlinli', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hqgdi hougk ywlv hjwg', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('declared the Dalai ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('vnd yihu mblwu qytv', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('kb yyyac rsypn yyyad', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yuav hqi hoav ytap', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mabirere', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lebalenghan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ym hail bu fh', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('side.But, despite ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('limilanhe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hbnd hqm hvhui mllm', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('pigu®!pa', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jinciqufu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('meribenhang', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sustainable ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('anladeni', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('shufumama', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('psh hjhne demwl dhe', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('fujiniya', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("world's largest ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('handanyici', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('deaaiyo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('benpinpairen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cunmadaan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kb yuytu bsd tgdi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('cj84gp zi6vu4', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('qlmy nn mk yyyac', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yyyad Ｐ Ｅ Ｎ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ganjueerfan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wb bamh limbb hgks', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yid twa mmok kmaa', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('zuiedude', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('houmanmanken', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jidanrenlong', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zenmequpan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hexinjiran', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('selianrenhe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fall in demand, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('adequate supplies ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ym hounk hdqmc csh', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('surpluses (China, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('dd sc mllm yuytu', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ("Serbia's neighbors ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('words: "We ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('why the Fed under ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('bufuhean', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('candanpinhun', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("China's ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('club-level ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('understand the ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mnr qhpm ygtq nwfa', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yif mwsl ndu mgb', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('alarmingly, Chechen ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jijijike', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('－genbenbu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('next fall."Worse, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ("Yeltsin's 1996 ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('more flexible ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('carbon-dioxide ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('henhendigeng', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('again.Debt relief ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('m ghui kmnr wtc', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('rounded up by ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ＮＡＮＡ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qitarenwu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('haha～yin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lilvsuian', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ＰＥＮＡ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('linheouba', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rukeyian', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aisitaier', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('henziranhen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zhourinage', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lirudingpu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('niggling little ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('pd kb m ghui', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('qujisenlin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('the existing ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jijinerji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('＝＝＝＝', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jinyaliji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ("the world's ", 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('kpblb kb ypmm hounk', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('times change the ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('changes.The ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('lilinhunyan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yo®!relie', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('！！！！', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sheltered by ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hqmqj buhu ck wyi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('patingwenta', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bixupino', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bumofuren', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('families were ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('lirechencan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tatingjinqu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cunfupicun', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('the young ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('alishansen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bailed out in bad ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('kendinghuiai', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('China and India ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('time keeping up, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mghui jmuc gesj vr', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hdbgb f byav bamh', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('the market-timing ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('budanruci', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hshml kb hbln suok', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('warships and 9 ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('menliketi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fu®;sansi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('menerwomen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('canyucici', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('underlying ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('rucifenfu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dm llml yudi ejmc', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yulabula', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lepoanke', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hemaiami', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ranerjuji', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Wedding" were ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('tupogenju', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('meteseba', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('renkankantai', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('henbeicansu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('carbon dioxide can ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('less demanding?A ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('magnitudes, timing, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('taqidepen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('huposenlin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('laoeryiru', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ernaruta', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Studebaker ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('qule®!®!', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('xiwahaha', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hdhjg qss vfshu qss', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('undeniable.Virtually ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ranmanyanlv', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dizaoanbi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('takankanta', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jihuilipan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('should be ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('dejibencan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('courenaoer', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jiribenyin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ranfanfufa', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tawennini', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('anikanta', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qumaikankan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qudiegege', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qiqiwenjin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Shenzhen and ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gennitile', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('buqifumu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ranyufukan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Lebanese Shia, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('gukehuxu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tghqi k hdln demwl', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('kairibencha', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bendirenbu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('diwuyihan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('matebieai', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('anpaitamen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('obiqina', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('inadequately ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('wusuofudi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('angry marauding ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('mkp ptyu hbu hsbuc', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('picturesque ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('ju mk khcmw nnnao', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('yib k hbnd bbtwt', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('chuidankepo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tuopinjincan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('emosanse', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nisukuhe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bukuodacan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('existing and newly ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jinbulebu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jirupubu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('digegege', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('the world by ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('wyi hq vfbm vfyia', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('the main leadership ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('el nlbm sp yudi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('liranerbi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qitadisan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vhpa yib kb nd', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('didabote', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('didagunni', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cemanmande', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fangleahe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hj cpim m shike', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('explain, but there ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('shiercice', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fact, the world ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('m csh kb ju', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('pincansidan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ＰＥＮＡ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wlyaj lijj lei yymr', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('tesehehua', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mankeyanbu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Palestinian youths ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('bulvhejin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('held back four ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('la®!wohen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rijixushen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bamh wb mf vnd', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('nikefurui', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jidejiran', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zi6n4rm3104', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('membership.Turkey ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('limocaba', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tupowande', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yuytu bsd ks tmmv', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('sqnl ypmm ekua klg', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('citizens.But if you ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('China, India, ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('kanchanpinqi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('disorderly workouts ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('(though bad ideas ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('wonder that ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('burannidu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('worship at the ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('jwj yihu etlb nn', 0)
+True Label: 0
+Predicted Label: 1
+
