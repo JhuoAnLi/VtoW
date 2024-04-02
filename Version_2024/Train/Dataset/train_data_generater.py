@@ -20,7 +20,6 @@ if __name__ == "__main__":
         for prefix in prefixes:
                 files = os.listdir(SRC_DATASET_PATH)
                 src_file_names = [file for file in files if file.startswith(f"{prefix}_")]
-                print(src_file_names)
                 assert len(src_file_names) == 4
                 target_file_name = f"labeled_{target_language}_{prefix}_train.txt"
                 if os.path.exists(TARGET_DATASET_PATH + target_file_name):
