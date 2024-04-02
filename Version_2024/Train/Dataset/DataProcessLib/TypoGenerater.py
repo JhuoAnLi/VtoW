@@ -178,9 +178,15 @@ class TypoGenerater:
             return input_string
 
         if error_type == "random":
-            return TypoGenerater._generate_random(input_string, error_rate)
+            lines = input_string.split("\n")
+            for i in range(len(lines)):
+                lines[i] = TypoGenerater._generate_random(lines[i], error_rate)
+            return "\n".join(lines)
         elif error_type == "8adjacency":
-            return TypoGenerater._generate_8adjacency(input_string, error_rate)
+            lines = input_string.split("\n")
+            for i in range(len(lines)):
+                lines[i] = TypoGenerater._generate_8adjacency(lines[i], error_rate)
+            return "\n".join(lines)
         else:
             raise ValueError("Error: error_type '{}' is not supported".format(error_type))
     
@@ -324,8 +330,7 @@ if __name__ == "__main__":
     ERROR_RATE = 0.1
     ERROR_TYPE = "random"
 
-    dir_path = os.path.dirname(__file__)
-    input_file = os.path.abspath(os.path.join(dir_path, "..\\Key_Stroke_Datasets\\bopomofo-news-0.txt"))
+    input_file = "..\\Key_Stroke_Datasets\\aaa.txt"
     print(input_file)
-    output_file = os.path.abspath(os.path.join(dir_path, "..\\Key_Stroke_Datasets\\bopomofo-news-{}.txt".format(str(ERROR_RATE).replace(".", "_"))))
+    output_file = "..\\Key_Stroke_Datasets\\bbb.txt"
     TypoGenerater.generate_file_parallel(input_file, output_file, ERROR_TYPE, ERROR_RATE)
