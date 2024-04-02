@@ -4,6 +4,9 @@ from DataProcessLib.LanguageCleaner import LanguageCleaner
 from DataProcessLib.KeyStrokeConverter import KeyStrokeConverter
 from DataProcessLib.TypoGenerater import TypoGenerater
 
+import random
+from tqdm import tqdm
+
 def split_train_test_file(input_file_path, train_file_path, test_file_path, train_test_split_size):
     with open(input_file_path, "r", encoding="utf-8") as file:
         lines = file.readlines()
@@ -19,6 +22,46 @@ def split_train_test_file(input_file_path, train_file_path, test_file_path, trai
         for line in test_lines:
             file.write(line)
 
+def split_by_word(input_file_path, output_file_path, min_split_word_len, max_split_word_len, language="en"):
+    with open(input_file_path, "r", encoding="utf-8") as file_in:
+        lines = file_in.readlines()
+        output_lines = []
+        if language == "en":
+            input_string = "".join(lines)
+            words = [word for line in input_string.split('\n') for word in line.split(' ')]
+            i = 0
+            with tqdm(total=len(words)) as pbar:
+                while i < len(words):
+                    output_lines.append(' '.join(words[i:i+1]))
+                    output_lines.append(' '.join(words[i+1:i+3]))
+                    output_lines.append(' '.join(words[i+3:i+6]))
+                    pbar.update(6)
+                    i += 6
+        elif language == "ch":
+            joined_lines = "".join(lines).replace("\n", "")
+            words = [word for word in joined_lines]
+            i = 0
+            with tqdm(total=len(words)) as pbar:
+                while i < len(words):
+                    output_lines.append(''.join(words[i:i+1]))
+                    output_lines.append(''.join(words[i+1:i+3]))
+                    output_lines.append(''.join(words[i+3:i+6]))
+                    pbar.update(6)
+                    i += 6
+        else:
+            raise ValueError("Invalid language: " + language)
+    
+    with open(output_file_path, "w", encoding="utf-8") as file_out:
+        file_out.write("\n".join(output_lines))
+
+def cut_keystroke_by(input_file_path, output_file_path, cut_out_len):
+    with open(input_file_path, "r", encoding="utf-8") as file_in:
+        keystroke_lines = file_in.readlines()
+        keystroke_lines = [line.replace("\n", "") for line in keystroke_lines if line.strip() != ""]
+        joined_keystroke_lines = "".join(keystroke_lines)
+        out_keystrokes = [joined_keystroke_lines[i:i+cut_out_len] for i in range(0, len(joined_keystroke_lines), cut_out_len)]
+    with open(output_file_path, "w", encoding="utf-8") as file_out:
+        file_out.write("\n".join(out_keystrokes))
 
 if __name__ == "__main__":
     NUM_PROCESSES = 4
@@ -28,7 +71,7 @@ if __name__ == "__main__":
 
     unfinished_jobs = []
     for job in job_list:
-        if job.get("status") != "done" or job.get("status") is None :
+        if job.get("status") != "done" or job.get("status") is None:
             try: 
                 if job["mode"] == "clean":
                     LanguageCleaner.clean_file_parallel(job["input_file_path"], job["output_file_path"], job["language"], num_processes=NUM_PROCESSES)
@@ -38,6 +81,10 @@ if __name__ == "__main__":
                     TypoGenerater.generate_file_parallel(job["input_file_path"], job["output_file_path"], job["error_type"], job["error_rate"], num_processes=NUM_PROCESSES)
                 elif job["mode"] == "split":
                     split_train_test_file(job["input_file_path"], job["train_file_path"], job["test_file_path"], job["train_test_split_ratio"])
+                elif job["mode"] == "split_word":
+                    split_by_word(job["input_file_path"], job["output_file_path"], job["min_split_word_len"], job["max_split_word_len"], job["language"])
+                elif job["mode"] == "cut_keystroke":
+                    cut_keystroke_by(job["input_file_path"], job["output_file_path"], job["cut_out_len"])
                 else:
                     raise ValueError("Invalid mode: " + job["mode"])
                 
