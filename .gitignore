@@ -4,4 +4,5 @@ wandb
 
 Version_2024/Train/Dataset/Train_Datasets/*.txt
 Version_2024/Train/Dataset/Test_Datasets/*.txt
+Version_2024/Train/Dataset/Key_Stroke_Datasets/*.txt
 tempCodeRunnerFile.py
