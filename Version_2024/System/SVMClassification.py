@@ -59,7 +59,7 @@ class IMEClassifier:
     def __init__(self, data):
         self.data = data
         self.labels = []
-        self.vectorizer = TfidfVectorizer(tokenizer=custom_tokenizer_pinyin)
+        self.vectorizer = TfidfVectorizer(tokenizer=custom_tokenizer_bopomofo)
         self.classifiers = {}
         self.X_train, self.X_val, self.y_train, self.y_val = train_test_split(
             [text for text, _ in self.data],
@@ -82,6 +82,10 @@ class IMEClassifier:
             threads.append(thread)
         for thread in tqdm(threads, desc="Training classifiers"):
             thread.join()
+        print(
+            "Number of tokens in TfidfVectorizer: ",
+            len(self.vectorizer.get_feature_names_out()),
+        )
 
     def train_classifier_thread(self, label, y_binary):
         classifier = SVC(kernel="linear")
@@ -131,65 +135,83 @@ class IMEClassifier:
 
 if __name__ == "__main__":
 
-    filename = "Version_2024\\Train\\Dataset\\Train_Datasets\\pinyin-0-len3.txt"
-    data = read_file(filename)
+    file_1 = "Version_2024\\Train\\Dataset\\Train_Datasets\\labeled_bopomofo_0_train.txt"
+    file_2 = (
+        "Version_2024\\Train\\Dataset\\Train_Datasets\\labeled_bopomofo_r0-1_train.txt"
+    )
+    data_1 = read_file(file_1)
+    data_2 = read_file(file_2)
     random.seed(42)
-    training_random_data = random.sample(data, 300000)
+    training_random_data_1 = random.sample(data_1, 450000)
+    training_random_data_2 = random.sample(data_2, 150000)
+    training_random_data = training_random_data_1 + training_random_data_2
     training_random_data_list = [
         (line[0], int(line[1])) for line in training_random_data
     ]
 
-    # test_file_name = (
-    #     "Version_2024\\Train\\Dataset\\Test_Datasets\\cangjie-0-len10-test.txt"
-    # )
-    # temp_test_data = read_file(test_file_name)
-    # testing_random_data = random.sample(temp_test_data, 100000)
-    # testing_random_data_list = [(line[0], int(line[1])) for line in testing_random_data]
+    test_file_name = (
+        "Version_2024\\Train\\Dataset\\Test_Datasets\\labeled_bopomofo_0_test.txt"
+    )
+    temp_test_data = read_file(test_file_name)
+    testing_random_data = random.sample(temp_test_data, 100000)
+    testing_random_data_list = [(line[0], int(line[1])) for line in testing_random_data]
+
+    print("Test Dataset: labeled_bopomofo_0_test.txt, 100000 Samples")
 
     relative_path = "Version_2024\\Model_dump"
-    model_name = "pinyin.pkl"
+    model_name = "bopomofo.pkl"
+
     if os.path.exists(os.path.join(os.getcwd(), relative_path, model_name)):
         loaded_classifier = IMEClassifier(training_random_data)
         loaded_classifier.load_model(model_name)
+        print(model_name)
         print("Model loaded")
     else:
+        print("Total Train Dataset: 480000 Samples")
+        print("Train Dataset 1: labeled_pinyin_0_train, 360000 Samples")
+        print("Train Dataset 2: labeled_pinyin_r0-1_train, 120000 Samples")
+        print()
+        print("Validation Dataset: 120000 Samples")
         text_classifier = IMEClassifier(training_random_data)
         text_classifier.train_classifier()
         text_classifier.validate_classifier()
         text_classifier.save_model(model_name)
         loaded_classifier = IMEClassifier(training_random_data)
         loaded_classifier.load_model(model_name)
+        print(model_name)
         print("Model saved")
         print("Model loaded")
 
-    new_text = ["cl3", "jmam"]
-    for text in new_text:
-        print("Test case:", text)
-        prediction = loaded_classifier.predict(text)
-        print("Predicted label:", prediction)
+    # new_text = ["cl3", "jmam","weather"]
+    # for text in new_text:
+    #     print("Test case:", text)
+    #     prediction = loaded_classifier.predict(text)
+    #     print("Predicted label:", prediction)
 
-    # print("Length of testing data:", len(testing_random_data_list))
-    # true_labels = []
-    # predicted_labels = []
+    print("Length of testing data:", len(testing_random_data_list))
+    true_labels = []
+    predicted_labels = []
 
-    # with open("cangjie_len10_prediction_errors.txt", "w", encoding="utf-8") as f:
-    #     for text, true_label in testing_random_data_list:
-    #         prediction = loaded_classifier.predict(text)
-    #         true_labels.append(true_label)
-    #         predicted_labels.append(int(prediction))
+    with open("pinyin_error0_prediction_errors.txt", "w", encoding="utf-8") as f:
+        for text, true_label in testing_random_data_list:
+            prediction = loaded_classifier.predict(text)
+            true_labels.append(true_label)
+            predicted_labels.append(int(prediction))
 
-    #     for text, true_label, predicted_label in zip(
-    #         testing_random_data_list, true_labels, predicted_labels
-    #     ):
-    #         if true_label != predicted_label:
-    #             f.write("Text: {}\n".format(text))
-    #             f.write("True Label: {}\n".format(true_label))
-    #             f.write("Predicted Label: {}\n".format(predicted_label))
-    #             f.write("\n")
+        for text, true_label, predicted_label in zip(
+            testing_random_data_list, true_labels, predicted_labels
+        ):
+            if true_label != predicted_label:
+                f.write("Text: {}\n".format(text))
+                f.write("True Label: {}\n".format(true_label))
+                f.write("Predicted Label: {}\n".format(predicted_label))
+                f.write("\n")
 
-    # conf_matrix = confusion_matrix(true_labels, predicted_labels)
-    # print("Confusion Matrix:")
-    # print(conf_matrix)
+    conf_matrix = confusion_matrix(true_labels, predicted_labels)
+    print("Confusion Matrix:")
+    print("\t  Predicted 0\t Predicted 1")
+    print("True 0\t", conf_matrix[0, 0], "\t\t", conf_matrix[0, 1])
+    print("True 1\t", conf_matrix[1, 0], "\t\t", conf_matrix[1, 1])
 
-    # accuracy = np.trace(conf_matrix) / np.sum(conf_matrix) * 100
-    # print("Test Accuracy:", accuracy)
+    accuracy = np.trace(conf_matrix) / np.sum(conf_matrix) * 100
+    print("Test Accuracy:", accuracy)
