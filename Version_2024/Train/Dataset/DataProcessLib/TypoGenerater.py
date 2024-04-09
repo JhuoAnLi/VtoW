@@ -34,66 +34,118 @@ def character_mapping(input: str) -> list[str]:
         return ["0", "=", "p", "[", "]"]
     elif input == "=":
         return ["-", "\\", "[", "]"]
-    elif input == "q" or input == "Q":
+    elif input == "q" :
         return ["1", "2", "w", "a", "s"]
-    elif input == "w" or input == "W":
-        return ["1", "2", "3", "q", "a", "s", "d"]
-    elif input == "e" or input == "E":
-        return ["2", "3", "4", "w", "s", "d", "f"]
-    elif input == "r" or input == "R":
-        return ["3", "4", "5", "e", "d", "f", "g"]
-    elif input == "t" or input == "T":
-        return ["4", "5", "6", "r", "f", "g", "h"]
-    elif input == "y" or input == "Y":
-        return ["5", "6", "7", "t", "g", "h", "j"]
-    elif input == "u" or input == "U":
-        return ["6", "7", "8", "y", "h", "j", "k"]
-    elif input == "i" or input == "I":
-        return ["7", "8", "9", "u", "j", "k", "l"]
-    elif input == "o" or input == "O":
-        return ["8", "9", "0", "i", "k", "l", ";"]
-    elif input == "p" or input == "P":
-        return ["9", "0", "-", "o", "l", ";", "'"]
+    elif input == "Q":
+        return ["1", "2", "W", "A", "S"]
+    elif input == "w":
+        return ["1", "2", "3", "q", "a", "s", "d","e"]
+    elif input == "W":
+        return ["1","2", "3", "E", "A", "S", "D","Q"]
+    elif input == "e" :
+        return ["2", "3", "4", "w", "s", "d", "f", "r"]
+    elif input == "E":
+        return ["2", "3", "4", "W", "S", "D", "F", "R"]
+    elif input == "r":
+        return ["3", "4", "5", "e", "d", "f", "g", "t"]
+    elif input == "R":
+        return ["3", "4", "5", "E", "D", "F", "G", "T"]
+    elif input == "t":
+        return ["4", "5", "6", "r", "f", "g", "h", "y"]
+    elif input == "T":
+        return ["4", "5", "6", "R", "F", "G", "H", "Y"]
+    elif input == "y" :
+        return ["5", "6", "7", "t", "g", "h", "j", "u"]
+    elif input == "Y":
+        return ["5", "6", "7", "T", "G", "H", "J", "U"]
+    elif input == "u":
+        return ["6", "7", "8", "y", "h", "j", "k", "i"]
+    elif input == "U":
+        return ["6", "7", "8", "Y", "H", "J", "K", "I"]
+    elif input == "i":
+        return ["7", "8", "9", "u", "j", "k", "l", "o"]
+    elif input == "I":
+        return ["7", "8", "9", "U", "J", "K", "L", "O"]
+    elif input == "o":
+        return ["8", "9", "0", "i", "k", "l", ";" "p"]
+    elif input == "O":
+        return ["8", "9", "0", "I", "K", "L", ";" "P"]
+    elif input == "p" :
+        return ["9", "0", "-", "o", "l", ";", "'", "["]
+    elif input == "P":
+        return ["9", "0", "-", "O", "L", ";", "'", "["]
     elif input == "[":
         return ["0", "-", "=", "p", ";", "'", "]"]
     elif input == "]":
         return ["-", "=", "[", "'", "\\"]
-    elif input == "a" or input == "A":
+    elif input == "a" :
         return ["q", "w", "s", "z", "x"]
-    elif input == "s" or input == "S":
+    elif input=="A":
+        return ["Q", "W", "S", "Z", "X"]
+    elif input == "s" :
         return ["q", "w", "e", "a", "d", "z", "x", "c"]
-    elif input == "d" or input == "D":
+    elif input == "S":
+        return ["Q", "W", "E", "A", "D", "Z", "X", "C"]
+    elif input == "d" :
         return ["w", "e", "r", "s", "f", "x", "c", "v"]
-    elif input == "f" or input == "F":
+    elif input == "D":
+        return ["W", "E", "R", "S", "F", "X", "C", "V"]
+    elif input == "f" :
         return ["e", "r", "t", "d", "g", "c", "v", "b"]
-    elif input == "g" or input == "G":
+    elif input == "F":
+        return ["E", "R", "T", "D", "G", "C", "V", "B"]
+    elif input == "g" :
         return ["r", "t", "y", "f", "h", "v", "b", "n"]
-    elif input == "h" or input == "H":
+    elif input == "G":
+        return ["R", "T", "Y", "F", "H", "V", "B", "N"]
+    elif input == "h":
         return ["t", "y", "u", "g", "j", "b", "n", "m"]
-    elif input == "j" or input == "J":
+    elif input == "H":
+        return ["T", "Y", "U", "G", "J", "B", "N", "M"]
+    elif input == "j" :
         return ["y", "u", "i", "h", "k", "n", "m", ","]
-    elif input == "k" or input == "K":
+    elif input == "J" :
+        return ["Y", "U", "I", "H", "K", "N", "M", ","]
+    elif input == "k" :
         return ["u", "i", "o", "j", "l", "m", ",", "."]
-    elif input == "l" or input == "L":
+    elif input == "K" :
+        return ["U", "I", "O", "J", "L", "M", ",", "."]
+    elif input == "l" :
         return ["i", "o", "p", "k", ";", ".", "/"]
+    elif input == "L" :
+        return ["I", "O", "P", "K", ";", ".", "/"]
     elif input == ";":
         return ["o", "p", "[", "l", "'", ".", "/"]
     elif input == "'":
         return ["p", "[", "]", ";", "/"]
-    elif input == "z" or input == "Z":
+    elif input == "z" :
         return ["a", "s", "x"]
-    elif input == "x" or input == "X":
+    elif input == "Z":
+        return ["A", "S", "X"]
+    elif input == "x" :
         return ["a", "s", "d", "z", "c"]
-    elif input == "c" or input == "C":
+    elif input == "X":
+        return ["A", "S", "D", "Z", "C"]
+    elif input == "c" :
         return ["s", "d", "f", "x", "v"]
-    elif input == "v" or input == "V":
+    elif input == "C":
+        return ["S", "D", "F", "X", "V"]
+    elif input == "v" :
         return ["d", "f", "g", "c", "b"]
-    elif input == "b" or input == "B":
+    elif input == "V":
+        return ["D", "F", "G", "C", "B"]
+    elif input == "b":
         return ["f", "g", "h", "v", "n"]
-    elif input == "n" or input == "N":
+    elif input=="B":
+        return ["F", "G", "H", "V", "N"]
+    elif input == "n" :
         return ["g", "h", "j", "b", "m"]
-    elif input == "m" or input == "M":
+    elif input== "N" :
+        return ["G", "H", "J", "B", "M"]
+    elif input == "m" :
         return ["h", "j", "k", "n", ","]
+    elif input== "M" :
+        return ["H", "J", "K", "N", ","]
     elif input == ",":
         return ["j", "k", "l", "m", "."]
     elif input == ".":
