@@ -1,11 +1,7 @@
-import os
-
 import joblib
-from sklearn.feature_extraction.text import TfidfVectorizer
 from abc import ABC, abstractmethod
-import re
 
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 
 
 from SVMClassification import custom_tokenizer_bopomofo, custom_tokenizer_cangjie, custom_tokenizer_pinyin # fix this depends on SVMClassification.py
@@ -50,20 +46,20 @@ class IMEDetectorSVM(IMEDetector):
             print(e)
 
 
-    def predict(self, input: str) -> str:
+    def predict(self, input: str, positive_bound: float = 1, neg_bound: float = -0.5) -> bool:
         text_features = self.vectorizer.transform([input])
         predictions = {}
-        correct_predictions = 0
-        total_predictions = 0
         for label, classifier in self.classifiers.items():
             prediction = classifier.decision_function(text_features)[0]
             predictions[label] = prediction
-            if prediction == label:
-                correct_predictions += 1
-            total_predictions += 1
-        # print("Predictions:", predictions)
-        return max(predictions, key=predictions.get)
-    
+        print("Predictions:", predictions)
+
+        if predictions["1"] > positive_bound or ( neg_bound < predictions["1"] < 0):
+            return True
+        else:
+            return False
+
+
 if __name__ == "__main__":
     my_bopomofo_detector = IMEDetectorSVM('..\\Model_dump\\bopomofo.pkl', '..\\Model_dump\\vectorizer_bopomofo.pkl')
     my_eng_detector = IMEDetectorSVM('..\\Model_dump\\english.pkl', '..\\Model_dump\\vectorizer_english.pkl')
@@ -72,10 +68,10 @@ if __name__ == "__main__":
     input_text = "su3cl3"
     while True:
         input_text = input('Enter text: ')
-        is_bopomofo = True if my_bopomofo_detector.predict(input_text) == "1" else False
-        is_cangjie = True if my_cangjie_detector.predict(input_text) == "1" else False
-        is_english = True if my_eng_detector.predict(input_text) == "1" else False
-        is_pinyin = True if my_pinyin_detector.predict(input_text) == "1" else False
+        is_bopomofo = my_bopomofo_detector.predict(input_text)
+        is_cangjie = my_cangjie_detector.predict(input_text)
+        is_english = my_eng_detector.predict(input_text)
+        is_pinyin = my_pinyin_detector.predict(input_text)
 
         print(Fore.GREEN + 'bopomofo'  if is_bopomofo else Fore.RED + 'bopomofo', end=' ')
         print(Fore.GREEN + 'cangjie' if is_cangjie else Fore.RED + 'cangjie', end=' ')
