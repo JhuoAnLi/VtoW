@@ -32,7 +32,7 @@ if __name__ == "__main__":
     group = [("ch", "Chinese_WebCrawlData_cc100-ch.txt"), ("en", "English_multi_news-ch.txt")]
     min_split_word_len = 1
     max_split_word_len = 3
-    skip_split_word = True
+    skip_split_word = False
 
     output_file_name_list = []
     for language, src_file in group:
@@ -65,7 +65,7 @@ if __name__ == "__main__":
     mode = "convert"
     src_files = ["wlen1-3_cc100.txt"]
     convert_types = ["bopomofo", "cangjie", "pinyin"]
-    skip_convert = True
+    skip_convert = False
 
     convert_files = []
     for src_file in src_files:
