@@ -7,7 +7,7 @@ if __name__ == "__main__":
     TARGET_DATASET_PATH = ".\\Train_Datasets\\"
 
     target_languages = ["bopomofo", "cangjie", "pinyin", "english"]
-    prefixes = ["0", "r0-1", "r0-01"]
+    prefixes = ["0", "r0-1"]
 
 
     for file in os.listdir(TARGET_DATASET_PATH):
@@ -30,12 +30,19 @@ if __name__ == "__main__":
                         print("File not overwritten. Exiting...")
                         exit()
 
+                file_lines = []
                 for file_name in tqdm(src_file_names, desc="Processing files"):
                     with open(SRC_DATASET_PATH + file_name, "r", encoding="utf-8") as file:
                         lines = file.readlines()
                         lines = [line.replace("\n", "") for line in lines] # remove the \n in the line
                         new_lines = [line + "\t1" if target_language in file_name else line + "\t0" for line in lines]
-                    
-                    with open(os.path.join(TARGET_DATASET_PATH, target_file_name), "a", encoding="utf-8") as file:
-                        for line in new_lines:
+                        file_lines.append(new_lines)
+                
+                print("file lines: ", [len(lines) for lines in file_lines])
+                max_lines = min([len(lines) for lines in file_lines])
+                print(f"Each language contains {max_lines} lines of data")
+                output_lines = [lines[:max_lines] for lines in file_lines]
+                with open(os.path.join(TARGET_DATASET_PATH, target_file_name), "a", encoding="utf-8") as file:
+                    for lines in output_lines:
+                        for line in lines:
                             file.write(line + "\n")
