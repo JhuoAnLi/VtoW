@@ -8,6 +8,14 @@
         "status": "done"
     },
     {
+        "mode": "clean",
+        "description": "Clean English_multi_news.txt to english",
+        "input_file_path": ".\\Plain_Text_Datasets\\English_multi_news.txt",
+        "output_file_path": ".\\Plain_Text_Datasets\\English_multi_news-ch.txt",
+        "language": "english",
+        "status": "done"
+    },
+    {
         "mode": "split_word",
         "description": "Split Chinese_WebCrawlData_cc100-ch.txt into words with length 1-3",
         "input_file_path": ".\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100-ch.txt",
@@ -19,9 +27,9 @@
     },
     {
         "mode": "split_word",
-        "description": "Split English.txt into words with length 1-3",
-        "input_file_path": ".\\Plain_Text_Datasets\\English.txt",
-        "output_file_path": ".\\Plain_Text_Datasets\\wlen1-3_English.txt",
+        "description": "Split English_multi_news-ch.txt into words with length 1-3",
+        "input_file_path": ".\\Plain_Text_Datasets\\English_multi_news-ch.txt",
+        "output_file_path": ".\\Plain_Text_Datasets\\wlen1-3_English_multi.txt",
         "min_split_word_len": 1,
         "max_split_word_len": 3,
         "language": "en",
@@ -53,9 +61,9 @@
     },
     {
         "mode": "convert",
-        "description": "Convert wlen1-3_English.txt to english",
-        "input_file_path": ".\\Plain_Text_Datasets\\wlen1-3_English.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\0_english_wlen1-3_English.txt",
+        "description": "Convert wlen1-3_English_multi.txt to english",
+        "input_file_path": ".\\Plain_Text_Datasets\\wlen1-3_English_multi.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\0_english_wlen1-3_English_multi.txt",
         "convert_type": "english",
         "status": "done"
     },
@@ -70,11 +78,29 @@
     },
     {
         "mode": "gen_error",
-        "description": "Generate 'random' error for 0_bopomofo_wlen1-3_cc100.txt with error rate 0.01",
+        "description": "Generate 'random' error for 0_bopomofo_wlen1-3_cc100.txt with error rate 0.05",
         "input_file_path": ".\\Key_Stroke_Datasets\\0_bopomofo_wlen1-3_cc100.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\r0-01_bopomofo_wlen1-3_cc100.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\r0-05_bopomofo_wlen1-3_cc100.txt",
         "error_type": "random",
-        "error_rate": 0.01,
+        "error_rate": 0.05,
+        "status": "done"
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate '8adjacency' error for 0_bopomofo_wlen1-3_cc100.txt with error rate 0.1",
+        "input_file_path": ".\\Key_Stroke_Datasets\\0_bopomofo_wlen1-3_cc100.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\8a0-1_bopomofo_wlen1-3_cc100.txt",
+        "error_type": "8adjacency",
+        "error_rate": 0.1,
+        "status": "done"
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate '8adjacency' error for 0_bopomofo_wlen1-3_cc100.txt with error rate 0.05",
+        "input_file_path": ".\\Key_Stroke_Datasets\\0_bopomofo_wlen1-3_cc100.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\8a0-05_bopomofo_wlen1-3_cc100.txt",
+        "error_type": "8adjacency",
+        "error_rate": 0.05,
         "status": "done"
     },
     {
@@ -88,11 +114,29 @@
     },
     {
         "mode": "gen_error",
-        "description": "Generate 'random' error for 0_cangjie_wlen1-3_cc100.txt with error rate 0.01",
+        "description": "Generate 'random' error for 0_cangjie_wlen1-3_cc100.txt with error rate 0.05",
         "input_file_path": ".\\Key_Stroke_Datasets\\0_cangjie_wlen1-3_cc100.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\r0-01_cangjie_wlen1-3_cc100.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\r0-05_cangjie_wlen1-3_cc100.txt",
         "error_type": "random",
-        "error_rate": 0.01,
+        "error_rate": 0.05,
+        "status": "done"
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate '8adjacency' error for 0_cangjie_wlen1-3_cc100.txt with error rate 0.1",
+        "input_file_path": ".\\Key_Stroke_Datasets\\0_cangjie_wlen1-3_cc100.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\8a0-1_cangjie_wlen1-3_cc100.txt",
+        "error_type": "8adjacency",
+        "error_rate": 0.1,
+        "status": "done"
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate '8adjacency' error for 0_cangjie_wlen1-3_cc100.txt with error rate 0.05",
+        "input_file_path": ".\\Key_Stroke_Datasets\\0_cangjie_wlen1-3_cc100.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\8a0-05_cangjie_wlen1-3_cc100.txt",
+        "error_type": "8adjacency",
+        "error_rate": 0.05,
         "status": "done"
     },
     {
@@ -106,29 +150,65 @@
     },
     {
         "mode": "gen_error",
-        "description": "Generate 'random' error for 0_pinyin_wlen1-3_cc100.txt with error rate 0.01",
+        "description": "Generate 'random' error for 0_pinyin_wlen1-3_cc100.txt with error rate 0.05",
         "input_file_path": ".\\Key_Stroke_Datasets\\0_pinyin_wlen1-3_cc100.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\r0-01_pinyin_wlen1-3_cc100.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\r0-05_pinyin_wlen1-3_cc100.txt",
         "error_type": "random",
-        "error_rate": 0.01,
+        "error_rate": 0.05,
         "status": "done"
     },
     {
         "mode": "gen_error",
-        "description": "Generate 'random' error for 0_english_wlen1-3_English.txt with error rate 0.1",
-        "input_file_path": ".\\Key_Stroke_Datasets\\0_english_wlen1-3_English.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\r0-1_english_wlen1-3_English.txt",
+        "description": "Generate '8adjacency' error for 0_pinyin_wlen1-3_cc100.txt with error rate 0.1",
+        "input_file_path": ".\\Key_Stroke_Datasets\\0_pinyin_wlen1-3_cc100.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\8a0-1_pinyin_wlen1-3_cc100.txt",
+        "error_type": "8adjacency",
+        "error_rate": 0.1,
+        "status": "done"
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate '8adjacency' error for 0_pinyin_wlen1-3_cc100.txt with error rate 0.05",
+        "input_file_path": ".\\Key_Stroke_Datasets\\0_pinyin_wlen1-3_cc100.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\8a0-05_pinyin_wlen1-3_cc100.txt",
+        "error_type": "8adjacency",
+        "error_rate": 0.05,
+        "status": "done"
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate 'random' error for 0_english_wlen1-3_English_multi.txt with error rate 0.1",
+        "input_file_path": ".\\Key_Stroke_Datasets\\0_english_wlen1-3_English_multi.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\r0-1_english_wlen1-3_English_multi.txt",
         "error_type": "random",
         "error_rate": 0.1,
         "status": "done"
     },
     {
         "mode": "gen_error",
-        "description": "Generate 'random' error for 0_english_wlen1-3_English.txt with error rate 0.01",
-        "input_file_path": ".\\Key_Stroke_Datasets\\0_english_wlen1-3_English.txt",
-        "output_file_path": ".\\Key_Stroke_Datasets\\r0-01_english_wlen1-3_English.txt",
+        "description": "Generate 'random' error for 0_english_wlen1-3_English_multi.txt with error rate 0.05",
+        "input_file_path": ".\\Key_Stroke_Datasets\\0_english_wlen1-3_English_multi.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\r0-05_english_wlen1-3_English_multi.txt",
         "error_type": "random",
-        "error_rate": 0.01,
+        "error_rate": 0.05,
+        "status": "done"
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate '8adjacency' error for 0_english_wlen1-3_English_multi.txt with error rate 0.1",
+        "input_file_path": ".\\Key_Stroke_Datasets\\0_english_wlen1-3_English_multi.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\8a0-1_english_wlen1-3_English_multi.txt",
+        "error_type": "8adjacency",
+        "error_rate": 0.1,
+        "status": "done"
+    },
+    {
+        "mode": "gen_error",
+        "description": "Generate '8adjacency' error for 0_english_wlen1-3_English_multi.txt with error rate 0.05",
+        "input_file_path": ".\\Key_Stroke_Datasets\\0_english_wlen1-3_English_multi.txt",
+        "output_file_path": ".\\Key_Stroke_Datasets\\8a0-05_english_wlen1-3_English_multi.txt",
+        "error_type": "8adjacency",
+        "error_rate": 0.05,
         "status": "done"
     },
     {
@@ -142,10 +222,28 @@
     },
     {
         "mode": "split",
-        "description": "Split r0-01_bopomofo_wlen1-3_cc100.txt with 0.5 into r0-01_bopomofo_wlen1-3_cc100_train.txt and r0-01_bopomofo_wlen1-3_cc100_test.txt datasets.",
-        "input_file_path": ".\\Key_Stroke_Datasets\\r0-01_bopomofo_wlen1-3_cc100.txt",
-        "train_file_path": ".\\Train_Datasets\\r0-01_bopomofo_wlen1-3_cc100_train.txt",
-        "test_file_path": ".\\Test_Datasets\\r0-01_bopomofo_wlen1-3_cc100_test.txt",
+        "description": "Split r0-05_bopomofo_wlen1-3_cc100.txt with 0.5 into r0-05_bopomofo_wlen1-3_cc100_train.txt and r0-05_bopomofo_wlen1-3_cc100_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\r0-05_bopomofo_wlen1-3_cc100.txt",
+        "train_file_path": ".\\Train_Datasets\\r0-05_bopomofo_wlen1-3_cc100_train.txt",
+        "test_file_path": ".\\Test_Datasets\\r0-05_bopomofo_wlen1-3_cc100_test.txt",
+        "train_test_split_ratio": 0.5,
+        "status": "done"
+    },
+    {
+        "mode": "split",
+        "description": "Split 8a0-1_bopomofo_wlen1-3_cc100.txt with 0.5 into 8a0-1_bopomofo_wlen1-3_cc100_train.txt and 8a0-1_bopomofo_wlen1-3_cc100_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\8a0-1_bopomofo_wlen1-3_cc100.txt",
+        "train_file_path": ".\\Train_Datasets\\8a0-1_bopomofo_wlen1-3_cc100_train.txt",
+        "test_file_path": ".\\Test_Datasets\\8a0-1_bopomofo_wlen1-3_cc100_test.txt",
+        "train_test_split_ratio": 0.5,
+        "status": "done"
+    },
+    {
+        "mode": "split",
+        "description": "Split 8a0-05_bopomofo_wlen1-3_cc100.txt with 0.5 into 8a0-05_bopomofo_wlen1-3_cc100_train.txt and 8a0-05_bopomofo_wlen1-3_cc100_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\8a0-05_bopomofo_wlen1-3_cc100.txt",
+        "train_file_path": ".\\Train_Datasets\\8a0-05_bopomofo_wlen1-3_cc100_train.txt",
+        "test_file_path": ".\\Test_Datasets\\8a0-05_bopomofo_wlen1-3_cc100_test.txt",
         "train_test_split_ratio": 0.5,
         "status": "done"
     },
@@ -160,10 +258,28 @@
     },
     {
         "mode": "split",
-        "description": "Split r0-01_cangjie_wlen1-3_cc100.txt with 0.5 into r0-01_cangjie_wlen1-3_cc100_train.txt and r0-01_cangjie_wlen1-3_cc100_test.txt datasets.",
-        "input_file_path": ".\\Key_Stroke_Datasets\\r0-01_cangjie_wlen1-3_cc100.txt",
-        "train_file_path": ".\\Train_Datasets\\r0-01_cangjie_wlen1-3_cc100_train.txt",
-        "test_file_path": ".\\Test_Datasets\\r0-01_cangjie_wlen1-3_cc100_test.txt",
+        "description": "Split r0-05_cangjie_wlen1-3_cc100.txt with 0.5 into r0-05_cangjie_wlen1-3_cc100_train.txt and r0-05_cangjie_wlen1-3_cc100_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\r0-05_cangjie_wlen1-3_cc100.txt",
+        "train_file_path": ".\\Train_Datasets\\r0-05_cangjie_wlen1-3_cc100_train.txt",
+        "test_file_path": ".\\Test_Datasets\\r0-05_cangjie_wlen1-3_cc100_test.txt",
+        "train_test_split_ratio": 0.5,
+        "status": "done"
+    },
+    {
+        "mode": "split",
+        "description": "Split 8a0-1_cangjie_wlen1-3_cc100.txt with 0.5 into 8a0-1_cangjie_wlen1-3_cc100_train.txt and 8a0-1_cangjie_wlen1-3_cc100_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\8a0-1_cangjie_wlen1-3_cc100.txt",
+        "train_file_path": ".\\Train_Datasets\\8a0-1_cangjie_wlen1-3_cc100_train.txt",
+        "test_file_path": ".\\Test_Datasets\\8a0-1_cangjie_wlen1-3_cc100_test.txt",
+        "train_test_split_ratio": 0.5,
+        "status": "done"
+    },
+    {
+        "mode": "split",
+        "description": "Split 8a0-05_cangjie_wlen1-3_cc100.txt with 0.5 into 8a0-05_cangjie_wlen1-3_cc100_train.txt and 8a0-05_cangjie_wlen1-3_cc100_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\8a0-05_cangjie_wlen1-3_cc100.txt",
+        "train_file_path": ".\\Train_Datasets\\8a0-05_cangjie_wlen1-3_cc100_train.txt",
+        "test_file_path": ".\\Test_Datasets\\8a0-05_cangjie_wlen1-3_cc100_test.txt",
         "train_test_split_ratio": 0.5,
         "status": "done"
     },
@@ -178,28 +294,64 @@
     },
     {
         "mode": "split",
-        "description": "Split r0-01_pinyin_wlen1-3_cc100.txt with 0.5 into r0-01_pinyin_wlen1-3_cc100_train.txt and r0-01_pinyin_wlen1-3_cc100_test.txt datasets.",
-        "input_file_path": ".\\Key_Stroke_Datasets\\r0-01_pinyin_wlen1-3_cc100.txt",
-        "train_file_path": ".\\Train_Datasets\\r0-01_pinyin_wlen1-3_cc100_train.txt",
-        "test_file_path": ".\\Test_Datasets\\r0-01_pinyin_wlen1-3_cc100_test.txt",
+        "description": "Split r0-05_pinyin_wlen1-3_cc100.txt with 0.5 into r0-05_pinyin_wlen1-3_cc100_train.txt and r0-05_pinyin_wlen1-3_cc100_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\r0-05_pinyin_wlen1-3_cc100.txt",
+        "train_file_path": ".\\Train_Datasets\\r0-05_pinyin_wlen1-3_cc100_train.txt",
+        "test_file_path": ".\\Test_Datasets\\r0-05_pinyin_wlen1-3_cc100_test.txt",
         "train_test_split_ratio": 0.5,
         "status": "done"
     },
     {
         "mode": "split",
-        "description": "Split r0-1_english_wlen1-3_English.txt with 0.5 into r0-1_english_wlen1-3_English_train.txt and r0-1_english_wlen1-3_English_test.txt datasets.",
-        "input_file_path": ".\\Key_Stroke_Datasets\\r0-1_english_wlen1-3_English.txt",
-        "train_file_path": ".\\Train_Datasets\\r0-1_english_wlen1-3_English_train.txt",
-        "test_file_path": ".\\Test_Datasets\\r0-1_english_wlen1-3_English_test.txt",
+        "description": "Split 8a0-1_pinyin_wlen1-3_cc100.txt with 0.5 into 8a0-1_pinyin_wlen1-3_cc100_train.txt and 8a0-1_pinyin_wlen1-3_cc100_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\8a0-1_pinyin_wlen1-3_cc100.txt",
+        "train_file_path": ".\\Train_Datasets\\8a0-1_pinyin_wlen1-3_cc100_train.txt",
+        "test_file_path": ".\\Test_Datasets\\8a0-1_pinyin_wlen1-3_cc100_test.txt",
         "train_test_split_ratio": 0.5,
         "status": "done"
     },
     {
         "mode": "split",
-        "description": "Split r0-01_english_wlen1-3_English.txt with 0.5 into r0-01_english_wlen1-3_English_train.txt and r0-01_english_wlen1-3_English_test.txt datasets.",
-        "input_file_path": ".\\Key_Stroke_Datasets\\r0-01_english_wlen1-3_English.txt",
-        "train_file_path": ".\\Train_Datasets\\r0-01_english_wlen1-3_English_train.txt",
-        "test_file_path": ".\\Test_Datasets\\r0-01_english_wlen1-3_English_test.txt",
+        "description": "Split 8a0-05_pinyin_wlen1-3_cc100.txt with 0.5 into 8a0-05_pinyin_wlen1-3_cc100_train.txt and 8a0-05_pinyin_wlen1-3_cc100_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\8a0-05_pinyin_wlen1-3_cc100.txt",
+        "train_file_path": ".\\Train_Datasets\\8a0-05_pinyin_wlen1-3_cc100_train.txt",
+        "test_file_path": ".\\Test_Datasets\\8a0-05_pinyin_wlen1-3_cc100_test.txt",
+        "train_test_split_ratio": 0.5,
+        "status": "done"
+    },
+    {
+        "mode": "split",
+        "description": "Split r0-1_english_wlen1-3_English_multi.txt with 0.5 into r0-1_english_wlen1-3_English_multi_train.txt and r0-1_english_wlen1-3_English_multi_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\r0-1_english_wlen1-3_English_multi.txt",
+        "train_file_path": ".\\Train_Datasets\\r0-1_english_wlen1-3_English_multi_train.txt",
+        "test_file_path": ".\\Test_Datasets\\r0-1_english_wlen1-3_English_multi_test.txt",
+        "train_test_split_ratio": 0.5,
+        "status": "done"
+    },
+    {
+        "mode": "split",
+        "description": "Split r0-05_english_wlen1-3_English_multi.txt with 0.5 into r0-05_english_wlen1-3_English_multi_train.txt and r0-05_english_wlen1-3_English_multi_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\r0-05_english_wlen1-3_English_multi.txt",
+        "train_file_path": ".\\Train_Datasets\\r0-05_english_wlen1-3_English_multi_train.txt",
+        "test_file_path": ".\\Test_Datasets\\r0-05_english_wlen1-3_English_multi_test.txt",
+        "train_test_split_ratio": 0.5,
+        "status": "done"
+    },
+    {
+        "mode": "split",
+        "description": "Split 8a0-1_english_wlen1-3_English_multi.txt with 0.5 into 8a0-1_english_wlen1-3_English_multi_train.txt and 8a0-1_english_wlen1-3_English_multi_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\8a0-1_english_wlen1-3_English_multi.txt",
+        "train_file_path": ".\\Train_Datasets\\8a0-1_english_wlen1-3_English_multi_train.txt",
+        "test_file_path": ".\\Test_Datasets\\8a0-1_english_wlen1-3_English_multi_test.txt",
+        "train_test_split_ratio": 0.5,
+        "status": "done"
+    },
+    {
+        "mode": "split",
+        "description": "Split 8a0-05_english_wlen1-3_English_multi.txt with 0.5 into 8a0-05_english_wlen1-3_English_multi_train.txt and 8a0-05_english_wlen1-3_English_multi_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\8a0-05_english_wlen1-3_English_multi.txt",
+        "train_file_path": ".\\Train_Datasets\\8a0-05_english_wlen1-3_English_multi_train.txt",
+        "test_file_path": ".\\Test_Datasets\\8a0-05_english_wlen1-3_English_multi_test.txt",
         "train_test_split_ratio": 0.5,
         "status": "done"
     },
@@ -232,10 +384,10 @@
     },
     {
         "mode": "split",
-        "description": "Split 0_english_wlen1-3_English.txt with 0.5 into 0_english_wlen1-3_English_train.txt and 0_english_wlen1-3_English_test.txt datasets.",
-        "input_file_path": ".\\Key_Stroke_Datasets\\0_english_wlen1-3_English.txt",
-        "train_file_path": ".\\Train_Datasets\\0_english_wlen1-3_English_train.txt",
-        "test_file_path": ".\\Test_Datasets\\0_english_wlen1-3_English_test.txt",
+        "description": "Split 0_english_wlen1-3_English_multi.txt with 0.5 into 0_english_wlen1-3_English_multi_train.txt and 0_english_wlen1-3_English_multi_test.txt datasets.",
+        "input_file_path": ".\\Key_Stroke_Datasets\\0_english_wlen1-3_English_multi.txt",
+        "train_file_path": ".\\Train_Datasets\\0_english_wlen1-3_English_multi_train.txt",
+        "test_file_path": ".\\Test_Datasets\\0_english_wlen1-3_English_multi_test.txt",
         "train_test_split_ratio": 0.5,
         "status": "done"
     }

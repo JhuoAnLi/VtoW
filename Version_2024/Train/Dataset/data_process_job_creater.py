@@ -13,94 +13,59 @@ if __name__ == "__main__":
 
     # Create Cleaned Dataset from existing plain text dataset
     mode = "clean"
-    src_files = ["Chinese_WebCrawlData_cc100.txt"]
-    languages = ["chinese"]
+    group = [("chinese", "Chinese_WebCrawlData_cc100.txt"), ("english", "English_multi_news.txt")]
     skip_clean = True
 
-    for src_file in src_files:
-        for language in languages:
-            dataset_name = None
-            if src_file.find("cc100") > 0:
-                dataset_name = "cc100"
-            elif src_file.find("news") > 0:
-                dataset_name = "news"
-            elif src_file.find("gossip") > 0:
-                dataset_name = "gossip"
-            else:
-                raise ValueError("Invalid file name: " + src_file)
-
-            job_list.append({
-                "mode": mode,
-                "description": f"Clean {src_file} to {language}",
-                "input_file_path": PLAIN_TEXT_DATASET_PATH + src_file, 
-                "output_file_path": PLAIN_TEXT_DATASET_PATH + f"{src_file.replace('.txt', '-ch.txt')}",
-                "language": language,
-                "status": "done" if skip_clean else None
-                })
+    for language, src_file in group:
+        job_list.append({
+            "mode": mode,
+            "description": f"Clean {src_file} to {language}",
+            "input_file_path": PLAIN_TEXT_DATASET_PATH + src_file, 
+            "output_file_path": PLAIN_TEXT_DATASET_PATH + f"{src_file.replace('.txt', '-ch.txt')}",
+            "language": language,
+            "status": "done" if skip_clean else None
+            })
+    
 
     # Split Dataset into words
     mode = "split_word"
-    src_files = ["Chinese_WebCrawlData_cc100-ch.txt"]
+    group = [("ch", "Chinese_WebCrawlData_cc100-ch.txt"), ("en", "English_multi_news-ch.txt")]
     min_split_word_len = 1
     max_split_word_len = 3
-    languages = ["ch"]
-    skip_split_word = False
+    skip_split_word = True
 
     output_file_name_list = []
-    for src_file in src_files:
-        for language in languages:
-            dataset_name = None
-            if src_file.find("cc100") > 0:
-                dataset_name = "cc100"
-            elif src_file.find("news") > 0:
-                dataset_name = "news"
-            else:
-                raise ValueError("Invalid file name: " + src_file)
+    for language, src_file in group:
+        dataset_name = None
+        if src_file.find("WebCrawlData_cc100") >= 0:
+            dataset_name = "cc100"
+        elif src_file.find("English_multi_news") >= 0:
+            dataset_name = "English_multi"
+        elif src_file.find("Chinese_news") >= 0:
+            dataset_name = "Chinese_news"
+        elif src_file.find("gossip") >= 0:
+            dataset_name = "gossip"
+        else:
+            raise ValueError("Invalid file name: " + src_file)
 
-            output_file_name = f"wlen{min_split_word_len}-{max_split_word_len}_{dataset_name}.txt"
-            output_file_name_list.append(output_file_name)
-            job_list.append({
-                "mode": mode,
-                "description": f"Split {src_file} into words with length {min_split_word_len}-{max_split_word_len}",
-                "input_file_path": PLAIN_TEXT_DATASET_PATH + src_file, 
-                "output_file_path": PLAIN_TEXT_DATASET_PATH + output_file_name,
-                "min_split_word_len": min_split_word_len,
-                "max_split_word_len": max_split_word_len,
-                "language": language,
-                "status": "done" if skip_split_word else None
-                })
-
-    mode = "split_word"
-    src_files = ["English.txt"]
-
-    languages = ["en"]
-    skeip_split_word = False
-
-    for src_file in src_files:
-        for language in languages:
-            if src_file.find("English") < 0:
-                raise ValueError("Invalid file name: " + src_file)
-
-
-            output_file_name = f"wlen{min_split_word_len}-{max_split_word_len}_English.txt"
-            output_file_name_list.append(output_file_name)
-            job_list.append({
-                "mode": mode,
-                "description": f"Split {src_file} into words with length {min_split_word_len}-{max_split_word_len}",
-                "input_file_path": PLAIN_TEXT_DATASET_PATH + src_file, 
-                "output_file_path": PLAIN_TEXT_DATASET_PATH + output_file_name,
-                "min_split_word_len": min_split_word_len,
-                "max_split_word_len": max_split_word_len,
-                "language": language,
-                "status": "done" if skip_split_word else None
-                })
-
+        output_file_name = f"wlen{min_split_word_len}-{max_split_word_len}_{dataset_name}.txt"
+        output_file_name_list.append(output_file_name)
+        job_list.append({
+            "mode": mode,
+            "description": f"Split {src_file} into words with length {min_split_word_len}-{max_split_word_len}",
+            "input_file_path": PLAIN_TEXT_DATASET_PATH + src_file, 
+            "output_file_path": PLAIN_TEXT_DATASET_PATH + output_file_name,
+            "min_split_word_len": min_split_word_len,
+            "max_split_word_len": max_split_word_len,
+            "language": language,
+            "status": "done" if skip_split_word else None
+            })
 
     # Create KeyStroke Dataset from existing plain text dataset
     mode = "convert"
     src_files = ["wlen1-3_cc100.txt"]
     convert_types = ["bopomofo", "cangjie", "pinyin"]
-    skip_convert = False
+    skip_convert = True
 
     convert_files = []
     for src_file in src_files:
@@ -118,7 +83,7 @@ if __name__ == "__main__":
                 })
 
     mode = "convert"
-    src_files = ["wlen1-3_English.txt"]  # todo: fix this
+    src_files = ["wlen1-3_English_multi.txt"]  # todo: fix this
     convert_types = ["english"]
     for src_file in src_files:
         for convert_type in convert_types:
@@ -138,8 +103,8 @@ if __name__ == "__main__":
     # Create Error Dataset from existing keystroke dataset
     mode = "gen_error"
     src_files = convert_files
-    error_rates = [0.1, 0.01]
-    error_types = ["random"]
+    error_rates = [0.1, 0.05]
+    error_types = ["random", "8adjacency"]
     skip_gen_error = False
 
     with_error_files = []
@@ -147,7 +112,7 @@ if __name__ == "__main__":
         for error_type in error_types:
             for error_rate in error_rates:
                 error_rate_name = str(error_rate).replace(".", "-")
-                error_type_name = "r" if error_type == "random" else "8a" if error_type == "8adjacent" else error_type
+                error_type_name = "r" if error_type == "random" else "8a" if error_type == "8adjacency" else error_type
 
                 src_file_name = src_file.split("_")[1:]
                 output_file_name = f"{error_type_name}{error_rate_name}_{'_'.join(src_file_name)}"
