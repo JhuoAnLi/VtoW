@@ -1,11 +1,12 @@
 import json
+import os
+
+from tqdm import tqdm
 
 from DataProcessLib.LanguageCleaner import LanguageCleaner
 from DataProcessLib.KeyStrokeConverter import KeyStrokeConverter
 from DataProcessLib.TypoGenerater import TypoGenerater
 
-import random
-from tqdm import tqdm
 
 def split_train_test_file(input_file_path, train_file_path, test_file_path, train_test_split_size):
     with open(input_file_path, "r", encoding="utf-8") as file:
@@ -67,7 +68,30 @@ if __name__ == "__main__":
     NUM_PROCESSES = 4
     PROCESS_JOB_FILE = "data_process_job.json"
 
+    KEY_STROKE_DATASET_PATH = ".\\Key_Stroke_Datasets\\"
+    TRAIN_DATASET_PATH = ".\\Train_Datasets\\"
+    TEST_DATASET_PATH = ".\\Test_Datasets\\"
+
     job_list = json.load(open(PROCESS_JOB_FILE, "r"))
+
+    # clear all files in the dataset folders
+    if len(os.listdir(KEY_STROKE_DATASET_PATH)) > 0:
+        if input("Do you want to remove all files in Key_Stroke_Datasets? (y/n)") == "y":
+            print("Removing all files in Key_Stroke_Datasets")
+            for file_name in os.listdir(KEY_STROKE_DATASET_PATH):
+                os.remove(os.path.join(KEY_STROKE_DATASET_PATH, file_name))
+
+    if len(os.listdir(TRAIN_DATASET_PATH)) > 0:
+        if input("Do you want to remove all files in Train_Datasets? (y/n)") == "y":
+            print("Removing all files in Train_Datasets")
+            for file_name in os.listdir(TRAIN_DATASET_PATH):
+                os.remove(os.path.join(TRAIN_DATASET_PATH, file_name))
+
+    if len(os.listdir(TEST_DATASET_PATH)) > 0:
+        if input("Do you want to remove all files in Test_Datasets? (y/n)") == "y":
+            print("Removing all files in Test_Datasets")
+            for file_name in os.listdir(TEST_DATASET_PATH):
+                os.remove(os.path.join(TEST_DATASET_PATH, file_name))
 
     unfinished_jobs = []
     for job in job_list:
