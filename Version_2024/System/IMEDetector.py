@@ -52,7 +52,7 @@ class IMEDetectorSVM(IMEDetector):
         for label, classifier in self.classifiers.items():
             prediction = classifier.decision_function(text_features)[0]
             predictions[label] = prediction
-        print("Predictions:", predictions)
+        # print("Predictions:", predictions)
 
         if predictions["1"] > positive_bound or ( neg_bound < predictions["1"] < 0):
             return True
