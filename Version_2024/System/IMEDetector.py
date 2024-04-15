@@ -58,7 +58,7 @@ class IMEDetectorSVM(IMEDetector):
         else:
             return False
         
-    def predict_postive(self, input:str) -> float:
+    def predict_positive(self, input:str) -> float:
         text_features = self.vectorizer.transform([input])
         predictions = {}
         for label, classifier in self.classifiers.items():

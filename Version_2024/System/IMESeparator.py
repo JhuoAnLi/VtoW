@@ -26,7 +26,7 @@ class IMESeparator:
             "..\\Model_dump\\pinyin_8adj.pkl",
             "..\\Model_dump\\vectorizer_pinyin_8adj.pkl",
         )
-        
+
     def separate(self, input_keystrokes: str) -> list[list[str, str]]:
         results = []
         for seclen in range(3, len(input_keystrokes) + 1):
@@ -54,10 +54,18 @@ class IMESeparator:
                         ("pinyin", self.my_pinyin_detector),
                     ]:
                         if detector.predict(latter) == True:
-                            results.append([[former_method, former], [method, latter]])
+                            results.append([(former_method, former), (method, latter)])
         if len(results) == 0:
-            results.append([[input_keystrokes]])
+            results.append(
+                [
+                    ("bopomofo", input_keystrokes),
+                    ("english", input_keystrokes),
+                    ("cangjie", input_keystrokes),
+                    ("pinyin", input_keystrokes),
+                ]
+            )
         return results
+
 
 if __name__ == "__main__":
     my_separator = IMESeparator()
