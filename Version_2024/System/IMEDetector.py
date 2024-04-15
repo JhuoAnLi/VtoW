@@ -52,19 +52,27 @@ class IMEDetectorSVM(IMEDetector):
         for label, classifier in self.classifiers.items():
             prediction = classifier.decision_function(text_features)[0]
             predictions[label] = prediction
-        # print("Predictions:", predictions)
 
-        if predictions["1"] > positive_bound or ( neg_bound < predictions["1"] < 0):
+        if predictions["1"] > positive_bound or (neg_bound < predictions["1"] < 0):
             return True
         else:
             return False
+        
+    def predict_postive(self, input:str) -> float:
+        text_features = self.vectorizer.transform([input])
+        predictions = {}
+        for label, classifier in self.classifiers.items():
+            prediction = classifier.decision_function(text_features)[0]
+            predictions[label] = prediction
+
+        return predictions["1"]
 
 
 if __name__ == "__main__":
-    my_bopomofo_detector = IMEDetectorSVM('..\\Model_dump\\bopomofo.pkl', '..\\Model_dump\\vectorizer_bopomofo.pkl')
-    my_eng_detector = IMEDetectorSVM('..\\Model_dump\\english.pkl', '..\\Model_dump\\vectorizer_english.pkl')
-    my_cangjie_detector = IMEDetectorSVM('..\\Model_dump\\cangjie.pkl', '..\\Model_dump\\vectorizer_cangjie.pkl')
-    my_pinyin_detector = IMEDetectorSVM('..\\Model_dump\\pinyin.pkl', '..\\Model_dump\\vectorizer_pinyin.pkl')
+    my_bopomofo_detector = IMEDetectorSVM('..\\Model_dump\\bopomofo_8adj.pkl', '..\\Model_dump\\vectorizer_bopomofo_8adj.pkl')
+    my_eng_detector = IMEDetectorSVM('..\\Model_dump\\english_8adj.pkl', '..\\Model_dump\\vectorizer_english_8adj.pkl')
+    my_cangjie_detector = IMEDetectorSVM('..\\Model_dump\\cangjie_8adj.pkl', '..\\Model_dump\\vectorizer_cangjie_8adj.pkl')
+    my_pinyin_detector = IMEDetectorSVM('..\\Model_dump\\pinyin_8adj.pkl', '..\\Model_dump\\vectorizer_pinyin_8adj.pkl')
     input_text = "su3cl3"
     while True:
         input_text = input('Enter text: ')
