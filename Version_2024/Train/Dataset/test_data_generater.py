@@ -9,7 +9,7 @@ if __name__ == "__main__":
     TARGET_DATASET_PATH = ".\Test_Datasets\\"
 
     target_languages = ["bopomofo", "cangjie", "pinyin", "english"]
-    prefixes = ["0", "r0-1", "r0-01"]
+    prefixes = ["0", "r0-1"]
 
 
     for file in os.listdir(TARGET_DATASET_PATH):
