@@ -79,10 +79,11 @@ class KeyStrokeConverter:
 
         cangjie_map_dict = setup_cangjie_key_map()
         
-        lines = input_string.split("\n")
         result = ""
-        for line in lines:
-            result += ' '.join(cangjie_map_dict.get(char, char) for char in line) + "\n"
+        for line in input_string:
+            have_newline = line.find("\n") != -1
+            line = line.strip()
+            result += ' '.join(cangjie_map_dict.get(char, char) for char in line) + ("\n" if have_newline else "")
 
         return result
 
@@ -127,13 +128,14 @@ class KeyStrokeConverter:
                     # raise ValueError("Invalid bopomofo: " + bopomofo)
             
             return keystroke
-        lines = input_string.split("\n")
         result = ""
-        for line in lines:
+        for line in input_string:
+            have_newline = line.find("\n") != -1
+            line = line.strip()
             BOPOMOFO_result = [pin[0] for pin in pinyin(line, style=Style.BOPOMOFO)]
             keystorke_result = [bopomofo_to_keystroke(word) for word in BOPOMOFO_result]
             keystorke_result = "".join(keystorke_result)
-            result += keystorke_result + "\n"
+            result += keystorke_result + ("\n" if have_newline else "")
 
         return result
 
@@ -265,8 +267,9 @@ class KeyStrokeConverter:
         print(f"Conversion Success: {output_file_path}")
 
 if __name__ == '__main__':
-    input_string = "僅頒行政院長陳建仁今（16）日出席「112年鳳凰獎楷模表揚典禮」，頒獎表揚74名獲獎義消"
+    input_string = "僅頒行政院長陳建仁今\n（16）日出席\n「112年鳳凰獎楷模表揚典禮」，頒獎表揚74名獲獎義消"
     convert_type = "cangjie"
+    print(input_string)
     print(KeyStrokeConverter.convert(input_string, convert_type))
     # input_file =  "..\\Plain_Text_Datasets\\bbb.txt"
     # output_file =  "..\\Key_Stroke_Datasets\\aaa.txt"
