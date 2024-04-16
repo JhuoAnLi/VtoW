@@ -1,0 +1,6 @@
+# Total: 5, 1: 3, 2: 2
+284ru8 vu; 	©©©	("bopomofo", "284ru8 vu; ")
+withhjjudmci	©©©	("english", "with")("cangjie", "hjjudmci")
+kenengshi	©©©	("pinyin", "kenengshi")
+ji3solemn	©©©	("bopomofo", "ji3")("english", "solemn")
+5k4	©©©	("bopomofo", "5k4")

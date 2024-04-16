@@ -27,8 +27,8 @@ def process_line(chinese_line, english_line, k_num):
 
 
 if __name__ == "__main__":
-    PLAIN_TEXT_DATA_PATH = os.path.join(".", "Plain_Text_Datasets")
-    TARGET_PATH = os.path.join(".", "labled_mix_ime.txt")
+    PLAIN_TEXT_DATA_PATH = ".\\Plain_Text_Datasets\\"
+    TARGET_PATH = "..\\..\\System_Test\\labled_mix_ime.txt"
     files = ["wlen1-3_cc100.txt", "wlen1-3_English_multi.txt"]
 
     random.seed(32)
@@ -46,7 +46,7 @@ if __name__ == "__main__":
     MAX_LINES = min(len(chinese_lines), len(english_lines), MAX_DATA_LINE)
     chinese_lines = chinese_lines[:MAX_LINES]
     english_lines = english_lines[:MAX_LINES]
-    k_num_list = [1, 2] * (MAX_LINES // 2)
+    k_num_list = [1, 2] * (MAX_LINES // 2) + [1] * (MAX_LINES % 2)
 
     outlines = []
     mix_count = {"1": k_num_list.count(1), "2": k_num_list.count(2)}
