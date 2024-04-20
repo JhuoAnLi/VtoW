@@ -5,6 +5,8 @@ from SVMClassification import (
     custom_tokenizer_pinyin,
 )
 from collections import Counter
+import re
+from tqdm import tqdm
 
 
 class IMESeparator:
@@ -42,10 +44,10 @@ class IMESeparator:
                     detector.predict(former) == True
                     and detector.predict(latter) == False
                 ):
-                    print(
-                        method + " " + former + " " + str(detector.predict(former)),
-                        latter + " " + str(detector.predict(latter)),
-                    )
+                    # print(
+                    #     method + " " + former + " " + str(detector.predict(former)),
+                    #     latter + " " + str(detector.predict(latter)),
+                    # )
                     former_method = method
                     for method, detector in [
                         ("bopomofo", self.my_bopomofo_detector),
@@ -67,10 +69,43 @@ class IMESeparator:
         return results
 
 
+def read_labels(file_path):
+    labels = []
+    with open(file_path, "r", encoding="utf-8") as file:
+        for line in file:
+            try:
+                input_text, label_str = line.split("\t©©©\t")
+                labels.append([input_text, label_str.strip()])
+            except ValueError:
+                pass
+    return labels
+
+
+def check_accuracy(label_file, my_separator):
+    labels = read_labels(label_file)
+    total_lines = len(labels)
+    print("Total lines: %d" % total_lines)
+    match_count = 0
+    for label in tqdm(labels, desc="Processing", unit=" line"):
+        input_text = label[0]
+        expected_label_pairs = re.findall(r"\([^)]*\)", label[1])
+        results = my_separator.separate(input_text)
+        for result in results:
+            temp_len = 0
+            for pairs in expected_label_pairs:
+                if eval(pairs) in result:
+                    temp_len += 1
+            if temp_len == len(expected_label_pairs):
+                match_count += 1
+                print(results)
+                print("Check1: ",result,"Check2: ",expected_label_pairs)
+                break
+        # print("Match count: %d" % match_count)
+    accuracy = match_count / total_lines
+    return accuracy
+
+
 if __name__ == "__main__":
     my_separator = IMESeparator()
-    input_text = "su3cl3 pinyin"
-    while True:
-        input_text = input("Enter text: ")
-        results = my_separator.separate(input_text)
-        print(results)
+    accuracy = check_accuracy("..\\System_Test\\labled_mix_ime.txt", my_separator)
+    print("Accuracy: ", accuracy)

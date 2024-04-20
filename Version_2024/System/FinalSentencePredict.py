@@ -1,38 +1,27 @@
-import requests
-
-API_URL = "https://api-inference.huggingface.co/models/google-bert/bert-base-chinese"
-headers = {"Authorization": "Bearer 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"}
-
-
-def query(payload):
-    response = requests.post(API_URL, headers=headers, json=payload)
-    return response.json()
+from gensim.models import word2vec
+import gensim
+import os
 
 
-masked_input = "經濟部這周將舉行會[MASK]。"
-user_list = ["輸入1", "輸入2", "輸入3", "輸入4"]
-# previous_token_str = None
+if __name__ == "__main__":
+    sg = 0
+    win_size = 2
+    vector_size = 300
+    epochs = 10
 
-while True:
-    temp_output_list = []
-    output = query({"inputs": masked_input})
-    for i in range(len(output)):
-        print(output[i])
-    # print(output)
-    # need to order bert output and user_list
-    for i in range(len(output)):
-        temp_output = "".join(output[i]["sequence"].split())
-        temp_output_list.append(temp_output)
-        print(f"{i}: {temp_output}")
-
-    for i, user_item in enumerate(user_list, start=len(output)):
-        temp_output = masked_input.replace("[MASK]", user_item, 1)
-        temp_output_list.append(temp_output)
-        print(f"{i}: {temp_output}")
-
-    user_choices = int(input("選擇您要的選項 : "))
-    masked_input = (
-        temp_output_list[user_choices][:-1]
-        + "[MASK]"
-        + temp_output_list[user_choices][-1]
-    )
+    if os.path.exists("word2vec.model"):
+        model = gensim.models.Word2Vec.load("word2vec.model")
+        print(model.wv.most_similar("早安", topn=10))
+    else:
+        sentences = word2vec.LineSentence(
+            "..\\Train\\Dataset\\Plain_Text_Datasets\\Chinese_WebCrawlData_cc100.txt"
+        )
+        model = word2vec.Word2Vec(
+            sentences,
+            vector_size=vector_size,
+            window=win_size,
+            sg=sg,
+            min_count=1,
+            epochs=epochs,
+        )
+        model.save("word2vec.model")
