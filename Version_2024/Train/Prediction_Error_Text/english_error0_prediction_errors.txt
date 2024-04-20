@@ -1,0 +1,5056 @@
+Text: ('NanetteAsimov ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Bonin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('commanders', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('exercises in', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hard', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Mullins', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Unemployment', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ceasefire', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fun.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('top leaders,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('driving', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('not reveal', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Cisneros,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Party booze', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Farkhunda,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('signed up', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('thanked', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fact', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ago', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('damages.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('actions', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (', Jenum ,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('age', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('entrance', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an qmbuc otf', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('2011Organization', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jobs.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Caso,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  Indeed,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Martin Stropnicky', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('0323 PM ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sinks', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('you want', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Die Rabatte', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fired', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('surprise snub', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aligned', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Sanctions ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Hagerstown,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('after smartphone overheated', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('renowned Opificio delle', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('customized HoopSwagg', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('PhotoManuel', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('A', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('disbanding', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('CBS', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('quote', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('familiar instrumental', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hgdi her', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('customers 60', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('policy. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('end nklq', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' researchers,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('no credible leads', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('28yearold', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fatigued ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('particular snafu,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('thrown', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' kmallettnewark ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('you live', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Democratic', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('repeat themes he', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ladder', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a varietal, Maurer', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hooves', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Jail', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Fla. You', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ships', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rvp he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('York,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Quezadas', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('serious', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('OSullivan, Bushs top', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ACTIONFOR', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('DuitsyWasHere', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' Philippine', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('License', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an aeronautical', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' A ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('having', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('selfdriving', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('funding.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('welfare', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('weird he', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('power', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a tuft', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nhe tau', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('listening', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('laboratories', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('her song.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lift', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Continue', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('up believing', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Democratic', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('drawn', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  Top', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mr ebsd hjwg', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('assess', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hitting', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('groups', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('denide', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('country realizing', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('herself.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('believe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('elevation,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Anna', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('t/61u/40 ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('expenses,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('entitled Accidental', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('specifically', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('complete immersion', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('stark', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('throat', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('goals', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Having a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cats. Grapes', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Makaveli', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('perceived', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Contador', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('courage', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('owners,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('orca go,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Meritorious', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Express cardholders a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Jeremys', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('long', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('disabled people', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('comfort placed', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Azcrraga,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('LaRoche prioritized', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('advocates', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('oldest song', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('info', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('JetBlue captain behaving', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Nolen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('thereby', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ago.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' study, Dibaba', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('man', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('surgical', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  Donald', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('J. Balcazar, principal', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('UK', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a reference', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('governor', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('0.96B 201422 Sunday', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a flexible,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Victoria', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cancer.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('23,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('apply', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a sizable anticoup', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('10,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cold', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('father fought', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ChickfilAs.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('weapon', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('line', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('indignities.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Broccoli Carrots,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('descent.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('despair,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('shred', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hospital', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('TMZ.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('U.S', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Knoxville', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('announcements', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tragedy reinforces', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('her', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('maintains', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('esi', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('morning', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('predictions', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('AAP ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ICE', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('overnight', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('hiermee verzamelen,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('17', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a publicity', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('treasures at', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('embarking on ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wasnt a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('voted ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('messages', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bachelor. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('booze. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('like', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Bivens', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('work up', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('unacceptable.Federal', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tanks,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Ozone depletion', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('long', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Newton, Frida N', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('as Mia Farrows', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Nweeias', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('scaling, a linear', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('delegatecounting', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Goldman', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('jabs', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Addressing', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('belongings,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('offtourist seasons.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' JPL', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('noticed', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' No', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' confident', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('laughed', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('December,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Qantas', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('relationship. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('actor', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('20, 2016', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Kickstarter', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('naturalized citizen,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bin', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('served', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('29 ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('a  CNN', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Jiang Zemin.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' shower ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ehbk an', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Dirk Welsford,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('common', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Investigators', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lawyer Gloria Allred.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('AU proposal. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('titles', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('IOC', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('you', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('citys', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tau tmbw otniq', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Mitzi McFarland,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2019,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Yelm,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('victory,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('focus', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('700 Celsius.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('careers', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bases. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fact', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('furniture', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('minimal', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('advocacy, stewardship, community', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('MP David', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Reserve', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an ebcd', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zip', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ancestors. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bin', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Dax', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tool.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('greater', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('IOC recently', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('highquality?  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('on gays', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('24, 2011.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('alderman', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('drivers', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Iran ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Todd', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('accusation', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pilots', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1.94,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Japan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('insight', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  Courtesy', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('-328 ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('a message', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aphh of', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Comptoir Voltaire', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('petition states.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ytj pp he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Q I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rectangular,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1154', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('conduct', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('minor sediment', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('luxurious lifestyle', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Muellers team.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('discussing an', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('families.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Ohsumi, Y. 2000.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Jordan Spieths', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('poster  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('S.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('applications. You', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('calibrate', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a false name,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('BU. However, Thickes', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' RELATED', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('them jumping', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pals', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Worms', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aggravating ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('era. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' chamber, stocked', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('my normal', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rewrite', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Shia ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('components', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' Bell', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Donald', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Wege geleitet. Die', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('instance. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Socialist Nazi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' evidence', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('winners. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('her name,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('button,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nightclub...', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('M. Craighill', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an ime hdbu', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('sqnl ojmo of', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('battle', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('individually.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rant went', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Latinos', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('attacks.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a QiaCube', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Aramco. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rsums, ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('talkers,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a twominute', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('grabbing', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' dancing,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('marital', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' trial', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Argument', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a stellar 4.5', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Superintendent Curtis', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('controllers', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('subscribe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('B7A', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Corp.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Charles Tobin,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('opposed deeper U.S.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  Sports', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('continue', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('urethra. It', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('assess', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('velocity, v s', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hurricane', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('great demo, ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('volume', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('waters. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' A', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bump. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('San Francisco', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Fierstein', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('man', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('democracy.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Acre Lane, Brixton,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('shop', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('arrives', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('trial', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('OKeefe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('betreffend', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('recounted', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Rainwaters', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gambling', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('brighter. Franklin Roosevelt', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('KaMin,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Bakerat', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('her', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('worlds', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('surprise? ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('profusely. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('something, Turner', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a nun in', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' theyve', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sync up an', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mourning', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Casteen ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('deflated. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he yrwlj yk', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('energy shifted,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('individual', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Romans  eyes', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('U.S.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fireball', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('60 Minutes', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Verizons', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('husbands', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dated', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Tehran.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' DSM', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Columbia', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('MSNBCs', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('reviewed the protocols', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('her nlcmo', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('by', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('randomized CVD', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('degree', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('reference', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' citing', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('shelf slopes', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('microcontinent', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('weapons,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a princess', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mogul.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('toll', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('slogan I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('An error', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('httpwww', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('uranium', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('stratosphere.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hunting', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('August', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('paid', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qualification.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('progress,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('better. Forgive', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a lot', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Ingrid', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wind', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('H5N1,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Wing', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('planner', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('victories, 22 top', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('stop', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('massive 201112', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('periods', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('6.3', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('no', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('A', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Fairstein', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('having a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Asian moviemaking dominance', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('experimenters K.F.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('level', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Ashok,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' A', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('demonstrations worldwide', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an embargo', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('various', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cooking', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' A ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('up', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('formal establishment', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('toppriced lots', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('reach', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('geri', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (', samesex couples', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Evelyne', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Clintons', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a unique', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Yorkers  especially', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('her', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('by', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('28 years', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('can', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he mwhoe olhh', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' women', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('resignation.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('together', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('top official', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('titled', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a yakclocking', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Todd', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an unmanned', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Jr,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Trauma', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tries', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Franklin.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('10year', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('devised. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('characters', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Whoopi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('you', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('assembly', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hosting  all', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Pallingston recounted', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('shooter', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('between Gatlinburg', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('heres my', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('impacted', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('TSA', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Ohr,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('myriad', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('canvass ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gue', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' He expects', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('listens', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('most vulnerable', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('highincome countries ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('BP', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('deductions,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('stable condition', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' actions', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('q dvii he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('cumulative discarded plastic', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a long', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Senators', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Mike', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('long', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('granting', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('girls,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('runners', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('limitations. Pinar pointed', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' recognize', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (',', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' node', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('verified mean? ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('introduce ambiguity', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Australia,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('got you.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('relatives', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('insurance ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('omnn vr mr', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('web . Crawls', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('side', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('edge,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  Harrington', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('covenant', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pressure', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('awesome budgets', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Dickey', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('can', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('eras', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('burkini', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Renesmee', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Romanian city', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  Myung', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('COURTESY JAN', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('database', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1,000point climb', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  You', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Zarifs presentation', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cycle somehow. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' sat', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Nina Tempia', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Lyles', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('zoom', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fish eggs', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('monoxide leak,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('obscene', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('terrorists', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('magicoreligious practitioners.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rest', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Committee.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('trafficking', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('entering', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' poorest', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a Tallahassee', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sequential reference', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('looking', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Atwell ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('keyboards answered', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Boston', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('assortment', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a vaguely', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('undermine', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('revenues.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('neighbors', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('can', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('J. Glaciol.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Yosemite', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('x', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('midhearing.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('accurate', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sensory scientist', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('antenna', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' clustered bellflower', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('documentary project spearheaded', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('literaryloving', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('exported', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Platform. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('no', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('happier', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Henson', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Keanu Reeves', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('contestant on', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('yearlong review', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('. .', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Celebuzz', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('can', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Eichmann did', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Josephus ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('incredible', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Bank AG', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  ABC10', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fellowship', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' pointing', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('am', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Germanys welfare', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Mr.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' users', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1700 Stoneridge', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Marthas', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('glowing reviews', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('relationship', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Allston', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('least', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dog q', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('a highspeed chase', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('I ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('dead, practically', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('problems.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('prominent', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('democracy', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('focus', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('highvelocity bullet,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('celebrities', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('express', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an outright ban,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('compounds', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Sexy', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Wisconsin', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('you', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Kurdish', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Campaigning group Avaaz', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a corked ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('computer', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Chum Oh, itd', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Instant', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('APhA. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Oxfam', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('5', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('extremists who', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('morning', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ration', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('A ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('reforms', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Hawk Pro Skater.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Bahamas', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  SwiftKey', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Kate', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Loving. Ruth', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('novel ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cellar.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a prop', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('wasnt. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Taliban', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('is unnecessary', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('locked up. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('up ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('owned firearms', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('accomplice', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rm,68 ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Hershs ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('couldnt', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  A', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lamented media', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bcrl mr vfhwp', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('tried', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lefthand ring finger.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mystery.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('obese themselves.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('emphasize', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('boost', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('as Kenyan', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('stricter regulation', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Cyber Monday,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('restrict', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Abu Ghayth, 29,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('her', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('broad', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Smithsonian', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Angel runs through', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a 1986', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Thats precisely', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Jazeeras Dorsa', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('A', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('60second commercial,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('96', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('penis may', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('possibility', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('midterm', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Removal', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Esther', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('an angry', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('owner,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' tapes,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fairly', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lifestyles.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('aggressively countermessaging Trump.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('market', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('surrogacy', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Pernetti', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('antibiotic ointment. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rush', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('you', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('identification', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('group affiliated', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('person', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('unconscionable, unbearable,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('runway success,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('onepercenter', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('recruiter', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Windows PC folk', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('RhRu', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('You', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('flying', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kingdoms', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('verbs in', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('RInd.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('27, 2015.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('patrol', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('confounding. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Leiber', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('hemisphere', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('B. Comey', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('conciliatory', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Bowers', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1665', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('so', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('approaches, Tommy', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('u.68 ', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Gallery Thumbnails', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('shrunk substantially.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Deadliest', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('singers', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('came up', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('typed', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('3.25m fourstorey', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('llml dpr', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('scaled', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Zimmer wrote I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('cleared', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('principle', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('me,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('me my walkietalkie.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a flexure', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('attracting advertisers', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('chemical', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('UV Neutralizer ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('abilities', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Donald', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('credibility.Believe', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('203 upset', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('meet ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('her', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('audio', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('glimpse', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('passwords.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('passages', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sentences', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ths mhaf eabt', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Active', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('An', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a crowbar', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ddi lwg her', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('  Australia', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('caucus. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Theatre', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a template', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Schneidermans', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Iran confronted ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('suction', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kappa', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('S1', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('me. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a break ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Topinka.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('transmit Ebola', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('extraordinary', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('intellectual property', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  Vaughn,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('on myvs', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('can', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('defeat', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('252', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a multibank, multinational', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ksatyarthi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bottle', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mode', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('accessing', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('girls', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('arguments', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('underestimating warming?', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('freeroaming, acornfed ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Co. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('drone.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('slippery', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('murdered', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('me', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('rumors,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('name', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('moral imperative', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gone', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('created a circumcision', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('consumers', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Valeries', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('impaired. He ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('forlorn Rangel arrived', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('end mgwlv gytu', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Samiul', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fame', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('passed', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Orthodox Church. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('an', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('up a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Rule', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('2001.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('moved', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('man', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: (' sweeteners', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('D. Ryan RWis.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('argue', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('name, calling', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' tectonic', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('beacon in', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('astronomer', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('eating', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('invest', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('acquired', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' run,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  Daviss', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('she', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('his gentle', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('999 tax', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('apertura', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('instead trusting Garridos', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' GF', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Kenya', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mr efh', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('can', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('sad.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Chronicle, I', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('occurrence, defense', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('tabloid hacks. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('individually, they', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('generically', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('presents', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('Andersons fitness method,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('restrain a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('gentlemen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  Follow', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pushed', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('honesty test.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('feeds ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('MattHoltTips ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('mad.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('spinal', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('delayed by', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('19', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' An', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('art dealer,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('seat', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('unsubstantiated', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('am', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Shiloh.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('teachers', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Brooklyn,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('deliberations.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Double ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('made', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('ii provide', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Cyrpus. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('preparation', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('nascent', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('A picture', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' 59', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Noble', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('holidays,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('seen', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('diets. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a liar? Conway', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bacterial mats', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('harmed', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('1 ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' Azor', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Cowboys', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('scenes. ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('81yearold', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('recruits,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('California, Berkeley', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('bought', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('princesses,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('her', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('poppies', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('York', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('qytg an', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('he', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('toward', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a 22monthold toddler', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('man', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('legitimacy', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Mardi', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fact,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('patents', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('properties. Olfactory', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('PA', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Norway', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('a', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('refund', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Ris', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('femalebonded', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kilometres', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('Saudis enjoyed', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('lawyer', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('long', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('  Colorado', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('correlation', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('types', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('her a screenshot', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('win streak', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('joy', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('intruder.  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('opioid', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('pistol', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('kayak', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('automatic', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('looper Seth', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('fullblown investigations,', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('voted', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('understand.', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('vbm pd her', 0)
+True Label: 0
+Predicted Label: 1
+
+Text: ('  ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: (' ', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('looking', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('', 1)
+True Label: 1
+Predicted Label: 0
+
+Text: ('metal roofs', 1)
+True Label: 1
+Predicted Label: 0
+
