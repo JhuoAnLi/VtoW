@@ -7,6 +7,7 @@ from SVMClassification import (
 from collections import Counter
 import re
 from tqdm import tqdm
+import random
 
 
 class IMESeparator:
@@ -40,23 +41,42 @@ class IMESeparator:
                 ("cangjie", self.my_cangjie_detector),
                 ("pinyin", self.my_pinyin_detector),
             ]:
-                if (
-                    detector.predict(former) == True
-                    and detector.predict(latter) == False
-                ):
-                    # print(
-                    #     method + " " + former + " " + str(detector.predict(former)),
-                    #     latter + " " + str(detector.predict(latter)),
-                    # )
-                    former_method = method
-                    for method, detector in [
-                        ("bopomofo", self.my_bopomofo_detector),
-                        ("english", self.my_eng_detector),
-                        ("cangjie", self.my_cangjie_detector),
-                        ("pinyin", self.my_pinyin_detector),
-                    ]:
-                        if detector.predict(latter) == True:
-                            results.append([(former_method, former), (method, latter)])
+                if method == "english":
+                    if (
+                    detector.predict_eng(former) == True
+                    and detector.predict_eng(latter) == False
+                    ):
+                        former_method = method
+                        for method, detector in [
+                            ("bopomofo", self.my_bopomofo_detector),
+                            ("english", self.my_eng_detector),
+                            ("cangjie", self.my_cangjie_detector),
+                            ("pinyin", self.my_pinyin_detector),
+                        ]:
+                            if method == "english":
+                                if detector.predict_eng(latter) == True:
+                                    results.append([(former_method, former), (method, latter)])
+                            else:
+                                if detector.predict(latter) == True:
+                                    results.append([(former_method, former), (method, latter)])
+                else:
+                    if (
+                        detector.predict(former) == True
+                        and detector.predict(latter) == False
+                    ):
+                        former_method = method
+                        for method, detector in [
+                            ("bopomofo", self.my_bopomofo_detector),
+                            ("english", self.my_eng_detector),
+                            ("cangjie", self.my_cangjie_detector),
+                            ("pinyin", self.my_pinyin_detector),
+                        ]:
+                            if method == "english":
+                                if detector.predict_eng(latter) == True:
+                                    results.append([(former_method, former), (method, latter)])
+                            else:
+                                if detector.predict(latter) == True:
+                                    results.append([(former_method, former), (method, latter)])
         if len(results) == 0:
             results.append(
                 [
@@ -83,23 +103,38 @@ def read_labels(file_path):
 
 def check_accuracy(label_file, my_separator):
     labels = read_labels(label_file)
+    labels = random.sample(labels, 5000)
     total_lines = len(labels)
     print("Total lines: %d" % total_lines)
     match_count = 0
-    for label in tqdm(labels, desc="Processing", unit=" line"):
-        input_text = label[0]
-        expected_label_pairs = re.findall(r"\([^)]*\)", label[1])
-        results = my_separator.separate(input_text)
-        for result in results:
-            temp_len = 0
-            for pairs in expected_label_pairs:
-                if eval(pairs) in result:
-                    temp_len += 1
-            if temp_len == len(expected_label_pairs):
-                match_count += 1
-                print(results)
-                print("Check1: ",result,"Check2: ",expected_label_pairs)
-                break
+    temp_count = 1
+    with open("all_old_Separator_prediction_summary.txt", "w", encoding="utf-8") as f:
+        for label in tqdm(labels, desc="Processing", unit=" line"):
+            input_text = label[0]
+            expected_label_pairs = re.findall(r"\([^)]*\)", label[1])
+            results = my_separator.separate(input_text)
+            for result in results:
+                temp_len = 0
+                for pairs in expected_label_pairs:
+                    if eval(pairs) in result:
+                        temp_len += 1
+                if temp_len == len(expected_label_pairs):
+                    match_count += 1
+                    # print(results)
+                    # print("Check1: ", result, "Check2: ", expected_label_pairs)
+                    f.write(str(temp_count) + ". Correct\n")
+                    f.write("Input: %s\n" % input_text)
+                    f.write("Expected: %s\n" % expected_label_pairs)
+                    f.write("Result: %s\n" % results)
+                    break
+            if temp_len != len(expected_label_pairs):
+                # print(results)
+                # print("Check1: ", result, "Check2: ", expected_label_pairs)
+                f.write(str(temp_count) + ". Incorrect\n")
+                f.write("Input: %s\n" % input_text)
+                f.write("Expected: %s\n" % expected_label_pairs)
+                f.write("Result: %s\n" % results)
+            temp_count += 1
         # print("Match count: %d" % match_count)
     accuracy = match_count / total_lines
     return accuracy

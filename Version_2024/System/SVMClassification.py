@@ -59,7 +59,7 @@ class IMEClassifier:
     def __init__(self, data):
         self.data = data
         self.labels = []
-        self.vectorizer = TfidfVectorizer(tokenizer=custom_tokenizer_bopomofo)
+        self.vectorizer = TfidfVectorizer()
         self.classifiers = {}
         self.X_train, self.X_val, self.y_train, self.y_val = train_test_split(
             [text for text, _ in self.data],
@@ -86,6 +86,9 @@ class IMEClassifier:
             "Number of tokens in TfidfVectorizer: ",
             len(self.vectorizer.get_feature_names_out()),
         )
+        print("Features: ")
+        for features in self.vectorizer.get_feature_names_out()[:100]:
+            print(features)
 
     def train_classifier_thread(self, label, y_binary):
         classifier = SVC(kernel="linear")
@@ -107,20 +110,32 @@ class IMEClassifier:
         ) / len(predictions)
         print("Validation Accuracy:", final_accuracy * 100, "%")
 
-    # output the decimal probability
-    def predict(self, text):
-        text_features = self.vectorizer.transform([text])
+    # def predict(self, text):
+    #     text_features = self.vectorizer.transform([text])
+    #     predictions = {}
+    #     correct_predictions = 0
+    #     total_predictions = 0
+    #     for label, classifier in self.classifiers.items():
+    #         prediction = classifier.decision_function(text_features)[0]
+    #         predictions[label] = prediction
+    #         if prediction == label:
+    #             correct_predictions += 1
+    #         total_predictions += 1
+    #     # print("Predictions:", predictions)
+    #     return max(predictions, key=predictions.get)
+
+    def predict(self, input: str, positive_bound: float = 1, neg_bound: float = -0.5):
+        text_features = self.vectorizer.transform([input])
         predictions = {}
-        correct_predictions = 0
-        total_predictions = 0
         for label, classifier in self.classifiers.items():
             prediction = classifier.decision_function(text_features)[0]
             predictions[label] = prediction
-            if prediction == label:
-                correct_predictions += 1
-            total_predictions += 1
         # print("Predictions:", predictions)
-        return max(predictions, key=predictions.get)
+
+        if predictions["1"] > positive_bound or (neg_bound < predictions["1"] < 0):
+            return 1
+        else:
+            return 0
 
     def save_model(self, modelname):
         save_path = os.path.join(os.getcwd(), "Version_2024\\Model_dump\\")
@@ -135,9 +150,9 @@ class IMEClassifier:
 
 if __name__ == "__main__":
 
-    file_1 = "Version_2024\\Train\\Dataset\\Train_Datasets\\labeled_bopomofo_0_train.txt"
+    file_1 = "Version_2024\\Train\\Dataset\\Train_Datasets\\labeled_english_0_train.txt"
     file_2 = (
-        "Version_2024\\Train\\Dataset\\Train_Datasets\\labeled_bopomofo_r0-1_train.txt"
+        "Version_2024\\Train\\Dataset\\Train_Datasets\\labeled_english_r0-1_train.txt"
     )
     data_1 = read_file(file_1)
     data_2 = read_file(file_2)
@@ -150,16 +165,16 @@ if __name__ == "__main__":
     ]
 
     test_file_name = (
-        "Version_2024\\Train\\Dataset\\Test_Datasets\\labeled_bopomofo_0_test.txt"
+        "Version_2024\\Train\\Dataset\\Test_Datasets\\labeled_english_0_test.txt"
     )
     temp_test_data = read_file(test_file_name)
-    testing_random_data = random.sample(temp_test_data, 100000)
+    testing_random_data = random.sample(temp_test_data, 50000)
     testing_random_data_list = [(line[0], int(line[1])) for line in testing_random_data]
 
     print("Test Dataset: labeled_bopomofo_0_test.txt, 100000 Samples")
 
     relative_path = "Version_2024\\Model_dump"
-    model_name = "bopomofo.pkl"
+    model_name = "temp_english_8adj.pkl"
 
     if os.path.exists(os.path.join(os.getcwd(), relative_path, model_name)):
         loaded_classifier = IMEClassifier(training_random_data)
@@ -192,7 +207,7 @@ if __name__ == "__main__":
     true_labels = []
     predicted_labels = []
 
-    with open("pinyin_error0_prediction_errors.txt", "w", encoding="utf-8") as f:
+    with open("english_error0_prediction_errors.txt", "w", encoding="utf-8") as f:
         for text, true_label in testing_random_data_list:
             prediction = loaded_classifier.predict(text)
             true_labels.append(true_label)

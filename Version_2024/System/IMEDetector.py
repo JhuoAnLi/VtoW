@@ -57,6 +57,18 @@ class IMEDetectorSVM(IMEDetector):
             return True
         else:
             return False
+    
+    def predict_eng(self, input: str, positive_bound: float = 0.8, neg_bound: float = -0.7) -> bool:
+        text_features = self.vectorizer.transform([input])
+        predictions = {}
+        for label, classifier in self.classifiers.items():
+            prediction = classifier.decision_function(text_features)[0]
+            predictions[label] = prediction
+
+        if predictions["1"] > positive_bound or (neg_bound < predictions["1"] < 0):
+            return True
+        else:
+            return False
         
     def predict_positive(self, input:str) -> float:
         text_features = self.vectorizer.transform([input])
