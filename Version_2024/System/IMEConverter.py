@@ -97,7 +97,17 @@ class IMEConverter():
         candidates = self.trie.findClosestMatches(key_stroke_query, num_of_result)
         candidates = [candidate for candidate in candidates if candidate["distance"] <= distance]
         candidates = sorted(candidates, key=lambda x: x["distance"])
-        return candidates
+
+        word_candidates = []
+        for candidate in candidates:
+            for value in candidate["value"]:
+                word_candidates.append({
+                    "word": value["word"],
+                    "distance": candidate["distance"],
+                    "frequency": value["frequency"],
+                    "key": candidate["keySoFar"],
+                })
+        return word_candidates
 
 
 if __name__ == "__main__":
@@ -114,3 +124,37 @@ if __name__ == "__main__":
         print("Pinyin: ", my_pinyin_IMEConverter.get_candidates(input_text, 3, 2))
         print("English: ", my_english_IMEConverter.get_candidates(input_text, 3, 2))
         print("\n")
+
+    # my_converter = IMEConverter(".\\keystroke_mapping_dictionary\\bopomofo_dict_with_frequency.json")
+    # input = "su3"
+
+    # def levenshteinDistance(s1: str, s2: str) -> int:
+    #     if len(s1) < len(s2):
+    #         return levenshteinDistance(s2, s1)
+
+    #     if len(s2) == 0:
+    #         return len(s1)
+
+    #     previous_row = list(range(len(s2) + 1))
+
+    #     for i, char1 in enumerate(s1):
+    #         current_row = [i + 1]
+
+    #         for j, char2 in enumerate(s2):
+    #             insertions = previous_row[j + 1] + 1
+    #             deletions = current_row[j] + 1
+    #             # substitutions = previous_row[j] + (char1 != char2)
+    #             if char1 != char2:
+    #                 if i > 0 and j > 0 and s1[i-1] == char2 and s1[i] == char1:
+    #                     substitutions = previous_row[j-1]
+    #                 else:
+    #                     substitutions = previous_row[j] + 1
+    #             else:
+    #                 substitutions = previous_row[j]
+
+    #             current_row.append(min(insertions, deletions, substitutions))
+
+    #         previous_row = current_row
+
+    #     return previous_row[-1]
+    # print(levenshteinDistance("su3", "s3u"))
