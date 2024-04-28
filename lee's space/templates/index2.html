@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multilingual IME Demo</title>
+    <style>
+        #inputText {
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            resize: none; /* 禁止調整大小 */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .placeholder {
+            color: #aaa;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multilingual IME Demo</h1>
+    <textarea id="inputText" rows="4" cols="50" placeholder="Enter your text here"></textarea>
+    <button onclick="sendInput()">Submit</button>
+    <div id="output" class="placeholder">System output here</div>
+
+    <script>
+        function sendInput() {
+            
+            var input = document.getElementById("inputText").value;
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById("output").innerHTML = xhr.responseText;
+                    document.getElementById("output").classList.remove("placeholder");
+                }
+            };
+            xhr.send(JSON.stringify({ input: input }));
+        }
+    </script>
+</body>
+</html>
