@@ -106,6 +106,7 @@ class IMEConverter():
                     "distance": candidate["distance"],
                     "frequency": value["frequency"],
                     "key": candidate["keySoFar"],
+                    "user_key": key_stroke_query
                 })
         return word_candidates
 
