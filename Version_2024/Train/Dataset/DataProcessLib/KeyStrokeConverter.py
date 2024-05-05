@@ -74,7 +74,7 @@ class KeyStrokeConverter:
                     parts = line.strip().split()
                     word, cangjie_keys = parts[0], parts[1:]
                     cangjie_key = cangjie_keys[0]
-                    cangjie_key_map_dict[word] = cangjie_key
+                    cangjie_key_map_dict[word] = cangjie_key + " "
             return cangjie_key_map_dict
 
         cangjie_map_dict = setup_cangjie_key_map()
@@ -83,7 +83,7 @@ class KeyStrokeConverter:
         for line in input_string:
             have_newline = line.find("\n") != -1
             line = line.strip()
-            result += ' '.join(cangjie_map_dict.get(char, char) for char in line) + ("\n" if have_newline else "")
+            result += ''.join([cangjie_map_dict.get(char, char) for char in line]) + ("\n" if have_newline else "")
 
         return result
 
