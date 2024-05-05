@@ -91,7 +91,7 @@ class Trie():
 
 class IMEConverter():
     def __init__(self, data_dict_path: str):
-        self.trie = Trie(data_dict=json.load(open(data_dict_path, "r")))
+        self.trie = Trie(data_dict=json.load(open(data_dict_path, "r", encoding="utf-8")))
 
     def get_candidates(self, key_stroke_query: str, num_of_result: int = 3, distance: int = 3) -> list:
         candidates = self.trie.findClosestMatches(key_stroke_query, num_of_result)
@@ -114,7 +114,7 @@ class IMEConverter():
 if __name__ == "__main__":
     my_bopomofo_IMEConverter = IMEConverter(".\\keystroke_mapping_dictionary\\bopomofo_dict_with_frequency.json")
     my_cangjie_IMEConverter = IMEConverter(".\\keystroke_mapping_dictionary\\cangjie_dict_with_frequency.json")
-    my_pinyin_IMEConverter = IMEConverter(".\\keystroke_mapping_dictionary\\pinyin_dict.json")
+    my_pinyin_IMEConverter = IMEConverter(".\\keystroke_mapping_dictionary\\pinyin_dict_with_frequency.json")
     my_english_IMEConverter = IMEConverter(".\\keystroke_mapping_dictionary\\english_dict_with_frequency.json")
 
 

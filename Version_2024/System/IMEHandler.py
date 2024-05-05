@@ -17,7 +17,7 @@ class IMEHandler():
     def __init__(self) -> None:
         self._bopomofo_converter = IMEConverter(".\\keystroke_mapping_dictionary\\bopomofo_dict_with_frequency.json")
         self._cangjie_converter = IMEConverter(".\\keystroke_mapping_dictionary\\cangjie_dict_with_frequency.json")
-        self._pinyin_converter = IMEConverter(".\\keystroke_mapping_dictionary\\pinyin_dict.json")
+        self._pinyin_converter = IMEConverter(".\\keystroke_mapping_dictionary\\pinyin_dict_with_frequency.json")
         self._english_converter = IMEConverter(".\\keystroke_mapping_dictionary\\english_dict_with_frequency.json")
         self._separator = IMESeparator()
         self._language_model = None
