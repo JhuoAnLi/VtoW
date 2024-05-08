@@ -23,7 +23,7 @@ class IMEHandler():
         self._language_model = None
         self._load_language_model("all-MiniLM-L6-v2")
 
-    def _load_language_model(self, model_name: str) -> None:
+    def _load_language_model(self, model_name: str) -> SentenceTransformer:
         start_time = time.time()
         print(f"Loading model...")
         self._language_model = SentenceTransformer(model_name)
