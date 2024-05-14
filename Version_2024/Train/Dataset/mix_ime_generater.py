@@ -3,12 +3,14 @@ import os
 import random
 from tqdm import tqdm
 from DataProcessLib.KeyStrokeConverter import KeyStrokeConverter
+from DataProcessLib.TypoGenerater import TypoGenerater
 from multiprocessing import Pool
 
 
 SPLITS = "\t©©©\t"
 MAX_DATA_LINE = 20000
 CONVERT_LANGUAGES = ["bopomofo", "cangjie", "pinyin", "english"]
+ERROR_RATE = 0.1
 
 def process_line(chinese_line, english_line, k_num):
     two_languages = random.sample(CONVERT_LANGUAGES, k=k_num)
@@ -19,6 +21,8 @@ def process_line(chinese_line, english_line, k_num):
             keystroke += KeyStrokeConverter.convert(english_line, convert_type=language)
         else:
             keystroke += KeyStrokeConverter.convert(chinese_line, convert_type=language)
+        
+        keystroke = TypoGenerater.generate(keystroke, error_type="random", error_rate=ERROR_RATE)
 
         line_keystroke += keystroke
         line_answer += f"(\"{language}\", \"{keystroke}\")"
@@ -28,7 +32,7 @@ def process_line(chinese_line, english_line, k_num):
 
 if __name__ == "__main__":
     PLAIN_TEXT_DATA_PATH = ".\\Plain_Text_Datasets\\"
-    TARGET_PATH = "..\\..\\System_Test\\labled_mix_ime.txt"
+    TARGET_PATH = "..\\..\\System_Test\\labled_mix_ime_r{}.txt".format(str(ERROR_RATE).replace(".","-"))
     files = ["wlen1-3_cc100.txt", "wlen1-3_English_multi.txt"]
 
     random.seed(32)
