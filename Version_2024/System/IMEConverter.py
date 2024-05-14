@@ -110,12 +110,38 @@ class IMEConverter():
                 })
         return word_candidates
 
+class EnglishIMEConverter():
+    def __init__(self, data_dict_path: str):
+        self.trie = Trie(data_dict=json.load(open(data_dict_path, "r", encoding="utf-8")))
+
+    def get_candidates(self, key_stroke_query: str, num_of_result: int = 3, distance: int = 3) -> list:
+        is_upper = False
+        if key_stroke_query[0].isupper():
+            key_stroke_query_lower_case = key_stroke_query.lower()
+            is_upper = True
+
+        candidates = self.trie.findClosestMatches(key_stroke_query_lower_case, num_of_result)
+        candidates = [candidate for candidate in candidates if candidate["distance"] <= distance]
+        candidates = sorted(candidates, key=lambda x: x["distance"])
+
+        word_candidates = []
+        for candidate in candidates:
+            for value in candidate["value"]:
+                word_candidates.append({
+                    "word": value["word"].capitalize() if is_upper else value["word"],
+                    "distance": candidate["distance"],
+                    "frequency": value["frequency"],
+                    "key": candidate["keySoFar"],
+                    "user_key": key_stroke_query
+                })
+        return word_candidates
+
 
 if __name__ == "__main__":
     my_bopomofo_IMEConverter = IMEConverter(".\\keystroke_mapping_dictionary\\bopomofo_dict_with_frequency.json")
     my_cangjie_IMEConverter = IMEConverter(".\\keystroke_mapping_dictionary\\cangjie_dict_with_frequency.json")
     my_pinyin_IMEConverter = IMEConverter(".\\keystroke_mapping_dictionary\\pinyin_dict_with_frequency.json")
-    my_english_IMEConverter = IMEConverter(".\\keystroke_mapping_dictionary\\english_dict_with_frequency.json")
+    my_english_IMEConverter = EnglishIMEConverter(".\\keystroke_mapping_dictionary\\english_dict_with_frequency.json")
 
 
     while True:
