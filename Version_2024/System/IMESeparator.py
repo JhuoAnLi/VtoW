@@ -8,7 +8,7 @@ from collections import Counter
 import re
 from tqdm import tqdm
 import random
-
+import multiprocessing
 
 class IMESeparator:
     def __init__(self):
@@ -100,16 +100,12 @@ def read_labels(file_path):
                 pass
     return labels
 
-
-def check_accuracy(label_file, my_separator):
-    labels = read_labels(label_file)
-    labels = random.sample(labels, 5000)
-    total_lines = len(labels)
-    print("Total lines: %d" % total_lines)
+def worker(label_chunk, my_separator, results_queue):
     match_count = 0
     temp_count = 1
-    with open("all_old_Separator_prediction_summary.txt", "w", encoding="utf-8") as f:
-        for label in tqdm(labels, desc="Processing", unit=" line"):
+    temp_accuracy = 0
+    with open("all_old_Separator_prediction_summary.txt", "a", encoding="utf-8") as f:
+        for label in tqdm(label_chunk, desc="Processing", unit=" line"):
             input_text = label[0]
             expected_label_pairs = re.findall(r"\([^)]*\)", label[1])
             results = my_separator.separate(input_text)
@@ -120,27 +116,87 @@ def check_accuracy(label_file, my_separator):
                         temp_len += 1
                 if temp_len == len(expected_label_pairs):
                     match_count += 1
-                    # print(results)
-                    # print("Check1: ", result, "Check2: ", expected_label_pairs)
                     f.write(str(temp_count) + ". Correct\n")
                     f.write("Input: %s\n" % input_text)
                     f.write("Expected: %s\n" % expected_label_pairs)
                     f.write("Result: %s\n" % results)
                     break
             if temp_len != len(expected_label_pairs):
-                # print(results)
-                # print("Check1: ", result, "Check2: ", expected_label_pairs)
                 f.write(str(temp_count) + ". Incorrect\n")
                 f.write("Input: %s\n" % input_text)
                 f.write("Expected: %s\n" % expected_label_pairs)
                 f.write("Result: %s\n" % results)
             temp_count += 1
-        # print("Match count: %d" % match_count)
-    accuracy = match_count / total_lines
+    temp_accuracy = match_count / len(label_chunk)
+    results_queue.put(temp_accuracy)
+
+def check_accuracy(label_file, my_separator):
+    labels = read_labels(label_file)
+    labels = random.sample(labels, 5000)
+    total_lines = len(labels)
+    print("Total lines: %d" % total_lines)
+    num_processes = multiprocessing.cpu_count()
+    chunk_size = len(labels) // num_processes
+    chunks = [labels[i:i + chunk_size] for i in range(0, len(labels), chunk_size)]
+    results_queue = multiprocessing.Queue()
+    processes = []
+
+    for chunk in chunks:
+        p = multiprocessing.Process(target=worker, args=(chunk, my_separator, results_queue))
+        processes.append(p)
+        p.start()
+
+    for p in processes:
+        p.join()
+
+    accuracies = []
+    while not results_queue.empty():
+        accuracies.append(results_queue.get())
+
+    accuracy = sum(accuracies) / len(accuracies)
     return accuracy
+
+
+# def check_accuracy(label_file, my_separator):
+#     labels = read_labels(label_file)
+#     labels = random.sample(labels, 5000)
+#     total_lines = len(labels)
+#     print("Total lines: %d" % total_lines)
+#     match_count = 0
+#     temp_count = 1
+#     with open("all_old_Separator_prediction_summary.txt", "w", encoding="utf-8") as f:
+#         for label in tqdm(labels, desc="Processing", unit=" line"):
+#             input_text = label[0]
+#             expected_label_pairs = re.findall(r"\([^)]*\)", label[1])
+#             results = my_separator.separate(input_text)
+#             for result in results:
+#                 temp_len = 0
+#                 for pairs in expected_label_pairs:
+#                     if eval(pairs) in result:
+#                         temp_len += 1
+#                 if temp_len == len(expected_label_pairs):
+#                     match_count += 1
+#                     # print(results)
+#                     # print("Check1: ", result, "Check2: ", expected_label_pairs)
+#                     f.write(str(temp_count) + ". Correct\n")
+#                     f.write("Input: %s\n" % input_text)
+#                     f.write("Expected: %s\n" % expected_label_pairs)
+#                     f.write("Result: %s\n" % results)
+#                     break
+#             if temp_len != len(expected_label_pairs):
+#                 # print(results)
+#                 # print("Check1: ", result, "Check2: ", expected_label_pairs)
+#                 f.write(str(temp_count) + ". Incorrect\n")
+#                 f.write("Input: %s\n" % input_text)
+#                 f.write("Expected: %s\n" % expected_label_pairs)
+#                 f.write("Result: %s\n" % results)
+#             temp_count += 1
+#         # print("Match count: %d" % match_count)
+#     accuracy = match_count / total_lines
+#     return accuracy
 
 
 if __name__ == "__main__":
     my_separator = IMESeparator()
-    accuracy = check_accuracy("..\\System_Test\\labled_mix_ime.txt", my_separator)
+    accuracy = check_accuracy("..\\System_Test\\labled_mix_ime_r0-1.txt", my_separator)
     print("Accuracy: ", accuracy)
