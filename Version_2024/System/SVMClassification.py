@@ -1,22 +1,18 @@
-from sklearn.svm import SVC
-from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 import random
-from sklearn.metrics import accuracy_score
-import threading
 from tqdm import tqdm
 import os
 import joblib
 from sklearn.metrics import confusion_matrix
 import numpy as np
 import re
-from sklearn.feature_extraction.text import TfidfVectorizer
 from torch.utils.data import DataLoader, Dataset
 from sklearn.preprocessing import LabelEncoder
 import torch
 import torch.nn as nn
 import torch.optim as optim
-model_name = "dl_pinyin"
+
+model_name = "2D_onehot_bopomofo"
 
 def read_file(filename):
     with open(filename, "r", encoding="utf-8") as f:
@@ -61,112 +57,72 @@ def custom_tokenizer_pinyin(text):
     return tokens
 
 
-# class IMEClassifier:
-#     def __init__(self, data):
-#         self.data = data
-#         self.labels = []
-#         self.vectorizer = TfidfVectorizer()
-#         self.classifiers = {}
-#         self.X_train, self.X_val, self.y_train, self.y_val = train_test_split(
-#             [text for text, _ in self.data],
-#             [label for _, label in self.data],
-#             test_size=0.2,
-#             random_state=42,
-#         )
+class KeystrokeTokenizer(): 
+    key_labels = [
+        "PAD", "<SOS>", "<EOS>", "<UNK>",
+        "`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=",
+        "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]", "\\",
+        "a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'", 
+        "z", "x", "c", "v", "b", "n", "m", ",", ".", "/",
+        "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+",
+        "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "{", "}", "|",
+        "A", "S", "D", "F", "G", "H", "J", "K", "L", ":", "\"",
+        "Z", "X", "C", "V", "B", "N", "M", "<", ">", "?",
+        "®", " "
+    ]
 
-#     def train_classifier(self):
+    @classmethod
+    def tokenize(cls, input_keystrokes: str) -> list[str]:
 
-#         threads = []
-#         self.labels = self.y_train
-#         self.X = self.vectorizer.fit_transform(self.X_train)
-#         for label in set(self.labels):
-#             y_binary = [1 if l == label else 0 for l in self.labels]
-#             thread = threading.Thread(
-#                 target=self.train_classifier_thread, args=(label, y_binary)
-#             )
-#             thread.start()
-#             threads.append(thread)
-#         for thread in tqdm(threads, desc="Training classifiers"):
-#             thread.join()
-#         print(
-#             "Number of tokens in TfidfVectorizer: ",
-#             len(self.vectorizer.get_feature_names_out()),
-#         )
-#         print("Features: ")
-#         for features in self.vectorizer.get_feature_names_out()[:100]:
-#             print(features)
+        token_list = []
+        token_list.append("<SOS>")
 
-#     def train_classifier_thread(self, label, y_binary):
-#         classifier = SVC(kernel="linear")
-#         classifier.fit(self.X, y_binary)
-#         self.classifiers[label] = classifier
+        for key in input_keystrokes:
+            if key not in cls.key_labels:
+                token_list.append("<UNK>")
+            else:
+                token_list.append(key)
 
-#     def validate_classifier(self):
-#         X_val_transformed = self.vectorizer.transform(self.X_val)
-#         predictions = {}
-#         for label, classifier in self.classifiers.items():
-#             y_val_binary = [1 if l == label else 0 for l in self.y_val]
-#             y_pred = classifier.predict(X_val_transformed)
-#             accuracy = accuracy_score(y_val_binary, y_pred)
-#             predictions[label] = {"accuracy": accuracy, "predicted_labels": y_pred}
+        token_list.append("<EOS>")
+        return token_list
 
-#         # Calculate the final accuracy
-#         final_accuracy = sum(
-#             prediction_info["accuracy"] for prediction_info in predictions.values()
-#         ) / len(predictions)
-#         print("Validation Accuracy:", final_accuracy * 100, "%")
+    @classmethod
+    def token_to_ids(cls, token_list:list[str]) -> list[int]:
 
-#     def predict(self, input: str, positive_bound: float = 1, neg_bound: float = -0.5):
-#         text_features = self.vectorizer.transform([input])
-#         predictions = {}
-#         for label, classifier in self.classifiers.items():
-#             prediction = classifier.decision_function(text_features)[0]
-#             predictions[label] = prediction
-#         # print("Predictions:", predictions)
-
-#         if predictions["1"] > positive_bound or (neg_bound < predictions["1"] < 0):
-#             return 1
-#         else:
-#             return 0
-
-#     def save_model(self, modelname):
-#         save_path = os.path.join(os.getcwd(), "Version_2024\\Model_dump\\")
-#         joblib.dump(self.classifiers, save_path + modelname)
-#         joblib.dump(self.vectorizer, save_path + "vectorizer_" + modelname)
+        id_list = []
+        for token in token_list:
+            assert token in cls.key_labels, "Error: can not convert token '{}' is not on list".format(token)
+            id_list.append(cls.key_labels.index(token))
+        return id_list
 
 
-#     def load_model(self, modelname):
-#         load_path = os.path.join(os.getcwd(), "Version_2024\\Model_dump\\")
-#         self.classifiers = joblib.load(load_path + modelname)
-#         self.vectorizer = joblib.load(load_path + "vectorizer_" + modelname)
-class SparseTensorDataset(Dataset):
-    def __init__(self, X, y):
-        self.X = X
-        self.y = y
+    @classmethod
+    def key_labels_length(cls):
+        return len(cls.key_labels)
+    
+
+class TensorDataset(Dataset):
+    def __init__(self, tensors, targets):
+        self.tensors = tensors
+        self.targets = targets
 
     def __len__(self):
-        return self.X.shape[0]
+        return len(self.tensors)
 
     def __getitem__(self, idx):
-        return self.X[idx].to_dense(), self.y[idx]
-
+        return self.tensors[idx], self.targets[idx]
 
 class IMEClassifier_Deep_Learning:
     def __init__(self, data):
         self.data = data
-        self.vectorizer = TfidfVectorizer(tokenizer=custom_tokenizer_pinyin)
-        # self.vectorizer = TfidfVectorizer(tokenizer=custom_tokenizer_bopomofo)
-        # self.vectorizer = TfidfVectorizer(tokenizer=custom_tokenizer_cangjie)
-        # self.vectorizer = TfidfVectorizer()
         self.classifiers = {}
+
         self.X_train, self.X_val, self.y_train, self.y_val = train_test_split(
             [text for text, _ in self.data],
             [label for _, label in self.data],
             test_size=0.2,
             random_state=42,
         )
-        self.X_train_tfidf = self.vectorizer.fit_transform(self.X_train)
-        self.X_val_tfidf = self.vectorizer.transform(self.X_val)
 
         self.le = LabelEncoder()
         self.y_train_enc = self.le.fit_transform(self.y_train)
@@ -175,19 +131,33 @@ class IMEClassifier_Deep_Learning:
         self.y_train_cat = torch.tensor(self.y_train_enc, dtype=torch.long)
         self.y_val_cat = torch.tensor(self.y_val_enc, dtype=torch.long)
 
-        self.X_train_tensor = self._sparse_matrix_to_tensor(self.X_train_tfidf)
-        self.X_val_tensor = self._sparse_matrix_to_tensor(self.X_val_tfidf)
+        self.X_train_tensor = self._keystrokes_to_tensor(self.X_train)
+        self.X_val_tensor = self._keystrokes_to_tensor(self.X_val)
 
         self.best_val_accuracy = 0.0
 
-    def _sparse_matrix_to_tensor(self, sparse_matrix):
-        sparse_matrix = sparse_matrix.tocoo()
-        values = sparse_matrix.data
-        indices = np.vstack((sparse_matrix.row, sparse_matrix.col))
-        i = torch.LongTensor(indices)
-        v = torch.FloatTensor(values)
-        shape = sparse_matrix.shape
-        return torch.sparse_coo_tensor(i, v, torch.Size(shape)).to(device)
+    def _keystrokes_to_tensor(self, keystrokes_list):
+        tensors = []
+        max_length = 30
+        num_labels = KeystrokeTokenizer.key_labels_length()
+        for keystrokes in keystrokes_list:
+            tokens_list = KeystrokeTokenizer.tokenize(keystrokes)
+            ids_list = KeystrokeTokenizer.token_to_ids(tokens_list)
+            
+            # Truncate if longer than max_length
+            if len(ids_list) > max_length:
+                ids_list = ids_list[:max_length]
+            
+            # One-hot encoding
+            one_hot = torch.eye(num_labels)[ids_list]
+            
+            # Pad if shorter than max_length
+            if one_hot.size(0) < max_length:
+                padding = torch.zeros(max_length - one_hot.size(0), num_labels)
+                one_hot = torch.cat((one_hot, padding), dim=0)
+            
+            tensors.append(one_hot)
+        return torch.stack(tensors).to(device)
 
     def build_model(self, input_shape, num_classes):
         model = nn.Sequential(
@@ -197,19 +167,22 @@ class IMEClassifier_Deep_Learning:
             nn.Linear(512, 256),
             nn.ReLU(),
             nn.Dropout(0.5),
-            nn.Linear(256, num_classes),
+            nn.Linear(256,128),
+            nn.ReLU(),
+            nn.Dropout(0.5),
+            nn.Linear(128, num_classes),
             nn.Softmax(dim=1),
         )
         return model.to(device)
 
     def train_classifier(self):
-        input_shape = self.X_train_tensor.shape[1]
+        input_shape = self.X_train_tensor.shape[1] * self.X_train_tensor.shape[2]
         num_classes = len(set(self.y_train_cat.numpy()))
         self.model = self.build_model(input_shape, num_classes)
 
         batch_size = 32
-        train_dataset = SparseTensorDataset(self.X_train_tensor, self.y_train_cat)
-        val_dataset = SparseTensorDataset(self.X_val_tensor, self.y_val_cat)
+        train_dataset = TensorDataset(self.X_train_tensor.view(self.X_train_tensor.size(0), -1), self.y_train_cat)
+        val_dataset = TensorDataset(self.X_val_tensor.view(self.X_val_tensor.size(0), -1), self.y_val_cat)
 
         train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
         val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
@@ -269,7 +242,7 @@ class IMEClassifier_Deep_Learning:
         self.load_model(model_name)
 
         self.model.eval()
-        val_dataset = SparseTensorDataset(self.X_val_tensor, self.y_val_cat)
+        val_dataset = TensorDataset(self.X_val_tensor.view(self.X_val_tensor.size(0), -1), self.y_val_cat)
         val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False)
 
         correct = 0
@@ -287,12 +260,27 @@ class IMEClassifier_Deep_Learning:
 
     def predict(self, input_text):
         self.model.eval()
-        input_tfidf = self.vectorizer.transform([input_text])
-        input_tensor = self._sparse_matrix_to_tensor(input_tfidf).to_dense()
+        tokens_list = KeystrokeTokenizer.tokenize(input_text)
+        ids_list = KeystrokeTokenizer.token_to_ids(tokens_list)
+        
+        # Truncate if longer than max_length
+        if len(ids_list) > 30:
+            ids_list = ids_list[:30]
+        
+        # One-hot encoding
+        one_hot = torch.eye(KeystrokeTokenizer.key_labels_length())[ids_list]
+        
+        # Pad if shorter than max_length
+        if one_hot.size(0) < 30:
+            padding = torch.zeros(30 - one_hot.size(0), one_hot.size(1))
+            one_hot = torch.cat((one_hot, padding), dim=0)
+        
+        one_hot_padded = one_hot.view(1, -1).to(device)
         with torch.no_grad():
-            output = self.model(input_tensor)
+            output = self.model(one_hot_padded)
             _, predicted = torch.max(output, 1)
         return self.le.inverse_transform(predicted.cpu().numpy())[0]
+
 
     def save_best_model(self, modelname):
         print("Saving model...")
@@ -300,19 +288,15 @@ class IMEClassifier_Deep_Learning:
         if not os.path.exists(save_path):
             os.makedirs(save_path)
         torch.save(self.model.state_dict(), os.path.join(save_path, modelname + ".pth"))
-        joblib.dump(self.vectorizer, os.path.join(save_path, "vectorizer_" + modelname + ".pkl"))
         joblib.dump(self.le, os.path.join(save_path, "label_encoder_" + modelname + ".pkl"))
 
     def load_model(self, modelname):
         load_path = os.path.join("..", "Model_dump")
-        input_shape = self.X_train_tensor.shape[1]
+        input_shape = self.X_train_tensor.shape[1] * self.X_train_tensor.shape[2]
         num_classes = len(set(self.y_train_cat.numpy()))
         self.model = self.build_model(input_shape, num_classes)
         self.model.load_state_dict(
             torch.load(os.path.join(load_path, modelname + ".pth"))
-        )
-        self.vectorizer = joblib.load(
-            os.path.join(load_path, "vectorizer_" + modelname + ".pkl")
         )
         self.le = joblib.load(
             os.path.join(load_path, "label_encoder_" + modelname + ".pkl")
@@ -321,8 +305,8 @@ class IMEClassifier_Deep_Learning:
 
 if __name__ == "__main__":
 
-    file_1 = "..\\Train\\Dataset\\Train_Datasets\\labeled_pinyin_0_train.txt"
-    file_2 = "..\\Train\\Dataset\\Train_Datasets\\labeled_pinyin_r0-1_train.txt"
+    file_1 = "..\\Train\\Dataset\\Train_Datasets\\labeled_bopomofo_0_train.txt"
+    file_2 = "..\\Train\\Dataset\\Train_Datasets\\labeled_bopomofo_r0-1_train.txt"
     data_1 = read_file(file_1)
     data_2 = read_file(file_2)
     random.seed(42)
@@ -336,7 +320,7 @@ if __name__ == "__main__":
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print("Using device:", device)
     
-    if os.path.exists(relative_path + "/" + "vectorizer_" + model_name + ".pkl"):
+    if os.path.exists(relative_path + "/" + "label_encoder_" + model_name + ".pkl"):
         loaded_classifier = IMEClassifier_Deep_Learning(training_random_data)
         loaded_classifier.load_model(model_name)
         print(model_name)
@@ -357,7 +341,7 @@ if __name__ == "__main__":
     #     prediction = loaded_classifier.predict(text)
     #     print("Predicted label:", prediction)
 
-    test_file_name = "..\\Train\\Dataset\\Test_Datasets\\labeled_pinyin_r0-1_test.txt"
+    test_file_name = "..\\Train\\Dataset\\Test_Datasets\\labeled_bopomofo_r0-1_test.txt"
     temp_test_data = read_file(test_file_name)
     testing_random_data = random.sample(temp_test_data, 50000)
     testing_random_data_list = [(line[0], int(line[1])) for line in testing_random_data]
