@@ -1,4 +1,4 @@
-
+import torch
 
 class KeystrokeTokenizer(): 
     key_labels = [
@@ -11,17 +11,17 @@ class KeystrokeTokenizer():
         "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "{", "}", "|",
         "A", "S", "D", "F", "G", "H", "J", "K", "L", ":", "\"",
         "Z", "X", "C", "V", "B", "N", "M", "<", ">", "?",
-
-        "<shift>", "<ctrl>", " "
+        
+        "®", " "
     ]
 
     @classmethod
-    def tokenize(cls, in_str:str) -> list:
+    def tokenize(cls, input_keystrokes: str) -> list[str]:
         """
         Tokenize the input string into a list of tokens
 
         Args:
-            in_str (str): The input string
+            input_keystrokes (str): The input string
 
         Returns:
             list: The list of tokens
@@ -30,24 +30,11 @@ class KeystrokeTokenizer():
         token_list = []
         token_list.append("<SOS>")
 
-        index = 0
-        while index < len(in_str):
-            if in_str[index] not in cls.key_labels:
+        for key in input_keystrokes:
+            if key not in cls.key_labels:
                 token_list.append("<UNK>")
-                index += 1
-            elif in_str[index] == "<":
-                if in_str[index:index+7] == "<shift>":
-                    token_list.append("<shift>")
-                    index += 7
-                elif in_str[index:index+6] == "<ctrl>":
-                    token_list.append("<ctrl>")
-                    index += 6
-                else:
-                    token_list.append("<")
-                    index += 1
             else:
-                token_list.append(in_str[index])
-                index += 1
+                token_list.append(key)
 
         token_list.append("<EOS>")
         return token_list
@@ -79,6 +66,10 @@ if __name__ == '__main__':
     input_str = "><z;6ru.4y9 － u3s061j"
     tokens_list = KeystrokeTokenizer.tokenize(input_str)
     ids_list = KeystrokeTokenizer.token_to_ids(tokens_list)
+
+    embedding = torch.eye(KeystrokeTokenizer.key_labels_length())[ids_list]
     print(input_str)
     print(tokens_list)
     print(ids_list)
+    print(embedding)
+    print(embedding.shape)
